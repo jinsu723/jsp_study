@@ -1,0 +1,16 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<form action="resultServlet1" method="get">
+		<label for="name">이름(GET) : </label>
+		<input type="text" id="name" name="userName" palceholder="이름 입력">
+		<br>
+	</form>
+</body>
+</html>

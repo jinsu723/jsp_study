@@ -128,7 +128,10 @@ day34(jsp 1일차)
 	즉, JSP는 내부적으로 서블릿으로 변환되어 실행된다
 
 7. web.xml 파일
+	xml : 다목적 마크업 언어
+	web.xml 파일은 웹 어플리케이션의 구성 정보를 포함한다
 	서블릿 파일에 작성된 @WebServlet() 어노테이션에 해당 서블릿의 경로를 작성한다
+	서블릿 매핑, 필터 설정, 리스너 등의 구성을 정의할 때 사용된다
 	예전에는 web.xml 파일을 이용해서 URL 매핑 처리를 진행했다
 	@WebServlet() 어노테이션이 대신 이 서블릿의 경로를 알려줄 수 있도록 작성하는 파일이다
 	우리가 만든 서블릿 파일을 등록하고 특정 경로로 요청이 들어오면 우리가 등록한 서블릿과 연결되도록 매핑해줘야 한다
@@ -138,10 +141,20 @@ day34(jsp 1일차)
 			<servlet-name> : 서블릿에 이름을 지어주는 태그
 			<servlet-class> : 패키지 경로를 포함한 서블릿 클래스의 이름을 작성하는 태그
 
+		<servlet>
+			<servlet-name></servlet-name>
+			<servlet-class></servlet-class>
+		</servlet>
+
 
 		<servlet-mapping> : 우리가 만든 서블릿과 특정 URL 경로를 매핑시킬 수 있다
 			<servlet-name> : 매핑시킬 서블릿의 이름을 작성하는데 서블릿 등록 시 작성한 이름으로 지정한다
 			<url-pattern> : 어떤 URL 경로와 매핑시킬지 작성한다
+
+		<servlet-mapping>
+			<servlet-name></servlet-name>
+			<servlet-pattern><url-pattern>
+		</servlet-mapping>
 
 	2) web.xml 파일 사용할 때의 요청(request) 흐름
 		- 클라이언트가 요청(request)를 보낸다
@@ -149,5 +162,5 @@ day34(jsp 1일차)
 		- 만약 request가 정적 페이지를 원한다면 웹 서버는 자체적으로 처리하여 응답(response)을 클라이언트에게 보내준다
 		- 만약 request가 동적 페이지를 원한다면 웹 서버는 서블릿 컨테이너의 도움을 받는다
 		- 서블릿 컨테이너는 web.xml 파일에서 URL에 해당하는 서블릿을 찾아서 실행한다
-		- 서블릿은 request를 처리하여 서블릿 컨테이너에 전달하고 서블릿 컨테이너는 휍 서버로 전달한다
+		- 서블릿은 request를 처리하여 서블릿 컨테이너에 전달하고 서블릿 컨테이너는 웹 서버로 전달한다
 		- 최종적으로 웹 서버는 클라이언트에게 response를 보낸다	
