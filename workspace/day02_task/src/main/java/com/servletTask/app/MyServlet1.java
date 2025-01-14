@@ -42,16 +42,21 @@ public class MyServlet1 extends HttpServlet {
 //		response.getWriter().println("<p>나이: " + age + "</p>");
 
 		String userName = request.getParameter("Name");
-		String userAge = request.getParameter("Age");
+		int userAge = Integer.parseInt(request.getParameter("Age"));
+		String gender = request.getParameter("gender");
+		String[] hobbies = request.getParameterValues("hobby");
 		
 		System.out.println(userName);
 		System.out.println(userAge);
+		System.out.println(gender);
 		
 		request.setAttribute("Name", userName);
 		request.setAttribute("Age", userAge);
+		request.setAttribute("gender", gender);
+		request.setAttribute("hobbies", hobbies);
 
 		// Forward 요청 처리
-		request.getRequestDispatcher("/result.jsp").forward(request, response);
+		request.getRequestDispatcher("result.jsp").forward(request, response);
 	}
 
 	/**
@@ -61,7 +66,7 @@ public class MyServlet1 extends HttpServlet {
 	protected void doPost(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 		// TODO Auto-generated method stub
-		doGet(request, response);
+//		doGet(request, response);
 	}
 
 }

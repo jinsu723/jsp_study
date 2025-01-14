@@ -11,10 +11,27 @@
 		<label for="name">이름(GET) : </label>
 		<input type="text" id="name" name="Name" palceholder="이름 입력" required>
 		<br>
+		
 		<label for="age">나이(GET) : </label>
 		<input type="number" id="age" name="Age" palceholder="나이 입력" required>
 		<br>
-		<button type="submit">GET 요청</button>
+		
+		<label for="gender">성별 : </label>
+		<input type="radio" id="none" name="gender" value="선택안함">
+		<label for="none">선택 안함</label>
+		<input type="radio" id="male" name="gender" value="남자">
+		<label for="male">남자</label>
+		<input type="radio" id="female" name="gender" value="여자">
+		<label for="female">여자</label>
+		<br>
+		
+		<label>취미 : </label><br>
+		<input type="checkbox" name="hobby" value="운동">운동<br>
+		<input type="checkbox" name="hobby" value="독서">독서<br>
+		<input type="checkbox" name="hobby" value="여행">여행<br>
+		<input type="checkbox" name="hobby" value="영화보기">양화보기<br>
+		
+		<button type="submit">접속</button>
 	</form>
 </body>
 </html>

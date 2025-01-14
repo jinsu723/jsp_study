@@ -27,7 +27,7 @@ public class MyServlet2 extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
-		response.getWriter().append("Served at: ").append(request.getContextPath());
+//		response.getWriter().append("Served at: ").append(request.getContextPath());
 	}
 
 	/**
@@ -35,7 +35,21 @@ public class MyServlet2 extends HttpServlet {
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
-		doGet(request, response);
+//		doGet(request, response);
+		
+		String userId = request.getParameter("userId");
+		String userPw = request.getParameter("userPw");
+		
+		System.out.println(userId);
+		System.out.println(userPw);
+		
+		request.setAttribute("userId", userId);
+		request.setAttribute("userPw", userPw);
+		
+		// forward 방식으로 loginResult.jsp
+//		request.getRequestDispatcher("result.jsp").forward(request, response);
+		
+		response.sendRedirect("result.jsp");
 	}
 
 }
