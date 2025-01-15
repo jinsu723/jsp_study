@@ -1,0 +1,9 @@
+package com.mybatis.config;
+
+import org.apache.ibatis.session.SqlSessionFactory;
+
+public class MyBatisConfig {
+
+	// sqlSession을 만들기 위해 세션 팩토리가 필요하다
+	private static SqlSessionFactory sqlSessionFactory;
+}

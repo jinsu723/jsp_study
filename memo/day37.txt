@@ -1,0 +1,50 @@
+day37
+
+
+복습 -> MyBatis -> MVC
+
+1. MyBatis
+
+[실습] day04_mybatis 프로젝트 만들기
+	url 루트 경로는 /mybatis로 설정한다
+	index.jsp를 회원가입 페이지로 사용한다	
+		id, pw, name, age, gender를 입력받는다
+		데이터 이름은 userId, userPw, userName, userAge, userGender로 설정한다
+		단, userGender는 라디오 박스로 입력받는다
+		요청은 MyServlet으로 get 방식으로 보낸다
+	com.servlet.app.Myservlet 서블릿을 만든다
+		서블릿 경로는 MyServlet으로 설정한다
+		get 방식으로 요청이 들어오면 id, pw, name, age, gender를 result.jsp에 출력한다
+		forward 방식으로 사용자의 페이지를 이동시킨다
+
+2. DBCP(DataBase Connection Pool)
+	커넥션 객체를 이용하여 DB에 접근하는데 사용할 때마다 연결과 종료를 반복하면 비효율적이다
+	DBCP는 일정량의 커넥션 객체를 미리 만들어두고 Connection Pool에 보관하여 필요할 때마다 커넥션 객체를 꺼내서 사용하고 반납하는 방식으로 관리해준다
+
+3. JNDI(Java Naming and Directory Interface)
+	외부의 자원을 자바의 객체로 가져와 사용할 때 필요한 기술이며 API이다
+	DBCP와 함께 사용하는 이유는 DBCP가 Connection 객체를 생성할 때 필요한 설정값을 저장하고 관리해주어 DBCP의 효율을 높여주기 때문이다
+
+4. MyBatis FrameWork
+	* Framework 라이브러리처럼 다른 개발자들이 미리 만들어 둔 코드이다
+		라이브러리가 내가 필요할 때 사용하는 도구 모음이라면, 프레임워크는 특정 목적을 가지고 만들어진 틀/규칙이다
+
+	관계형 데이터베이스를 자바에서 쉽게 다루도록 도와주는 프레임워크
+	JDBC의 문제점인 반복되는 코드를 줄여주며 java 코드와 SQL 코드를 분리하여 유지보수와 분업에 유리하게 만들어준다
+	또한 내부적으로 DBCP를 사용하여 커넥션 객체를 여러 개 생성하고 관리하기 때문에 
+
+	1) MyBatis의 동작 순서
+		- 요청이 들어오기 전에 미리 준비한다
+		1. 실행중인 Application이 SqlSession Factory Builder를 만들어 놓는다
+		2. 팩토리 빌더는 MyBatis Config File이라는 설정파일을 참고한다
+		3. 설정파일을 참고하여 SqlSession Factory를 만든다
+
+		- 요청이 들어오면 아래와 같이 처리한다
+		4. 사용자의 요청이 들어온다
+		5. SqlSession Factory에게 세션을 찍으라고 명령한다
+		6. 공장에서 세션을 찍어낸다
+		7. 어플리케이션이 SqlSession에게 쿼리를 실행하게 한다
+		8. sqlSession객체가 Mapper.xml에 있는 쿼리를 실행시킨다
+
+	2) MyBatis 설치
+		구글 > mybatis 검색 > https://mybatis.org/mybatis-3/ 접속

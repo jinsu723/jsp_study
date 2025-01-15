@@ -1,26 +1,22 @@
-2025-01-14 16:23:43.893 - DBeaver 24.3.0.202412011650 is starting
-2025-01-14 16:23:43.893 - OS: Windows 10 10.0 (amd64)
-2025-01-14 16:23:43.893 - Java version: 17.0.6 by Eclipse Adoptium (64bit)
-2025-01-14 16:23:43.893 - Install path: 'D:\web_0900_kjs\dbms_3\resource\dbeaver-ce-24.3.0-win32.win32.x86_64\dbeaver'
-2025-01-14 16:23:43.893 - Instance path: 'file:/D:/web_0900_kjs/jsp_6/dbms/'
-2025-01-14 16:23:43.893 - Memory available 64Mb/1024Mb
-2025-01-14 16:23:43.893 - Platform not initialized: metadata folder may be not set
-2025-01-14 16:23:43.909 - Create display
-> Start Eclipse IDE UI [org.eclipse.ui.ide 3.22.300.v20240828-1234]
-2025-01-14 16:23:43.991 - Initialize desktop platform...
-2025-01-14 16:23:44.060 - BounceCastle bundle found. Use JCE provider BC
+2025-01-15 10:25:09.752 - DBeaver 24.3.0.202412011650 is starting
+2025-01-15 10:25:09.753 - OS: Windows 10 10.0 (amd64)
+2025-01-15 10:25:09.753 - Java version: 17.0.6 by Eclipse Adoptium (64bit)
+2025-01-15 10:25:09.753 - Install path: 'D:\web_0900_kjs\dbms_3\resource\dbeaver-ce-24.3.0-win32.win32.x86_64\dbeaver'
+2025-01-15 10:25:09.754 - Instance path: 'file:/D:/web_0900_kjs/jsp_6/dbms/'
+2025-01-15 10:25:09.755 - Memory available 64Mb/1024Mb
+2025-01-15 10:25:09.755 - Platform not initialized: metadata folder may be not set
+2025-01-15 10:25:09.766 - Create display
+2025-01-15 10:25:09.858 - Initialize desktop platform...
+2025-01-15 10:25:09.977 - BounceCastle bundle found. Use JCE provider BC
 > Start Core File Systems [org.eclipse.core.filesystem 1.11.0.v20240824-0952]
 > Start Core Resource Management [org.eclipse.core.resources 3.21.0.v20240805-1607]
 > Start Team Support Core [org.eclipse.team.core 3.10.500.v20240621-0541]
 > Start DBeaver UI Navigator [org.jkiss.dbeaver.ui.navigator 1.0.144.202412011650]
-2025-01-14 16:23:44.152 - 
-2025-01-14 16:23:44.153 - 	Refreshing workspace.
-2025-01-14 16:23:44.153 - Refreshing workspace contents
-2025-01-14 16:23:44.197 - Initialize base platform...
+2025-01-15 10:25:10.169 - Initialize base platform...
 > Start DBeaver UI Editors - Base [org.jkiss.dbeaver.ui.editors.base 1.0.144.202412011650]
-2025-01-14 16:23:44.214 - Platform initialized (223ms)
-2025-01-14 16:23:44.248 - Starting instance server at http://localhost:52062
-2025-01-14 16:23:44.253 - Run workbench
+2025-01-15 10:25:10.189 - Platform initialized (331ms)
+2025-01-15 10:25:10.223 - Starting instance server at http://localhost:54977
+2025-01-15 10:25:10.229 - Run workbench
 > Start Eclipse e4 Workbench SWT [org.eclipse.e4.ui.workbench.swt 0.17.500.v20240807-0911]
 > Start Eclipse Application Services [org.eclipse.e4.core.services 2.4.400.v20240413-1529]
 > Start Eclipse UI Application Services [org.eclipse.e4.ui.services 1.6.300.v20231201-1637]
@@ -33,224 +29,151 @@
 > Start Eclipse e4 Workbench SWT Renderer [org.eclipse.e4.ui.workbench.renderers.swt 0.16.500.v20240727-1037]
 > Start Eclipse Dependency Injection Extensions [org.eclipse.e4.core.di.extensions 0.18.300.v20240413-1529]
 > Start Eclipse CSS SWT Support [org.eclipse.e4.ui.css.swt 0.15.400.v20240321-1245]
-2025-01-14 16:23:45.057 - Configure workbench window
-> Start DBeaver SQL Model [org.jkiss.dbeaver.model.sql 1.0.134.202412011650]
-2025-01-14 16:23:45.135 - Script dialect 'gbase8s' not found in registry (for data source provider gbase8s). Use default.
-2025-01-14 16:23:45.165 - Total database drivers: 121 (121)
-> Start Help System Core [org.eclipse.help 3.10.400.v20240415-0528]
-2025-01-14 16:23:45.242 - Create actions
-2025-01-14 16:23:45.253 - Disable Eclipse action set 'org.eclipse.ui.edit.text.actionSet.annotationNavigation'
-2025-01-14 16:23:45.253 - Disable Eclipse action set 'org.eclipse.ui.WorkingSetActionSet'
-2025-01-14 16:23:45.253 - Disable Eclipse action set 'org.eclipse.ui.actionSet.openFiles'
-2025-01-14 16:23:45.254 - Create workbench actions
 > Start Default Text Editor [org.eclipse.ui.editors 3.18.0.v20240807-0735]
 > Start Text Editor Framework [org.eclipse.ui.workbench.texteditor 3.18.0.v20240819-1419]
-2025-01-14 16:23:45.936 - Initialize workbench window
-2025-01-14 16:23:45.939 - Finish initialization
+2025-01-15 10:25:11.544 - Configure workbench window
+> Start DBeaver SQL Model [org.jkiss.dbeaver.model.sql 1.0.134.202412011650]
+2025-01-15 10:25:11.687 - Script dialect 'gbase8s' not found in registry (for data source provider gbase8s). Use default.
+2025-01-15 10:25:11.749 - Total database drivers: 121 (121)
+> Start Help System Core [org.eclipse.help 3.10.400.v20240415-0528]
+2025-01-15 10:25:11.865 - Create actions
+2025-01-15 10:25:11.876 - Disable Eclipse action set 'org.eclipse.ui.edit.text.actionSet.annotationNavigation'
+2025-01-15 10:25:11.877 - Disable Eclipse action set 'org.eclipse.ui.WorkingSetActionSet'
+2025-01-15 10:25:11.877 - Disable Eclipse action set 'org.eclipse.ui.actionSet.openFiles'
+2025-01-15 10:25:11.878 - Create workbench actions
+2025-01-15 10:25:12.189 - Initialize workbench window
+2025-01-15 10:25:12.194 - Finish initialization
 > Start DBeaver UI Editors - Data [org.jkiss.dbeaver.ui.editors.data 1.0.144.202412011650]
-> Start Internet Connection Management UI [org.eclipse.ui.net 1.5.400.v20240413-1529]
-> Start Internet Connection Management [org.eclipse.core.net 1.5.500.v20240625-1706]
 Warning: NLS unused message: actions_navigator__objects in: org.jkiss.dbeaver.ui.editors.sql.internal.SQLEditorMessages
 > Start DBeaver UI Editors - SQL [org.jkiss.dbeaver.ui.editors.sql 1.0.144.202412011650]
+> Start DBeaver SQL Terminal [org.jkiss.dbeaver.ui.editors.sql.terminal 1.0.120.202412011650]
+> Start Core Compare Support [org.eclipse.compare.core 3.8.500.v20240524-2010]
+> Start Internet Connection Management UI [org.eclipse.ui.net 1.5.400.v20240413-1529]
+> Start Internet Connection Management [org.eclipse.core.net 1.5.500.v20240625-1706]
+> Start DBeaver Sample Database [org.jkiss.dbeaver.ext.sample.database 1.0.181.202412011650]
+> Start DBeaver Tip of the day [org.jkiss.dbeaver.ext.ui.tipoftheday 1.0.150.202412011650]
 > Start GEF Classic Draw2d [org.eclipse.draw2d 3.17.0.202409021815]
 > Start GEF Classic GEF (MVC) [org.eclipse.gef 3.19.0.202409021815]
 > Start DBeaver ERD UI [org.jkiss.dbeaver.erd.ui 3.0.104.202412011650]
 > Start DBeaver ERD Model [org.jkiss.dbeaver.erd.model 1.0.104.202412011650]
 > Start DBeaver Dashboard UI [org.jkiss.dbeaver.ui.dashboard 1.0.141.202412011650]
-> Start DBeaver Sample Database [org.jkiss.dbeaver.ext.sample.database 1.0.181.202412011650]
-> Start DBeaver Tip of the day [org.jkiss.dbeaver.ext.ui.tipoftheday 1.0.150.202412011650]
-2025-01-14 16:23:49.053 - Open [https://dbeaver.io/product/version.xml]
 > Start DBeaver UI Editors - Connections [org.jkiss.dbeaver.ui.editors.connection 1.0.135.202412011650]
-> Start DBeaver Oracle UI [org.jkiss.dbeaver.ext.oracle.ui 1.0.131.202412011650]
-> Start DBeaver Oracle Model [org.jkiss.dbeaver.ext.oracle 2.1.229.202412011650]
 > Start DBeaver JDBC Model [org.jkiss.dbeaver.model.jdbc 1.0.37.202412011650]
-2025-01-14 16:24:46.318 - Unrecognized Oracle client version at C:\oracle21c\dbhomeXE
-2025-01-14 16:24:46.526 - Auth model 'native' was replaced by 'oracle_native'
-2025-01-14 16:24:46.544 - Service 'org.jkiss.dbeaver.runtime.ui.UIServiceSecurity' not found
-2025-01-14 16:25:33.562 - Open [https://repo1.maven.org/maven2/com/oracle/database/jdbc/ojdbc11/23.2.0.0/ojdbc11-23.2.0.0.pom]
-2025-01-14 16:25:34.244 - Open [https://repo1.maven.org/maven2/com/oracle/database/nls/orai18n/23.2.0.0/orai18n-23.2.0.0.pom]
-2025-01-14 16:25:34.411 - Open [https://repo1.maven.org/maven2/com/oracle/database/xml/xdb6/18.3.0.0/xdb6-18.3.0.0.pom]
-2025-01-14 16:25:34.588 - Open [https://repo1.maven.org/maven2/com/oracle/database/xml/xmlparserv2/18.3.0.0/xmlparserv2-18.3.0.0.pom]
-2025-01-14 16:25:34.765 - Open [https://repo1.maven.org/maven2/com/oracle/database/xml/xmlparserv2/23.2.0.0/xmlparserv2-23.2.0.0.pom]
-2025-01-14 16:28:14.401 - Connect with 'jdbc:oracle:thin:@//localhost:1521/ORCL' (oracle_thin-19463b413a2-4b83eb760484dd31)
-2025-01-14 16:28:14.424 - Execution context opened (jdbc:oracle:thin:@//localhost:1521/ORCL; Main; 0)
-2025-01-14 16:28:14.602 - Listener refused the connection with the following error:
-ORA-12514, TNS:listener does not currently know of service requested in connect descriptor
-  (CONNECTION_ID=MJ/yEKQdRmyNxGpNTF0YLg==)
-oracle.net.ns.NetException: Listener refused the connection with the following error:
-ORA-12514, TNS:listener does not currently know of service requested in connect descriptor
-  (CONNECTION_ID=MJ/yEKQdRmyNxGpNTF0YLg==)
-	at oracle.net.ns.NSProtocolNIO.createRefusePacketException(NSProtocolNIO.java:816)
-	at oracle.net.ns.NSProtocolNIO.handleConnectPacketResponse(NSProtocolNIO.java:396)
-	at oracle.net.ns.NSProtocolNIO.negotiateConnection(NSProtocolNIO.java:207)
-	at oracle.net.ns.NSProtocol.connect(NSProtocol.java:354)
-	at oracle.jdbc.driver.T4CConnection.connect(T4CConnection.java:2155)
-	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:652)
-	at oracle.jdbc.driver.PhysicalConnection.connect(PhysicalConnection.java:1086)
-	at oracle.jdbc.driver.T4CDriverExtension.getConnection(T4CDriverExtension.java:90)
-	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:728)
-	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:649)
-	at org.jkiss.dbeaver.model.impl.jdbc.JDBCConnectionOpener.run(JDBCConnectionOpener.java:109)
-	at org.jkiss.dbeaver.model.impl.jdbc.JDBCConnectionOpener.run(JDBCConnectionOpener.java:83)
-	at org.jkiss.dbeaver.model.impl.jdbc.JDBCDataSource.openConnection(JDBCDataSource.java:214)
-	at org.jkiss.dbeaver.model.impl.jdbc.JDBCDataSource.openConnection(JDBCDataSource.java:133)
-	at org.jkiss.dbeaver.ext.oracle.model.OracleDataSource.openConnection(OracleDataSource.java:197)
-	at org.jkiss.dbeaver.model.impl.jdbc.JDBCExecutionContext.connect(JDBCExecutionContext.java:124)
-	at org.jkiss.dbeaver.model.impl.jdbc.JDBCRemoteInstance.initializeMainContext(JDBCRemoteInstance.java:102)
-	at org.jkiss.dbeaver.model.impl.jdbc.JDBCRemoteInstance.<init>(JDBCRemoteInstance.java:61)
-	at org.jkiss.dbeaver.model.impl.jdbc.JDBCDataSource.initializeRemoteInstance(JDBCDataSource.java:125)
-	at org.jkiss.dbeaver.model.impl.jdbc.JDBCDataSource.<init>(JDBCDataSource.java:109)
-	at org.jkiss.dbeaver.model.impl.jdbc.JDBCDataSource.<init>(JDBCDataSource.java:100)
-	at org.jkiss.dbeaver.ext.oracle.model.OracleDataSource.<init>(OracleDataSource.java:110)
-	at org.jkiss.dbeaver.ext.oracle.OracleDataSourceProvider.openDataSource(OracleDataSourceProvider.java:143)
-	at org.jkiss.dbeaver.registry.DataSourceDescriptor.openDataSource(DataSourceDescriptor.java:1395)
-	at org.jkiss.dbeaver.registry.DataSourceDescriptor.connect0(DataSourceDescriptor.java:1266)
-	at org.jkiss.dbeaver.registry.DataSourceDescriptor.connect(DataSourceDescriptor.java:1056)
-	at org.jkiss.dbeaver.runtime.jobs.ConnectJob.run(ConnectJob.java:78)
-	at org.jkiss.dbeaver.runtime.jobs.ConnectionTestJob.run(ConnectionTestJob.java:103)
-	at org.jkiss.dbeaver.model.runtime.AbstractJob.run(AbstractJob.java:119)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
-2025-01-14 16:42:30.525 - Auth model 'native' was replaced by 'oracle_native'
-2025-01-14 16:42:30.530 - Service 'org.jkiss.dbeaver.runtime.ui.UIServiceSecurity' not found
-2025-01-14 16:42:43.178 - Connect with 'jdbc:oracle:thin:@//localhost:1521/ORCL' (oracle_thin-19463c3c9db-6ceb56fe0c337e76)
-2025-01-14 16:42:43.178 - Execution context opened (jdbc:oracle:thin:@//localhost:1521/ORCL; Main; 1)
-2025-01-14 16:42:43.239 - Listener refused the connection with the following error:
-ORA-12514, TNS:listener does not currently know of service requested in connect descriptor
-  (CONNECTION_ID=45BOAkqlShyNM0epzDFJAQ==)
-oracle.net.ns.NetException: Listener refused the connection with the following error:
-ORA-12514, TNS:listener does not currently know of service requested in connect descriptor
-  (CONNECTION_ID=45BOAkqlShyNM0epzDFJAQ==)
-	at oracle.net.ns.NSProtocolNIO.createRefusePacketException(NSProtocolNIO.java:816)
-	at oracle.net.ns.NSProtocolNIO.handleConnectPacketResponse(NSProtocolNIO.java:396)
-	at oracle.net.ns.NSProtocolNIO.negotiateConnection(NSProtocolNIO.java:207)
-	at oracle.net.ns.NSProtocol.connect(NSProtocol.java:354)
-	at oracle.jdbc.driver.T4CConnection.connect(T4CConnection.java:2155)
-	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:652)
-	at oracle.jdbc.driver.PhysicalConnection.connect(PhysicalConnection.java:1086)
-	at oracle.jdbc.driver.T4CDriverExtension.getConnection(T4CDriverExtension.java:90)
-	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:728)
-	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:649)
-	at org.jkiss.dbeaver.model.impl.jdbc.JDBCConnectionOpener.run(JDBCConnectionOpener.java:109)
-	at org.jkiss.dbeaver.model.impl.jdbc.JDBCConnectionOpener.run(JDBCConnectionOpener.java:83)
-	at org.jkiss.dbeaver.model.impl.jdbc.JDBCDataSource.openConnection(JDBCDataSource.java:214)
-	at org.jkiss.dbeaver.model.impl.jdbc.JDBCDataSource.openConnection(JDBCDataSource.java:133)
-	at org.jkiss.dbeaver.ext.oracle.model.OracleDataSource.openConnection(OracleDataSource.java:197)
-	at org.jkiss.dbeaver.model.impl.jdbc.JDBCExecutionContext.connect(JDBCExecutionContext.java:124)
-	at org.jkiss.dbeaver.model.impl.jdbc.JDBCRemoteInstance.initializeMainContext(JDBCRemoteInstance.java:102)
-	at org.jkiss.dbeaver.model.impl.jdbc.JDBCRemoteInstance.<init>(JDBCRemoteInstance.java:61)
-	at org.jkiss.dbeaver.model.impl.jdbc.JDBCDataSource.initializeRemoteInstance(JDBCDataSource.java:125)
-	at org.jkiss.dbeaver.model.impl.jdbc.JDBCDataSource.<init>(JDBCDataSource.java:109)
-	at org.jkiss.dbeaver.model.impl.jdbc.JDBCDataSource.<init>(JDBCDataSource.java:100)
-	at org.jkiss.dbeaver.ext.oracle.model.OracleDataSource.<init>(OracleDataSource.java:110)
-	at org.jkiss.dbeaver.ext.oracle.OracleDataSourceProvider.openDataSource(OracleDataSourceProvider.java:143)
-	at org.jkiss.dbeaver.registry.DataSourceDescriptor.openDataSource(DataSourceDescriptor.java:1395)
-	at org.jkiss.dbeaver.registry.DataSourceDescriptor.connect0(DataSourceDescriptor.java:1266)
-	at org.jkiss.dbeaver.registry.DataSourceDescriptor.connect(DataSourceDescriptor.java:1056)
-	at org.jkiss.dbeaver.runtime.jobs.ConnectJob.run(ConnectJob.java:78)
-	at org.jkiss.dbeaver.runtime.jobs.ConnectionTestJob.run(ConnectionTestJob.java:103)
-	at org.jkiss.dbeaver.model.runtime.AbstractJob.run(AbstractJob.java:119)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
-2025-01-14 16:42:55.089 - Connect with 'jdbc:oracle:thin:@//localhost:1521/ORCL' (oracle_thin-19463c3f863-4df107c1852b7aa2)
-2025-01-14 16:42:55.090 - Execution context opened (jdbc:oracle:thin:@//localhost:1521/ORCL; Main; 2)
-2025-01-14 16:42:55.152 - Listener refused the connection with the following error:
-ORA-12514, TNS:listener does not currently know of service requested in connect descriptor
-  (CONNECTION_ID=YPX7CYvRRsyfdlrn4eO6IQ==)
-oracle.net.ns.NetException: Listener refused the connection with the following error:
-ORA-12514, TNS:listener does not currently know of service requested in connect descriptor
-  (CONNECTION_ID=YPX7CYvRRsyfdlrn4eO6IQ==)
-	at oracle.net.ns.NSProtocolNIO.createRefusePacketException(NSProtocolNIO.java:816)
-	at oracle.net.ns.NSProtocolNIO.handleConnectPacketResponse(NSProtocolNIO.java:396)
-	at oracle.net.ns.NSProtocolNIO.negotiateConnection(NSProtocolNIO.java:207)
-	at oracle.net.ns.NSProtocol.connect(NSProtocol.java:354)
-	at oracle.jdbc.driver.T4CConnection.connect(T4CConnection.java:2155)
-	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:652)
-	at oracle.jdbc.driver.PhysicalConnection.connect(PhysicalConnection.java:1086)
-	at oracle.jdbc.driver.T4CDriverExtension.getConnection(T4CDriverExtension.java:90)
-	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:728)
-	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:649)
-	at org.jkiss.dbeaver.model.impl.jdbc.JDBCConnectionOpener.run(JDBCConnectionOpener.java:109)
-	at org.jkiss.dbeaver.model.impl.jdbc.JDBCConnectionOpener.run(JDBCConnectionOpener.java:83)
-	at org.jkiss.dbeaver.model.impl.jdbc.JDBCDataSource.openConnection(JDBCDataSource.java:214)
-	at org.jkiss.dbeaver.model.impl.jdbc.JDBCDataSource.openConnection(JDBCDataSource.java:133)
-	at org.jkiss.dbeaver.ext.oracle.model.OracleDataSource.openConnection(OracleDataSource.java:197)
-	at org.jkiss.dbeaver.model.impl.jdbc.JDBCExecutionContext.connect(JDBCExecutionContext.java:124)
-	at org.jkiss.dbeaver.model.impl.jdbc.JDBCRemoteInstance.initializeMainContext(JDBCRemoteInstance.java:102)
-	at org.jkiss.dbeaver.model.impl.jdbc.JDBCRemoteInstance.<init>(JDBCRemoteInstance.java:61)
-	at org.jkiss.dbeaver.model.impl.jdbc.JDBCDataSource.initializeRemoteInstance(JDBCDataSource.java:125)
-	at org.jkiss.dbeaver.model.impl.jdbc.JDBCDataSource.<init>(JDBCDataSource.java:109)
-	at org.jkiss.dbeaver.model.impl.jdbc.JDBCDataSource.<init>(JDBCDataSource.java:100)
-	at org.jkiss.dbeaver.ext.oracle.model.OracleDataSource.<init>(OracleDataSource.java:110)
-	at org.jkiss.dbeaver.ext.oracle.OracleDataSourceProvider.openDataSource(OracleDataSourceProvider.java:143)
-	at org.jkiss.dbeaver.registry.DataSourceDescriptor.openDataSource(DataSourceDescriptor.java:1395)
-	at org.jkiss.dbeaver.registry.DataSourceDescriptor.connect0(DataSourceDescriptor.java:1266)
-	at org.jkiss.dbeaver.registry.DataSourceDescriptor.connect(DataSourceDescriptor.java:1056)
-	at org.jkiss.dbeaver.runtime.jobs.ConnectJob.run(ConnectJob.java:78)
-	at org.jkiss.dbeaver.runtime.jobs.ConnectionTestJob.run(ConnectionTestJob.java:103)
-	at org.jkiss.dbeaver.model.runtime.AbstractJob.run(AbstractJob.java:119)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
-2025-01-14 16:43:47.316 - Connect with 'jdbc:oracle:thin:@//localhost:1521/XE' (oracle_thin-19463c4c463-7418f17395551559)
-2025-01-14 16:43:47.317 - Execution context opened (jdbc:oracle:thin:@//localhost:1521/XE; Main; 3)
-2025-01-14 16:43:47.620 - Connected (oracle_thin-19463c4c463-7418f17395551559, Oracle JDBC driver [21.3.0.0.0])
-2025-01-14 16:43:47.634 - Execution context closed (jdbc:oracle:thin:@//localhost:1521/XE, 3)
-2025-01-14 16:43:47.635 - Disconnected (oracle_thin-19463c4c463-7418f17395551559)
-2025-01-14 16:44:35.152 - Connect with 'localhost' (oracle_thin-19463c3984c-220a81fefe85c04a)
-2025-01-14 16:44:35.152 - Execution context opened (localhost; Main; 4)
-2025-01-14 16:44:35.173 - Execution context opened (localhost; Metadata; 5)
-2025-01-14 16:44:35.199 - Connected (oracle_thin-19463c3984c-220a81fefe85c04a, Oracle JDBC driver [21.3.0.0.0])
-> Start DBeaver SQL Terminal [org.jkiss.dbeaver.ui.editors.sql.terminal 1.0.120.202412011650]
-> Start Core Compare Support [org.eclipse.compare.core 3.8.500.v20240524-2010]
+> Start DBeaver Oracle Model [org.jkiss.dbeaver.ext.oracle 2.1.229.202412011650]
 > Start Console [org.eclipse.ui.console 3.14.100.v20240429-1358]
 > Start Debug Core [org.eclipse.debug.core 3.21.500.v20240801-2219]
-2025-01-14 16:44:39.295 - Execution context opened (localhost; SQLEditor <Script.sql>; 6)
 > Start DBeaver Tasks - Native Tools UI [org.jkiss.dbeaver.tasks.native.ui 1.0.122.202412011650]
+> Start DBeaver Oracle UI [org.jkiss.dbeaver.ext.oracle.ui 1.0.131.202412011650]
 > Start DBeaver Tasks - General UI [org.jkiss.dbeaver.tasks.ui 1.0.122.202412011650]
+2025-01-15 10:25:13.778 - Connect with 'localhost' (oracle_thin-19463c3984c-220a81fefe85c04a)
+2025-01-15 10:25:13.804 - Execution context opened (localhost; Main; 0)
+2025-01-15 10:25:14.172 - Execution context opened (localhost; Metadata; 1)
 > Start DBeaver SQL Language Semantic Model [org.jkiss.dbeaver.model.lsm 1.0.39.202412011650]
-2025-01-14 16:46:15.897 - Auth model 'native' was replaced by 'oracle_native'
-2025-01-14 16:46:15.903 - Service 'org.jkiss.dbeaver.runtime.ui.UIServiceSecurity' not found
-> Start DBeaver Data Transfer [org.jkiss.dbeaver.data.transfer 2.0.128.202412011650]
-2025-01-14 16:52:07.247 - SQL Error [942] [42000]: ORA-00942: 테이블 또는 뷰가 존재하지 않습니다
-
-org.jkiss.dbeaver.model.sql.DBSQLException: SQL Error [942] [42000]: ORA-00942: 테이블 또는 뷰가 존재하지 않습니다
-
-	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.executeStatement(JDBCStatementImpl.java:130)
-	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.executeStatement(SQLQueryJob.java:631)
-	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.lambda$2(SQLQueryJob.java:522)
-	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:192)
-	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.executeSingleQuery(SQLQueryJob.java:541)
-	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.extractData(SQLQueryJob.java:1016)
-	at org.jkiss.dbeaver.ui.editors.sql.SQLEditor$QueryResultsContainer.readData(SQLEditor.java:4273)
-	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetJobDataRead.lambda$0(ResultSetJobDataRead.java:128)
-	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:192)
-	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetJobDataRead.run(ResultSetJobDataRead.java:126)
-	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetViewer$ResultSetDataPumpJob.run(ResultSetViewer.java:5166)
+2025-01-15 10:25:14.274 - Connected (oracle_thin-19463c3984c-220a81fefe85c04a, Oracle JDBC driver [21.3.0.0.0])
+2025-01-15 10:25:14.276 - Execution context opened (localhost; SQLEditor <Script.sql>; 2)
+2025-01-15 10:25:15.997 - Open [https://dbeaver.io/product/version.xml]
+2025-01-15 12:07:27.550 - Unrecognized Oracle client version at C:\oracle21c\dbhomeXE
+2025-01-15 12:07:27.609 - Auth model 'native' was replaced by 'oracle_native'
+2025-01-15 12:07:27.622 - Service 'org.jkiss.dbeaver.runtime.ui.UIServiceSecurity' not found
+2025-01-15 12:07:36.116 - Connect with 'jdbc:oracle:thin:@//localhost:1521/ORCL' (oracle_thin-19467ee4523-6e6937328157ba02)
+2025-01-15 12:07:36.117 - Execution context opened (jdbc:oracle:thin:@//localhost:1521/ORCL; Main; 3)
+2025-01-15 12:07:36.275 - Listener refused the connection with the following error:
+ORA-12514, TNS:listener does not currently know of service requested in connect descriptor
+  (CONNECTION_ID=klkwxNKjSAO6a7TybGK+1Q==)
+oracle.net.ns.NetException: Listener refused the connection with the following error:
+ORA-12514, TNS:listener does not currently know of service requested in connect descriptor
+  (CONNECTION_ID=klkwxNKjSAO6a7TybGK+1Q==)
+	at oracle.net.ns.NSProtocolNIO.createRefusePacketException(NSProtocolNIO.java:816)
+	at oracle.net.ns.NSProtocolNIO.handleConnectPacketResponse(NSProtocolNIO.java:396)
+	at oracle.net.ns.NSProtocolNIO.negotiateConnection(NSProtocolNIO.java:207)
+	at oracle.net.ns.NSProtocol.connect(NSProtocol.java:354)
+	at oracle.jdbc.driver.T4CConnection.connect(T4CConnection.java:2155)
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:652)
+	at oracle.jdbc.driver.PhysicalConnection.connect(PhysicalConnection.java:1086)
+	at oracle.jdbc.driver.T4CDriverExtension.getConnection(T4CDriverExtension.java:90)
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:728)
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:649)
+	at org.jkiss.dbeaver.model.impl.jdbc.JDBCConnectionOpener.run(JDBCConnectionOpener.java:109)
+	at org.jkiss.dbeaver.model.impl.jdbc.JDBCConnectionOpener.run(JDBCConnectionOpener.java:83)
+	at org.jkiss.dbeaver.model.impl.jdbc.JDBCDataSource.openConnection(JDBCDataSource.java:214)
+	at org.jkiss.dbeaver.model.impl.jdbc.JDBCDataSource.openConnection(JDBCDataSource.java:133)
+	at org.jkiss.dbeaver.ext.oracle.model.OracleDataSource.openConnection(OracleDataSource.java:197)
+	at org.jkiss.dbeaver.model.impl.jdbc.JDBCExecutionContext.connect(JDBCExecutionContext.java:124)
+	at org.jkiss.dbeaver.model.impl.jdbc.JDBCRemoteInstance.initializeMainContext(JDBCRemoteInstance.java:102)
+	at org.jkiss.dbeaver.model.impl.jdbc.JDBCRemoteInstance.<init>(JDBCRemoteInstance.java:61)
+	at org.jkiss.dbeaver.model.impl.jdbc.JDBCDataSource.initializeRemoteInstance(JDBCDataSource.java:125)
+	at org.jkiss.dbeaver.model.impl.jdbc.JDBCDataSource.<init>(JDBCDataSource.java:109)
+	at org.jkiss.dbeaver.model.impl.jdbc.JDBCDataSource.<init>(JDBCDataSource.java:100)
+	at org.jkiss.dbeaver.ext.oracle.model.OracleDataSource.<init>(OracleDataSource.java:110)
+	at org.jkiss.dbeaver.ext.oracle.OracleDataSourceProvider.openDataSource(OracleDataSourceProvider.java:143)
+	at org.jkiss.dbeaver.registry.DataSourceDescriptor.openDataSource(DataSourceDescriptor.java:1395)
+	at org.jkiss.dbeaver.registry.DataSourceDescriptor.connect0(DataSourceDescriptor.java:1266)
+	at org.jkiss.dbeaver.registry.DataSourceDescriptor.connect(DataSourceDescriptor.java:1056)
+	at org.jkiss.dbeaver.runtime.jobs.ConnectJob.run(ConnectJob.java:78)
+	at org.jkiss.dbeaver.runtime.jobs.ConnectionTestJob.run(ConnectionTestJob.java:103)
 	at org.jkiss.dbeaver.model.runtime.AbstractJob.run(AbstractJob.java:119)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
-Caused by: java.sql.SQLSyntaxErrorException: ORA-00942: 테이블 또는 뷰가 존재하지 않습니다
-
-	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:630)
-	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:564)
-	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1231)
-	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:772)
-	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:299)
-	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:512)
-	at oracle.jdbc.driver.T4CStatement.doOall8(T4CStatement.java:123)
-	at oracle.jdbc.driver.T4CStatement.executeForDescribe(T4CStatement.java:969)
-	at oracle.jdbc.driver.OracleStatement.prepareDefineBufferAndExecute(OracleStatement.java:1271)
-	at oracle.jdbc.driver.OracleStatement.executeMaybeDescribe(OracleStatement.java:1149)
-	at oracle.jdbc.driver.OracleStatement.executeSQLSelect(OracleStatement.java:1661)
-	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1470)
-	at oracle.jdbc.driver.OracleStatement.executeInternal(OracleStatement.java:2505)
-	at oracle.jdbc.driver.OracleStatement.execute(OracleStatement.java:2460)
-	at oracle.jdbc.driver.OracleStatementWrapper.execute(OracleStatementWrapper.java:328)
-	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.execute(JDBCStatementImpl.java:344)
-	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.executeStatement(JDBCStatementImpl.java:128)
-	... 12 more
-Caused by: Error : 942, Position : 14, Sql = SELECT * FROM tbl_member, OriginalSql = SELECT * FROM tbl_member, Error Msg = ORA-00942: 테이블 또는 뷰가 존재하지 않습니다
-
-	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:637)
-	... 28 more
-2025-01-14 17:58:23.589 - Execution context closed (localhost, 6)
-2025-01-14 17:58:23.682 - Dispose navigator model
-2025-01-14 17:58:23.697 - DBeaver is stopping
-2025-01-14 17:58:23.698 - Stop instance server
-2025-01-14 17:58:24.710 - DBeaver shutdown completed
+2025-01-15 12:07:47.857 - Connect with 'jdbc:oracle:thin:@//localhost:1521/XE' (oracle_thin-19467ee7303-2db41d4342c595a3)
+2025-01-15 12:07:47.858 - Execution context opened (jdbc:oracle:thin:@//localhost:1521/XE; Main; 4)
+2025-01-15 12:07:47.959 - Connected (oracle_thin-19467ee7303-2db41d4342c595a3, Oracle JDBC driver [21.3.0.0.0])
+2025-01-15 12:07:47.973 - Execution context closed (jdbc:oracle:thin:@//localhost:1521/XE, 4)
+2025-01-15 12:07:47.973 - Disconnected (oracle_thin-19467ee7303-2db41d4342c595a3)
+2025-01-15 12:08:18.194 - Connect with 'localhost' (oracle_thin-19467ee23bc-120621d2bf7f97ba)
+2025-01-15 12:08:18.195 - Execution context opened (localhost; Main; 5)
+2025-01-15 12:08:18.269 - Execution context opened (localhost; Metadata; 6)
+2025-01-15 12:08:18.343 - Connected (oracle_thin-19467ee23bc-120621d2bf7f97ba, Oracle JDBC driver [21.3.0.0.0])
+2025-01-15 12:08:18.345 - Execution context opened (localhost; SQLEditor <Script.sql>; 7)
+2025-01-15 12:12:24.736 - Error while analyzing query text: CREATE TABLE tbl_user(
+	user_number	NUMBER
+  , USER_id		varchar2(10)
+  , user_pw		varchar2(10)
+  , user_name	varchar2(300)
+  , user_age	NUMBER
+  , user_gender	char(1)
+  , CONSTRAINT pk_user PRIMARY key()
+)
+java.lang.NullPointerException: Cannot invoke "org.jkiss.dbeaver.model.sql.semantics.SQLQuerySymbolEntry.isNotClassified()" because "columnRef" is null
+	at org.jkiss.dbeaver.model.sql.semantics.model.ddl.SQLQueryTableConstraintSpec.propagateContext(SQLQueryTableConstraintSpec.java:98)
+	at org.jkiss.dbeaver.model.sql.semantics.model.ddl.SQLQueryTableCreateModel.applyContext(SQLQueryTableCreateModel.java:121)
+	at org.jkiss.dbeaver.model.sql.semantics.model.SQLQueryModel.propagateContext(SQLQueryModel.java:80)
+	at org.jkiss.dbeaver.model.sql.semantics.SQLQueryModelRecognizer.recognizeQuery(SQLQueryModelRecognizer.java:156)
+	at org.jkiss.dbeaver.model.sql.semantics.SQLQueryModelRecognizer.recognizeQuery(SQLQueryModelRecognizer.java:934)
+	at org.jkiss.dbeaver.ui.editors.sql.semantics.SQLBackgroundParsingJob.doWork(SQLBackgroundParsingJob.java:660)
+	at org.jkiss.dbeaver.ui.editors.sql.semantics.SQLBackgroundParsingJob$1.run(SQLBackgroundParsingJob.java:96)
+	at org.jkiss.dbeaver.model.runtime.AbstractJob.run(AbstractJob.java:119)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+> Start DBeaver Data Transfer [org.jkiss.dbeaver.data.transfer 2.0.128.202412011650]
+2025-01-15 12:12:47.313 - Error while analyzing query text: CREATE TABLE tbl_user(
+	user_number	NUMBER
+  , USER_id		varchar2(10)
+  , user_pw		varchar2(10)
+  , user_name	varchar2(300)
+  , user_age	NUMBER
+  , user_gender	char(1)
+  , CONSTRAINT pk_user PRIMARY key()
+)
+java.lang.NullPointerException: Cannot invoke "org.jkiss.dbeaver.model.sql.semantics.SQLQuerySymbolEntry.isNotClassified()" because "columnRef" is null
+	at org.jkiss.dbeaver.model.sql.semantics.model.ddl.SQLQueryTableConstraintSpec.propagateContext(SQLQueryTableConstraintSpec.java:98)
+	at org.jkiss.dbeaver.model.sql.semantics.model.ddl.SQLQueryTableCreateModel.applyContext(SQLQueryTableCreateModel.java:121)
+	at org.jkiss.dbeaver.model.sql.semantics.model.SQLQueryModel.propagateContext(SQLQueryModel.java:80)
+	at org.jkiss.dbeaver.model.sql.semantics.SQLQueryModelRecognizer.recognizeQuery(SQLQueryModelRecognizer.java:156)
+	at org.jkiss.dbeaver.model.sql.semantics.SQLQueryModelRecognizer.recognizeQuery(SQLQueryModelRecognizer.java:934)
+	at org.jkiss.dbeaver.ui.editors.sql.semantics.SQLBackgroundParsingJob.doWork(SQLBackgroundParsingJob.java:660)
+	at org.jkiss.dbeaver.ui.editors.sql.semantics.SQLBackgroundParsingJob$1.run(SQLBackgroundParsingJob.java:96)
+	at org.jkiss.dbeaver.model.runtime.AbstractJob.run(AbstractJob.java:119)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+2025-01-15 16:14:19.260 - Execution context closed (localhost, 0)
+2025-01-15 16:14:19.266 - Execution context closed (localhost, 5)
+2025-01-15 16:14:19.271 - Execution context closed (localhost, 1)
+2025-01-15 16:14:19.277 - Execution context closed (localhost, 6)
+2025-01-15 16:14:19.282 - Execution context closed (localhost, 2)
+2025-01-15 16:14:19.282 - Disconnected (oracle_thin-19463c3984c-220a81fefe85c04a)
+2025-01-15 16:14:19.289 - Execution context closed (localhost, 7)
+2025-01-15 16:14:19.289 - Disconnected (oracle_thin-19467ee23bc-120621d2bf7f97ba)
+2025-01-15 16:42:38.160 - Auth model 'native' was replaced by 'oracle_native'
+2025-01-15 16:42:38.169 - Service 'org.jkiss.dbeaver.runtime.ui.UIServiceSecurity' not found
+2025-01-15 16:42:56.829 - Connect with 'localhost' (oracle_thin-19467ee23bc-120621d2bf7f97ba)
+2025-01-15 16:42:56.830 - Execution context opened (localhost; Main; 8)
+2025-01-15 16:42:56.854 - Execution context opened (localhost; Metadata; 9)
+2025-01-15 16:42:56.902 - Connected (oracle_thin-19467ee23bc-120621d2bf7f97ba, Oracle JDBC driver [21.3.0.0.0])
+2025-01-15 16:42:56.902 - Execution context opened (localhost; SQLEditor <day37_1.sql>; 10)
