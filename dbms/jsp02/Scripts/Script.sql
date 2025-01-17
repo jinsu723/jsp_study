@@ -13,7 +13,13 @@ CREATE TABLE tbl_member (
 );
 
 
-SELECT * FROM tbl_member;
+SELECT * FROM tbl_member 
+ORDER BY member_number;
+
+SELECT	member_name
+FROM 	tbl_member
+WHERE 	member_id = 'aaa' AND member_password = '1234';
+
 DROP SEQUENCE seq_member;
 
 CREATE SEQUENCE seq_member
@@ -24,3 +30,7 @@ nocycle  -- 최대값에 도달하면 재시작하지 않도록 설정
 ;
 
 --ON DELETE cascade
+
+insert into tbl_member(member_number, member_id, member_password, member_name, member_age, member_gender)
+values(seq_member.nextVal, 'aaa', '1234', 'naem', 11, 'M');
+

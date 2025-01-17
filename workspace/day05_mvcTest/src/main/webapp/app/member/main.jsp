@@ -1,5 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
+	pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -7,6 +7,13 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<h1>회원가입 완룐</h1>
+	<h1>로그인 결과</h1>
+	<%
+	if (request.getAttribute("message") != null) {
+	%>
+	<h1><%=request.getAttribute("message")%></h1>
+	<%
+	}
+	%>
 </body>
 </html>

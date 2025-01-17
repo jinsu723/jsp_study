@@ -4,3 +4,5 @@
 1737013876646	Move compilation unit
 1737013915854	Move file
 1737013919982	Rename resource 'memberMapper.xml'
+1737077274753	Rename type 'memberDAO'
+1737077319175	Rename package 'com.example.app.memberDAO'

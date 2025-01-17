@@ -1,0 +1,36 @@
+package com.example.app.member.dao;
+
+import org.apache.ibatis.session.SqlSession;
+
+import com.example.app.dto.MemberDTO;
+import com.mybatis.config.MyBatisConfig;
+
+public class MemberDAO {
+	public SqlSession sqlSession;
+	MemberDTO memberDTO = new MemberDTO();
+	
+	public MemberDAO() {
+		sqlSession = MyBatisConfig.getSqlSessionFactory().openSession(true);
+	}
+	
+	public void join(MemberDTO memberDTO) {
+		sqlSession.insert("member.join", memberDTO);
+	}
+
+	public String login(MemberDTO memberDTO) {
+		
+		return null;
+	}
+//	public String login(MemberDTO memberDTO) {
+//		System.out.println(memberDTO.getMemberId());
+//		System.out.println(memberDTO.getMemberPassword());
+//		String login = sqlSession.selectOne("member.login", memberDTO);
+//		
+//		System.out.println(login);
+//		
+//		return login;
+////		int userIdValue = sqlSession.selectOne("user.checkId", request.getParameter("userId"));
+//	}
+	
+	
+}

@@ -1646,3 +1646,1551 @@ Error : 2289, Position : 14, Sql = DROP SEQUENCE se1_member, OriginalSql = DROP 
 	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetViewer$ResultSetDataPumpJob.run(ResultSetViewer.java:5166)
 	at org.jkiss.dbeaver.model.runtime.AbstractJob.run(AbstractJob.java:119)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.jkiss.dbeaver.model 2 0 2025-01-16 18:00:53.304
+!MESSAGE Some data source listeners are still registered: org.jkiss.dbeaver.model.navigator.DBNProjectDatabases:node://jsp02/datasources
+!SESSION 2025-01-17 10:09:51.737 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=17.0.6
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ko_KR
+Framework arguments:  -eclipse.keyring C:\Users\Administrator\AppData\Roaming\DBeaverData\secure\secure_storage
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY org.eclipse.ui 2 2 2025-01-17 10:09:55.990
+!MESSAGE Invalid preference category path: org.eclipse.debug.ui.ConsolePreferencePage (bundle: org.eclipse.ui.console, page: org.eclipse.ui.internal.console.ansi.preferences.AnsiConsolePreferencePage)
+
+!ENTRY org.jkiss.dbeaver.model 4 0 2025-01-17 10:18:59.851
+!MESSAGE SQL Error [933] [42000]: ORA-00933: SQL 명령어가 올바르게 종료되지 않았습니다
+
+
+Error position: line: 15 pos: 53
+!SUBENTRY 1 org.jkiss.dbeaver.model 4 0 2025-01-17 10:18:59.851
+!MESSAGE SQL Error [933] [42000]: ORA-00933: SQL 명령어가 올바르게 종료되지 않았습니다
+
+!SUBENTRY 2 org.jkiss.dbeaver.model 4 0 2025-01-17 10:18:59.851
+!MESSAGE Error : 933, Position : 53, Sql = CREATE SEQUENCE seq_user START WITH 1 INCREMENT BY 1 nochece, OriginalSql = CREATE SEQUENCE seq_user START WITH 1 INCREMENT BY 1 nochece, Error Msg = ORA-00933: SQL 명령어가 올바르게 종료되지 않았습니다
+
+!STACK 0
+Error : 933, Position : 53, Sql = CREATE SEQUENCE seq_user START WITH 1 INCREMENT BY 1 nochece, OriginalSql = CREATE SEQUENCE seq_user START WITH 1 INCREMENT BY 1 nochece, Error Msg = ORA-00933: SQL 명령어가 올바르게 종료되지 않았습니다
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:637)
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:564)
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1231)
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:772)
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:299)
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:512)
+	at oracle.jdbc.driver.T4CStatement.doOall8(T4CStatement.java:123)
+	at oracle.jdbc.driver.T4CStatement.executeForRows(T4CStatement.java:1200)
+	at oracle.jdbc.driver.OracleStatement.executeSQLStatement(OracleStatement.java:1820)
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1472)
+	at oracle.jdbc.driver.OracleStatement.executeInternal(OracleStatement.java:2505)
+	at oracle.jdbc.driver.OracleStatement.execute(OracleStatement.java:2460)
+	at oracle.jdbc.driver.OracleStatementWrapper.execute(OracleStatementWrapper.java:328)
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.execute(JDBCStatementImpl.java:344)
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.executeStatement(JDBCStatementImpl.java:128)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.executeStatement(SQLQueryJob.java:631)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.lambda$2(SQLQueryJob.java:522)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:192)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.executeSingleQuery(SQLQueryJob.java:541)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.extractData(SQLQueryJob.java:1016)
+	at org.jkiss.dbeaver.ui.editors.sql.SQLEditor$QueryResultsContainer.readData(SQLEditor.java:4273)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetJobDataRead.lambda$0(ResultSetJobDataRead.java:128)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:192)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetJobDataRead.run(ResultSetJobDataRead.java:126)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetViewer$ResultSetDataPumpJob.run(ResultSetViewer.java:5166)
+	at org.jkiss.dbeaver.model.runtime.AbstractJob.run(AbstractJob.java:119)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.jkiss.dbeaver.model 4 0 2025-01-17 10:19:25.765
+!MESSAGE SQL Error [955] [42000]: ORA-00955: 기존의 객체가 이름을 사용하고 있습니다.
+
+!SUBENTRY 1 org.jkiss.dbeaver.model 4 0 2025-01-17 10:19:25.765
+!MESSAGE Error : 955, Position : 16, Sql = CREATE SEQUENCE seq_user START WITH 1 INCREMENT BY 1 nocache, OriginalSql = CREATE SEQUENCE seq_user START WITH 1 INCREMENT BY 1 nocache, Error Msg = ORA-00955: 기존의 객체가 이름을 사용하고 있습니다.
+
+!STACK 0
+Error : 955, Position : 16, Sql = CREATE SEQUENCE seq_user START WITH 1 INCREMENT BY 1 nocache, OriginalSql = CREATE SEQUENCE seq_user START WITH 1 INCREMENT BY 1 nocache, Error Msg = ORA-00955: 기존의 객체가 이름을 사용하고 있습니다.
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:637)
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:564)
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1231)
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:772)
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:299)
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:512)
+	at oracle.jdbc.driver.T4CStatement.doOall8(T4CStatement.java:123)
+	at oracle.jdbc.driver.T4CStatement.executeForRows(T4CStatement.java:1200)
+	at oracle.jdbc.driver.OracleStatement.executeSQLStatement(OracleStatement.java:1820)
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1472)
+	at oracle.jdbc.driver.OracleStatement.executeInternal(OracleStatement.java:2505)
+	at oracle.jdbc.driver.OracleStatement.execute(OracleStatement.java:2460)
+	at oracle.jdbc.driver.OracleStatementWrapper.execute(OracleStatementWrapper.java:328)
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.execute(JDBCStatementImpl.java:344)
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.executeStatement(JDBCStatementImpl.java:128)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.executeStatement(SQLQueryJob.java:631)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.lambda$2(SQLQueryJob.java:522)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:192)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.executeSingleQuery(SQLQueryJob.java:541)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.extractData(SQLQueryJob.java:1016)
+	at org.jkiss.dbeaver.ui.editors.sql.SQLEditor$QueryResultsContainer.readData(SQLEditor.java:4273)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetJobDataRead.lambda$0(ResultSetJobDataRead.java:128)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:192)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetJobDataRead.run(ResultSetJobDataRead.java:126)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetViewer$ResultSetDataPumpJob.run(ResultSetViewer.java:5166)
+	at org.jkiss.dbeaver.model.runtime.AbstractJob.run(AbstractJob.java:119)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.jkiss.dbeaver.model 4 0 2025-01-17 10:45:31.523
+!MESSAGE SQL Error [942] [42000]: ORA-00942: 테이블 또는 뷰가 존재하지 않습니다
+
+!SUBENTRY 1 org.jkiss.dbeaver.model 4 0 2025-01-17 10:45:31.523
+!MESSAGE Error : 942, Position : 370, Sql = CREATE TABLE tbl_forum (
+    forum_number NUMBER,
+    user_number NUMBER,
+    forum_category VARCHAR2(10) NOT NULL,
+    forum_title VARCHAR2(150) NOT NULL,
+    forum_date DATE,
+    forum_update DATE,
+    forum_content VARCHAR2(2000) NOT NULL,
+    CONSTRAINT pk_forum PRIMARY KEY (forum_number),
+    CONSTRAINT fk_forum_user FOREIGN KEY (user_number) REFERENCES tbl_user (user_number) ON DELETE CASCADE
+), OriginalSql = CREATE TABLE tbl_forum (
+    forum_number NUMBER,
+    user_number NUMBER,
+    forum_category VARCHAR2(10) NOT NULL,
+    forum_title VARCHAR2(150) NOT NULL,
+    forum_date DATE,
+    forum_update DATE,
+    forum_content VARCHAR2(2000) NOT NULL,
+    CONSTRAINT pk_forum PRIMARY KEY (forum_number),
+    CONSTRAINT fk_forum_user FOREIGN KEY (user_number) REFERENCES tbl_user (user_number) ON DELETE CASCADE
+), Error Msg = ORA-00942: 테이블 또는 뷰가 존재하지 않습니다
+
+!STACK 0
+Error : 942, Position : 370, Sql = CREATE TABLE tbl_forum (
+    forum_number NUMBER,
+    user_number NUMBER,
+    forum_category VARCHAR2(10) NOT NULL,
+    forum_title VARCHAR2(150) NOT NULL,
+    forum_date DATE,
+    forum_update DATE,
+    forum_content VARCHAR2(2000) NOT NULL,
+    CONSTRAINT pk_forum PRIMARY KEY (forum_number),
+    CONSTRAINT fk_forum_user FOREIGN KEY (user_number) REFERENCES tbl_user (user_number) ON DELETE CASCADE
+), OriginalSql = CREATE TABLE tbl_forum (
+    forum_number NUMBER,
+    user_number NUMBER,
+    forum_category VARCHAR2(10) NOT NULL,
+    forum_title VARCHAR2(150) NOT NULL,
+    forum_date DATE,
+    forum_update DATE,
+    forum_content VARCHAR2(2000) NOT NULL,
+    CONSTRAINT pk_forum PRIMARY KEY (forum_number),
+    CONSTRAINT fk_forum_user FOREIGN KEY (user_number) REFERENCES tbl_user (user_number) ON DELETE CASCADE
+), Error Msg = ORA-00942: 테이블 또는 뷰가 존재하지 않습니다
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:637)
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:564)
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1231)
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:772)
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:299)
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:512)
+	at oracle.jdbc.driver.T4CStatement.doOall8(T4CStatement.java:123)
+	at oracle.jdbc.driver.T4CStatement.executeForRows(T4CStatement.java:1200)
+	at oracle.jdbc.driver.OracleStatement.executeSQLStatement(OracleStatement.java:1820)
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1472)
+	at oracle.jdbc.driver.OracleStatement.executeInternal(OracleStatement.java:2505)
+	at oracle.jdbc.driver.OracleStatement.execute(OracleStatement.java:2460)
+	at oracle.jdbc.driver.OracleStatementWrapper.execute(OracleStatementWrapper.java:328)
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.execute(JDBCStatementImpl.java:344)
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.executeStatement(JDBCStatementImpl.java:128)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.executeStatement(SQLQueryJob.java:631)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.lambda$2(SQLQueryJob.java:522)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:192)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.executeSingleQuery(SQLQueryJob.java:541)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.extractData(SQLQueryJob.java:1016)
+	at org.jkiss.dbeaver.ui.editors.sql.SQLEditor$QueryResultsContainer.readData(SQLEditor.java:4273)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetJobDataRead.lambda$0(ResultSetJobDataRead.java:128)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:192)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetJobDataRead.run(ResultSetJobDataRead.java:126)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetViewer$ResultSetDataPumpJob.run(ResultSetViewer.java:5166)
+	at org.jkiss.dbeaver.model.runtime.AbstractJob.run(AbstractJob.java:119)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.jkiss.dbeaver.model 4 0 2025-01-17 10:45:53.471
+!MESSAGE SQL Error [942] [42000]: ORA-00942: 테이블 또는 뷰가 존재하지 않습니다
+
+!SUBENTRY 1 org.jkiss.dbeaver.model 4 0 2025-01-17 10:45:53.471
+!MESSAGE Error : 942, Position : 225, Sql = CREATE TABLE tbl_file (
+    file_number NUMBER,
+    forum_number NUMBER,
+    img_source VARCHAR2(200),
+    CONSTRAINT pk_file PRIMARY KEY (file_number),
+    CONSTRAINT fk_file_forum FOREIGN KEY (forum_number) REFERENCES tbl_forum (forum_number) ON DELETE CASCADE
+), OriginalSql = CREATE TABLE tbl_file (
+    file_number NUMBER,
+    forum_number NUMBER,
+    img_source VARCHAR2(200),
+    CONSTRAINT pk_file PRIMARY KEY (file_number),
+    CONSTRAINT fk_file_forum FOREIGN KEY (forum_number) REFERENCES tbl_forum (forum_number) ON DELETE CASCADE
+), Error Msg = ORA-00942: 테이블 또는 뷰가 존재하지 않습니다
+
+!STACK 0
+Error : 942, Position : 225, Sql = CREATE TABLE tbl_file (
+    file_number NUMBER,
+    forum_number NUMBER,
+    img_source VARCHAR2(200),
+    CONSTRAINT pk_file PRIMARY KEY (file_number),
+    CONSTRAINT fk_file_forum FOREIGN KEY (forum_number) REFERENCES tbl_forum (forum_number) ON DELETE CASCADE
+), OriginalSql = CREATE TABLE tbl_file (
+    file_number NUMBER,
+    forum_number NUMBER,
+    img_source VARCHAR2(200),
+    CONSTRAINT pk_file PRIMARY KEY (file_number),
+    CONSTRAINT fk_file_forum FOREIGN KEY (forum_number) REFERENCES tbl_forum (forum_number) ON DELETE CASCADE
+), Error Msg = ORA-00942: 테이블 또는 뷰가 존재하지 않습니다
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:637)
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:564)
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1231)
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:772)
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:299)
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:512)
+	at oracle.jdbc.driver.T4CStatement.doOall8(T4CStatement.java:123)
+	at oracle.jdbc.driver.T4CStatement.executeForRows(T4CStatement.java:1200)
+	at oracle.jdbc.driver.OracleStatement.executeSQLStatement(OracleStatement.java:1820)
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1472)
+	at oracle.jdbc.driver.OracleStatement.executeInternal(OracleStatement.java:2505)
+	at oracle.jdbc.driver.OracleStatement.execute(OracleStatement.java:2460)
+	at oracle.jdbc.driver.OracleStatementWrapper.execute(OracleStatementWrapper.java:328)
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.execute(JDBCStatementImpl.java:344)
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.executeStatement(JDBCStatementImpl.java:128)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.executeStatement(SQLQueryJob.java:631)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.lambda$2(SQLQueryJob.java:522)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:192)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.executeSingleQuery(SQLQueryJob.java:541)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.extractData(SQLQueryJob.java:1016)
+	at org.jkiss.dbeaver.ui.editors.sql.SQLEditor$QueryResultsContainer.readData(SQLEditor.java:4273)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetJobDataRead.lambda$0(ResultSetJobDataRead.java:128)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:192)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetJobDataRead.run(ResultSetJobDataRead.java:126)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetViewer$ResultSetDataPumpJob.run(ResultSetViewer.java:5166)
+	at org.jkiss.dbeaver.model.runtime.AbstractJob.run(AbstractJob.java:119)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.jkiss.dbeaver.model 4 0 2025-01-17 10:45:58.098
+!MESSAGE SQL Error [942] [42000]: ORA-00942: 테이블 또는 뷰가 존재하지 않습니다
+
+!SUBENTRY 1 org.jkiss.dbeaver.model 4 0 2025-01-17 10:45:58.098
+!MESSAGE Error : 942, Position : 225, Sql = CREATE TABLE tbl_file (
+    file_number NUMBER,
+    forum_number NUMBER,
+    img_source VARCHAR2(200),
+    CONSTRAINT pk_file PRIMARY KEY (file_number),
+    CONSTRAINT fk_file_forum FOREIGN KEY (forum_number) REFERENCES tbl_forum (forum_number) ON DELETE CASCADE
+), OriginalSql = CREATE TABLE tbl_file (
+    file_number NUMBER,
+    forum_number NUMBER,
+    img_source VARCHAR2(200),
+    CONSTRAINT pk_file PRIMARY KEY (file_number),
+    CONSTRAINT fk_file_forum FOREIGN KEY (forum_number) REFERENCES tbl_forum (forum_number) ON DELETE CASCADE
+), Error Msg = ORA-00942: 테이블 또는 뷰가 존재하지 않습니다
+
+!STACK 0
+Error : 942, Position : 225, Sql = CREATE TABLE tbl_file (
+    file_number NUMBER,
+    forum_number NUMBER,
+    img_source VARCHAR2(200),
+    CONSTRAINT pk_file PRIMARY KEY (file_number),
+    CONSTRAINT fk_file_forum FOREIGN KEY (forum_number) REFERENCES tbl_forum (forum_number) ON DELETE CASCADE
+), OriginalSql = CREATE TABLE tbl_file (
+    file_number NUMBER,
+    forum_number NUMBER,
+    img_source VARCHAR2(200),
+    CONSTRAINT pk_file PRIMARY KEY (file_number),
+    CONSTRAINT fk_file_forum FOREIGN KEY (forum_number) REFERENCES tbl_forum (forum_number) ON DELETE CASCADE
+), Error Msg = ORA-00942: 테이블 또는 뷰가 존재하지 않습니다
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:637)
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:564)
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1231)
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:772)
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:299)
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:512)
+	at oracle.jdbc.driver.T4CStatement.doOall8(T4CStatement.java:123)
+	at oracle.jdbc.driver.T4CStatement.executeForRows(T4CStatement.java:1200)
+	at oracle.jdbc.driver.OracleStatement.executeSQLStatement(OracleStatement.java:1820)
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1472)
+	at oracle.jdbc.driver.OracleStatement.executeInternal(OracleStatement.java:2505)
+	at oracle.jdbc.driver.OracleStatement.execute(OracleStatement.java:2460)
+	at oracle.jdbc.driver.OracleStatementWrapper.execute(OracleStatementWrapper.java:328)
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.execute(JDBCStatementImpl.java:344)
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.executeStatement(JDBCStatementImpl.java:128)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.executeStatement(SQLQueryJob.java:631)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.lambda$2(SQLQueryJob.java:522)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:192)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.executeSingleQuery(SQLQueryJob.java:541)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.extractData(SQLQueryJob.java:1016)
+	at org.jkiss.dbeaver.ui.editors.sql.SQLEditor$QueryResultsContainer.readData(SQLEditor.java:4273)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetJobDataRead.lambda$0(ResultSetJobDataRead.java:128)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:192)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetJobDataRead.run(ResultSetJobDataRead.java:126)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetViewer$ResultSetDataPumpJob.run(ResultSetViewer.java:5166)
+	at org.jkiss.dbeaver.model.runtime.AbstractJob.run(AbstractJob.java:119)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.jkiss.dbeaver.model 4 0 2025-01-17 10:45:58.816
+!MESSAGE SQL Error [942] [42000]: ORA-00942: 테이블 또는 뷰가 존재하지 않습니다
+
+!SUBENTRY 1 org.jkiss.dbeaver.model 4 0 2025-01-17 10:45:58.816
+!MESSAGE Error : 942, Position : 225, Sql = CREATE TABLE tbl_file (
+    file_number NUMBER,
+    forum_number NUMBER,
+    img_source VARCHAR2(200),
+    CONSTRAINT pk_file PRIMARY KEY (file_number),
+    CONSTRAINT fk_file_forum FOREIGN KEY (forum_number) REFERENCES tbl_forum (forum_number) ON DELETE CASCADE
+), OriginalSql = CREATE TABLE tbl_file (
+    file_number NUMBER,
+    forum_number NUMBER,
+    img_source VARCHAR2(200),
+    CONSTRAINT pk_file PRIMARY KEY (file_number),
+    CONSTRAINT fk_file_forum FOREIGN KEY (forum_number) REFERENCES tbl_forum (forum_number) ON DELETE CASCADE
+), Error Msg = ORA-00942: 테이블 또는 뷰가 존재하지 않습니다
+
+!STACK 0
+Error : 942, Position : 225, Sql = CREATE TABLE tbl_file (
+    file_number NUMBER,
+    forum_number NUMBER,
+    img_source VARCHAR2(200),
+    CONSTRAINT pk_file PRIMARY KEY (file_number),
+    CONSTRAINT fk_file_forum FOREIGN KEY (forum_number) REFERENCES tbl_forum (forum_number) ON DELETE CASCADE
+), OriginalSql = CREATE TABLE tbl_file (
+    file_number NUMBER,
+    forum_number NUMBER,
+    img_source VARCHAR2(200),
+    CONSTRAINT pk_file PRIMARY KEY (file_number),
+    CONSTRAINT fk_file_forum FOREIGN KEY (forum_number) REFERENCES tbl_forum (forum_number) ON DELETE CASCADE
+), Error Msg = ORA-00942: 테이블 또는 뷰가 존재하지 않습니다
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:637)
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:564)
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1231)
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:772)
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:299)
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:512)
+	at oracle.jdbc.driver.T4CStatement.doOall8(T4CStatement.java:123)
+	at oracle.jdbc.driver.T4CStatement.executeForRows(T4CStatement.java:1200)
+	at oracle.jdbc.driver.OracleStatement.executeSQLStatement(OracleStatement.java:1820)
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1472)
+	at oracle.jdbc.driver.OracleStatement.executeInternal(OracleStatement.java:2505)
+	at oracle.jdbc.driver.OracleStatement.execute(OracleStatement.java:2460)
+	at oracle.jdbc.driver.OracleStatementWrapper.execute(OracleStatementWrapper.java:328)
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.execute(JDBCStatementImpl.java:344)
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.executeStatement(JDBCStatementImpl.java:128)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.executeStatement(SQLQueryJob.java:631)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.lambda$2(SQLQueryJob.java:522)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:192)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.executeSingleQuery(SQLQueryJob.java:541)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.extractData(SQLQueryJob.java:1016)
+	at org.jkiss.dbeaver.ui.editors.sql.SQLEditor$QueryResultsContainer.readData(SQLEditor.java:4273)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetJobDataRead.lambda$0(ResultSetJobDataRead.java:128)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:192)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetJobDataRead.run(ResultSetJobDataRead.java:126)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetViewer$ResultSetDataPumpJob.run(ResultSetViewer.java:5166)
+	at org.jkiss.dbeaver.model.runtime.AbstractJob.run(AbstractJob.java:119)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.jkiss.dbeaver.model 4 0 2025-01-17 10:45:59.322
+!MESSAGE SQL Error [942] [42000]: ORA-00942: 테이블 또는 뷰가 존재하지 않습니다
+
+!SUBENTRY 1 org.jkiss.dbeaver.model 4 0 2025-01-17 10:45:59.322
+!MESSAGE Error : 942, Position : 225, Sql = CREATE TABLE tbl_file (
+    file_number NUMBER,
+    forum_number NUMBER,
+    img_source VARCHAR2(200),
+    CONSTRAINT pk_file PRIMARY KEY (file_number),
+    CONSTRAINT fk_file_forum FOREIGN KEY (forum_number) REFERENCES tbl_forum (forum_number) ON DELETE CASCADE
+), OriginalSql = CREATE TABLE tbl_file (
+    file_number NUMBER,
+    forum_number NUMBER,
+    img_source VARCHAR2(200),
+    CONSTRAINT pk_file PRIMARY KEY (file_number),
+    CONSTRAINT fk_file_forum FOREIGN KEY (forum_number) REFERENCES tbl_forum (forum_number) ON DELETE CASCADE
+), Error Msg = ORA-00942: 테이블 또는 뷰가 존재하지 않습니다
+
+!STACK 0
+Error : 942, Position : 225, Sql = CREATE TABLE tbl_file (
+    file_number NUMBER,
+    forum_number NUMBER,
+    img_source VARCHAR2(200),
+    CONSTRAINT pk_file PRIMARY KEY (file_number),
+    CONSTRAINT fk_file_forum FOREIGN KEY (forum_number) REFERENCES tbl_forum (forum_number) ON DELETE CASCADE
+), OriginalSql = CREATE TABLE tbl_file (
+    file_number NUMBER,
+    forum_number NUMBER,
+    img_source VARCHAR2(200),
+    CONSTRAINT pk_file PRIMARY KEY (file_number),
+    CONSTRAINT fk_file_forum FOREIGN KEY (forum_number) REFERENCES tbl_forum (forum_number) ON DELETE CASCADE
+), Error Msg = ORA-00942: 테이블 또는 뷰가 존재하지 않습니다
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:637)
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:564)
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1231)
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:772)
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:299)
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:512)
+	at oracle.jdbc.driver.T4CStatement.doOall8(T4CStatement.java:123)
+	at oracle.jdbc.driver.T4CStatement.executeForRows(T4CStatement.java:1200)
+	at oracle.jdbc.driver.OracleStatement.executeSQLStatement(OracleStatement.java:1820)
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1472)
+	at oracle.jdbc.driver.OracleStatement.executeInternal(OracleStatement.java:2505)
+	at oracle.jdbc.driver.OracleStatement.execute(OracleStatement.java:2460)
+	at oracle.jdbc.driver.OracleStatementWrapper.execute(OracleStatementWrapper.java:328)
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.execute(JDBCStatementImpl.java:344)
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.executeStatement(JDBCStatementImpl.java:128)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.executeStatement(SQLQueryJob.java:631)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.lambda$2(SQLQueryJob.java:522)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:192)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.executeSingleQuery(SQLQueryJob.java:541)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.extractData(SQLQueryJob.java:1016)
+	at org.jkiss.dbeaver.ui.editors.sql.SQLEditor$QueryResultsContainer.readData(SQLEditor.java:4273)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetJobDataRead.lambda$0(ResultSetJobDataRead.java:128)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:192)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetJobDataRead.run(ResultSetJobDataRead.java:126)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetViewer$ResultSetDataPumpJob.run(ResultSetViewer.java:5166)
+	at org.jkiss.dbeaver.model.runtime.AbstractJob.run(AbstractJob.java:119)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.jkiss.dbeaver.model 4 0 2025-01-17 10:45:59.792
+!MESSAGE SQL Error [942] [42000]: ORA-00942: 테이블 또는 뷰가 존재하지 않습니다
+
+!SUBENTRY 1 org.jkiss.dbeaver.model 4 0 2025-01-17 10:45:59.793
+!MESSAGE Error : 942, Position : 225, Sql = CREATE TABLE tbl_file (
+    file_number NUMBER,
+    forum_number NUMBER,
+    img_source VARCHAR2(200),
+    CONSTRAINT pk_file PRIMARY KEY (file_number),
+    CONSTRAINT fk_file_forum FOREIGN KEY (forum_number) REFERENCES tbl_forum (forum_number) ON DELETE CASCADE
+), OriginalSql = CREATE TABLE tbl_file (
+    file_number NUMBER,
+    forum_number NUMBER,
+    img_source VARCHAR2(200),
+    CONSTRAINT pk_file PRIMARY KEY (file_number),
+    CONSTRAINT fk_file_forum FOREIGN KEY (forum_number) REFERENCES tbl_forum (forum_number) ON DELETE CASCADE
+), Error Msg = ORA-00942: 테이블 또는 뷰가 존재하지 않습니다
+
+!STACK 0
+Error : 942, Position : 225, Sql = CREATE TABLE tbl_file (
+    file_number NUMBER,
+    forum_number NUMBER,
+    img_source VARCHAR2(200),
+    CONSTRAINT pk_file PRIMARY KEY (file_number),
+    CONSTRAINT fk_file_forum FOREIGN KEY (forum_number) REFERENCES tbl_forum (forum_number) ON DELETE CASCADE
+), OriginalSql = CREATE TABLE tbl_file (
+    file_number NUMBER,
+    forum_number NUMBER,
+    img_source VARCHAR2(200),
+    CONSTRAINT pk_file PRIMARY KEY (file_number),
+    CONSTRAINT fk_file_forum FOREIGN KEY (forum_number) REFERENCES tbl_forum (forum_number) ON DELETE CASCADE
+), Error Msg = ORA-00942: 테이블 또는 뷰가 존재하지 않습니다
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:637)
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:564)
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1231)
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:772)
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:299)
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:512)
+	at oracle.jdbc.driver.T4CStatement.doOall8(T4CStatement.java:123)
+	at oracle.jdbc.driver.T4CStatement.executeForRows(T4CStatement.java:1200)
+	at oracle.jdbc.driver.OracleStatement.executeSQLStatement(OracleStatement.java:1820)
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1472)
+	at oracle.jdbc.driver.OracleStatement.executeInternal(OracleStatement.java:2505)
+	at oracle.jdbc.driver.OracleStatement.execute(OracleStatement.java:2460)
+	at oracle.jdbc.driver.OracleStatementWrapper.execute(OracleStatementWrapper.java:328)
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.execute(JDBCStatementImpl.java:344)
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.executeStatement(JDBCStatementImpl.java:128)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.executeStatement(SQLQueryJob.java:631)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.lambda$2(SQLQueryJob.java:522)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:192)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.executeSingleQuery(SQLQueryJob.java:541)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.extractData(SQLQueryJob.java:1016)
+	at org.jkiss.dbeaver.ui.editors.sql.SQLEditor$QueryResultsContainer.readData(SQLEditor.java:4273)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetJobDataRead.lambda$0(ResultSetJobDataRead.java:128)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:192)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetJobDataRead.run(ResultSetJobDataRead.java:126)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetViewer$ResultSetDataPumpJob.run(ResultSetViewer.java:5166)
+	at org.jkiss.dbeaver.model.runtime.AbstractJob.run(AbstractJob.java:119)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.jkiss.dbeaver.model 4 0 2025-01-17 10:46:03.952
+!MESSAGE SQL Error [942] [42000]: ORA-00942: 테이블 또는 뷰가 존재하지 않습니다
+
+!SUBENTRY 1 org.jkiss.dbeaver.model 4 0 2025-01-17 10:46:03.952
+!MESSAGE Error : 942, Position : 370, Sql = CREATE TABLE tbl_forum (
+    forum_number NUMBER,
+    user_number NUMBER,
+    forum_category VARCHAR2(10) NOT NULL,
+    forum_title VARCHAR2(150) NOT NULL,
+    forum_date DATE,
+    forum_update DATE,
+    forum_content VARCHAR2(2000) NOT NULL,
+    CONSTRAINT pk_forum PRIMARY KEY (forum_number),
+    CONSTRAINT fk_forum_user FOREIGN KEY (user_number) REFERENCES tbl_user (user_number) ON DELETE CASCADE
+), OriginalSql = CREATE TABLE tbl_forum (
+    forum_number NUMBER,
+    user_number NUMBER,
+    forum_category VARCHAR2(10) NOT NULL,
+    forum_title VARCHAR2(150) NOT NULL,
+    forum_date DATE,
+    forum_update DATE,
+    forum_content VARCHAR2(2000) NOT NULL,
+    CONSTRAINT pk_forum PRIMARY KEY (forum_number),
+    CONSTRAINT fk_forum_user FOREIGN KEY (user_number) REFERENCES tbl_user (user_number) ON DELETE CASCADE
+), Error Msg = ORA-00942: 테이블 또는 뷰가 존재하지 않습니다
+
+!STACK 0
+Error : 942, Position : 370, Sql = CREATE TABLE tbl_forum (
+    forum_number NUMBER,
+    user_number NUMBER,
+    forum_category VARCHAR2(10) NOT NULL,
+    forum_title VARCHAR2(150) NOT NULL,
+    forum_date DATE,
+    forum_update DATE,
+    forum_content VARCHAR2(2000) NOT NULL,
+    CONSTRAINT pk_forum PRIMARY KEY (forum_number),
+    CONSTRAINT fk_forum_user FOREIGN KEY (user_number) REFERENCES tbl_user (user_number) ON DELETE CASCADE
+), OriginalSql = CREATE TABLE tbl_forum (
+    forum_number NUMBER,
+    user_number NUMBER,
+    forum_category VARCHAR2(10) NOT NULL,
+    forum_title VARCHAR2(150) NOT NULL,
+    forum_date DATE,
+    forum_update DATE,
+    forum_content VARCHAR2(2000) NOT NULL,
+    CONSTRAINT pk_forum PRIMARY KEY (forum_number),
+    CONSTRAINT fk_forum_user FOREIGN KEY (user_number) REFERENCES tbl_user (user_number) ON DELETE CASCADE
+), Error Msg = ORA-00942: 테이블 또는 뷰가 존재하지 않습니다
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:637)
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:564)
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1231)
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:772)
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:299)
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:512)
+	at oracle.jdbc.driver.T4CStatement.doOall8(T4CStatement.java:123)
+	at oracle.jdbc.driver.T4CStatement.executeForRows(T4CStatement.java:1200)
+	at oracle.jdbc.driver.OracleStatement.executeSQLStatement(OracleStatement.java:1820)
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1472)
+	at oracle.jdbc.driver.OracleStatement.executeInternal(OracleStatement.java:2505)
+	at oracle.jdbc.driver.OracleStatement.execute(OracleStatement.java:2460)
+	at oracle.jdbc.driver.OracleStatementWrapper.execute(OracleStatementWrapper.java:328)
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.execute(JDBCStatementImpl.java:344)
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.executeStatement(JDBCStatementImpl.java:128)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.executeStatement(SQLQueryJob.java:631)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.lambda$2(SQLQueryJob.java:522)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:192)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.executeSingleQuery(SQLQueryJob.java:541)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.extractData(SQLQueryJob.java:1016)
+	at org.jkiss.dbeaver.ui.editors.sql.SQLEditor$QueryResultsContainer.readData(SQLEditor.java:4273)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetJobDataRead.lambda$0(ResultSetJobDataRead.java:128)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:192)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetJobDataRead.run(ResultSetJobDataRead.java:126)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetViewer$ResultSetDataPumpJob.run(ResultSetViewer.java:5166)
+	at org.jkiss.dbeaver.model.runtime.AbstractJob.run(AbstractJob.java:119)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.jkiss.dbeaver.model 4 0 2025-01-17 10:46:10.962
+!MESSAGE SQL Error [942] [42000]: ORA-00942: 테이블 또는 뷰가 존재하지 않습니다
+
+!SUBENTRY 1 org.jkiss.dbeaver.model 4 0 2025-01-17 10:46:10.962
+!MESSAGE Error : 942, Position : 370, Sql = CREATE TABLE tbl_forum (
+    forum_number NUMBER,
+    user_number NUMBER,
+    forum_category VARCHAR2(10) NOT NULL,
+    forum_title VARCHAR2(150) NOT NULL,
+    forum_date DATE,
+    forum_update DATE,
+    forum_content VARCHAR2(2000) NOT NULL,
+    CONSTRAINT pk_forum PRIMARY KEY (forum_number),
+    CONSTRAINT fk_forum_user FOREIGN KEY (user_number) REFERENCES tbl_user (user_number) ON DELETE CASCADE
+), OriginalSql = CREATE TABLE tbl_forum (
+    forum_number NUMBER,
+    user_number NUMBER,
+    forum_category VARCHAR2(10) NOT NULL,
+    forum_title VARCHAR2(150) NOT NULL,
+    forum_date DATE,
+    forum_update DATE,
+    forum_content VARCHAR2(2000) NOT NULL,
+    CONSTRAINT pk_forum PRIMARY KEY (forum_number),
+    CONSTRAINT fk_forum_user FOREIGN KEY (user_number) REFERENCES tbl_user (user_number) ON DELETE CASCADE
+), Error Msg = ORA-00942: 테이블 또는 뷰가 존재하지 않습니다
+
+!STACK 0
+Error : 942, Position : 370, Sql = CREATE TABLE tbl_forum (
+    forum_number NUMBER,
+    user_number NUMBER,
+    forum_category VARCHAR2(10) NOT NULL,
+    forum_title VARCHAR2(150) NOT NULL,
+    forum_date DATE,
+    forum_update DATE,
+    forum_content VARCHAR2(2000) NOT NULL,
+    CONSTRAINT pk_forum PRIMARY KEY (forum_number),
+    CONSTRAINT fk_forum_user FOREIGN KEY (user_number) REFERENCES tbl_user (user_number) ON DELETE CASCADE
+), OriginalSql = CREATE TABLE tbl_forum (
+    forum_number NUMBER,
+    user_number NUMBER,
+    forum_category VARCHAR2(10) NOT NULL,
+    forum_title VARCHAR2(150) NOT NULL,
+    forum_date DATE,
+    forum_update DATE,
+    forum_content VARCHAR2(2000) NOT NULL,
+    CONSTRAINT pk_forum PRIMARY KEY (forum_number),
+    CONSTRAINT fk_forum_user FOREIGN KEY (user_number) REFERENCES tbl_user (user_number) ON DELETE CASCADE
+), Error Msg = ORA-00942: 테이블 또는 뷰가 존재하지 않습니다
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:637)
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:564)
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1231)
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:772)
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:299)
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:512)
+	at oracle.jdbc.driver.T4CStatement.doOall8(T4CStatement.java:123)
+	at oracle.jdbc.driver.T4CStatement.executeForRows(T4CStatement.java:1200)
+	at oracle.jdbc.driver.OracleStatement.executeSQLStatement(OracleStatement.java:1820)
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1472)
+	at oracle.jdbc.driver.OracleStatement.executeInternal(OracleStatement.java:2505)
+	at oracle.jdbc.driver.OracleStatement.execute(OracleStatement.java:2460)
+	at oracle.jdbc.driver.OracleStatementWrapper.execute(OracleStatementWrapper.java:328)
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.execute(JDBCStatementImpl.java:344)
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.executeStatement(JDBCStatementImpl.java:128)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.executeStatement(SQLQueryJob.java:631)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.lambda$2(SQLQueryJob.java:522)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:192)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.executeSingleQuery(SQLQueryJob.java:541)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.extractData(SQLQueryJob.java:1016)
+	at org.jkiss.dbeaver.ui.editors.sql.SQLEditor$QueryResultsContainer.readData(SQLEditor.java:4273)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetJobDataRead.lambda$0(ResultSetJobDataRead.java:128)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:192)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetJobDataRead.run(ResultSetJobDataRead.java:126)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetViewer$ResultSetDataPumpJob.run(ResultSetViewer.java:5166)
+	at org.jkiss.dbeaver.model.runtime.AbstractJob.run(AbstractJob.java:119)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.jkiss.dbeaver.model 4 0 2025-01-17 10:46:11.374
+!MESSAGE SQL Error [942] [42000]: ORA-00942: 테이블 또는 뷰가 존재하지 않습니다
+
+!SUBENTRY 1 org.jkiss.dbeaver.model 4 0 2025-01-17 10:46:11.374
+!MESSAGE Error : 942, Position : 370, Sql = CREATE TABLE tbl_forum (
+    forum_number NUMBER,
+    user_number NUMBER,
+    forum_category VARCHAR2(10) NOT NULL,
+    forum_title VARCHAR2(150) NOT NULL,
+    forum_date DATE,
+    forum_update DATE,
+    forum_content VARCHAR2(2000) NOT NULL,
+    CONSTRAINT pk_forum PRIMARY KEY (forum_number),
+    CONSTRAINT fk_forum_user FOREIGN KEY (user_number) REFERENCES tbl_user (user_number) ON DELETE CASCADE
+), OriginalSql = CREATE TABLE tbl_forum (
+    forum_number NUMBER,
+    user_number NUMBER,
+    forum_category VARCHAR2(10) NOT NULL,
+    forum_title VARCHAR2(150) NOT NULL,
+    forum_date DATE,
+    forum_update DATE,
+    forum_content VARCHAR2(2000) NOT NULL,
+    CONSTRAINT pk_forum PRIMARY KEY (forum_number),
+    CONSTRAINT fk_forum_user FOREIGN KEY (user_number) REFERENCES tbl_user (user_number) ON DELETE CASCADE
+), Error Msg = ORA-00942: 테이블 또는 뷰가 존재하지 않습니다
+
+!STACK 0
+Error : 942, Position : 370, Sql = CREATE TABLE tbl_forum (
+    forum_number NUMBER,
+    user_number NUMBER,
+    forum_category VARCHAR2(10) NOT NULL,
+    forum_title VARCHAR2(150) NOT NULL,
+    forum_date DATE,
+    forum_update DATE,
+    forum_content VARCHAR2(2000) NOT NULL,
+    CONSTRAINT pk_forum PRIMARY KEY (forum_number),
+    CONSTRAINT fk_forum_user FOREIGN KEY (user_number) REFERENCES tbl_user (user_number) ON DELETE CASCADE
+), OriginalSql = CREATE TABLE tbl_forum (
+    forum_number NUMBER,
+    user_number NUMBER,
+    forum_category VARCHAR2(10) NOT NULL,
+    forum_title VARCHAR2(150) NOT NULL,
+    forum_date DATE,
+    forum_update DATE,
+    forum_content VARCHAR2(2000) NOT NULL,
+    CONSTRAINT pk_forum PRIMARY KEY (forum_number),
+    CONSTRAINT fk_forum_user FOREIGN KEY (user_number) REFERENCES tbl_user (user_number) ON DELETE CASCADE
+), Error Msg = ORA-00942: 테이블 또는 뷰가 존재하지 않습니다
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:637)
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:564)
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1231)
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:772)
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:299)
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:512)
+	at oracle.jdbc.driver.T4CStatement.doOall8(T4CStatement.java:123)
+	at oracle.jdbc.driver.T4CStatement.executeForRows(T4CStatement.java:1200)
+	at oracle.jdbc.driver.OracleStatement.executeSQLStatement(OracleStatement.java:1820)
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1472)
+	at oracle.jdbc.driver.OracleStatement.executeInternal(OracleStatement.java:2505)
+	at oracle.jdbc.driver.OracleStatement.execute(OracleStatement.java:2460)
+	at oracle.jdbc.driver.OracleStatementWrapper.execute(OracleStatementWrapper.java:328)
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.execute(JDBCStatementImpl.java:344)
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.executeStatement(JDBCStatementImpl.java:128)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.executeStatement(SQLQueryJob.java:631)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.lambda$2(SQLQueryJob.java:522)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:192)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.executeSingleQuery(SQLQueryJob.java:541)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.extractData(SQLQueryJob.java:1016)
+	at org.jkiss.dbeaver.ui.editors.sql.SQLEditor$QueryResultsContainer.readData(SQLEditor.java:4273)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetJobDataRead.lambda$0(ResultSetJobDataRead.java:128)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:192)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetJobDataRead.run(ResultSetJobDataRead.java:126)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetViewer$ResultSetDataPumpJob.run(ResultSetViewer.java:5166)
+	at org.jkiss.dbeaver.model.runtime.AbstractJob.run(AbstractJob.java:119)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.jkiss.dbeaver.model 4 0 2025-01-17 10:46:11.545
+!MESSAGE SQL Error [942] [42000]: ORA-00942: 테이블 또는 뷰가 존재하지 않습니다
+
+!SUBENTRY 1 org.jkiss.dbeaver.model 4 0 2025-01-17 10:46:11.545
+!MESSAGE Error : 942, Position : 370, Sql = CREATE TABLE tbl_forum (
+    forum_number NUMBER,
+    user_number NUMBER,
+    forum_category VARCHAR2(10) NOT NULL,
+    forum_title VARCHAR2(150) NOT NULL,
+    forum_date DATE,
+    forum_update DATE,
+    forum_content VARCHAR2(2000) NOT NULL,
+    CONSTRAINT pk_forum PRIMARY KEY (forum_number),
+    CONSTRAINT fk_forum_user FOREIGN KEY (user_number) REFERENCES tbl_user (user_number) ON DELETE CASCADE
+), OriginalSql = CREATE TABLE tbl_forum (
+    forum_number NUMBER,
+    user_number NUMBER,
+    forum_category VARCHAR2(10) NOT NULL,
+    forum_title VARCHAR2(150) NOT NULL,
+    forum_date DATE,
+    forum_update DATE,
+    forum_content VARCHAR2(2000) NOT NULL,
+    CONSTRAINT pk_forum PRIMARY KEY (forum_number),
+    CONSTRAINT fk_forum_user FOREIGN KEY (user_number) REFERENCES tbl_user (user_number) ON DELETE CASCADE
+), Error Msg = ORA-00942: 테이블 또는 뷰가 존재하지 않습니다
+
+!STACK 0
+Error : 942, Position : 370, Sql = CREATE TABLE tbl_forum (
+    forum_number NUMBER,
+    user_number NUMBER,
+    forum_category VARCHAR2(10) NOT NULL,
+    forum_title VARCHAR2(150) NOT NULL,
+    forum_date DATE,
+    forum_update DATE,
+    forum_content VARCHAR2(2000) NOT NULL,
+    CONSTRAINT pk_forum PRIMARY KEY (forum_number),
+    CONSTRAINT fk_forum_user FOREIGN KEY (user_number) REFERENCES tbl_user (user_number) ON DELETE CASCADE
+), OriginalSql = CREATE TABLE tbl_forum (
+    forum_number NUMBER,
+    user_number NUMBER,
+    forum_category VARCHAR2(10) NOT NULL,
+    forum_title VARCHAR2(150) NOT NULL,
+    forum_date DATE,
+    forum_update DATE,
+    forum_content VARCHAR2(2000) NOT NULL,
+    CONSTRAINT pk_forum PRIMARY KEY (forum_number),
+    CONSTRAINT fk_forum_user FOREIGN KEY (user_number) REFERENCES tbl_user (user_number) ON DELETE CASCADE
+), Error Msg = ORA-00942: 테이블 또는 뷰가 존재하지 않습니다
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:637)
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:564)
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1231)
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:772)
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:299)
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:512)
+	at oracle.jdbc.driver.T4CStatement.doOall8(T4CStatement.java:123)
+	at oracle.jdbc.driver.T4CStatement.executeForRows(T4CStatement.java:1200)
+	at oracle.jdbc.driver.OracleStatement.executeSQLStatement(OracleStatement.java:1820)
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1472)
+	at oracle.jdbc.driver.OracleStatement.executeInternal(OracleStatement.java:2505)
+	at oracle.jdbc.driver.OracleStatement.execute(OracleStatement.java:2460)
+	at oracle.jdbc.driver.OracleStatementWrapper.execute(OracleStatementWrapper.java:328)
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.execute(JDBCStatementImpl.java:344)
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.executeStatement(JDBCStatementImpl.java:128)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.executeStatement(SQLQueryJob.java:631)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.lambda$2(SQLQueryJob.java:522)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:192)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.executeSingleQuery(SQLQueryJob.java:541)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.extractData(SQLQueryJob.java:1016)
+	at org.jkiss.dbeaver.ui.editors.sql.SQLEditor$QueryResultsContainer.readData(SQLEditor.java:4273)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetJobDataRead.lambda$0(ResultSetJobDataRead.java:128)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:192)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetJobDataRead.run(ResultSetJobDataRead.java:126)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetViewer$ResultSetDataPumpJob.run(ResultSetViewer.java:5166)
+	at org.jkiss.dbeaver.model.runtime.AbstractJob.run(AbstractJob.java:119)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.jkiss.dbeaver.model 4 0 2025-01-17 10:46:11.700
+!MESSAGE SQL Error [942] [42000]: ORA-00942: 테이블 또는 뷰가 존재하지 않습니다
+
+!SUBENTRY 1 org.jkiss.dbeaver.model 4 0 2025-01-17 10:46:11.700
+!MESSAGE Error : 942, Position : 370, Sql = CREATE TABLE tbl_forum (
+    forum_number NUMBER,
+    user_number NUMBER,
+    forum_category VARCHAR2(10) NOT NULL,
+    forum_title VARCHAR2(150) NOT NULL,
+    forum_date DATE,
+    forum_update DATE,
+    forum_content VARCHAR2(2000) NOT NULL,
+    CONSTRAINT pk_forum PRIMARY KEY (forum_number),
+    CONSTRAINT fk_forum_user FOREIGN KEY (user_number) REFERENCES tbl_user (user_number) ON DELETE CASCADE
+), OriginalSql = CREATE TABLE tbl_forum (
+    forum_number NUMBER,
+    user_number NUMBER,
+    forum_category VARCHAR2(10) NOT NULL,
+    forum_title VARCHAR2(150) NOT NULL,
+    forum_date DATE,
+    forum_update DATE,
+    forum_content VARCHAR2(2000) NOT NULL,
+    CONSTRAINT pk_forum PRIMARY KEY (forum_number),
+    CONSTRAINT fk_forum_user FOREIGN KEY (user_number) REFERENCES tbl_user (user_number) ON DELETE CASCADE
+), Error Msg = ORA-00942: 테이블 또는 뷰가 존재하지 않습니다
+
+!STACK 0
+Error : 942, Position : 370, Sql = CREATE TABLE tbl_forum (
+    forum_number NUMBER,
+    user_number NUMBER,
+    forum_category VARCHAR2(10) NOT NULL,
+    forum_title VARCHAR2(150) NOT NULL,
+    forum_date DATE,
+    forum_update DATE,
+    forum_content VARCHAR2(2000) NOT NULL,
+    CONSTRAINT pk_forum PRIMARY KEY (forum_number),
+    CONSTRAINT fk_forum_user FOREIGN KEY (user_number) REFERENCES tbl_user (user_number) ON DELETE CASCADE
+), OriginalSql = CREATE TABLE tbl_forum (
+    forum_number NUMBER,
+    user_number NUMBER,
+    forum_category VARCHAR2(10) NOT NULL,
+    forum_title VARCHAR2(150) NOT NULL,
+    forum_date DATE,
+    forum_update DATE,
+    forum_content VARCHAR2(2000) NOT NULL,
+    CONSTRAINT pk_forum PRIMARY KEY (forum_number),
+    CONSTRAINT fk_forum_user FOREIGN KEY (user_number) REFERENCES tbl_user (user_number) ON DELETE CASCADE
+), Error Msg = ORA-00942: 테이블 또는 뷰가 존재하지 않습니다
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:637)
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:564)
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1231)
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:772)
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:299)
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:512)
+	at oracle.jdbc.driver.T4CStatement.doOall8(T4CStatement.java:123)
+	at oracle.jdbc.driver.T4CStatement.executeForRows(T4CStatement.java:1200)
+	at oracle.jdbc.driver.OracleStatement.executeSQLStatement(OracleStatement.java:1820)
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1472)
+	at oracle.jdbc.driver.OracleStatement.executeInternal(OracleStatement.java:2505)
+	at oracle.jdbc.driver.OracleStatement.execute(OracleStatement.java:2460)
+	at oracle.jdbc.driver.OracleStatementWrapper.execute(OracleStatementWrapper.java:328)
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.execute(JDBCStatementImpl.java:344)
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.executeStatement(JDBCStatementImpl.java:128)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.executeStatement(SQLQueryJob.java:631)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.lambda$2(SQLQueryJob.java:522)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:192)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.executeSingleQuery(SQLQueryJob.java:541)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.extractData(SQLQueryJob.java:1016)
+	at org.jkiss.dbeaver.ui.editors.sql.SQLEditor$QueryResultsContainer.readData(SQLEditor.java:4273)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetJobDataRead.lambda$0(ResultSetJobDataRead.java:128)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:192)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetJobDataRead.run(ResultSetJobDataRead.java:126)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetViewer$ResultSetDataPumpJob.run(ResultSetViewer.java:5166)
+	at org.jkiss.dbeaver.model.runtime.AbstractJob.run(AbstractJob.java:119)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.jkiss.dbeaver.model 4 0 2025-01-17 10:46:11.855
+!MESSAGE SQL Error [942] [42000]: ORA-00942: 테이블 또는 뷰가 존재하지 않습니다
+
+!SUBENTRY 1 org.jkiss.dbeaver.model 4 0 2025-01-17 10:46:11.855
+!MESSAGE Error : 942, Position : 370, Sql = CREATE TABLE tbl_forum (
+    forum_number NUMBER,
+    user_number NUMBER,
+    forum_category VARCHAR2(10) NOT NULL,
+    forum_title VARCHAR2(150) NOT NULL,
+    forum_date DATE,
+    forum_update DATE,
+    forum_content VARCHAR2(2000) NOT NULL,
+    CONSTRAINT pk_forum PRIMARY KEY (forum_number),
+    CONSTRAINT fk_forum_user FOREIGN KEY (user_number) REFERENCES tbl_user (user_number) ON DELETE CASCADE
+), OriginalSql = CREATE TABLE tbl_forum (
+    forum_number NUMBER,
+    user_number NUMBER,
+    forum_category VARCHAR2(10) NOT NULL,
+    forum_title VARCHAR2(150) NOT NULL,
+    forum_date DATE,
+    forum_update DATE,
+    forum_content VARCHAR2(2000) NOT NULL,
+    CONSTRAINT pk_forum PRIMARY KEY (forum_number),
+    CONSTRAINT fk_forum_user FOREIGN KEY (user_number) REFERENCES tbl_user (user_number) ON DELETE CASCADE
+), Error Msg = ORA-00942: 테이블 또는 뷰가 존재하지 않습니다
+
+!STACK 0
+Error : 942, Position : 370, Sql = CREATE TABLE tbl_forum (
+    forum_number NUMBER,
+    user_number NUMBER,
+    forum_category VARCHAR2(10) NOT NULL,
+    forum_title VARCHAR2(150) NOT NULL,
+    forum_date DATE,
+    forum_update DATE,
+    forum_content VARCHAR2(2000) NOT NULL,
+    CONSTRAINT pk_forum PRIMARY KEY (forum_number),
+    CONSTRAINT fk_forum_user FOREIGN KEY (user_number) REFERENCES tbl_user (user_number) ON DELETE CASCADE
+), OriginalSql = CREATE TABLE tbl_forum (
+    forum_number NUMBER,
+    user_number NUMBER,
+    forum_category VARCHAR2(10) NOT NULL,
+    forum_title VARCHAR2(150) NOT NULL,
+    forum_date DATE,
+    forum_update DATE,
+    forum_content VARCHAR2(2000) NOT NULL,
+    CONSTRAINT pk_forum PRIMARY KEY (forum_number),
+    CONSTRAINT fk_forum_user FOREIGN KEY (user_number) REFERENCES tbl_user (user_number) ON DELETE CASCADE
+), Error Msg = ORA-00942: 테이블 또는 뷰가 존재하지 않습니다
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:637)
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:564)
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1231)
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:772)
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:299)
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:512)
+	at oracle.jdbc.driver.T4CStatement.doOall8(T4CStatement.java:123)
+	at oracle.jdbc.driver.T4CStatement.executeForRows(T4CStatement.java:1200)
+	at oracle.jdbc.driver.OracleStatement.executeSQLStatement(OracleStatement.java:1820)
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1472)
+	at oracle.jdbc.driver.OracleStatement.executeInternal(OracleStatement.java:2505)
+	at oracle.jdbc.driver.OracleStatement.execute(OracleStatement.java:2460)
+	at oracle.jdbc.driver.OracleStatementWrapper.execute(OracleStatementWrapper.java:328)
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.execute(JDBCStatementImpl.java:344)
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.executeStatement(JDBCStatementImpl.java:128)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.executeStatement(SQLQueryJob.java:631)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.lambda$2(SQLQueryJob.java:522)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:192)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.executeSingleQuery(SQLQueryJob.java:541)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.extractData(SQLQueryJob.java:1016)
+	at org.jkiss.dbeaver.ui.editors.sql.SQLEditor$QueryResultsContainer.readData(SQLEditor.java:4273)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetJobDataRead.lambda$0(ResultSetJobDataRead.java:128)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:192)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetJobDataRead.run(ResultSetJobDataRead.java:126)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetViewer$ResultSetDataPumpJob.run(ResultSetViewer.java:5166)
+	at org.jkiss.dbeaver.model.runtime.AbstractJob.run(AbstractJob.java:119)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.jkiss.dbeaver.model 4 0 2025-01-17 10:46:12.024
+!MESSAGE SQL Error [942] [42000]: ORA-00942: 테이블 또는 뷰가 존재하지 않습니다
+
+!SUBENTRY 1 org.jkiss.dbeaver.model 4 0 2025-01-17 10:46:12.024
+!MESSAGE Error : 942, Position : 370, Sql = CREATE TABLE tbl_forum (
+    forum_number NUMBER,
+    user_number NUMBER,
+    forum_category VARCHAR2(10) NOT NULL,
+    forum_title VARCHAR2(150) NOT NULL,
+    forum_date DATE,
+    forum_update DATE,
+    forum_content VARCHAR2(2000) NOT NULL,
+    CONSTRAINT pk_forum PRIMARY KEY (forum_number),
+    CONSTRAINT fk_forum_user FOREIGN KEY (user_number) REFERENCES tbl_user (user_number) ON DELETE CASCADE
+), OriginalSql = CREATE TABLE tbl_forum (
+    forum_number NUMBER,
+    user_number NUMBER,
+    forum_category VARCHAR2(10) NOT NULL,
+    forum_title VARCHAR2(150) NOT NULL,
+    forum_date DATE,
+    forum_update DATE,
+    forum_content VARCHAR2(2000) NOT NULL,
+    CONSTRAINT pk_forum PRIMARY KEY (forum_number),
+    CONSTRAINT fk_forum_user FOREIGN KEY (user_number) REFERENCES tbl_user (user_number) ON DELETE CASCADE
+), Error Msg = ORA-00942: 테이블 또는 뷰가 존재하지 않습니다
+
+!STACK 0
+Error : 942, Position : 370, Sql = CREATE TABLE tbl_forum (
+    forum_number NUMBER,
+    user_number NUMBER,
+    forum_category VARCHAR2(10) NOT NULL,
+    forum_title VARCHAR2(150) NOT NULL,
+    forum_date DATE,
+    forum_update DATE,
+    forum_content VARCHAR2(2000) NOT NULL,
+    CONSTRAINT pk_forum PRIMARY KEY (forum_number),
+    CONSTRAINT fk_forum_user FOREIGN KEY (user_number) REFERENCES tbl_user (user_number) ON DELETE CASCADE
+), OriginalSql = CREATE TABLE tbl_forum (
+    forum_number NUMBER,
+    user_number NUMBER,
+    forum_category VARCHAR2(10) NOT NULL,
+    forum_title VARCHAR2(150) NOT NULL,
+    forum_date DATE,
+    forum_update DATE,
+    forum_content VARCHAR2(2000) NOT NULL,
+    CONSTRAINT pk_forum PRIMARY KEY (forum_number),
+    CONSTRAINT fk_forum_user FOREIGN KEY (user_number) REFERENCES tbl_user (user_number) ON DELETE CASCADE
+), Error Msg = ORA-00942: 테이블 또는 뷰가 존재하지 않습니다
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:637)
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:564)
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1231)
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:772)
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:299)
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:512)
+	at oracle.jdbc.driver.T4CStatement.doOall8(T4CStatement.java:123)
+	at oracle.jdbc.driver.T4CStatement.executeForRows(T4CStatement.java:1200)
+	at oracle.jdbc.driver.OracleStatement.executeSQLStatement(OracleStatement.java:1820)
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1472)
+	at oracle.jdbc.driver.OracleStatement.executeInternal(OracleStatement.java:2505)
+	at oracle.jdbc.driver.OracleStatement.execute(OracleStatement.java:2460)
+	at oracle.jdbc.driver.OracleStatementWrapper.execute(OracleStatementWrapper.java:328)
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.execute(JDBCStatementImpl.java:344)
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.executeStatement(JDBCStatementImpl.java:128)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.executeStatement(SQLQueryJob.java:631)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.lambda$2(SQLQueryJob.java:522)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:192)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.executeSingleQuery(SQLQueryJob.java:541)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.extractData(SQLQueryJob.java:1016)
+	at org.jkiss.dbeaver.ui.editors.sql.SQLEditor$QueryResultsContainer.readData(SQLEditor.java:4273)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetJobDataRead.lambda$0(ResultSetJobDataRead.java:128)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:192)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetJobDataRead.run(ResultSetJobDataRead.java:126)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetViewer$ResultSetDataPumpJob.run(ResultSetViewer.java:5166)
+	at org.jkiss.dbeaver.model.runtime.AbstractJob.run(AbstractJob.java:119)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.jkiss.dbeaver.model 4 0 2025-01-17 10:46:12.349
+!MESSAGE SQL Error [942] [42000]: ORA-00942: 테이블 또는 뷰가 존재하지 않습니다
+
+!SUBENTRY 1 org.jkiss.dbeaver.model 4 0 2025-01-17 10:46:12.349
+!MESSAGE Error : 942, Position : 370, Sql = CREATE TABLE tbl_forum (
+    forum_number NUMBER,
+    user_number NUMBER,
+    forum_category VARCHAR2(10) NOT NULL,
+    forum_title VARCHAR2(150) NOT NULL,
+    forum_date DATE,
+    forum_update DATE,
+    forum_content VARCHAR2(2000) NOT NULL,
+    CONSTRAINT pk_forum PRIMARY KEY (forum_number),
+    CONSTRAINT fk_forum_user FOREIGN KEY (user_number) REFERENCES tbl_user (user_number) ON DELETE CASCADE
+), OriginalSql = CREATE TABLE tbl_forum (
+    forum_number NUMBER,
+    user_number NUMBER,
+    forum_category VARCHAR2(10) NOT NULL,
+    forum_title VARCHAR2(150) NOT NULL,
+    forum_date DATE,
+    forum_update DATE,
+    forum_content VARCHAR2(2000) NOT NULL,
+    CONSTRAINT pk_forum PRIMARY KEY (forum_number),
+    CONSTRAINT fk_forum_user FOREIGN KEY (user_number) REFERENCES tbl_user (user_number) ON DELETE CASCADE
+), Error Msg = ORA-00942: 테이블 또는 뷰가 존재하지 않습니다
+
+!STACK 0
+Error : 942, Position : 370, Sql = CREATE TABLE tbl_forum (
+    forum_number NUMBER,
+    user_number NUMBER,
+    forum_category VARCHAR2(10) NOT NULL,
+    forum_title VARCHAR2(150) NOT NULL,
+    forum_date DATE,
+    forum_update DATE,
+    forum_content VARCHAR2(2000) NOT NULL,
+    CONSTRAINT pk_forum PRIMARY KEY (forum_number),
+    CONSTRAINT fk_forum_user FOREIGN KEY (user_number) REFERENCES tbl_user (user_number) ON DELETE CASCADE
+), OriginalSql = CREATE TABLE tbl_forum (
+    forum_number NUMBER,
+    user_number NUMBER,
+    forum_category VARCHAR2(10) NOT NULL,
+    forum_title VARCHAR2(150) NOT NULL,
+    forum_date DATE,
+    forum_update DATE,
+    forum_content VARCHAR2(2000) NOT NULL,
+    CONSTRAINT pk_forum PRIMARY KEY (forum_number),
+    CONSTRAINT fk_forum_user FOREIGN KEY (user_number) REFERENCES tbl_user (user_number) ON DELETE CASCADE
+), Error Msg = ORA-00942: 테이블 또는 뷰가 존재하지 않습니다
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:637)
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:564)
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1231)
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:772)
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:299)
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:512)
+	at oracle.jdbc.driver.T4CStatement.doOall8(T4CStatement.java:123)
+	at oracle.jdbc.driver.T4CStatement.executeForRows(T4CStatement.java:1200)
+	at oracle.jdbc.driver.OracleStatement.executeSQLStatement(OracleStatement.java:1820)
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1472)
+	at oracle.jdbc.driver.OracleStatement.executeInternal(OracleStatement.java:2505)
+	at oracle.jdbc.driver.OracleStatement.execute(OracleStatement.java:2460)
+	at oracle.jdbc.driver.OracleStatementWrapper.execute(OracleStatementWrapper.java:328)
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.execute(JDBCStatementImpl.java:344)
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.executeStatement(JDBCStatementImpl.java:128)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.executeStatement(SQLQueryJob.java:631)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.lambda$2(SQLQueryJob.java:522)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:192)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.executeSingleQuery(SQLQueryJob.java:541)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.extractData(SQLQueryJob.java:1016)
+	at org.jkiss.dbeaver.ui.editors.sql.SQLEditor$QueryResultsContainer.readData(SQLEditor.java:4273)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetJobDataRead.lambda$0(ResultSetJobDataRead.java:128)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:192)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetJobDataRead.run(ResultSetJobDataRead.java:126)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetViewer$ResultSetDataPumpJob.run(ResultSetViewer.java:5166)
+	at org.jkiss.dbeaver.model.runtime.AbstractJob.run(AbstractJob.java:119)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.jkiss.dbeaver.model 4 0 2025-01-17 10:46:12.517
+!MESSAGE SQL Error [942] [42000]: ORA-00942: 테이블 또는 뷰가 존재하지 않습니다
+
+!SUBENTRY 1 org.jkiss.dbeaver.model 4 0 2025-01-17 10:46:12.517
+!MESSAGE Error : 942, Position : 370, Sql = CREATE TABLE tbl_forum (
+    forum_number NUMBER,
+    user_number NUMBER,
+    forum_category VARCHAR2(10) NOT NULL,
+    forum_title VARCHAR2(150) NOT NULL,
+    forum_date DATE,
+    forum_update DATE,
+    forum_content VARCHAR2(2000) NOT NULL,
+    CONSTRAINT pk_forum PRIMARY KEY (forum_number),
+    CONSTRAINT fk_forum_user FOREIGN KEY (user_number) REFERENCES tbl_user (user_number) ON DELETE CASCADE
+), OriginalSql = CREATE TABLE tbl_forum (
+    forum_number NUMBER,
+    user_number NUMBER,
+    forum_category VARCHAR2(10) NOT NULL,
+    forum_title VARCHAR2(150) NOT NULL,
+    forum_date DATE,
+    forum_update DATE,
+    forum_content VARCHAR2(2000) NOT NULL,
+    CONSTRAINT pk_forum PRIMARY KEY (forum_number),
+    CONSTRAINT fk_forum_user FOREIGN KEY (user_number) REFERENCES tbl_user (user_number) ON DELETE CASCADE
+), Error Msg = ORA-00942: 테이블 또는 뷰가 존재하지 않습니다
+
+!STACK 0
+Error : 942, Position : 370, Sql = CREATE TABLE tbl_forum (
+    forum_number NUMBER,
+    user_number NUMBER,
+    forum_category VARCHAR2(10) NOT NULL,
+    forum_title VARCHAR2(150) NOT NULL,
+    forum_date DATE,
+    forum_update DATE,
+    forum_content VARCHAR2(2000) NOT NULL,
+    CONSTRAINT pk_forum PRIMARY KEY (forum_number),
+    CONSTRAINT fk_forum_user FOREIGN KEY (user_number) REFERENCES tbl_user (user_number) ON DELETE CASCADE
+), OriginalSql = CREATE TABLE tbl_forum (
+    forum_number NUMBER,
+    user_number NUMBER,
+    forum_category VARCHAR2(10) NOT NULL,
+    forum_title VARCHAR2(150) NOT NULL,
+    forum_date DATE,
+    forum_update DATE,
+    forum_content VARCHAR2(2000) NOT NULL,
+    CONSTRAINT pk_forum PRIMARY KEY (forum_number),
+    CONSTRAINT fk_forum_user FOREIGN KEY (user_number) REFERENCES tbl_user (user_number) ON DELETE CASCADE
+), Error Msg = ORA-00942: 테이블 또는 뷰가 존재하지 않습니다
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:637)
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:564)
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1231)
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:772)
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:299)
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:512)
+	at oracle.jdbc.driver.T4CStatement.doOall8(T4CStatement.java:123)
+	at oracle.jdbc.driver.T4CStatement.executeForRows(T4CStatement.java:1200)
+	at oracle.jdbc.driver.OracleStatement.executeSQLStatement(OracleStatement.java:1820)
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1472)
+	at oracle.jdbc.driver.OracleStatement.executeInternal(OracleStatement.java:2505)
+	at oracle.jdbc.driver.OracleStatement.execute(OracleStatement.java:2460)
+	at oracle.jdbc.driver.OracleStatementWrapper.execute(OracleStatementWrapper.java:328)
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.execute(JDBCStatementImpl.java:344)
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.executeStatement(JDBCStatementImpl.java:128)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.executeStatement(SQLQueryJob.java:631)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.lambda$2(SQLQueryJob.java:522)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:192)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.executeSingleQuery(SQLQueryJob.java:541)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.extractData(SQLQueryJob.java:1016)
+	at org.jkiss.dbeaver.ui.editors.sql.SQLEditor$QueryResultsContainer.readData(SQLEditor.java:4273)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetJobDataRead.lambda$0(ResultSetJobDataRead.java:128)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:192)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetJobDataRead.run(ResultSetJobDataRead.java:126)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetViewer$ResultSetDataPumpJob.run(ResultSetViewer.java:5166)
+	at org.jkiss.dbeaver.model.runtime.AbstractJob.run(AbstractJob.java:119)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.jkiss.dbeaver.model 4 0 2025-01-17 10:46:12.669
+!MESSAGE SQL Error [942] [42000]: ORA-00942: 테이블 또는 뷰가 존재하지 않습니다
+
+!SUBENTRY 1 org.jkiss.dbeaver.model 4 0 2025-01-17 10:46:12.669
+!MESSAGE Error : 942, Position : 370, Sql = CREATE TABLE tbl_forum (
+    forum_number NUMBER,
+    user_number NUMBER,
+    forum_category VARCHAR2(10) NOT NULL,
+    forum_title VARCHAR2(150) NOT NULL,
+    forum_date DATE,
+    forum_update DATE,
+    forum_content VARCHAR2(2000) NOT NULL,
+    CONSTRAINT pk_forum PRIMARY KEY (forum_number),
+    CONSTRAINT fk_forum_user FOREIGN KEY (user_number) REFERENCES tbl_user (user_number) ON DELETE CASCADE
+), OriginalSql = CREATE TABLE tbl_forum (
+    forum_number NUMBER,
+    user_number NUMBER,
+    forum_category VARCHAR2(10) NOT NULL,
+    forum_title VARCHAR2(150) NOT NULL,
+    forum_date DATE,
+    forum_update DATE,
+    forum_content VARCHAR2(2000) NOT NULL,
+    CONSTRAINT pk_forum PRIMARY KEY (forum_number),
+    CONSTRAINT fk_forum_user FOREIGN KEY (user_number) REFERENCES tbl_user (user_number) ON DELETE CASCADE
+), Error Msg = ORA-00942: 테이블 또는 뷰가 존재하지 않습니다
+
+!STACK 0
+Error : 942, Position : 370, Sql = CREATE TABLE tbl_forum (
+    forum_number NUMBER,
+    user_number NUMBER,
+    forum_category VARCHAR2(10) NOT NULL,
+    forum_title VARCHAR2(150) NOT NULL,
+    forum_date DATE,
+    forum_update DATE,
+    forum_content VARCHAR2(2000) NOT NULL,
+    CONSTRAINT pk_forum PRIMARY KEY (forum_number),
+    CONSTRAINT fk_forum_user FOREIGN KEY (user_number) REFERENCES tbl_user (user_number) ON DELETE CASCADE
+), OriginalSql = CREATE TABLE tbl_forum (
+    forum_number NUMBER,
+    user_number NUMBER,
+    forum_category VARCHAR2(10) NOT NULL,
+    forum_title VARCHAR2(150) NOT NULL,
+    forum_date DATE,
+    forum_update DATE,
+    forum_content VARCHAR2(2000) NOT NULL,
+    CONSTRAINT pk_forum PRIMARY KEY (forum_number),
+    CONSTRAINT fk_forum_user FOREIGN KEY (user_number) REFERENCES tbl_user (user_number) ON DELETE CASCADE
+), Error Msg = ORA-00942: 테이블 또는 뷰가 존재하지 않습니다
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:637)
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:564)
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1231)
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:772)
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:299)
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:512)
+	at oracle.jdbc.driver.T4CStatement.doOall8(T4CStatement.java:123)
+	at oracle.jdbc.driver.T4CStatement.executeForRows(T4CStatement.java:1200)
+	at oracle.jdbc.driver.OracleStatement.executeSQLStatement(OracleStatement.java:1820)
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1472)
+	at oracle.jdbc.driver.OracleStatement.executeInternal(OracleStatement.java:2505)
+	at oracle.jdbc.driver.OracleStatement.execute(OracleStatement.java:2460)
+	at oracle.jdbc.driver.OracleStatementWrapper.execute(OracleStatementWrapper.java:328)
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.execute(JDBCStatementImpl.java:344)
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.executeStatement(JDBCStatementImpl.java:128)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.executeStatement(SQLQueryJob.java:631)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.lambda$2(SQLQueryJob.java:522)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:192)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.executeSingleQuery(SQLQueryJob.java:541)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.extractData(SQLQueryJob.java:1016)
+	at org.jkiss.dbeaver.ui.editors.sql.SQLEditor$QueryResultsContainer.readData(SQLEditor.java:4273)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetJobDataRead.lambda$0(ResultSetJobDataRead.java:128)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:192)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetJobDataRead.run(ResultSetJobDataRead.java:126)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetViewer$ResultSetDataPumpJob.run(ResultSetViewer.java:5166)
+	at org.jkiss.dbeaver.model.runtime.AbstractJob.run(AbstractJob.java:119)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.jkiss.dbeaver.model 4 0 2025-01-17 10:46:12.840
+!MESSAGE SQL Error [942] [42000]: ORA-00942: 테이블 또는 뷰가 존재하지 않습니다
+
+!SUBENTRY 1 org.jkiss.dbeaver.model 4 0 2025-01-17 10:46:12.840
+!MESSAGE Error : 942, Position : 370, Sql = CREATE TABLE tbl_forum (
+    forum_number NUMBER,
+    user_number NUMBER,
+    forum_category VARCHAR2(10) NOT NULL,
+    forum_title VARCHAR2(150) NOT NULL,
+    forum_date DATE,
+    forum_update DATE,
+    forum_content VARCHAR2(2000) NOT NULL,
+    CONSTRAINT pk_forum PRIMARY KEY (forum_number),
+    CONSTRAINT fk_forum_user FOREIGN KEY (user_number) REFERENCES tbl_user (user_number) ON DELETE CASCADE
+), OriginalSql = CREATE TABLE tbl_forum (
+    forum_number NUMBER,
+    user_number NUMBER,
+    forum_category VARCHAR2(10) NOT NULL,
+    forum_title VARCHAR2(150) NOT NULL,
+    forum_date DATE,
+    forum_update DATE,
+    forum_content VARCHAR2(2000) NOT NULL,
+    CONSTRAINT pk_forum PRIMARY KEY (forum_number),
+    CONSTRAINT fk_forum_user FOREIGN KEY (user_number) REFERENCES tbl_user (user_number) ON DELETE CASCADE
+), Error Msg = ORA-00942: 테이블 또는 뷰가 존재하지 않습니다
+
+!STACK 0
+Error : 942, Position : 370, Sql = CREATE TABLE tbl_forum (
+    forum_number NUMBER,
+    user_number NUMBER,
+    forum_category VARCHAR2(10) NOT NULL,
+    forum_title VARCHAR2(150) NOT NULL,
+    forum_date DATE,
+    forum_update DATE,
+    forum_content VARCHAR2(2000) NOT NULL,
+    CONSTRAINT pk_forum PRIMARY KEY (forum_number),
+    CONSTRAINT fk_forum_user FOREIGN KEY (user_number) REFERENCES tbl_user (user_number) ON DELETE CASCADE
+), OriginalSql = CREATE TABLE tbl_forum (
+    forum_number NUMBER,
+    user_number NUMBER,
+    forum_category VARCHAR2(10) NOT NULL,
+    forum_title VARCHAR2(150) NOT NULL,
+    forum_date DATE,
+    forum_update DATE,
+    forum_content VARCHAR2(2000) NOT NULL,
+    CONSTRAINT pk_forum PRIMARY KEY (forum_number),
+    CONSTRAINT fk_forum_user FOREIGN KEY (user_number) REFERENCES tbl_user (user_number) ON DELETE CASCADE
+), Error Msg = ORA-00942: 테이블 또는 뷰가 존재하지 않습니다
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:637)
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:564)
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1231)
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:772)
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:299)
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:512)
+	at oracle.jdbc.driver.T4CStatement.doOall8(T4CStatement.java:123)
+	at oracle.jdbc.driver.T4CStatement.executeForRows(T4CStatement.java:1200)
+	at oracle.jdbc.driver.OracleStatement.executeSQLStatement(OracleStatement.java:1820)
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1472)
+	at oracle.jdbc.driver.OracleStatement.executeInternal(OracleStatement.java:2505)
+	at oracle.jdbc.driver.OracleStatement.execute(OracleStatement.java:2460)
+	at oracle.jdbc.driver.OracleStatementWrapper.execute(OracleStatementWrapper.java:328)
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.execute(JDBCStatementImpl.java:344)
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.executeStatement(JDBCStatementImpl.java:128)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.executeStatement(SQLQueryJob.java:631)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.lambda$2(SQLQueryJob.java:522)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:192)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.executeSingleQuery(SQLQueryJob.java:541)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.extractData(SQLQueryJob.java:1016)
+	at org.jkiss.dbeaver.ui.editors.sql.SQLEditor$QueryResultsContainer.readData(SQLEditor.java:4273)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetJobDataRead.lambda$0(ResultSetJobDataRead.java:128)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:192)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetJobDataRead.run(ResultSetJobDataRead.java:126)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetViewer$ResultSetDataPumpJob.run(ResultSetViewer.java:5166)
+	at org.jkiss.dbeaver.model.runtime.AbstractJob.run(AbstractJob.java:119)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.jkiss.dbeaver.model 4 0 2025-01-17 11:06:48.033
+!MESSAGE SQL Error [923] [42000]: ORA-00923: FROM 키워드가 필요한 위치에 없습니다.
+
+!SUBENTRY 1 org.jkiss.dbeaver.model 4 0 2025-01-17 11:06:48.033
+!MESSAGE Error : 923, Position : 9, Sql = SELECT * form tbl_manager, OriginalSql = SELECT * form tbl_manager, Error Msg = ORA-00923: FROM 키워드가 필요한 위치에 없습니다.
+
+!STACK 0
+Error : 923, Position : 9, Sql = SELECT * form tbl_manager, OriginalSql = SELECT * form tbl_manager, Error Msg = ORA-00923: FROM 키워드가 필요한 위치에 없습니다.
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:637)
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:564)
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1231)
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:772)
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:299)
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:512)
+	at oracle.jdbc.driver.T4CStatement.doOall8(T4CStatement.java:123)
+	at oracle.jdbc.driver.T4CStatement.executeForDescribe(T4CStatement.java:969)
+	at oracle.jdbc.driver.OracleStatement.prepareDefineBufferAndExecute(OracleStatement.java:1271)
+	at oracle.jdbc.driver.OracleStatement.executeMaybeDescribe(OracleStatement.java:1149)
+	at oracle.jdbc.driver.OracleStatement.executeSQLSelect(OracleStatement.java:1661)
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1470)
+	at oracle.jdbc.driver.OracleStatement.executeInternal(OracleStatement.java:2505)
+	at oracle.jdbc.driver.OracleStatement.execute(OracleStatement.java:2460)
+	at oracle.jdbc.driver.OracleStatementWrapper.execute(OracleStatementWrapper.java:328)
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.execute(JDBCStatementImpl.java:344)
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.executeStatement(JDBCStatementImpl.java:128)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.executeStatement(SQLQueryJob.java:631)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.lambda$2(SQLQueryJob.java:522)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:192)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.executeSingleQuery(SQLQueryJob.java:541)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.extractData(SQLQueryJob.java:1016)
+	at org.jkiss.dbeaver.ui.editors.sql.SQLEditor$QueryResultsContainer.readData(SQLEditor.java:4273)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetJobDataRead.lambda$0(ResultSetJobDataRead.java:128)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:192)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetJobDataRead.run(ResultSetJobDataRead.java:126)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetViewer$ResultSetDataPumpJob.run(ResultSetViewer.java:5166)
+	at org.jkiss.dbeaver.model.runtime.AbstractJob.run(AbstractJob.java:119)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.jkiss.dbeaver.model 4 0 2025-01-17 14:39:45.170
+!MESSAGE SQL Error [904] [42000]: ORA-00904: "MAMBER_ID": 부적합한 식별자
+
+!SUBENTRY 1 org.jkiss.dbeaver.model 4 0 2025-01-17 14:39:45.170
+!MESSAGE Error : 904, Position : 45, Sql = SELECT	member_name
+FROM 	tbl_member
+WHERE 	mamber_id = 'aaa' AND member_password = '1234', OriginalSql = SELECT	member_name
+FROM 	tbl_member
+WHERE 	mamber_id = 'aaa' AND member_password = '1234', Error Msg = ORA-00904: "MAMBER_ID": 부적합한 식별자
+
+!STACK 0
+Error : 904, Position : 45, Sql = SELECT	member_name
+FROM 	tbl_member
+WHERE 	mamber_id = 'aaa' AND member_password = '1234', OriginalSql = SELECT	member_name
+FROM 	tbl_member
+WHERE 	mamber_id = 'aaa' AND member_password = '1234', Error Msg = ORA-00904: "MAMBER_ID": 부적합한 식별자
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:637)
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:564)
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1231)
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:772)
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:299)
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:512)
+	at oracle.jdbc.driver.T4CStatement.doOall8(T4CStatement.java:123)
+	at oracle.jdbc.driver.T4CStatement.executeForDescribe(T4CStatement.java:969)
+	at oracle.jdbc.driver.OracleStatement.prepareDefineBufferAndExecute(OracleStatement.java:1271)
+	at oracle.jdbc.driver.OracleStatement.executeMaybeDescribe(OracleStatement.java:1149)
+	at oracle.jdbc.driver.OracleStatement.executeSQLSelect(OracleStatement.java:1661)
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1470)
+	at oracle.jdbc.driver.OracleStatement.executeInternal(OracleStatement.java:2505)
+	at oracle.jdbc.driver.OracleStatement.execute(OracleStatement.java:2460)
+	at oracle.jdbc.driver.OracleStatementWrapper.execute(OracleStatementWrapper.java:328)
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.execute(JDBCStatementImpl.java:344)
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.executeStatement(JDBCStatementImpl.java:128)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.executeStatement(SQLQueryJob.java:631)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.lambda$2(SQLQueryJob.java:522)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:192)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.executeSingleQuery(SQLQueryJob.java:541)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.extractData(SQLQueryJob.java:1016)
+	at org.jkiss.dbeaver.ui.editors.sql.SQLEditor$QueryResultsContainer.readData(SQLEditor.java:4273)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetJobDataRead.lambda$0(ResultSetJobDataRead.java:128)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:192)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetJobDataRead.run(ResultSetJobDataRead.java:126)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetViewer$ResultSetDataPumpJob.run(ResultSetViewer.java:5166)
+	at org.jkiss.dbeaver.model.runtime.AbstractJob.run(AbstractJob.java:119)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.jkiss.dbeaver.model 4 0 2025-01-17 14:39:51.649
+!MESSAGE SQL Error [936] [42000]: ORA-00936: 누락된 표현식
+
+!SUBENTRY 1 org.jkiss.dbeaver.model 4 0 2025-01-17 14:39:51.649
+!MESSAGE Error : 936, Position : 33, Sql = SELECT * FROM tbl_member WHERE 
+ORDER BY member_number, OriginalSql = SELECT * FROM tbl_member WHERE 
+ORDER BY member_number, Error Msg = ORA-00936: 누락된 표현식
+
+!STACK 0
+Error : 936, Position : 33, Sql = SELECT * FROM tbl_member WHERE 
+ORDER BY member_number, OriginalSql = SELECT * FROM tbl_member WHERE 
+ORDER BY member_number, Error Msg = ORA-00936: 누락된 표현식
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:637)
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:564)
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1231)
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:772)
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:299)
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:512)
+	at oracle.jdbc.driver.T4CStatement.doOall8(T4CStatement.java:123)
+	at oracle.jdbc.driver.T4CStatement.executeForDescribe(T4CStatement.java:969)
+	at oracle.jdbc.driver.OracleStatement.prepareDefineBufferAndExecute(OracleStatement.java:1271)
+	at oracle.jdbc.driver.OracleStatement.executeMaybeDescribe(OracleStatement.java:1149)
+	at oracle.jdbc.driver.OracleStatement.executeSQLSelect(OracleStatement.java:1661)
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1470)
+	at oracle.jdbc.driver.OracleStatement.executeInternal(OracleStatement.java:2505)
+	at oracle.jdbc.driver.OracleStatement.execute(OracleStatement.java:2460)
+	at oracle.jdbc.driver.OracleStatementWrapper.execute(OracleStatementWrapper.java:328)
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.execute(JDBCStatementImpl.java:344)
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.executeStatement(JDBCStatementImpl.java:128)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.executeStatement(SQLQueryJob.java:631)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.lambda$2(SQLQueryJob.java:522)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:192)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.executeSingleQuery(SQLQueryJob.java:541)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.extractData(SQLQueryJob.java:1016)
+	at org.jkiss.dbeaver.ui.editors.sql.SQLEditor$QueryResultsContainer.readData(SQLEditor.java:4273)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetJobDataRead.lambda$0(ResultSetJobDataRead.java:128)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:192)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetJobDataRead.run(ResultSetJobDataRead.java:126)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetViewer$ResultSetDataPumpJob.run(ResultSetViewer.java:5166)
+	at org.jkiss.dbeaver.model.runtime.AbstractJob.run(AbstractJob.java:119)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.jkiss.dbeaver.model 4 0 2025-01-17 14:39:54.009
+!MESSAGE SQL Error [936] [42000]: ORA-00936: 누락된 표현식
+
+!SUBENTRY 1 org.jkiss.dbeaver.model 4 0 2025-01-17 14:39:54.009
+!MESSAGE Error : 936, Position : 33, Sql = SELECT * FROM tbl_member WHERE 
+ORDER BY member_number, OriginalSql = SELECT * FROM tbl_member WHERE 
+ORDER BY member_number, Error Msg = ORA-00936: 누락된 표현식
+
+!STACK 0
+Error : 936, Position : 33, Sql = SELECT * FROM tbl_member WHERE 
+ORDER BY member_number, OriginalSql = SELECT * FROM tbl_member WHERE 
+ORDER BY member_number, Error Msg = ORA-00936: 누락된 표현식
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:637)
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:564)
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1231)
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:772)
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:299)
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:512)
+	at oracle.jdbc.driver.T4CStatement.doOall8(T4CStatement.java:123)
+	at oracle.jdbc.driver.T4CStatement.executeForDescribe(T4CStatement.java:969)
+	at oracle.jdbc.driver.OracleStatement.prepareDefineBufferAndExecute(OracleStatement.java:1271)
+	at oracle.jdbc.driver.OracleStatement.executeMaybeDescribe(OracleStatement.java:1149)
+	at oracle.jdbc.driver.OracleStatement.executeSQLSelect(OracleStatement.java:1661)
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1470)
+	at oracle.jdbc.driver.OracleStatement.executeInternal(OracleStatement.java:2505)
+	at oracle.jdbc.driver.OracleStatement.execute(OracleStatement.java:2460)
+	at oracle.jdbc.driver.OracleStatementWrapper.execute(OracleStatementWrapper.java:328)
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.execute(JDBCStatementImpl.java:344)
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.executeStatement(JDBCStatementImpl.java:128)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.executeStatement(SQLQueryJob.java:631)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.lambda$2(SQLQueryJob.java:522)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:192)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.executeSingleQuery(SQLQueryJob.java:541)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.extractData(SQLQueryJob.java:1016)
+	at org.jkiss.dbeaver.ui.editors.sql.SQLEditor$QueryResultsContainer.readData(SQLEditor.java:4273)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetJobDataRead.lambda$0(ResultSetJobDataRead.java:128)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:192)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetJobDataRead.run(ResultSetJobDataRead.java:126)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetViewer$ResultSetDataPumpJob.run(ResultSetViewer.java:5166)
+	at org.jkiss.dbeaver.model.runtime.AbstractJob.run(AbstractJob.java:119)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.jkiss.dbeaver.model 4 0 2025-01-17 14:40:12.046
+!MESSAGE SQL Error [904] [42000]: ORA-00904: "MAMBER_ID": 부적합한 식별자
+
+
+Error position: line: 21 pos: 45
+!SUBENTRY 1 org.jkiss.dbeaver.model 4 0 2025-01-17 14:40:12.046
+!MESSAGE SQL Error [904] [42000]: ORA-00904: "MAMBER_ID": 부적합한 식별자
+
+!SUBENTRY 2 org.jkiss.dbeaver.model 4 0 2025-01-17 14:40:12.046
+!MESSAGE Error : 904, Position : 45, Sql = SELECT	member_name
+FROM 	tbl_member
+WHERE 	mamber_id = 'aaa' AND member_password = '1234', OriginalSql = SELECT	member_name
+FROM 	tbl_member
+WHERE 	mamber_id = 'aaa' AND member_password = '1234', Error Msg = ORA-00904: "MAMBER_ID": 부적합한 식별자
+
+!STACK 0
+Error : 904, Position : 45, Sql = SELECT	member_name
+FROM 	tbl_member
+WHERE 	mamber_id = 'aaa' AND member_password = '1234', OriginalSql = SELECT	member_name
+FROM 	tbl_member
+WHERE 	mamber_id = 'aaa' AND member_password = '1234', Error Msg = ORA-00904: "MAMBER_ID": 부적합한 식별자
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:637)
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:564)
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1231)
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:772)
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:299)
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:512)
+	at oracle.jdbc.driver.T4CStatement.doOall8(T4CStatement.java:123)
+	at oracle.jdbc.driver.T4CStatement.executeForDescribe(T4CStatement.java:969)
+	at oracle.jdbc.driver.OracleStatement.prepareDefineBufferAndExecute(OracleStatement.java:1271)
+	at oracle.jdbc.driver.OracleStatement.executeMaybeDescribe(OracleStatement.java:1149)
+	at oracle.jdbc.driver.OracleStatement.executeSQLSelect(OracleStatement.java:1661)
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1470)
+	at oracle.jdbc.driver.OracleStatement.executeInternal(OracleStatement.java:2505)
+	at oracle.jdbc.driver.OracleStatement.execute(OracleStatement.java:2460)
+	at oracle.jdbc.driver.OracleStatementWrapper.execute(OracleStatementWrapper.java:328)
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.execute(JDBCStatementImpl.java:344)
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.executeStatement(JDBCStatementImpl.java:128)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.executeStatement(SQLQueryJob.java:631)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.lambda$2(SQLQueryJob.java:522)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:192)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.executeSingleQuery(SQLQueryJob.java:541)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.extractData(SQLQueryJob.java:1016)
+	at org.jkiss.dbeaver.ui.editors.sql.SQLEditor$QueryResultsContainer.readData(SQLEditor.java:4273)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetJobDataRead.lambda$0(ResultSetJobDataRead.java:128)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:192)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetJobDataRead.run(ResultSetJobDataRead.java:126)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetViewer$ResultSetDataPumpJob.run(ResultSetViewer.java:5166)
+	at org.jkiss.dbeaver.model.runtime.AbstractJob.run(AbstractJob.java:119)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.jkiss.dbeaver.model 2 0 2025-01-17 18:30:20.499
+!MESSAGE Some data source listeners are still registered: org.jkiss.dbeaver.model.navigator.DBNProjectDatabases:node://jsp02/datasources

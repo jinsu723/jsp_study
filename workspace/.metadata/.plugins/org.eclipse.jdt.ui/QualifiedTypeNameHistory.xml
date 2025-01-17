@@ -2,4 +2,5 @@
 <qualifiedTypeNameHistroy>
     <fullyQualifiedTypeName name="java.lang.System"/>
     <fullyQualifiedTypeName name="com.mybatis.config.MyBatisConfig"/>
+    <fullyQualifiedTypeName name="com.example.app.Result"/>
 </qualifiedTypeNameHistroy>

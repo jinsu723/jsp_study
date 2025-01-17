@@ -1,0 +1,44 @@
+package com.example.app.member;
+
+import java.io.IOException;
+
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import com.example.app.Execute;
+import com.example.app.Result;
+import com.example.app.dto.MemberDTO;
+import com.example.app.member.dao.MemberDAO;
+
+public class LoginOkController implements Execute{
+
+	@Override
+	public Result execute(HttpServletRequest request, HttpServletResponse response)
+			throws ServletException, IOException {
+		MemberDTO memberDTO = new MemberDTO();
+		MemberDAO memberDAO = new MemberDAO();
+		Result result = new Result();
+		
+		memberDTO.setMemberId(request.getParameter("memberId"));
+		memberDTO.setMemberPassword(request.getParameter("memberPassword"));
+		
+		System.out.println(memberDTO.getMemberId());
+		System.out.println(memberDTO.getMemberPassword());
+		
+		System.out.println(memberDAO.login(memberDTO));
+		
+		if(memberDAO.login(memberDTO) != null) {
+			System.out.println("환영");
+			request.setAttribute("message", memberDAO.login(memberDTO) + "님 환영합니다");
+			result.setRedirect(true);
+			result.setPath("{pageContext.request.contextPath}/main.jsp");
+		} else {
+			result.setRedirect(false);
+			result.setPath(request.getContextPath());
+		}
+		
+		return result;
+	}
+	
+}

@@ -1,0 +1,8 @@
+package com.example.app.memberDAO;
+
+import org.apache.ibatis.session.SqlSession;
+
+public class MemberDAO {
+	public SqlSession sqlSession;
+	
+}
