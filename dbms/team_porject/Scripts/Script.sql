@@ -75,13 +75,13 @@ CREATE TABLE tbl_ben (
 CREATE SEQUENCE seq_ben START WITH 1 INCREMENT BY 1 nocache nocycle;
 
 
-CREATE TABLE tbl_manager (
-    manager_number NUMBER,
-    manager_id VARCHAR2(20) NOT NULL,
-    manager_passwd VARCHAR2(20) NOT NULL,
-    CONSTRAINT pk_manager PRIMARY KEY (manager_number)
+CREATE TABLE tbl_admin (
+    admin_number NUMBER,
+    admin_id VARCHAR2(20) NOT NULL,
+    admin_passwd VARCHAR2(20) NOT NULL,
+    CONSTRAINT pk_admin PRIMARY KEY (admin_number)
 );
-CREATE SEQUENCE seq_manager START WITH 1 INCREMENT BY 1 nocache nocycle;
+CREATE SEQUENCE seq_admin START WITH 1 INCREMENT BY 1 nocache nocycle;
 
 SELECT * FROM tbl_user;
 SELECT * FROM tbl_forum;
@@ -151,5 +151,8 @@ INSERT INTO tbl_ben (ben_number, user_num, ben_start_date, ben_period, ben_reaso
 VALUES (seq_ben.NEXTVAL, 1, SYSDATE, 7, '선정적인 게시물');
 
 
-INSERT INTO tbl_manager (manager_number, manager_id, manager_passwd)
-VALUES (seq_manager.NEXTVAL, 'admin', 'admin123');
+INSERT INTO tbl_admin (admin_number, admin_id, admin_passwd)
+VALUES (seq_admin.NEXTVAL, 'admin', 'admin123');
+
+SELECT * FROM tbl_admin;
+SELECT * FROM tbl_user;

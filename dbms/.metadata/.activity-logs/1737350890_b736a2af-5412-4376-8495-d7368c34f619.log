@@ -1,0 +1,33 @@
+1120:APP_OPEN:startTime=1737350884621
+2544:GENERAL_SHOW_PERSPECTIVE:perspective=org.jkiss.dbeaver.core.perspective
+2544:GENERAL_VIEW_OPEN:view=org.jkiss.dbeaver.core.projectNavigator
+2544:GENERAL_VIEW_OPEN:view=org.jkiss.dbeaver.core.projectExplorer
+2865:Open connection:origin=local&driver=oracle:oracle_thin
+3005:SQL_EDITOR_OPEN:driver=oracle:oracle_thin
+26897:Test connection:driver=oracle:oracle_thin
+208249:Test connection:driver=oracle:oracle_thin
+215796:Create connection:driver=oracle:oracle_thin
+220067:Delete connection:driver=oracle:oracle_thin
+242121:Test connection:driver=oracle:oracle_thin
+336714:Create connection:driver=oracle:oracle_thin
+344801:SQL_SCRIPT_NEW
+344950:Open connection:origin=local&driver=oracle:oracle_thin
+344962:SQL_EDITOR_OPEN:driver=oracle:oracle_thin
+370964:SQL_EDITOR_EXECUTE_QUERY
+386732:SQL_EDITOR_EXECUTE_SCRIPT
+426909:ENTITY_EDITOR_OPEN:className=OracleSchema&driver=oracle:oracle_thin
+444997:ENTITY_EDITOR_OPEN:className=OracleSequence&driver=oracle:oracle_thin
+456892:SQL_EDITOR_EXECUTE_SCRIPT
+468100:SQL_EDITOR_EXECUTE_SCRIPT
+495785:SQL_EDITOR_EXECUTE_QUERY
+496393:SQL_EDITOR_EXECUTE_QUERY
+497017:SQL_EDITOR_EXECUTE_QUERY
+497521:SQL_EDITOR_EXECUTE_QUERY
+498025:SQL_EDITOR_EXECUTE_QUERY
+498673:SQL_EDITOR_EXECUTE_QUERY
+499217:SQL_EDITOR_EXECUTE_QUERY
+2679297:SQL_EDITOR_EXECUTE_QUERY
+2680009:SQL_EDITOR_EXECUTE_QUERY
+2680177:SQL_EDITOR_EXECUTE_QUERY
+2680329:SQL_EDITOR_EXECUTE_QUERY
+2680473:SQL_EDITOR_EXECUTE_QUERY

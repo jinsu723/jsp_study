@@ -3194,3 +3194,1175 @@ WHERE 	mamber_id = 'aaa' AND member_password = '1234', Error Msg = ORA-00904: "M
 
 !ENTRY org.jkiss.dbeaver.model 2 0 2025-01-17 18:30:20.499
 !MESSAGE Some data source listeners are still registered: org.jkiss.dbeaver.model.navigator.DBNProjectDatabases:node://jsp02/datasources
+!SESSION 2025-01-20 08:58:47.521 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=17.0.6
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ko_KR
+Framework arguments:  -eclipse.keyring C:\Users\Administrator\AppData\Roaming\DBeaverData\secure\secure_storage
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY org.eclipse.ui 2 2 2025-01-20 08:58:51.469
+!MESSAGE Invalid preference category path: org.eclipse.debug.ui.ConsolePreferencePage (bundle: org.eclipse.ui.console, page: org.eclipse.ui.internal.console.ansi.preferences.AnsiConsolePreferencePage)
+
+!ENTRY org.jkiss.dbeaver.model 4 0 2025-01-20 13:02:05.786
+!MESSAGE SQL Error [955] [42000]: ORA-00955: 기존의 객체가 이름을 사용하고 있습니다.
+
+
+Error position: line: 3 pos: 13
+!SUBENTRY 1 org.jkiss.dbeaver.model 4 0 2025-01-20 13:02:05.786
+!MESSAGE SQL Error [955] [42000]: ORA-00955: 기존의 객체가 이름을 사용하고 있습니다.
+
+!SUBENTRY 2 org.jkiss.dbeaver.model 4 0 2025-01-20 13:02:05.786
+!MESSAGE Error : 955, Position : 13, Sql = CREATE TABLE tbl_member(
+   member_number NUMBER,
+   member_id varchar2(300),
+   member_password varchar2(300),
+   member_name varchar2(300),
+   member_phone_number varchar2(300),
+   member_age NUMBER(3),
+   member_gender char(1),
+   CONSTRAINT pk_member PRIMARY KEY(member_number)
+), OriginalSql = CREATE TABLE tbl_member(
+   member_number NUMBER,
+   member_id varchar2(300),
+   member_password varchar2(300),
+   member_name varchar2(300),
+   member_phone_number varchar2(300),
+   member_age NUMBER(3),
+   member_gender char(1),
+   CONSTRAINT pk_member PRIMARY KEY(member_number)
+), Error Msg = ORA-00955: 기존의 객체가 이름을 사용하고 있습니다.
+
+!STACK 0
+Error : 955, Position : 13, Sql = CREATE TABLE tbl_member(
+   member_number NUMBER,
+   member_id varchar2(300),
+   member_password varchar2(300),
+   member_name varchar2(300),
+   member_phone_number varchar2(300),
+   member_age NUMBER(3),
+   member_gender char(1),
+   CONSTRAINT pk_member PRIMARY KEY(member_number)
+), OriginalSql = CREATE TABLE tbl_member(
+   member_number NUMBER,
+   member_id varchar2(300),
+   member_password varchar2(300),
+   member_name varchar2(300),
+   member_phone_number varchar2(300),
+   member_age NUMBER(3),
+   member_gender char(1),
+   CONSTRAINT pk_member PRIMARY KEY(member_number)
+), Error Msg = ORA-00955: 기존의 객체가 이름을 사용하고 있습니다.
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:637)
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:564)
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1231)
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:772)
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:299)
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:512)
+	at oracle.jdbc.driver.T4CStatement.doOall8(T4CStatement.java:123)
+	at oracle.jdbc.driver.T4CStatement.executeForRows(T4CStatement.java:1200)
+	at oracle.jdbc.driver.OracleStatement.executeSQLStatement(OracleStatement.java:1820)
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1472)
+	at oracle.jdbc.driver.OracleStatement.executeInternal(OracleStatement.java:2505)
+	at oracle.jdbc.driver.OracleStatement.execute(OracleStatement.java:2460)
+	at oracle.jdbc.driver.OracleStatementWrapper.execute(OracleStatementWrapper.java:328)
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.execute(JDBCStatementImpl.java:344)
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.executeStatement(JDBCStatementImpl.java:128)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.executeStatement(SQLQueryJob.java:631)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.lambda$2(SQLQueryJob.java:522)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:192)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.executeSingleQuery(SQLQueryJob.java:541)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.extractData(SQLQueryJob.java:1016)
+	at org.jkiss.dbeaver.ui.editors.sql.SQLEditor$QueryResultsContainer.readData(SQLEditor.java:4273)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetJobDataRead.lambda$0(ResultSetJobDataRead.java:128)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:192)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetJobDataRead.run(ResultSetJobDataRead.java:126)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetViewer$ResultSetDataPumpJob.run(ResultSetViewer.java:5166)
+	at org.jkiss.dbeaver.model.runtime.AbstractJob.run(AbstractJob.java:119)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.jkiss.dbeaver.model 4 0 2025-01-20 13:02:19.284
+!MESSAGE SQL Error [955] [42000]: ORA-00955: 기존의 객체가 이름을 사용하고 있습니다.
+
+!SUBENTRY 1 org.jkiss.dbeaver.model 4 0 2025-01-20 13:02:19.284
+!MESSAGE Error : 955, Position : 13, Sql = CREATE TABLE tbl_member(
+   member_number NUMBER,
+   member_id varchar2(300),
+   member_password varchar2(300),
+   member_name varchar2(300),
+   member_phone_number varchar2(300),
+   member_age NUMBER(3),
+   member_gender char(1),
+   CONSTRAINT pk_member PRIMARY KEY(member_number)
+), OriginalSql = CREATE TABLE tbl_member(
+   member_number NUMBER,
+   member_id varchar2(300),
+   member_password varchar2(300),
+   member_name varchar2(300),
+   member_phone_number varchar2(300),
+   member_age NUMBER(3),
+   member_gender char(1),
+   CONSTRAINT pk_member PRIMARY KEY(member_number)
+), Error Msg = ORA-00955: 기존의 객체가 이름을 사용하고 있습니다.
+
+!STACK 0
+Error : 955, Position : 13, Sql = CREATE TABLE tbl_member(
+   member_number NUMBER,
+   member_id varchar2(300),
+   member_password varchar2(300),
+   member_name varchar2(300),
+   member_phone_number varchar2(300),
+   member_age NUMBER(3),
+   member_gender char(1),
+   CONSTRAINT pk_member PRIMARY KEY(member_number)
+), OriginalSql = CREATE TABLE tbl_member(
+   member_number NUMBER,
+   member_id varchar2(300),
+   member_password varchar2(300),
+   member_name varchar2(300),
+   member_phone_number varchar2(300),
+   member_age NUMBER(3),
+   member_gender char(1),
+   CONSTRAINT pk_member PRIMARY KEY(member_number)
+), Error Msg = ORA-00955: 기존의 객체가 이름을 사용하고 있습니다.
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:637)
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:564)
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1231)
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:772)
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:299)
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:512)
+	at oracle.jdbc.driver.T4CStatement.doOall8(T4CStatement.java:123)
+	at oracle.jdbc.driver.T4CStatement.executeForRows(T4CStatement.java:1200)
+	at oracle.jdbc.driver.OracleStatement.executeSQLStatement(OracleStatement.java:1820)
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1472)
+	at oracle.jdbc.driver.OracleStatement.executeInternal(OracleStatement.java:2505)
+	at oracle.jdbc.driver.OracleStatement.execute(OracleStatement.java:2460)
+	at oracle.jdbc.driver.OracleStatementWrapper.execute(OracleStatementWrapper.java:328)
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.execute(JDBCStatementImpl.java:344)
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.executeStatement(JDBCStatementImpl.java:128)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.executeStatement(SQLQueryJob.java:631)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.lambda$2(SQLQueryJob.java:522)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:192)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.executeSingleQuery(SQLQueryJob.java:541)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.extractData(SQLQueryJob.java:1016)
+	at org.jkiss.dbeaver.ui.editors.sql.SQLEditor$QueryResultsContainer.readData(SQLEditor.java:4273)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetJobDataRead.lambda$0(ResultSetJobDataRead.java:128)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:192)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetJobDataRead.run(ResultSetJobDataRead.java:126)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetViewer$ResultSetDataPumpJob.run(ResultSetViewer.java:5166)
+	at org.jkiss.dbeaver.model.runtime.AbstractJob.run(AbstractJob.java:119)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.jkiss.dbeaver.model 4 0 2025-01-20 13:02:43.205
+!MESSAGE SQL Error [2289] [42000]: ORA-02289: 시퀀스가 존재하지 않습니다.
+
+!SUBENTRY 1 org.jkiss.dbeaver.model 4 0 2025-01-20 13:02:43.205
+!MESSAGE Error : 2289, Position : 31, Sql = INSERT INTO tbl_member
+values(seq_member.nextVal, 'abc11', 'qwer1234!', '짱구', '01012345678', 5, 'm'), OriginalSql = INSERT INTO tbl_member
+values(seq_member.nextVal, 'abc11', 'qwer1234!', '짱구', '01012345678', 5, 'm'), Error Msg = ORA-02289: 시퀀스가 존재하지 않습니다.
+
+!STACK 0
+Error : 2289, Position : 31, Sql = INSERT INTO tbl_member
+values(seq_member.nextVal, 'abc11', 'qwer1234!', '짱구', '01012345678', 5, 'm'), OriginalSql = INSERT INTO tbl_member
+values(seq_member.nextVal, 'abc11', 'qwer1234!', '짱구', '01012345678', 5, 'm'), Error Msg = ORA-02289: 시퀀스가 존재하지 않습니다.
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:637)
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:564)
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1231)
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:772)
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:299)
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:512)
+	at oracle.jdbc.driver.T4CStatement.doOall8(T4CStatement.java:123)
+	at oracle.jdbc.driver.T4CStatement.executeForRows(T4CStatement.java:1200)
+	at oracle.jdbc.driver.OracleStatement.executeSQLStatement(OracleStatement.java:1820)
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1472)
+	at oracle.jdbc.driver.OracleStatement.executeInternal(OracleStatement.java:2505)
+	at oracle.jdbc.driver.OracleStatement.execute(OracleStatement.java:2460)
+	at oracle.jdbc.driver.OracleStatementWrapper.execute(OracleStatementWrapper.java:328)
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.execute(JDBCStatementImpl.java:344)
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.executeStatement(JDBCStatementImpl.java:128)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.executeStatement(SQLQueryJob.java:631)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.lambda$2(SQLQueryJob.java:522)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.executeSingleQuery(SQLQueryJob.java:544)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.extractData(SQLQueryJob.java:1016)
+	at org.jkiss.dbeaver.ui.editors.sql.SQLEditor$QueryResultsContainer.readData(SQLEditor.java:4273)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetJobDataRead.lambda$0(ResultSetJobDataRead.java:128)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:192)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetJobDataRead.run(ResultSetJobDataRead.java:126)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetViewer$ResultSetDataPumpJob.run(ResultSetViewer.java:5166)
+	at org.jkiss.dbeaver.model.runtime.AbstractJob.run(AbstractJob.java:119)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.jkiss.dbeaver.model 4 0 2025-01-20 13:02:45.119
+!MESSAGE SQL Error [2289] [42000]: ORA-02289: 시퀀스가 존재하지 않습니다.
+
+!SUBENTRY 1 org.jkiss.dbeaver.model 4 0 2025-01-20 13:02:45.119
+!MESSAGE Error : 2289, Position : 14, Sql = DROP SEQUENCE SEQ_MEMBER, OriginalSql = DROP SEQUENCE SEQ_MEMBER, Error Msg = ORA-02289: 시퀀스가 존재하지 않습니다.
+
+!STACK 0
+Error : 2289, Position : 14, Sql = DROP SEQUENCE SEQ_MEMBER, OriginalSql = DROP SEQUENCE SEQ_MEMBER, Error Msg = ORA-02289: 시퀀스가 존재하지 않습니다.
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:637)
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:564)
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1231)
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:772)
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:299)
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:512)
+	at oracle.jdbc.driver.T4CStatement.doOall8(T4CStatement.java:123)
+	at oracle.jdbc.driver.T4CStatement.executeForRows(T4CStatement.java:1200)
+	at oracle.jdbc.driver.OracleStatement.executeSQLStatement(OracleStatement.java:1820)
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1472)
+	at oracle.jdbc.driver.OracleStatement.executeInternal(OracleStatement.java:2505)
+	at oracle.jdbc.driver.OracleStatement.execute(OracleStatement.java:2460)
+	at oracle.jdbc.driver.OracleStatementWrapper.execute(OracleStatementWrapper.java:328)
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.execute(JDBCStatementImpl.java:344)
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.executeStatement(JDBCStatementImpl.java:128)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.executeStatement(SQLQueryJob.java:631)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.lambda$2(SQLQueryJob.java:522)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:192)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.executeSingleQuery(SQLQueryJob.java:541)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.extractData(SQLQueryJob.java:1016)
+	at org.jkiss.dbeaver.ui.editors.sql.SQLEditor$QueryResultsContainer.readData(SQLEditor.java:4273)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetJobDataRead.lambda$0(ResultSetJobDataRead.java:128)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:192)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetJobDataRead.run(ResultSetJobDataRead.java:126)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetViewer$ResultSetDataPumpJob.run(ResultSetViewer.java:5166)
+	at org.jkiss.dbeaver.model.runtime.AbstractJob.run(AbstractJob.java:119)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.jkiss.dbeaver.model 4 0 2025-01-20 13:03:28.486
+!MESSAGE SQL Error [900] [42000]: ORA-00900: SQL 문이 부적합합니다
+
+!SUBENTRY 1 org.jkiss.dbeaver.model 4 0 2025-01-20 13:03:28.486
+!MESSAGE Error : 900, Position : 0, Sql = //테스트 데이터 만들기
+insert into tbl_board(board_title, board_content, member_number)
+(select board_title, board_content, member_number from tbl_board), OriginalSql = //테스트 데이터 만들기
+insert into tbl_board(board_title, board_content, member_number)
+(select board_title, board_content, member_number from tbl_board), Error Msg = ORA-00900: SQL 문이 부적합합니다
+
+!STACK 0
+Error : 900, Position : 0, Sql = //테스트 데이터 만들기
+insert into tbl_board(board_title, board_content, member_number)
+(select board_title, board_content, member_number from tbl_board), OriginalSql = //테스트 데이터 만들기
+insert into tbl_board(board_title, board_content, member_number)
+(select board_title, board_content, member_number from tbl_board), Error Msg = ORA-00900: SQL 문이 부적합합니다
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:637)
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:564)
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1231)
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:772)
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:299)
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:512)
+	at oracle.jdbc.driver.T4CStatement.doOall8(T4CStatement.java:123)
+	at oracle.jdbc.driver.T4CStatement.executeForRows(T4CStatement.java:1200)
+	at oracle.jdbc.driver.OracleStatement.executeSQLStatement(OracleStatement.java:1820)
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1472)
+	at oracle.jdbc.driver.OracleStatement.executeInternal(OracleStatement.java:2505)
+	at oracle.jdbc.driver.OracleStatement.execute(OracleStatement.java:2460)
+	at oracle.jdbc.driver.OracleStatementWrapper.execute(OracleStatementWrapper.java:328)
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.execute(JDBCStatementImpl.java:344)
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.executeStatement(JDBCStatementImpl.java:128)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.executeStatement(SQLQueryJob.java:631)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.lambda$2(SQLQueryJob.java:522)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.executeSingleQuery(SQLQueryJob.java:544)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.extractData(SQLQueryJob.java:1016)
+	at org.jkiss.dbeaver.ui.editors.sql.SQLEditor$QueryResultsContainer.readData(SQLEditor.java:4273)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetJobDataRead.lambda$0(ResultSetJobDataRead.java:128)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:192)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetJobDataRead.run(ResultSetJobDataRead.java:126)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetViewer$ResultSetDataPumpJob.run(ResultSetViewer.java:5166)
+	at org.jkiss.dbeaver.model.runtime.AbstractJob.run(AbstractJob.java:119)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.jkiss.dbeaver.model 4 0 2025-01-20 13:03:44.074
+!MESSAGE SQL Error [955] [42000]: ORA-00955: 기존의 객체가 이름을 사용하고 있습니다.
+
+!SUBENTRY 1 org.jkiss.dbeaver.model 4 0 2025-01-20 13:03:44.074
+!MESSAGE Error : 955, Position : 13, Sql = CREATE TABLE tbl_file(
+    -- 서버에 저장되는 실제 파일 명
+    file_system_name VARCHAR2(300),
+    -- 원본 파일 명
+    file_original_name VARCHAR2(300),
+    -- 게시판 번호 (FK로 참조)
+    board_number NUMBER,
+    CONSTRAINT pk_file PRIMARY KEY(file_system_name),
+    -- 외래 키 제약 조건
+    CONSTRAINT fk_file FOREIGN KEY (board_number) REFERENCES tbl_board (board_number)
+), OriginalSql = CREATE TABLE tbl_file(
+    -- 서버에 저장되는 실제 파일 명
+    file_system_name VARCHAR2(300),
+    -- 원본 파일 명
+    file_original_name VARCHAR2(300),
+    -- 게시판 번호 (FK로 참조)
+    board_number NUMBER,
+    CONSTRAINT pk_file PRIMARY KEY(file_system_name),
+    -- 외래 키 제약 조건
+    CONSTRAINT fk_file FOREIGN KEY (board_number) REFERENCES tbl_board (board_number)
+), Error Msg = ORA-00955: 기존의 객체가 이름을 사용하고 있습니다.
+
+!STACK 0
+Error : 955, Position : 13, Sql = CREATE TABLE tbl_file(
+    -- 서버에 저장되는 실제 파일 명
+    file_system_name VARCHAR2(300),
+    -- 원본 파일 명
+    file_original_name VARCHAR2(300),
+    -- 게시판 번호 (FK로 참조)
+    board_number NUMBER,
+    CONSTRAINT pk_file PRIMARY KEY(file_system_name),
+    -- 외래 키 제약 조건
+    CONSTRAINT fk_file FOREIGN KEY (board_number) REFERENCES tbl_board (board_number)
+), OriginalSql = CREATE TABLE tbl_file(
+    -- 서버에 저장되는 실제 파일 명
+    file_system_name VARCHAR2(300),
+    -- 원본 파일 명
+    file_original_name VARCHAR2(300),
+    -- 게시판 번호 (FK로 참조)
+    board_number NUMBER,
+    CONSTRAINT pk_file PRIMARY KEY(file_system_name),
+    -- 외래 키 제약 조건
+    CONSTRAINT fk_file FOREIGN KEY (board_number) REFERENCES tbl_board (board_number)
+), Error Msg = ORA-00955: 기존의 객체가 이름을 사용하고 있습니다.
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:637)
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:564)
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1231)
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:772)
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:299)
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:512)
+	at oracle.jdbc.driver.T4CStatement.doOall8(T4CStatement.java:123)
+	at oracle.jdbc.driver.T4CStatement.executeForRows(T4CStatement.java:1200)
+	at oracle.jdbc.driver.OracleStatement.executeSQLStatement(OracleStatement.java:1820)
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1472)
+	at oracle.jdbc.driver.OracleStatement.executeInternal(OracleStatement.java:2505)
+	at oracle.jdbc.driver.OracleStatement.execute(OracleStatement.java:2460)
+	at oracle.jdbc.driver.OracleStatementWrapper.execute(OracleStatementWrapper.java:328)
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.execute(JDBCStatementImpl.java:344)
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.executeStatement(JDBCStatementImpl.java:128)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.executeStatement(SQLQueryJob.java:631)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.lambda$2(SQLQueryJob.java:522)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:192)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.executeSingleQuery(SQLQueryJob.java:541)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.extractData(SQLQueryJob.java:1016)
+	at org.jkiss.dbeaver.ui.editors.sql.SQLEditor$QueryResultsContainer.readData(SQLEditor.java:4273)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetJobDataRead.lambda$0(ResultSetJobDataRead.java:128)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:192)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetJobDataRead.run(ResultSetJobDataRead.java:126)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetViewer$ResultSetDataPumpJob.run(ResultSetViewer.java:5166)
+	at org.jkiss.dbeaver.model.runtime.AbstractJob.run(AbstractJob.java:119)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.jkiss.dbeaver.model 4 0 2025-01-20 13:05:13.649
+!MESSAGE Error : 32794, Position : 19, Sql = DROP SEQUENCE TEST."ISEQ$$_77729", OriginalSql = DROP SEQUENCE TEST."ISEQ$$_77729", Error Msg = ORA-32794: 시스템 생성 시퀀스를 삭제할 수 없습니다.
+
+!SUBENTRY 1 org.jkiss.dbeaver.model 4 0 2025-01-20 13:05:13.649
+!MESSAGE Error : 32794, Position : 19, Sql = DROP SEQUENCE TEST."ISEQ$$_77729", OriginalSql = DROP SEQUENCE TEST."ISEQ$$_77729", Error Msg = ORA-32794: 시스템 생성 시퀀스를 삭제할 수 없습니다.
+
+!STACK 0
+Error : 32794, Position : 19, Sql = DROP SEQUENCE TEST."ISEQ$$_77729", OriginalSql = DROP SEQUENCE TEST."ISEQ$$_77729", Error Msg = ORA-32794: 시스템 생성 시퀀스를 삭제할 수 없습니다.
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:637)
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:564)
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1231)
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:772)
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:299)
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:512)
+	at oracle.jdbc.driver.T4CStatement.doOall8(T4CStatement.java:123)
+	at oracle.jdbc.driver.T4CStatement.executeForRows(T4CStatement.java:1200)
+	at oracle.jdbc.driver.OracleStatement.executeSQLStatement(OracleStatement.java:1820)
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1472)
+	at oracle.jdbc.driver.OracleStatement.executeInternal(OracleStatement.java:2505)
+	at oracle.jdbc.driver.OracleStatement.execute(OracleStatement.java:2460)
+	at oracle.jdbc.driver.OracleStatementWrapper.execute(OracleStatementWrapper.java:328)
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.execute(JDBCStatementImpl.java:344)
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.executeStatement(JDBCStatementImpl.java:128)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.executePersistAction(DBExecUtils.java:361)
+	at org.jkiss.dbeaver.model.impl.edit.AbstractObjectManager.executePersistAction(AbstractObjectManager.java:40)
+	at org.jkiss.dbeaver.model.impl.edit.AbstractCommandContext.executeCommands(AbstractCommandContext.java:198)
+	at org.jkiss.dbeaver.model.impl.edit.AbstractCommandContext.saveChanges(AbstractCommandContext.java:125)
+	at org.jkiss.dbeaver.ui.navigator.actions.NavigatorHandlerObjectBase$ObjectSaver.run(NavigatorHandlerObjectBase.java:297)
+	at org.jkiss.dbeaver.runtime.TasksJob.run(TasksJob.java:58)
+	at org.jkiss.dbeaver.model.runtime.AbstractJob.run(AbstractJob.java:119)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SESSION 2025-01-20 14:28:03.967 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=17.0.6
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ko_KR
+Framework arguments:  -eclipse.keyring C:\Users\Administrator\AppData\Roaming\DBeaverData\secure\secure_storage
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY org.eclipse.ui 2 2 2025-01-20 14:28:07.038
+!MESSAGE Invalid preference category path: org.eclipse.debug.ui.ConsolePreferencePage (bundle: org.eclipse.ui.console, page: org.eclipse.ui.internal.console.ansi.preferences.AnsiConsolePreferencePage)
+
+!ENTRY org.jkiss.dbeaver.model 4 0 2025-01-20 14:34:15.776
+!MESSAGE SQL Error [922] [42000]: ORA-00922: 누락된 또는 부적합한 옵션
+
+
+Error position: line: 14 pos: 511
+!SUBENTRY 1 org.jkiss.dbeaver.model 4 0 2025-01-20 14:34:15.776
+!MESSAGE SQL Error [922] [42000]: ORA-00922: 누락된 또는 부적합한 옵션
+
+!SUBENTRY 2 org.jkiss.dbeaver.model 4 0 2025-01-20 14:34:15.776
+!MESSAGE Error : 922, Position : 511, Sql = CREATE TABLE tbl_user (
+    user_number NUMBER,
+    user_id VARCHAR2(20) NOT NULL,
+    user_passwd VARCHAR2(20) NOT NULL,
+    user_nickname VARCHAR2(15) NOT NULL,
+    user_tier VARCHAR2(15) NOT NULL,
+    user_phone VARCHAR2(15) NOT NULL,
+    user_join_date DATE,
+    user_ben_ctn NUMBER DEFAULT 0,
+    CONSTRAINT pk_user PRIMARY KEY (user_number),
+    CONSTRAINT uq_user_id UNIQUE (user_id),
+    CONSTRAINT uq_user_nickname UNIQUE (user_nickname),
+    CONSTRAINT uq_user_phone UNIQUE (user_phone)
+);
+CREATE SEQUENCE seq_user START WITH 1 INCREMENT BY 1
+nocache  --시퀀스 값을 미리 메모리에 캐싱하지 않도록 설정
+nocycle; --최대갑셍 도달하면 재시작하지 않도록 설정
+
+CREATE TABLE tbl_forum (
+    forum_number NUMBER,
+    user_number NUMBER,
+    forum_category VARCHAR2(10) NOT NULL,
+    forum_title VARCHAR2(150) NOT NULL,
+    forum_date DATE,
+    forum_update DATE,
+    forum_content VARCHAR2(2000) NOT NULL,
+    CONSTRAINT pk_forum PRIMARY KEY (forum_number),
+    CONSTRAINT fk_forum_user FOREIGN KEY (user_number) REFERENCES tbl_user (user_number) ON DELETE CASCADE
+);
+CREATE SEQUENCE seq_forum START WITH 1 INCREMENT BY 1 nocache nocycle;
+
+CREATE TABLE tbl_file (
+    file_number NUMBER,
+    forum_number NUMBER,
+    img_source VARCHAR2(200),
+    CONSTRAINT pk_file PRIMARY KEY (file_number),
+    CONSTRAINT fk_file_forum FOREIGN KEY (forum_number) REFERENCES tbl_forum (forum_number) ON DELETE CASCADE
+);
+CREATE SEQUENCE seq_file START WITH 1 INCREMENT BY 1 nocache nocycle;
+
+CREATE TABLE tbl_comment (
+    comment_number NUMBER,
+    forum_number NUMBER,
+    user_number NUMBER,
+    comment_content VARCHAR2(500) NOT NULL,
+    comment_date DATE,
+    CONSTRAINT pk_comment PRIMARY KEY (comment_number),
+    CONSTRAINT fk_comment_forum FOREIGN KEY (forum_number) REFERENCES tbl_forum (forum_number) ON DELETE CASCADE,
+    CONSTRAINT fk_comment_user FOREIGN KEY (user_number) REFERENCES tbl_user (user_number) ON DELETE CASCADE
+);
+CREATE SEQUENCE seq_comment START WITH 1 INCREMENT BY 1 nocache nocycle;
+
+
+CREATE TABLE tbl_party (
+    party_number NUMBER,
+    forum_number NUMBER,
+    user_number NUMBER,
+    party_state VARCHAR2(20) DEFAULT '대기중',
+    CONSTRAINT pk_party PRIMARY KEY (party_number),
+    CONSTRAINT fk_party_forum FOREIGN KEY (forum_number) REFERENCES tbl_forum (forum_number) ON DELETE CASCADE,
+    CONSTRAINT fk_party_user FOREIGN KEY (user_number) REFERENCES tbl_user (user_number) ON DELETE CASCADE
+);
+CREATE SEQUENCE seq_party START WITH 1 INCREMENT BY 1 nocache nocycle;
+
+
+CREATE TABLE tbl_ben (
+    ben_number NUMBER,
+    user_num NUMBER,
+    ben_start_date DATE,
+    ben_period NUMBER NOT NULL,
+    ben_reason VARCHAR2(50) NOT NULL,
+    CONSTRAINT pk_ben PRIMARY KEY (ben_number),
+    CONSTRAINT fk_ben_user FOREIGN KEY (user_num) REFERENCES tbl_user (user_number) ON DELETE CASCADE
+);
+CREATE SEQUENCE seq_ben START WITH 1 INCREMENT BY 1 nocache nocycle;
+
+
+CREATE TABLE tbl_admin (
+    admin_number NUMBER,
+    admin_id VARCHAR2(20) NOT NULL,
+    admin_passwd VARCHAR2(20) NOT NULL,
+    CONSTRAINT pk_admin PRIMARY KEY (admin_number)
+);
+CREATE SEQUENCE seq_admin START WITH 1 INCREMENT BY 1 nocache nocycle;
+
+SELECT * FROM tbl_user;
+SELECT * FROM tbl_forum;
+SELECT * FROM tbl_file;
+SELECT * FROM tbl_comment;
+SELECT * FROM tbl_party;
+SELECT * FROM tbl_ben;
+SELECT * from tbl_manager;
+
+INSERT INTO tbl_user (user_number, user_id, user_passwd, user_nickname, user_tier, user_phone, user_join_date, user_ben_ctn)
+VALUES (seq_user.NEXTVAL, 'alice123', 'pass123', 'Alice', 'gold', '010-1111-2222', SYSDATE, 0);
+
+INSERT INTO tbl_user (user_number, user_id, user_passwd, user_nickname, user_tier, user_phone, user_join_date, user_ben_ctn)
+VALUES (seq_user.NEXTVAL, 'bob456', 'pass456', 'Bob', 'silver', '010-3333-4444', SYSDATE, 1);
+
+INSERT INTO tbl_user (user_number, user_id, user_passwd, user_nickname, user_tier, user_phone, user_join_date, user_ben_ctn)
+VALUES (seq_user.NEXTVAL, 'char789', 'pass789', 'Char', 'bronze', '010-5555-6666', SYSDATE, 0);
+
+
+INSERT INTO tbl_forum (forum_number, user_number, forum_category, forum_title, forum_date, forum_update, forum_content)
+VALUES (seq_forum.NEXTVAL, 1, '자유', '이게 롤이다', SYSDATE, NULL, '요번 업데이트 미쳤다 이게 롤이지 이게');
+
+INSERT INTO tbl_forum (forum_number, user_number, forum_category, forum_title, forum_date, forum_update, forum_content)
+VALUES (seq_forum.NEXTVAL, 2, '공략', '아이템 이게 맞나요?', SYSDATE, NULL, 'ap템으로 가려고 하는데 어떤걸 가야할지 모르겠어요 추천좀여');
+
+INSERT INTO tbl_forum (forum_number, user_number, forum_category, forum_title, forum_date, forum_update, forum_content)
+VALUES (seq_forum.NEXTVAL, 3, '파티', '1/3일 5인팟해주실 고인물들 구함', SYSDATE, NULL, '플레 이상만 지원해주세여~ 1/1일까지 받음');
+
+
+INSERT INTO tbl_file (file_number, forum_number, img_source)
+VALUES (seq_file.NEXTVAL, 1, 'image1.png');
+
+INSERT INTO tbl_file (file_number, forum_number, img_source)
+VALUES (seq_file.NEXTVAL, 2, 'tips.png');
+
+INSERT INTO tbl_file (file_number, forum_number, img_source)
+VALUES (seq_file.NEXTVAL, 3, 'trends.png');
+
+
+INSERT INTO tbl_comment (comment_number, forum_number, user_number, comment_content, comment_date)
+VALUES (seq_comment.NEXTVAL, 1, 2, '대박 ㄷㄷ', SYSDATE);
+
+INSERT INTO tbl_comment (comment_number, forum_number, user_number, comment_content, comment_date)
+VALUES (seq_comment.NEXTVAL, 2, 3, '오오', SYSDATE);
+
+INSERT INTO tbl_comment (comment_number, forum_number, user_number, comment_content, comment_date)
+VALUES (seq_comment.NEXTVAL, 3, 1, '추추추', SYSDATE);
+
+
+INSERT INTO tbl_party (party_number, forum_number, user_number, party_state)
+VALUES (seq_party.NEXTVAL, 1, 1, '대기중');
+
+INSERT INTO tbl_party (party_number, forum_number, user_number, party_state)
+VALUES (seq_party.NEXTVAL, 2, 2, '대기중');
+
+INSERT INTO tbl_party (party_number, forum_number, user_number, party_state)
+VALUES (seq_party.NEXTVAL, 3, 3, '승인됨');
+
+
+INSERT INTO tbl_ben (ben_number, user_num, ben_start_date, ben_period, ben_reason)
+VALUES (seq_ben.NEXTVAL, 2, SYSDATE, 30, '욕설');
+
+INSERT INTO tbl_ben (ben_number, user_num, ben_start_date, ben_period, ben_reason)
+VALUES (seq_ben.NEXTVAL, 3, SYSDATE, 15, '비방');
+
+INSERT INTO tbl_ben (ben_number, user_num, ben_start_date, ben_period, ben_reason)
+VALUES (seq_ben.NEXTVAL, 1, SYSDATE, 7, '선정적인 게시물');
+
+
+INSERT INTO tbl_admin (admin_number, admin_id, admin_passwd)
+VALUES (seq_admin.NEXTVAL, 'admin', 'admin123');
+
+--SELECT * FROM tbl_admin;
+--SELECT * FROM tbl_user, OriginalSql = CREATE TABLE tbl_user (
+    user_number NUMBER,
+    user_id VARCHAR2(20) NOT NULL,
+    user_passwd VARCHAR2(20) NOT NULL,
+    user_nickname VARCHAR2(15) NOT NULL,
+    user_tier VARCHAR2(15) NOT NULL,
+    user_phone VARCHAR2(15) NOT NULL,
+    user_join_date DATE,
+    user_ben_ctn NUMBER DEFAULT 0,
+    CONSTRAINT pk_user PRIMARY KEY (user_number),
+    CONSTRAINT uq_user_id UNIQUE (user_id),
+    CONSTRAINT uq_user_nickname UNIQUE (user_nickname),
+    CONSTRAINT uq_user_phone UNIQUE (user_phone)
+);
+CREATE SEQUENCE seq_user START WITH 1 INCREMENT BY 1
+nocache  --시퀀스 값을 미리 메모리에 캐싱하지 않도록 설정
+nocycle; --최대갑셍 도달하면 재시작하지 않도록 설정
+
+CREATE TABLE tbl_forum (
+    forum_number NUMBER,
+    user_number NUMBER,
+    forum_category VARCHAR2(10) NOT NULL,
+    forum_title VARCHAR2(150) NOT NULL,
+    forum_date DATE,
+    forum_update DATE,
+    forum_content VARCHAR2(2000) NOT NULL,
+    CONSTRAINT pk_forum PRIMARY KEY (forum_number),
+    CONSTRAINT fk_forum_user FOREIGN KEY (user_number) REFERENCES tbl_user (user_number) ON DELETE CASCADE
+);
+CREATE SEQUENCE seq_forum START WITH 1 INCREMENT BY 1 nocache nocycle;
+
+CREATE TABLE tbl_file (
+    file_number NUMBER,
+    forum_number NUMBER,
+    img_source VARCHAR2(200),
+    CONSTRAINT pk_file PRIMARY KEY (file_number),
+    CONSTRAINT fk_file_forum FOREIGN KEY (forum_number) REFERENCES tbl_forum (forum_number) ON DELETE CASCADE
+);
+CREATE SEQUENCE seq_file START WITH 1 INCREMENT BY 1 nocache nocycle;
+
+CREATE TABLE tbl_comment (
+    comment_number NUMBER,
+    forum_number NUMBER,
+    user_number NUMBER,
+    comment_content VARCHAR2(500) NOT NULL,
+    comment_date DATE,
+    CONSTRAINT pk_comment PRIMARY KEY (comment_number),
+    CONSTRAINT fk_comment_forum FOREIGN KEY (forum_number) REFERENCES tbl_forum (forum_number) ON DELETE CASCADE,
+    CONSTRAINT fk_comment_user FOREIGN KEY (user_number) REFERENCES tbl_user (user_number) ON DELETE CASCADE
+);
+CREATE SEQUENCE seq_comment START WITH 1 INCREMENT BY 1 nocache nocycle;
+
+
+CREATE TABLE tbl_party (
+    party_number NUMBER,
+    forum_number NUMBER,
+    user_number NUMBER,
+    party_state VARCHAR2(20) DEFAULT '대기중',
+    CONSTRAINT pk_party PRIMARY KEY (party_number),
+    CONSTRAINT fk_party_forum FOREIGN KEY (forum_number) REFERENCES tbl_forum (forum_number) ON DELETE CASCADE,
+    CONSTRAINT fk_party_user FOREIGN KEY (user_number) REFERENCES tbl_user (user_number) ON DELETE CASCADE
+);
+CREATE SEQUENCE seq_party START WITH 1 INCREMENT BY 1 nocache nocycle;
+
+
+CREATE TABLE tbl_ben (
+    ben_number NUMBER,
+    user_num NUMBER,
+    ben_start_date DATE,
+    ben_period NUMBER NOT NULL,
+    ben_reason VARCHAR2(50) NOT NULL,
+    CONSTRAINT pk_ben PRIMARY KEY (ben_number),
+    CONSTRAINT fk_ben_user FOREIGN KEY (user_num) REFERENCES tbl_user (user_number) ON DELETE CASCADE
+);
+CREATE SEQUENCE seq_ben START WITH 1 INCREMENT BY 1 nocache nocycle;
+
+
+CREATE TABLE tbl_admin (
+    admin_number NUMBER,
+    admin_id VARCHAR2(20) NOT NULL,
+    admin_passwd VARCHAR2(20) NOT NULL,
+    CONSTRAINT pk_admin PRIMARY KEY (admin_number)
+);
+CREATE SEQUENCE seq_admin START WITH 1 INCREMENT BY 1 nocache nocycle;
+
+SELECT * FROM tbl_user;
+SELECT * FROM tbl_forum;
+SELECT * FROM tbl_file;
+SELECT * FROM tbl_comment;
+SELECT * FROM tbl_party;
+SELECT * FROM tbl_ben;
+SELECT * from tbl_manager;
+
+INSERT INTO tbl_user (user_number, user_id, user_passwd, user_nickname, user_tier, user_phone, user_join_date, user_ben_ctn)
+VALUES (seq_user.NEXTVAL, 'alice123', 'pass123', 'Alice', 'gold', '010-1111-2222', SYSDATE, 0);
+
+INSERT INTO tbl_user (user_number, user_id, user_passwd, user_nickname, user_tier, user_phone, user_join_date, user_ben_ctn)
+VALUES (seq_user.NEXTVAL, 'bob456', 'pass456', 'Bob', 'silver', '010-3333-4444', SYSDATE, 1);
+
+INSERT INTO tbl_user (user_number, user_id, user_passwd, user_nickname, user_tier, user_phone, user_join_date, user_ben_ctn)
+VALUES (seq_user.NEXTVAL, 'char789', 'pass789', 'Char', 'bronze', '010-5555-6666', SYSDATE, 0);
+
+
+INSERT INTO tbl_forum (forum_number, user_number, forum_category, forum_title, forum_date, forum_update, forum_content)
+VALUES (seq_forum.NEXTVAL, 1, '자유', '이게 롤이다', SYSDATE, NULL, '요번 업데이트 미쳤다 이게 롤이지 이게');
+
+INSERT INTO tbl_forum (forum_number, user_number, forum_category, forum_title, forum_date, forum_update, forum_content)
+VALUES (seq_forum.NEXTVAL, 2, '공략', '아이템 이게 맞나요?', SYSDATE, NULL, 'ap템으로 가려고 하는데 어떤걸 가야할지 모르겠어요 추천좀여');
+
+INSERT INTO tbl_forum (forum_number, user_number, forum_category, forum_title, forum_date, forum_update, forum_content)
+VALUES (seq_forum.NEXTVAL, 3, '파티', '1/3일 5인팟해주실 고인물들 구함', SYSDATE, NULL, '플레 이상만 지원해주세여~ 1/1일까지 받음');
+
+
+INSERT INTO tbl_file (file_number, forum_number, img_source)
+VALUES (seq_file.NEXTVAL, 1, 'image1.png');
+
+INSERT INTO tbl_file (file_number, forum_number, img_source)
+VALUES (seq_file.NEXTVAL, 2, 'tips.png');
+
+INSERT INTO tbl_file (file_number, forum_number, img_source)
+VALUES (seq_file.NEXTVAL, 3, 'trends.png');
+
+
+INSERT INTO tbl_comment (comment_number, forum_number, user_number, comment_content, comment_date)
+VALUES (seq_comment.NEXTVAL, 1, 2, '대박 ㄷㄷ', SYSDATE);
+
+INSERT INTO tbl_comment (comment_number, forum_number, user_number, comment_content, comment_date)
+VALUES (seq_comment.NEXTVAL, 2, 3, '오오', SYSDATE);
+
+INSERT INTO tbl_comment (comment_number, forum_number, user_number, comment_content, comment_date)
+VALUES (seq_comment.NEXTVAL, 3, 1, '추추추', SYSDATE);
+
+
+INSERT INTO tbl_party (party_number, forum_number, user_number, party_state)
+VALUES (seq_party.NEXTVAL, 1, 1, '대기중');
+
+INSERT INTO tbl_party (party_number, forum_number, user_number, party_state)
+VALUES (seq_party.NEXTVAL, 2, 2, '대기중');
+
+INSERT INTO tbl_party (party_number, forum_number, user_number, party_state)
+VALUES (seq_party.NEXTVAL, 3, 3, '승인됨');
+
+
+INSERT INTO tbl_ben (ben_number, user_num, ben_start_date, ben_period, ben_reason)
+VALUES (seq_ben.NEXTVAL, 2, SYSDATE, 30, '욕설');
+
+INSERT INTO tbl_ben (ben_number, user_num, ben_start_date, ben_period, ben_reason)
+VALUES (seq_ben.NEXTVAL, 3, SYSDATE, 15, '비방');
+
+INSERT INTO tbl_ben (ben_number, user_num, ben_start_date, ben_period, ben_reason)
+VALUES (seq_ben.NEXTVAL, 1, SYSDATE, 7, '선정적인 게시물');
+
+
+INSERT INTO tbl_admin (admin_number, admin_id, admin_passwd)
+VALUES (seq_admin.NEXTVAL, 'admin', 'admin123');
+
+--SELECT * FROM tbl_admin;
+--SELECT * FROM tbl_user, Error Msg = ORA-00922: 누락된 또는 부적합한 옵션
+
+!STACK 0
+Error : 922, Position : 511, Sql = CREATE TABLE tbl_user (
+    user_number NUMBER,
+    user_id VARCHAR2(20) NOT NULL,
+    user_passwd VARCHAR2(20) NOT NULL,
+    user_nickname VARCHAR2(15) NOT NULL,
+    user_tier VARCHAR2(15) NOT NULL,
+    user_phone VARCHAR2(15) NOT NULL,
+    user_join_date DATE,
+    user_ben_ctn NUMBER DEFAULT 0,
+    CONSTRAINT pk_user PRIMARY KEY (user_number),
+    CONSTRAINT uq_user_id UNIQUE (user_id),
+    CONSTRAINT uq_user_nickname UNIQUE (user_nickname),
+    CONSTRAINT uq_user_phone UNIQUE (user_phone)
+);
+CREATE SEQUENCE seq_user START WITH 1 INCREMENT BY 1
+nocache  --시퀀스 값을 미리 메모리에 캐싱하지 않도록 설정
+nocycle; --최대갑셍 도달하면 재시작하지 않도록 설정
+
+CREATE TABLE tbl_forum (
+    forum_number NUMBER,
+    user_number NUMBER,
+    forum_category VARCHAR2(10) NOT NULL,
+    forum_title VARCHAR2(150) NOT NULL,
+    forum_date DATE,
+    forum_update DATE,
+    forum_content VARCHAR2(2000) NOT NULL,
+    CONSTRAINT pk_forum PRIMARY KEY (forum_number),
+    CONSTRAINT fk_forum_user FOREIGN KEY (user_number) REFERENCES tbl_user (user_number) ON DELETE CASCADE
+);
+CREATE SEQUENCE seq_forum START WITH 1 INCREMENT BY 1 nocache nocycle;
+
+CREATE TABLE tbl_file (
+    file_number NUMBER,
+    forum_number NUMBER,
+    img_source VARCHAR2(200),
+    CONSTRAINT pk_file PRIMARY KEY (file_number),
+    CONSTRAINT fk_file_forum FOREIGN KEY (forum_number) REFERENCES tbl_forum (forum_number) ON DELETE CASCADE
+);
+CREATE SEQUENCE seq_file START WITH 1 INCREMENT BY 1 nocache nocycle;
+
+CREATE TABLE tbl_comment (
+    comment_number NUMBER,
+    forum_number NUMBER,
+    user_number NUMBER,
+    comment_content VARCHAR2(500) NOT NULL,
+    comment_date DATE,
+    CONSTRAINT pk_comment PRIMARY KEY (comment_number),
+    CONSTRAINT fk_comment_forum FOREIGN KEY (forum_number) REFERENCES tbl_forum (forum_number) ON DELETE CASCADE,
+    CONSTRAINT fk_comment_user FOREIGN KEY (user_number) REFERENCES tbl_user (user_number) ON DELETE CASCADE
+);
+CREATE SEQUENCE seq_comment START WITH 1 INCREMENT BY 1 nocache nocycle;
+
+
+CREATE TABLE tbl_party (
+    party_number NUMBER,
+    forum_number NUMBER,
+    user_number NUMBER,
+    party_state VARCHAR2(20) DEFAULT '대기중',
+    CONSTRAINT pk_party PRIMARY KEY (party_number),
+    CONSTRAINT fk_party_forum FOREIGN KEY (forum_number) REFERENCES tbl_forum (forum_number) ON DELETE CASCADE,
+    CONSTRAINT fk_party_user FOREIGN KEY (user_number) REFERENCES tbl_user (user_number) ON DELETE CASCADE
+);
+CREATE SEQUENCE seq_party START WITH 1 INCREMENT BY 1 nocache nocycle;
+
+
+CREATE TABLE tbl_ben (
+    ben_number NUMBER,
+    user_num NUMBER,
+    ben_start_date DATE,
+    ben_period NUMBER NOT NULL,
+    ben_reason VARCHAR2(50) NOT NULL,
+    CONSTRAINT pk_ben PRIMARY KEY (ben_number),
+    CONSTRAINT fk_ben_user FOREIGN KEY (user_num) REFERENCES tbl_user (user_number) ON DELETE CASCADE
+);
+CREATE SEQUENCE seq_ben START WITH 1 INCREMENT BY 1 nocache nocycle;
+
+
+CREATE TABLE tbl_admin (
+    admin_number NUMBER,
+    admin_id VARCHAR2(20) NOT NULL,
+    admin_passwd VARCHAR2(20) NOT NULL,
+    CONSTRAINT pk_admin PRIMARY KEY (admin_number)
+);
+CREATE SEQUENCE seq_admin START WITH 1 INCREMENT BY 1 nocache nocycle;
+
+SELECT * FROM tbl_user;
+SELECT * FROM tbl_forum;
+SELECT * FROM tbl_file;
+SELECT * FROM tbl_comment;
+SELECT * FROM tbl_party;
+SELECT * FROM tbl_ben;
+SELECT * from tbl_manager;
+
+INSERT INTO tbl_user (user_number, user_id, user_passwd, user_nickname, user_tier, user_phone, user_join_date, user_ben_ctn)
+VALUES (seq_user.NEXTVAL, 'alice123', 'pass123', 'Alice', 'gold', '010-1111-2222', SYSDATE, 0);
+
+INSERT INTO tbl_user (user_number, user_id, user_passwd, user_nickname, user_tier, user_phone, user_join_date, user_ben_ctn)
+VALUES (seq_user.NEXTVAL, 'bob456', 'pass456', 'Bob', 'silver', '010-3333-4444', SYSDATE, 1);
+
+INSERT INTO tbl_user (user_number, user_id, user_passwd, user_nickname, user_tier, user_phone, user_join_date, user_ben_ctn)
+VALUES (seq_user.NEXTVAL, 'char789', 'pass789', 'Char', 'bronze', '010-5555-6666', SYSDATE, 0);
+
+
+INSERT INTO tbl_forum (forum_number, user_number, forum_category, forum_title, forum_date, forum_update, forum_content)
+VALUES (seq_forum.NEXTVAL, 1, '자유', '이게 롤이다', SYSDATE, NULL, '요번 업데이트 미쳤다 이게 롤이지 이게');
+
+INSERT INTO tbl_forum (forum_number, user_number, forum_category, forum_title, forum_date, forum_update, forum_content)
+VALUES (seq_forum.NEXTVAL, 2, '공략', '아이템 이게 맞나요?', SYSDATE, NULL, 'ap템으로 가려고 하는데 어떤걸 가야할지 모르겠어요 추천좀여');
+
+INSERT INTO tbl_forum (forum_number, user_number, forum_category, forum_title, forum_date, forum_update, forum_content)
+VALUES (seq_forum.NEXTVAL, 3, '파티', '1/3일 5인팟해주실 고인물들 구함', SYSDATE, NULL, '플레 이상만 지원해주세여~ 1/1일까지 받음');
+
+
+INSERT INTO tbl_file (file_number, forum_number, img_source)
+VALUES (seq_file.NEXTVAL, 1, 'image1.png');
+
+INSERT INTO tbl_file (file_number, forum_number, img_source)
+VALUES (seq_file.NEXTVAL, 2, 'tips.png');
+
+INSERT INTO tbl_file (file_number, forum_number, img_source)
+VALUES (seq_file.NEXTVAL, 3, 'trends.png');
+
+
+INSERT INTO tbl_comment (comment_number, forum_number, user_number, comment_content, comment_date)
+VALUES (seq_comment.NEXTVAL, 1, 2, '대박 ㄷㄷ', SYSDATE);
+
+INSERT INTO tbl_comment (comment_number, forum_number, user_number, comment_content, comment_date)
+VALUES (seq_comment.NEXTVAL, 2, 3, '오오', SYSDATE);
+
+INSERT INTO tbl_comment (comment_number, forum_number, user_number, comment_content, comment_date)
+VALUES (seq_comment.NEXTVAL, 3, 1, '추추추', SYSDATE);
+
+
+INSERT INTO tbl_party (party_number, forum_number, user_number, party_state)
+VALUES (seq_party.NEXTVAL, 1, 1, '대기중');
+
+INSERT INTO tbl_party (party_number, forum_number, user_number, party_state)
+VALUES (seq_party.NEXTVAL, 2, 2, '대기중');
+
+INSERT INTO tbl_party (party_number, forum_number, user_number, party_state)
+VALUES (seq_party.NEXTVAL, 3, 3, '승인됨');
+
+
+INSERT INTO tbl_ben (ben_number, user_num, ben_start_date, ben_period, ben_reason)
+VALUES (seq_ben.NEXTVAL, 2, SYSDATE, 30, '욕설');
+
+INSERT INTO tbl_ben (ben_number, user_num, ben_start_date, ben_period, ben_reason)
+VALUES (seq_ben.NEXTVAL, 3, SYSDATE, 15, '비방');
+
+INSERT INTO tbl_ben (ben_number, user_num, ben_start_date, ben_period, ben_reason)
+VALUES (seq_ben.NEXTVAL, 1, SYSDATE, 7, '선정적인 게시물');
+
+
+INSERT INTO tbl_admin (admin_number, admin_id, admin_passwd)
+VALUES (seq_admin.NEXTVAL, 'admin', 'admin123');
+
+--SELECT * FROM tbl_admin;
+--SELECT * FROM tbl_user, OriginalSql = CREATE TABLE tbl_user (
+    user_number NUMBER,
+    user_id VARCHAR2(20) NOT NULL,
+    user_passwd VARCHAR2(20) NOT NULL,
+    user_nickname VARCHAR2(15) NOT NULL,
+    user_tier VARCHAR2(15) NOT NULL,
+    user_phone VARCHAR2(15) NOT NULL,
+    user_join_date DATE,
+    user_ben_ctn NUMBER DEFAULT 0,
+    CONSTRAINT pk_user PRIMARY KEY (user_number),
+    CONSTRAINT uq_user_id UNIQUE (user_id),
+    CONSTRAINT uq_user_nickname UNIQUE (user_nickname),
+    CONSTRAINT uq_user_phone UNIQUE (user_phone)
+);
+CREATE SEQUENCE seq_user START WITH 1 INCREMENT BY 1
+nocache  --시퀀스 값을 미리 메모리에 캐싱하지 않도록 설정
+nocycle; --최대갑셍 도달하면 재시작하지 않도록 설정
+
+CREATE TABLE tbl_forum (
+    forum_number NUMBER,
+    user_number NUMBER,
+    forum_category VARCHAR2(10) NOT NULL,
+    forum_title VARCHAR2(150) NOT NULL,
+    forum_date DATE,
+    forum_update DATE,
+    forum_content VARCHAR2(2000) NOT NULL,
+    CONSTRAINT pk_forum PRIMARY KEY (forum_number),
+    CONSTRAINT fk_forum_user FOREIGN KEY (user_number) REFERENCES tbl_user (user_number) ON DELETE CASCADE
+);
+CREATE SEQUENCE seq_forum START WITH 1 INCREMENT BY 1 nocache nocycle;
+
+CREATE TABLE tbl_file (
+    file_number NUMBER,
+    forum_number NUMBER,
+    img_source VARCHAR2(200),
+    CONSTRAINT pk_file PRIMARY KEY (file_number),
+    CONSTRAINT fk_file_forum FOREIGN KEY (forum_number) REFERENCES tbl_forum (forum_number) ON DELETE CASCADE
+);
+CREATE SEQUENCE seq_file START WITH 1 INCREMENT BY 1 nocache nocycle;
+
+CREATE TABLE tbl_comment (
+    comment_number NUMBER,
+    forum_number NUMBER,
+    user_number NUMBER,
+    comment_content VARCHAR2(500) NOT NULL,
+    comment_date DATE,
+    CONSTRAINT pk_comment PRIMARY KEY (comment_number),
+    CONSTRAINT fk_comment_forum FOREIGN KEY (forum_number) REFERENCES tbl_forum (forum_number) ON DELETE CASCADE,
+    CONSTRAINT fk_comment_user FOREIGN KEY (user_number) REFERENCES tbl_user (user_number) ON DELETE CASCADE
+);
+CREATE SEQUENCE seq_comment START WITH 1 INCREMENT BY 1 nocache nocycle;
+
+
+CREATE TABLE tbl_party (
+    party_number NUMBER,
+    forum_number NUMBER,
+    user_number NUMBER,
+    party_state VARCHAR2(20) DEFAULT '대기중',
+    CONSTRAINT pk_party PRIMARY KEY (party_number),
+    CONSTRAINT fk_party_forum FOREIGN KEY (forum_number) REFERENCES tbl_forum (forum_number) ON DELETE CASCADE,
+    CONSTRAINT fk_party_user FOREIGN KEY (user_number) REFERENCES tbl_user (user_number) ON DELETE CASCADE
+);
+CREATE SEQUENCE seq_party START WITH 1 INCREMENT BY 1 nocache nocycle;
+
+
+CREATE TABLE tbl_ben (
+    ben_number NUMBER,
+    user_num NUMBER,
+    ben_start_date DATE,
+    ben_period NUMBER NOT NULL,
+    ben_reason VARCHAR2(50) NOT NULL,
+    CONSTRAINT pk_ben PRIMARY KEY (ben_number),
+    CONSTRAINT fk_ben_user FOREIGN KEY (user_num) REFERENCES tbl_user (user_number) ON DELETE CASCADE
+);
+CREATE SEQUENCE seq_ben START WITH 1 INCREMENT BY 1 nocache nocycle;
+
+
+CREATE TABLE tbl_admin (
+    admin_number NUMBER,
+    admin_id VARCHAR2(20) NOT NULL,
+    admin_passwd VARCHAR2(20) NOT NULL,
+    CONSTRAINT pk_admin PRIMARY KEY (admin_number)
+);
+CREATE SEQUENCE seq_admin START WITH 1 INCREMENT BY 1 nocache nocycle;
+
+SELECT * FROM tbl_user;
+SELECT * FROM tbl_forum;
+SELECT * FROM tbl_file;
+SELECT * FROM tbl_comment;
+SELECT * FROM tbl_party;
+SELECT * FROM tbl_ben;
+SELECT * from tbl_manager;
+
+INSERT INTO tbl_user (user_number, user_id, user_passwd, user_nickname, user_tier, user_phone, user_join_date, user_ben_ctn)
+VALUES (seq_user.NEXTVAL, 'alice123', 'pass123', 'Alice', 'gold', '010-1111-2222', SYSDATE, 0);
+
+INSERT INTO tbl_user (user_number, user_id, user_passwd, user_nickname, user_tier, user_phone, user_join_date, user_ben_ctn)
+VALUES (seq_user.NEXTVAL, 'bob456', 'pass456', 'Bob', 'silver', '010-3333-4444', SYSDATE, 1);
+
+INSERT INTO tbl_user (user_number, user_id, user_passwd, user_nickname, user_tier, user_phone, user_join_date, user_ben_ctn)
+VALUES (seq_user.NEXTVAL, 'char789', 'pass789', 'Char', 'bronze', '010-5555-6666', SYSDATE, 0);
+
+
+INSERT INTO tbl_forum (forum_number, user_number, forum_category, forum_title, forum_date, forum_update, forum_content)
+VALUES (seq_forum.NEXTVAL, 1, '자유', '이게 롤이다', SYSDATE, NULL, '요번 업데이트 미쳤다 이게 롤이지 이게');
+
+INSERT INTO tbl_forum (forum_number, user_number, forum_category, forum_title, forum_date, forum_update, forum_content)
+VALUES (seq_forum.NEXTVAL, 2, '공략', '아이템 이게 맞나요?', SYSDATE, NULL, 'ap템으로 가려고 하는데 어떤걸 가야할지 모르겠어요 추천좀여');
+
+INSERT INTO tbl_forum (forum_number, user_number, forum_category, forum_title, forum_date, forum_update, forum_content)
+VALUES (seq_forum.NEXTVAL, 3, '파티', '1/3일 5인팟해주실 고인물들 구함', SYSDATE, NULL, '플레 이상만 지원해주세여~ 1/1일까지 받음');
+
+
+INSERT INTO tbl_file (file_number, forum_number, img_source)
+VALUES (seq_file.NEXTVAL, 1, 'image1.png');
+
+INSERT INTO tbl_file (file_number, forum_number, img_source)
+VALUES (seq_file.NEXTVAL, 2, 'tips.png');
+
+INSERT INTO tbl_file (file_number, forum_number, img_source)
+VALUES (seq_file.NEXTVAL, 3, 'trends.png');
+
+
+INSERT INTO tbl_comment (comment_number, forum_number, user_number, comment_content, comment_date)
+VALUES (seq_comment.NEXTVAL, 1, 2, '대박 ㄷㄷ', SYSDATE);
+
+INSERT INTO tbl_comment (comment_number, forum_number, user_number, comment_content, comment_date)
+VALUES (seq_comment.NEXTVAL, 2, 3, '오오', SYSDATE);
+
+INSERT INTO tbl_comment (comment_number, forum_number, user_number, comment_content, comment_date)
+VALUES (seq_comment.NEXTVAL, 3, 1, '추추추', SYSDATE);
+
+
+INSERT INTO tbl_party (party_number, forum_number, user_number, party_state)
+VALUES (seq_party.NEXTVAL, 1, 1, '대기중');
+
+INSERT INTO tbl_party (party_number, forum_number, user_number, party_state)
+VALUES (seq_party.NEXTVAL, 2, 2, '대기중');
+
+INSERT INTO tbl_party (party_number, forum_number, user_number, party_state)
+VALUES (seq_party.NEXTVAL, 3, 3, '승인됨');
+
+
+INSERT INTO tbl_ben (ben_number, user_num, ben_start_date, ben_period, ben_reason)
+VALUES (seq_ben.NEXTVAL, 2, SYSDATE, 30, '욕설');
+
+INSERT INTO tbl_ben (ben_number, user_num, ben_start_date, ben_period, ben_reason)
+VALUES (seq_ben.NEXTVAL, 3, SYSDATE, 15, '비방');
+
+INSERT INTO tbl_ben (ben_number, user_num, ben_start_date, ben_period, ben_reason)
+VALUES (seq_ben.NEXTVAL, 1, SYSDATE, 7, '선정적인 게시물');
+
+
+INSERT INTO tbl_admin (admin_number, admin_id, admin_passwd)
+VALUES (seq_admin.NEXTVAL, 'admin', 'admin123');
+
+--SELECT * FROM tbl_admin;
+--SELECT * FROM tbl_user, Error Msg = ORA-00922: 누락된 또는 부적합한 옵션
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:637)
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:564)
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1231)
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:772)
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:299)
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:512)
+	at oracle.jdbc.driver.T4CStatement.doOall8(T4CStatement.java:123)
+	at oracle.jdbc.driver.T4CStatement.executeForRows(T4CStatement.java:1200)
+	at oracle.jdbc.driver.OracleStatement.executeSQLStatement(OracleStatement.java:1820)
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1472)
+	at oracle.jdbc.driver.OracleStatement.executeInternal(OracleStatement.java:2505)
+	at oracle.jdbc.driver.OracleStatement.execute(OracleStatement.java:2460)
+	at oracle.jdbc.driver.OracleStatementWrapper.execute(OracleStatementWrapper.java:328)
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.execute(JDBCStatementImpl.java:344)
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.executeStatement(JDBCStatementImpl.java:128)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.executeStatement(SQLQueryJob.java:631)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.lambda$2(SQLQueryJob.java:522)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:192)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.executeSingleQuery(SQLQueryJob.java:541)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.extractData(SQLQueryJob.java:1016)
+	at org.jkiss.dbeaver.ui.editors.sql.SQLEditor$QueryResultsContainer.readData(SQLEditor.java:4273)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetJobDataRead.lambda$0(ResultSetJobDataRead.java:128)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:192)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetJobDataRead.run(ResultSetJobDataRead.java:126)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetViewer$ResultSetDataPumpJob.run(ResultSetViewer.java:5166)
+	at org.jkiss.dbeaver.model.runtime.AbstractJob.run(AbstractJob.java:119)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.jkiss.dbeaver.model 4 0 2025-01-20 14:34:32.032
+!MESSAGE SQL Error [942] [42000]: ORA-00942: 테이블 또는 뷰가 존재하지 않습니다
+
+!SUBENTRY 1 org.jkiss.dbeaver.model 4 0 2025-01-20 14:34:32.032
+!MESSAGE Error : 942, Position : 14, Sql = SELECT * from tbl_manager, OriginalSql = SELECT * from tbl_manager, Error Msg = ORA-00942: 테이블 또는 뷰가 존재하지 않습니다
+
+!STACK 0
+Error : 942, Position : 14, Sql = SELECT * from tbl_manager, OriginalSql = SELECT * from tbl_manager, Error Msg = ORA-00942: 테이블 또는 뷰가 존재하지 않습니다
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:637)
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:564)
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1231)
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:772)
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:299)
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:512)
+	at oracle.jdbc.driver.T4CStatement.doOall8(T4CStatement.java:123)
+	at oracle.jdbc.driver.T4CStatement.executeForDescribe(T4CStatement.java:969)
+	at oracle.jdbc.driver.OracleStatement.prepareDefineBufferAndExecute(OracleStatement.java:1271)
+	at oracle.jdbc.driver.OracleStatement.executeMaybeDescribe(OracleStatement.java:1149)
+	at oracle.jdbc.driver.OracleStatement.executeSQLSelect(OracleStatement.java:1661)
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1470)
+	at oracle.jdbc.driver.OracleStatement.executeInternal(OracleStatement.java:2505)
+	at oracle.jdbc.driver.OracleStatement.execute(OracleStatement.java:2460)
+	at oracle.jdbc.driver.OracleStatementWrapper.execute(OracleStatementWrapper.java:328)
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.execute(JDBCStatementImpl.java:344)
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.executeStatement(JDBCStatementImpl.java:128)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.executeStatement(SQLQueryJob.java:631)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.lambda$2(SQLQueryJob.java:522)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:192)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.executeSingleQuery(SQLQueryJob.java:541)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.run(SQLQueryJob.java:241)
+	at org.jkiss.dbeaver.model.runtime.AbstractJob.run(AbstractJob.java:119)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.jkiss.dbeaver.model 4 0 2025-01-20 14:35:03.197
+!MESSAGE Error : 2449, Position : 20, Sql = DROP TABLE LEARNING.TBL_FORUM, OriginalSql = DROP TABLE LEARNING.TBL_FORUM, Error Msg = ORA-02449: 외래 키에 의해 참조되는 고유/기본 키가 테이블에 있습니다
+
+!SUBENTRY 1 org.jkiss.dbeaver.model 4 0 2025-01-20 14:35:03.197
+!MESSAGE Error : 2449, Position : 20, Sql = DROP TABLE LEARNING.TBL_FORUM, OriginalSql = DROP TABLE LEARNING.TBL_FORUM, Error Msg = ORA-02449: 외래 키에 의해 참조되는 고유/기본 키가 테이블에 있습니다
+
+!STACK 0
+Error : 2449, Position : 20, Sql = DROP TABLE LEARNING.TBL_FORUM, OriginalSql = DROP TABLE LEARNING.TBL_FORUM, Error Msg = ORA-02449: 외래 키에 의해 참조되는 고유/기본 키가 테이블에 있습니다
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:637)
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:564)
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1231)
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:772)
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:299)
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:512)
+	at oracle.jdbc.driver.T4CStatement.doOall8(T4CStatement.java:123)
+	at oracle.jdbc.driver.T4CStatement.executeForRows(T4CStatement.java:1200)
+	at oracle.jdbc.driver.OracleStatement.executeSQLStatement(OracleStatement.java:1820)
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1472)
+	at oracle.jdbc.driver.OracleStatement.executeInternal(OracleStatement.java:2505)
+	at oracle.jdbc.driver.OracleStatement.execute(OracleStatement.java:2460)
+	at oracle.jdbc.driver.OracleStatementWrapper.execute(OracleStatementWrapper.java:328)
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.execute(JDBCStatementImpl.java:344)
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.executeStatement(JDBCStatementImpl.java:128)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.executePersistAction(DBExecUtils.java:361)
+	at org.jkiss.dbeaver.model.impl.edit.AbstractObjectManager.executePersistAction(AbstractObjectManager.java:40)
+	at org.jkiss.dbeaver.model.impl.edit.AbstractCommandContext.executeCommands(AbstractCommandContext.java:198)
+	at org.jkiss.dbeaver.model.impl.edit.AbstractCommandContext.saveChanges(AbstractCommandContext.java:125)
+	at org.jkiss.dbeaver.ui.navigator.actions.NavigatorHandlerObjectBase$ObjectSaver.run(NavigatorHandlerObjectBase.java:297)
+	at org.jkiss.dbeaver.runtime.TasksJob.run(TasksJob.java:58)
+	at org.jkiss.dbeaver.model.runtime.AbstractJob.run(AbstractJob.java:119)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.jkiss.dbeaver.model 4 0 2025-01-20 14:35:07.484
+!MESSAGE Error : 2449, Position : 20, Sql = DROP TABLE LEARNING.TBL_USER, OriginalSql = DROP TABLE LEARNING.TBL_USER, Error Msg = ORA-02449: 외래 키에 의해 참조되는 고유/기본 키가 테이블에 있습니다
+
+!SUBENTRY 1 org.jkiss.dbeaver.model 4 0 2025-01-20 14:35:07.484
+!MESSAGE Error : 2449, Position : 20, Sql = DROP TABLE LEARNING.TBL_USER, OriginalSql = DROP TABLE LEARNING.TBL_USER, Error Msg = ORA-02449: 외래 키에 의해 참조되는 고유/기본 키가 테이블에 있습니다
+
+!STACK 0
+Error : 2449, Position : 20, Sql = DROP TABLE LEARNING.TBL_USER, OriginalSql = DROP TABLE LEARNING.TBL_USER, Error Msg = ORA-02449: 외래 키에 의해 참조되는 고유/기본 키가 테이블에 있습니다
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:637)
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:564)
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1231)
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:772)
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:299)
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:512)
+	at oracle.jdbc.driver.T4CStatement.doOall8(T4CStatement.java:123)
+	at oracle.jdbc.driver.T4CStatement.executeForRows(T4CStatement.java:1200)
+	at oracle.jdbc.driver.OracleStatement.executeSQLStatement(OracleStatement.java:1820)
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1472)
+	at oracle.jdbc.driver.OracleStatement.executeInternal(OracleStatement.java:2505)
+	at oracle.jdbc.driver.OracleStatement.execute(OracleStatement.java:2460)
+	at oracle.jdbc.driver.OracleStatementWrapper.execute(OracleStatementWrapper.java:328)
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.execute(JDBCStatementImpl.java:344)
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.executeStatement(JDBCStatementImpl.java:128)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.executePersistAction(DBExecUtils.java:361)
+	at org.jkiss.dbeaver.model.impl.edit.AbstractObjectManager.executePersistAction(AbstractObjectManager.java:40)
+	at org.jkiss.dbeaver.model.impl.edit.AbstractCommandContext.executeCommands(AbstractCommandContext.java:198)
+	at org.jkiss.dbeaver.model.impl.edit.AbstractCommandContext.saveChanges(AbstractCommandContext.java:125)
+	at org.jkiss.dbeaver.ui.navigator.actions.NavigatorHandlerObjectBase$ObjectSaver.run(NavigatorHandlerObjectBase.java:297)
+	at org.jkiss.dbeaver.runtime.TasksJob.run(TasksJob.java:58)
+	at org.jkiss.dbeaver.model.runtime.AbstractJob.run(AbstractJob.java:119)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
