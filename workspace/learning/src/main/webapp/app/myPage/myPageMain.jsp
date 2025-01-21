@@ -17,7 +17,6 @@
    <link rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/preset/preset.css">
    <script defer src="${pageContext.request.contextPath}/assets/js/myPageMain/myPageMain.js"></script>
    <script defer src="${pageContext.request.contextPath}/assets/js/preset/mainLogin.js"></script>
-   <script defer src="${pageContext.request.contextPath}/app/user/logout.us"></script>
    
    <style type="text/css">
    	hr{
@@ -30,49 +29,7 @@
 
 <body>
    <!-- 헤더 -->
-   <header class="main-header">
-  <nav class="main-header-container">
-    <div class="main-header-content">
-      <div class="main-header-logo">
-        <a href="${pageContext.request.contextPath}/app/preset/main.jsp">learnning</a>
-      </div>
-      <div class="main-header-post-container">
-        <a href="${pageContext.request.contextPath}/app/partyForum/partyForum.jsp">
-          <li>파티 모집</li>
-        </a> <a href="${pageContext.request.contextPath}/app/communityForum/communityForum.jsp">
-          <li>커뮤니티</li>
-        </a>
-      </div>
-    </div>
-    <c:choose>
-      <c:when test="${not empty sessionScope.userDTO}">
-        <div class="main-header-dropdown-container">
-          <div class="main-header-user-box">
-            <i class="icon-down-dir"></i>
-            <%= session.getAttribute("userNickname") %><i class="icon-user-circle-o"></i>
-          </div>
-          <div class="main-header-dropdown">
-            <a href="${pageContext.request.contextPath}/app/myPage/checkPass.jsp">• 개인 정보 수정</a>
-            <hr />
-            <a href="${pageContext.request.contextPath}/app/myPage/myPageRecruitment.jsp">• 모집 현황</a>
-            <hr />
-            <a href="${pageContext.request.contextPath}/myPageMyPost.my">• 내 게시물</a>
-            <hr />
-            <a href="${pageContext.request.contextPath}/logoutOk.us">• 로그 아웃</a>
-          </div>
-        </div>
-      </c:when>
-      <c:otherwise>
-        <div class="main-nlog-header-container">
-          <li class="main-nlog-header-join"><a
-              href="${pageContext.request.contextPath}/app/user/login/login.jsp">로그인</a></li>
-          <li class="main-nlog-header-join"><a
-              href="${pageContext.request.contextPath}/app/user/signUp/signUp1.jsp">회원가입</a></li>
-        </div>
-      </c:otherwise>
-    </c:choose>
-  </nav>
-</header>
+   <jsp:include page="/app/preset/header.jsp" />
 
    <!-- 메인 -->
    <main class="myPage-main">
@@ -93,7 +50,8 @@
          <div class="myPage-container-box">
             <h2>닉네임</h2>
             <div><% if(session.getAttribute("userDTO")!=null){%><%= dto.getUserNickname() %><%} %></div>
-            <button class="myPage-nickBtn">비밀번호 변경</button>
+               <button class="myPage-nickBtn">닉네임 변경</button>
+            
          </div>
 
          <!-- 비밀번호 -->
@@ -132,8 +90,10 @@
             <div class="myPage-box-text">
                전화번호를 변경합니다. 새로 입력하는 전화번호로 본인인증이 진행됩니다.
             </div>
-            <input type="text">
-            <button class="myPage-phoneBtn">인증번호 받기</button>
+            <div>
+            	<input type="text" class="myPage-phoneText">
+            	<button class="myPage-phoneBtn">인증번호 받기</button>
+            </div>
             <div class="myPage-phoneCheck">
                <br>
                <input type="text" class="myPage-phoneCheckText">
@@ -149,29 +109,32 @@
                계정을 삭제합니다. 삭제시 복구가 불가능하며 작성했던 게시글, 댓글 등 데이터가 전부 삭제됩니다.<br>
                계정 삭제가 진행되면 회원의 정보가 모두 삭제되며, 약관에 대한 계약이 모두 철회됩니다.
             </div>
-            <form action="${pageContext.request.contextPath}/deleteUser.my">
             	<button class="myPage-delBtn">회원 탈퇴</button>
-            </form>
          </div>
       </div>
    </main>
    <!-- 푸터 -->
-   <footer class="main-footer">
-      <div class="main-login-footer-text">
-         <span><a href="">이용약관</a></span> | <span><a href="">개인정보 처리 방침</a></span> | <span><a href="">고객센터</a></span>
-      </div>
-   </footer>
+   <jsp:include page="/app/preset/footer.jsp" />
 
 </body>
 <script type="text/javascript">
   const selec = document.querySelectorAll(".myPage-drop-op");
-  console.log(selec.length);
   for (let i = 0; i < selec.length; i++) {
-   console.log(selec[i].textContent);
    if(selec[i].textContent == "<% if(session.getAttribute("userDTO")!=null){%><%= dto.getUserTier() %><%} %>"){
       selec[i].selected="true";
       break;
-   }
+    }
   }
+  const contextPath = '<%= request.getContextPath() %>';
+  let isChangeNickName = "<%= request.getAttribute("nickChanged") %>";
+  if(isChangeNickName==="true"){
+	  alert("닉네임이 변경되었습니다");
+	  location.href = '<%= request.getContextPath() %>/app/myPage/myPageMain.jsp';
+  }else if(isChangeNickName==="false"){
+	  alert("변경실패했습니다\n닉네임이 이미 존재합니다");
+	  location.href = '<%= request.getContextPath() %>/app/myPage/myPageMain.jsp';
+  }
+  isChangeNickName = "";
+  <% request.removeAttribute("nickChanged"); %>
 </script>
 </html>

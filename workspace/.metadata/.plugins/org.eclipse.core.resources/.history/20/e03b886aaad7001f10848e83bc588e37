@@ -1,0 +1,58 @@
+package com.learning.app.dto;
+
+public class BenDTO {
+//	CREATE TABLE tbl_ben (
+//		    ben_number NUMBER,
+//		    user_num NUMBER,
+//		    ben_start_date DATE,
+//		    ben_period NUMBER NOT NULL,
+//		    ben_reason VARCHAR2(50) NOT NULL,
+//		    CONSTRAINT pk_ben PRIMARY KEY (ben_number),
+//		    CONSTRAINT fk_ben_user FOREIGN KEY (user_num) REFERENCES tbl_user (user_number) ON DELETE CASCADE
+//		);
+	
+	private int userId;
+	private int benNumber;
+	private int userNumber;
+	private String benStartDate;
+	private int benPeriod;
+	private String benReason;
+	
+	public int getBenNumber() {
+		return benNumber;
+	}
+	public void setBenNumber(int benNumber) {
+		this.benNumber = benNumber;
+	}
+	public int getUserNumber() {
+		return userNumber;
+	}
+	public void setUserNumber(int userNumber) {
+		this.userNumber = userNumber;
+	}
+	public String getBenStartDate() {
+		return benStartDate;
+	}
+	public void setBenStartDate(String benStartDate) {
+		this.benStartDate = benStartDate;
+	}
+	public int getBenPeriod() {
+		return benPeriod;
+	}
+	public void setBenPeriod(int benPeriod) {
+		this.benPeriod = benPeriod;
+	}
+	public String getBenReason() {
+		return benReason;
+	}
+	public void setBenReason(String benReason) {
+		this.benReason = benReason;
+	}
+	
+	@Override
+	public String toString() {
+		return "BenDTO [benNumber=" + benNumber + ", userNumber=" + userNumber + ", benStartDate=" + benStartDate
+				+ ", benPeriod=" + benPeriod + ", benReason=" + benReason + "]";
+	}
+	
+}

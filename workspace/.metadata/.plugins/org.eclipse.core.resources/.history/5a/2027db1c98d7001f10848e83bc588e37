@@ -1,0 +1,17 @@
+package com.learning.app.dao;
+
+import org.apache.ibatis.session.SqlSession;
+
+import com.mybatis.config.MyBatisConfig;
+
+public class BenDAO {
+	public SqlSession sqlSession;
+	
+	public BenDAO() {
+		sqlSession = MyBatisConfig.getSqlSessionFactory().openSession(true); // Auto-commit 활성화
+	}
+	
+	public List<BenDAO> benList() {
+		return null;
+	}
+}

@@ -1,0 +1,7 @@
+package com.learning.app.admin;
+
+import com.learning.app.Execute;
+
+public class AdminBenController implements Execute{
+
+}

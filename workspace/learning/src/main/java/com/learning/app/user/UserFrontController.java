@@ -72,9 +72,30 @@ public class UserFrontController extends HttpServlet {
 			System.out.println("signUp5");
 			result = new SignUp5Controller().execute(request, response);
 			break;
+			
+		case "/nicknameCheck.us":
+			System.out.println("닉네임 중복 검사");
+			new NicknameCheckController().execute(request, response);
+			break;
+
+		case "/idCheck.us":
+			System.out.println("아이디 중복 검사");
+			new IdCheckController().execute(request, response);
+			break;
+
+//		case "/phoneCheck.us":
+//			System.out.println("전화번호 중복 검사");
+//			new PhoneCheckController().execute(request, response);
+//			break;	
 
 		case "/findPass1.us":
-			System.out.println("findPassOk");
+			System.out.println("findPass1");
+			result = new FindPass1Controller().execute(request, response);
+			break;
+			
+		case "/findPass2.us":
+			System.out.println("findPass2");
+			result = new FindPass2Controller().execute(request, response);
 			break;
 
 		default:
@@ -85,10 +106,14 @@ public class UserFrontController extends HttpServlet {
 		// 결과에 따라 리다이렉트 또는 포워드 처리
 		if (result != null) {
 			if (result.isRedirect()) {
+				System.out.println("Redirect");
 				response.sendRedirect(result.getPath());
 			} else {
+				System.out.println("Forward");
 				request.getRequestDispatcher(result.getPath()).forward(request, response);
 			}
+		} else {
+			System.out.println("result=null");
 		}
 	}
 }

@@ -1,3 +1,4 @@
+<%@page import="com.learning.app.dto.UserDTO"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
    <header class="main-header">
@@ -7,7 +8,7 @@
                <a href="${pageContext.request.contextPath}/app/preset/main.jsp">learning</a>
             </div>
             <div class="main-header-post-container">
-               <a href="${pageContext.request.contextPath}/app/partyForum/partyForum.fo">
+               <a href="${pageContext.request.contextPath}/app/partyForum/partyForum.jsp">
                   <li>파티 모집</li>
                </a> <a href="${pageContext.request.contextPath}/app/communityForum/communityForum.cf">
                   <li>커뮤니티</li>
@@ -18,7 +19,7 @@
             <c:when test="${not empty sessionScope.userDTO}">
                <div class="main-header-dropdown-container">
                   <div class="main-header-user-box">
-                     <i class="icon-down-dir"></i><%= session.getAttribute("userNickname") %><i class="icon-user-circle-o"></i>
+                     <i class="icon-down-dir"></i><%= ((UserDTO)session.getAttribute("userDTO")).getUserNickname() %><i class="icon-user-circle-o"></i>
                   </div>
                   <div class="main-header-dropdown">
                      <a href="${pageContext.request.contextPath}/app/myPage/checkPass.jsp">• 개인 정보 수정</a>

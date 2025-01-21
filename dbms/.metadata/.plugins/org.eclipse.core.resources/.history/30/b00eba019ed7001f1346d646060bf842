@@ -1,0 +1,16 @@
+SELECT	user_id
+	  , user_nickname
+	  , ben_reason
+	  , ben_start_date
+	  , (ben_start_date + ben_period) ben_end_date
+	  , ben_period
+FROM	tbl_user u
+JOIN	tbl_ben b
+ON		u.user_number = b.user_num
+order by ben_number DESC
+
+SELECT	count(*)
+FROM	TBL_BEN
+;
+
+
