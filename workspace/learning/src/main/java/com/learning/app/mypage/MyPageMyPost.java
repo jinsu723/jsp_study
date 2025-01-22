@@ -15,28 +15,26 @@ import com.learning.app.dto.ForumDTO;
 import com.learning.app.dto.MyForumDTO;
 import com.learning.app.dto.UserDTO;
 
-public class MyPageMyPost implements Execute{
+public class MyPageMyPost implements Execute {
 
 	@Override
 	public Result execute(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 		Result rs = new Result();
-		
+
 		HttpSession session = request.getSession();
 		UserDTO dto = (UserDTO) session.getAttribute("userDTO");
 		session.setMaxInactiveInterval(60 * 60 * 24);
 
-		System.out.println("유저 num : "+dto.getUserNumber());
+		System.out.println("유저 num : " + dto.getUserNumber());
 		List<MyForumDTO> list = new MyPageDAO().myPostList(dto.getUserNumber());
-		
+
+		System.out.println("게시물 : " + list);
 		request.setAttribute("posts", list);
-		
+
 		rs.setPath("/app/myPage/myPageMyPost.jsp");
 		rs.setRedirect(false);
 		return rs;
 	}
-	
-	
-	
-	
+
 }

@@ -262,6 +262,8 @@ body{
 #mng-totalcount{
   width: 96%;
   text-align: right;
+  margin-top: 30px;
+  margin-right: 80px;
 }
 
 

@@ -6840,3 +6840,95 @@ Error : 1, Position : 0, Sql = INSERT INTO TBL_USER (user_number, user_id, user_
 
 !ENTRY org.jkiss.dbeaver.model 2 0 2025-01-21 18:03:00.896
 !MESSAGE Some data source listeners are still registered: org.jkiss.dbeaver.model.navigator.DBNProjectDatabases:node://learning/datasources
+!SESSION 2025-01-22 09:27:04.879 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=17.0.6
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ko_KR
+Framework arguments:  -eclipse.keyring C:\Users\Administrator\AppData\Roaming\DBeaverData\secure\secure_storage
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY org.eclipse.ui 2 2 2025-01-22 09:27:08.743
+!MESSAGE Invalid preference category path: org.eclipse.debug.ui.ConsolePreferencePage (bundle: org.eclipse.ui.console, page: org.eclipse.ui.internal.console.ansi.preferences.AnsiConsolePreferencePage)
+
+!ENTRY org.jkiss.dbeaver.model 4 0 2025-01-22 14:19:52.352
+!MESSAGE SQL Error [1841] [22008]: ORA-01841: 년은 영이 아닌 -4713 과 +4713 사이의 값으로 지정해야 합니다.
+
+
+Error position: line: 104 pos: 202
+!SUBENTRY 1 org.jkiss.dbeaver.model 4 0 2025-01-22 14:19:52.352
+!MESSAGE SQL Error [1841] [22008]: ORA-01841: 년은 영이 아닌 -4713 과 +4713 사이의 값으로 지정해야 합니다.
+
+!SUBENTRY 2 org.jkiss.dbeaver.model 4 0 2025-01-22 14:19:52.352
+!MESSAGE Error : 1841, Position : 202, Sql = INSERT INTO TBL_USER (user_number, user_id, user_passwd, user_nickname, user_tier, user_phone, user_join_date) VALUES (seq_user.NEXTVAL, 'test101', 'passwd100*', '길진수', '골드', '010-2278-5540', 'sysdate'), OriginalSql = INSERT INTO TBL_USER (user_number, user_id, user_passwd, user_nickname, user_tier, user_phone, user_join_date) VALUES (seq_user.NEXTVAL, 'test101', 'passwd100*', '길진수', '골드', '010-2278-5540', 'sysdate'), Error Msg = ORA-01841: 년은 영이 아닌 -4713 과 +4713 사이의 값으로 지정해야 합니다.
+
+!STACK 0
+Error : 1841, Position : 202, Sql = INSERT INTO TBL_USER (user_number, user_id, user_passwd, user_nickname, user_tier, user_phone, user_join_date) VALUES (seq_user.NEXTVAL, 'test101', 'passwd100*', '길진수', '골드', '010-2278-5540', 'sysdate'), OriginalSql = INSERT INTO TBL_USER (user_number, user_id, user_passwd, user_nickname, user_tier, user_phone, user_join_date) VALUES (seq_user.NEXTVAL, 'test101', 'passwd100*', '길진수', '골드', '010-2278-5540', 'sysdate'), Error Msg = ORA-01841: 년은 영이 아닌 -4713 과 +4713 사이의 값으로 지정해야 합니다.
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:637)
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:564)
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1231)
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:772)
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:299)
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:512)
+	at oracle.jdbc.driver.T4CStatement.doOall8(T4CStatement.java:123)
+	at oracle.jdbc.driver.T4CStatement.executeForRows(T4CStatement.java:1200)
+	at oracle.jdbc.driver.OracleStatement.executeSQLStatement(OracleStatement.java:1820)
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1472)
+	at oracle.jdbc.driver.OracleStatement.executeInternal(OracleStatement.java:2505)
+	at oracle.jdbc.driver.OracleStatement.execute(OracleStatement.java:2460)
+	at oracle.jdbc.driver.OracleStatementWrapper.execute(OracleStatementWrapper.java:328)
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.execute(JDBCStatementImpl.java:344)
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.executeStatement(JDBCStatementImpl.java:128)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.executeStatement(SQLQueryJob.java:631)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.lambda$2(SQLQueryJob.java:522)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.executeSingleQuery(SQLQueryJob.java:544)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.extractData(SQLQueryJob.java:1016)
+	at org.jkiss.dbeaver.ui.editors.sql.SQLEditor$QueryResultsContainer.readData(SQLEditor.java:4273)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetJobDataRead.lambda$0(ResultSetJobDataRead.java:128)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:192)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetJobDataRead.run(ResultSetJobDataRead.java:126)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetViewer$ResultSetDataPumpJob.run(ResultSetViewer.java:5166)
+	at org.jkiss.dbeaver.model.runtime.AbstractJob.run(AbstractJob.java:119)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.jkiss.dbeaver.model 4 0 2025-01-22 15:40:10.618
+!MESSAGE SQL Error [927] [42000]: ORA-00927: 누락된 등호
+
+!SUBENTRY 1 org.jkiss.dbeaver.model 4 0 2025-01-22 15:40:10.618
+!MESSAGE Error : 927, Position : 33, Sql = UPDATE tbl_user
+SET user_ben_cnt++, OriginalSql = UPDATE tbl_user
+SET user_ben_cnt++, Error Msg = ORA-00927: 누락된 등호
+
+!STACK 0
+Error : 927, Position : 33, Sql = UPDATE tbl_user
+SET user_ben_cnt++, OriginalSql = UPDATE tbl_user
+SET user_ben_cnt++, Error Msg = ORA-00927: 누락된 등호
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:637)
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:564)
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1231)
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:772)
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:299)
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:512)
+	at oracle.jdbc.driver.T4CStatement.doOall8(T4CStatement.java:123)
+	at oracle.jdbc.driver.T4CStatement.executeForRows(T4CStatement.java:1200)
+	at oracle.jdbc.driver.OracleStatement.executeSQLStatement(OracleStatement.java:1820)
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1472)
+	at oracle.jdbc.driver.OracleStatement.executeInternal(OracleStatement.java:2505)
+	at oracle.jdbc.driver.OracleStatement.execute(OracleStatement.java:2460)
+	at oracle.jdbc.driver.OracleStatementWrapper.execute(OracleStatementWrapper.java:328)
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.execute(JDBCStatementImpl.java:344)
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.executeStatement(JDBCStatementImpl.java:128)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.executeStatement(SQLQueryJob.java:631)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.lambda$2(SQLQueryJob.java:522)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:192)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.executeSingleQuery(SQLQueryJob.java:541)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.extractData(SQLQueryJob.java:1016)
+	at org.jkiss.dbeaver.ui.editors.sql.SQLEditor$QueryResultsContainer.readData(SQLEditor.java:4273)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetJobDataRead.lambda$0(ResultSetJobDataRead.java:128)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:192)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetJobDataRead.run(ResultSetJobDataRead.java:126)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetViewer$ResultSetDataPumpJob.run(ResultSetViewer.java:5166)
+	at org.jkiss.dbeaver.model.runtime.AbstractJob.run(AbstractJob.java:119)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)

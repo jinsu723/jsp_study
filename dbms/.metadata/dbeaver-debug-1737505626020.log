@@ -1,0 +1,2135 @@
+2025-01-21 09:48:51.012 - DBeaver 24.3.0.202412011650 is starting
+2025-01-21 09:48:51.013 - OS: Windows 10 10.0 (amd64)
+2025-01-21 09:48:51.013 - Java version: 17.0.6 by Eclipse Adoptium (64bit)
+2025-01-21 09:48:51.013 - Install path: 'D:\web_0900_kjs\dbms_3\resource\dbeaver-ce-24.3.0-win32.win32.x86_64\dbeaver'
+2025-01-21 09:48:51.013 - Instance path: 'file:/D:/web_0900_kjs/jsp_6/dbms/'
+2025-01-21 09:48:51.014 - Memory available 64Mb/1024Mb
+2025-01-21 09:48:51.015 - Platform not initialized: metadata folder may be not set
+2025-01-21 09:48:51.022 - Create display
+2025-01-21 09:48:51.097 - Initialize desktop platform...
+2025-01-21 09:48:51.190 - BounceCastle bundle found. Use JCE provider BC
+> Start Core File Systems [org.eclipse.core.filesystem 1.11.0.v20240824-0952]
+> Start Core Resource Management [org.eclipse.core.resources 3.21.0.v20240805-1607]
+> Start Team Support Core [org.eclipse.team.core 3.10.500.v20240621-0541]
+> Start DBeaver UI Navigator [org.jkiss.dbeaver.ui.navigator 1.0.144.202412011650]
+2025-01-21 09:48:51.329 - Initialize base platform...
+> Start DBeaver UI Editors - Base [org.jkiss.dbeaver.ui.editors.base 1.0.144.202412011650]
+2025-01-21 09:48:51.346 - send collected statistics
+2025-01-21 09:48:51.353 - Platform initialized (256ms)
+2025-01-21 09:48:51.385 - Starting instance server at http://localhost:50195
+2025-01-21 09:48:51.394 - Run workbench
+> Start Eclipse e4 Workbench SWT [org.eclipse.e4.ui.workbench.swt 0.17.500.v20240807-0911]
+> Start Eclipse Application Services [org.eclipse.e4.core.services 2.4.400.v20240413-1529]
+> Start Eclipse UI Application Services [org.eclipse.e4.ui.services 1.6.300.v20231201-1637]
+> Start Eclipse e4 Progress View [org.eclipse.e4.ui.progress 0.4.600.v20240606-1020]
+> Start Eclipse Bindings Support [org.eclipse.e4.ui.bindings 0.14.400.v20240321-1245]
+> Start Eclipse e4 core commands [org.eclipse.e4.core.commands 1.1.400.v20240424-0444]
+> Start EMF XML/XMI Persistence [org.eclipse.emf.ecore.xmi 2.38.0.v20240721-0634]
+> Start Eclipse CSS SWT Theme Support [org.eclipse.e4.ui.css.swt.theme 0.14.400.v20240424-0956]
+> Start Eclipse e4 Workbench Add-ons [org.eclipse.e4.ui.workbench.addons.swt 1.5.500.v20240620-1945]
+> Start Eclipse e4 Workbench SWT Renderer [org.eclipse.e4.ui.workbench.renderers.swt 0.16.500.v20240727-1037]
+> Start Eclipse Dependency Injection Extensions [org.eclipse.e4.core.di.extensions 0.18.300.v20240413-1529]
+> Start Eclipse CSS SWT Support [org.eclipse.e4.ui.css.swt 0.15.400.v20240321-1245]
+> Start Default Text Editor [org.eclipse.ui.editors 3.18.0.v20240807-0735]
+> Start Text Editor Framework [org.eclipse.ui.workbench.texteditor 3.18.0.v20240819-1419]
+2025-01-21 09:48:52.497 - Configure workbench window
+> Start DBeaver SQL Model [org.jkiss.dbeaver.model.sql 1.0.134.202412011650]
+2025-01-21 09:48:52.562 - Script dialect 'gbase8s' not found in registry (for data source provider gbase8s). Use default.
+2025-01-21 09:48:52.592 - Total database drivers: 121 (121)
+> Start Help System Core [org.eclipse.help 3.10.400.v20240415-0528]
+2025-01-21 09:48:52.641 - Create actions
+2025-01-21 09:48:52.646 - Disable Eclipse action set 'org.eclipse.ui.edit.text.actionSet.annotationNavigation'
+2025-01-21 09:48:52.647 - Disable Eclipse action set 'org.eclipse.ui.WorkingSetActionSet'
+2025-01-21 09:48:52.647 - Disable Eclipse action set 'org.eclipse.ui.actionSet.openFiles'
+2025-01-21 09:48:52.647 - Create workbench actions
+2025-01-21 09:48:52.877 - Initialize workbench window
+2025-01-21 09:48:52.881 - Finish initialization
+> Start DBeaver UI Editors - Data [org.jkiss.dbeaver.ui.editors.data 1.0.144.202412011650]
+Warning: NLS unused message: actions_navigator__objects in: org.jkiss.dbeaver.ui.editors.sql.internal.SQLEditorMessages
+> Start DBeaver UI Editors - SQL [org.jkiss.dbeaver.ui.editors.sql 1.0.144.202412011650]
+> Start DBeaver SQL Terminal [org.jkiss.dbeaver.ui.editors.sql.terminal 1.0.120.202412011650]
+> Start Core Compare Support [org.eclipse.compare.core 3.8.500.v20240524-2010]
+> Start Internet Connection Management UI [org.eclipse.ui.net 1.5.400.v20240413-1529]
+> Start Internet Connection Management [org.eclipse.core.net 1.5.500.v20240625-1706]
+> Start DBeaver Sample Database [org.jkiss.dbeaver.ext.sample.database 1.0.181.202412011650]
+> Start DBeaver Tip of the day [org.jkiss.dbeaver.ext.ui.tipoftheday 1.0.150.202412011650]
+> Start GEF Classic Draw2d [org.eclipse.draw2d 3.17.0.202409021815]
+> Start GEF Classic GEF (MVC) [org.eclipse.gef 3.19.0.202409021815]
+> Start DBeaver ERD UI [org.jkiss.dbeaver.erd.ui 3.0.104.202412011650]
+> Start DBeaver ERD Model [org.jkiss.dbeaver.erd.model 1.0.104.202412011650]
+> Start DBeaver Dashboard UI [org.jkiss.dbeaver.ui.dashboard 1.0.141.202412011650]
+> Start DBeaver UI Editors - Connections [org.jkiss.dbeaver.ui.editors.connection 1.0.135.202412011650]
+> Start DBeaver JDBC Model [org.jkiss.dbeaver.model.jdbc 1.0.37.202412011650]
+> Start DBeaver Oracle Model [org.jkiss.dbeaver.ext.oracle 2.1.229.202412011650]
+> Start Console [org.eclipse.ui.console 3.14.100.v20240429-1358]
+> Start Debug Core [org.eclipse.debug.core 3.21.500.v20240801-2219]
+> Start DBeaver Tasks - Native Tools UI [org.jkiss.dbeaver.tasks.native.ui 1.0.122.202412011650]
+> Start DBeaver Oracle UI [org.jkiss.dbeaver.ext.oracle.ui 1.0.131.202412011650]
+> Start DBeaver Tasks - General UI [org.jkiss.dbeaver.tasks.ui 1.0.122.202412011650]
+2025-01-21 09:48:54.673 - Connect with 'localhost' (oracle_thin-19482321f56-1b0cbac635d63ab3)
+2025-01-21 09:48:54.699 - Execution context opened (localhost; Main; 0)
+2025-01-21 09:48:55.061 - Execution context opened (localhost; Metadata; 1)
+> Start DBeaver SQL Language Semantic Model [org.jkiss.dbeaver.model.lsm 1.0.39.202412011650]
+2025-01-21 09:48:55.155 - Connected (oracle_thin-19482321f56-1b0cbac635d63ab3, Oracle JDBC driver [21.3.0.0.0])
+2025-01-21 09:48:55.156 - Execution context opened (localhost; SQLEditor <Script.sql>; 2)
+2025-01-21 09:48:56.725 - Open [https://dbeaver.io/product/version.xml]
+2025-01-21 09:58:32.217 - SQL Error [904] [42000]: ORA-00904: "SEQ_BEN": 부적합한 식별자
+
+org.jkiss.dbeaver.model.sql.DBSQLException: SQL Error [904] [42000]: ORA-00904: "SEQ_BEN": 부적합한 식별자
+
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.executeStatement(JDBCStatementImpl.java:130)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.executeStatement(SQLQueryJob.java:631)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.lambda$2(SQLQueryJob.java:522)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:192)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.executeSingleQuery(SQLQueryJob.java:541)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.extractData(SQLQueryJob.java:1016)
+	at org.jkiss.dbeaver.ui.editors.sql.SQLEditor$QueryResultsContainer.readData(SQLEditor.java:4273)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetJobDataRead.lambda$0(ResultSetJobDataRead.java:128)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:192)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetJobDataRead.run(ResultSetJobDataRead.java:126)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetViewer$ResultSetDataPumpJob.run(ResultSetViewer.java:5166)
+	at org.jkiss.dbeaver.model.runtime.AbstractJob.run(AbstractJob.java:119)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: java.sql.SQLSyntaxErrorException: ORA-00904: "SEQ_BEN": 부적합한 식별자
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:630)
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:564)
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1231)
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:772)
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:299)
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:512)
+	at oracle.jdbc.driver.T4CStatement.doOall8(T4CStatement.java:123)
+	at oracle.jdbc.driver.T4CStatement.executeForDescribe(T4CStatement.java:969)
+	at oracle.jdbc.driver.OracleStatement.prepareDefineBufferAndExecute(OracleStatement.java:1271)
+	at oracle.jdbc.driver.OracleStatement.executeMaybeDescribe(OracleStatement.java:1149)
+	at oracle.jdbc.driver.OracleStatement.executeSQLSelect(OracleStatement.java:1661)
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1470)
+	at oracle.jdbc.driver.OracleStatement.executeInternal(OracleStatement.java:2505)
+	at oracle.jdbc.driver.OracleStatement.execute(OracleStatement.java:2460)
+	at oracle.jdbc.driver.OracleStatementWrapper.execute(OracleStatementWrapper.java:328)
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.execute(JDBCStatementImpl.java:344)
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.executeStatement(JDBCStatementImpl.java:128)
+	... 12 more
+Caused by: Error : 904, Position : 34, Sql = SELECT	*
+FROM 	tbl_ben
+ORDER BY seq_ben DESC, OriginalSql = SELECT	*
+FROM 	tbl_ben
+ORDER BY seq_ben DESC, Error Msg = ORA-00904: "SEQ_BEN": 부적합한 식별자
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:637)
+	... 28 more
+2025-01-21 09:58:39.230 - SQL Error [955] [42000]: ORA-00955: 기존의 객체가 이름을 사용하고 있습니다.
+
+org.jkiss.dbeaver.model.sql.DBSQLException: SQL Error [955] [42000]: ORA-00955: 기존의 객체가 이름을 사용하고 있습니다.
+
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.executeStatement(JDBCStatementImpl.java:130)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.executeStatement(SQLQueryJob.java:631)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.lambda$2(SQLQueryJob.java:522)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:192)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.executeSingleQuery(SQLQueryJob.java:541)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.extractData(SQLQueryJob.java:1016)
+	at org.jkiss.dbeaver.ui.editors.sql.SQLEditor$QueryResultsContainer.readData(SQLEditor.java:4273)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetJobDataRead.lambda$0(ResultSetJobDataRead.java:128)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:192)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetJobDataRead.run(ResultSetJobDataRead.java:126)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetViewer$ResultSetDataPumpJob.run(ResultSetViewer.java:5166)
+	at org.jkiss.dbeaver.model.runtime.AbstractJob.run(AbstractJob.java:119)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: java.sql.SQLSyntaxErrorException: ORA-00955: 기존의 객체가 이름을 사용하고 있습니다.
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:630)
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:564)
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1231)
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:772)
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:299)
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:512)
+	at oracle.jdbc.driver.T4CStatement.doOall8(T4CStatement.java:123)
+	at oracle.jdbc.driver.T4CStatement.executeForRows(T4CStatement.java:1200)
+	at oracle.jdbc.driver.OracleStatement.executeSQLStatement(OracleStatement.java:1820)
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1472)
+	at oracle.jdbc.driver.OracleStatement.executeInternal(OracleStatement.java:2505)
+	at oracle.jdbc.driver.OracleStatement.execute(OracleStatement.java:2460)
+	at oracle.jdbc.driver.OracleStatementWrapper.execute(OracleStatementWrapper.java:328)
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.execute(JDBCStatementImpl.java:344)
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.executeStatement(JDBCStatementImpl.java:128)
+	... 12 more
+Caused by: Error : 955, Position : 16, Sql = CREATE SEQUENCE seq_ben START WITH 1 INCREMENT BY 1 nocache nocycle, OriginalSql = CREATE SEQUENCE seq_ben START WITH 1 INCREMENT BY 1 nocache nocycle, Error Msg = ORA-00955: 기존의 객체가 이름을 사용하고 있습니다.
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:637)
+	... 26 more
+2025-01-21 09:58:40.931 - SQL Error [904] [42000]: ORA-00904: "SEQ_BEN": 부적합한 식별자
+
+org.jkiss.dbeaver.model.sql.DBSQLException: SQL Error [904] [42000]: ORA-00904: "SEQ_BEN": 부적합한 식별자
+
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.executeStatement(JDBCStatementImpl.java:130)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.executeStatement(SQLQueryJob.java:631)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.lambda$2(SQLQueryJob.java:522)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:192)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.executeSingleQuery(SQLQueryJob.java:541)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.extractData(SQLQueryJob.java:1016)
+	at org.jkiss.dbeaver.ui.editors.sql.SQLEditor$QueryResultsContainer.readData(SQLEditor.java:4273)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetJobDataRead.lambda$0(ResultSetJobDataRead.java:128)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:192)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetJobDataRead.run(ResultSetJobDataRead.java:126)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetViewer$ResultSetDataPumpJob.run(ResultSetViewer.java:5166)
+	at org.jkiss.dbeaver.model.runtime.AbstractJob.run(AbstractJob.java:119)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: java.sql.SQLSyntaxErrorException: ORA-00904: "SEQ_BEN": 부적합한 식별자
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:630)
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:564)
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1231)
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:772)
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:299)
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:512)
+	at oracle.jdbc.driver.T4CStatement.doOall8(T4CStatement.java:123)
+	at oracle.jdbc.driver.T4CStatement.executeForDescribe(T4CStatement.java:969)
+	at oracle.jdbc.driver.OracleStatement.prepareDefineBufferAndExecute(OracleStatement.java:1271)
+	at oracle.jdbc.driver.OracleStatement.executeMaybeDescribe(OracleStatement.java:1149)
+	at oracle.jdbc.driver.OracleStatement.executeSQLSelect(OracleStatement.java:1661)
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1470)
+	at oracle.jdbc.driver.OracleStatement.executeInternal(OracleStatement.java:2505)
+	at oracle.jdbc.driver.OracleStatement.execute(OracleStatement.java:2460)
+	at oracle.jdbc.driver.OracleStatementWrapper.execute(OracleStatementWrapper.java:328)
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.execute(JDBCStatementImpl.java:344)
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.executeStatement(JDBCStatementImpl.java:128)
+	... 12 more
+Caused by: Error : 904, Position : 34, Sql = SELECT	*
+FROM 	tbl_ben
+ORDER BY seq_ben DESC, OriginalSql = SELECT	*
+FROM 	tbl_ben
+ORDER BY seq_ben DESC, Error Msg = ORA-00904: "SEQ_BEN": 부적합한 식별자
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:637)
+	... 28 more
+2025-01-21 10:43:43.828 - Connect with 'localhost' (oracle_thin-19471d6d50f-3f36108ac82302db)
+2025-01-21 10:43:43.829 - Execution context opened (localhost; Main; 3)
+2025-01-21 10:43:43.999 - Execution context opened (localhost; Metadata; 4)
+2025-01-21 10:43:44.033 - Connected (oracle_thin-19471d6d50f-3f36108ac82302db, Oracle JDBC driver [21.3.0.0.0])
+2025-01-21 10:43:44.035 - Execution context opened (localhost; SQLEditor <Script-1.sql>; 5)
+2025-01-21 10:43:44.766 - Connect with 'localhost' (oracle_thin-19467ee23bc-120621d2bf7f97ba)
+2025-01-21 10:43:44.767 - Execution context opened (localhost; Main; 6)
+2025-01-21 10:43:44.791 - Execution context opened (localhost; Metadata; 7)
+2025-01-21 10:43:44.802 - Execution context opened (localhost; SQLEditor <Script.sql>; 8)
+2025-01-21 10:43:44.815 - Connected (oracle_thin-19467ee23bc-120621d2bf7f97ba, Oracle JDBC driver [21.3.0.0.0])
+2025-01-21 10:43:47.685 - Execution context opened (localhost; SQLEditor <Script.sql>; 9)
+2025-01-21 10:43:51.278 - Execution context opened (localhost; SQLEditor <Script-1.sql>; 10)
+2025-01-21 11:05:28.552 - SQL Error [950] [42000]: ORA-00950: DROP 옵션이 부적합합니다
+
+org.jkiss.dbeaver.model.sql.DBSQLException: SQL Error [950] [42000]: ORA-00950: DROP 옵션이 부적합합니다
+
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.executeStatement(JDBCStatementImpl.java:130)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.executeStatement(SQLQueryJob.java:631)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.lambda$2(SQLQueryJob.java:522)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:192)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.executeSingleQuery(SQLQueryJob.java:541)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.extractData(SQLQueryJob.java:1016)
+	at org.jkiss.dbeaver.ui.editors.sql.SQLEditor$QueryResultsContainer.readData(SQLEditor.java:4273)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetJobDataRead.lambda$0(ResultSetJobDataRead.java:128)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:192)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetJobDataRead.run(ResultSetJobDataRead.java:126)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetViewer$ResultSetDataPumpJob.run(ResultSetViewer.java:5166)
+	at org.jkiss.dbeaver.model.runtime.AbstractJob.run(AbstractJob.java:119)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: java.sql.SQLSyntaxErrorException: ORA-00950: DROP 옵션이 부적합합니다
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:630)
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:564)
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1231)
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:772)
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:299)
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:512)
+	at oracle.jdbc.driver.T4CStatement.doOall8(T4CStatement.java:123)
+	at oracle.jdbc.driver.T4CStatement.executeForRows(T4CStatement.java:1200)
+	at oracle.jdbc.driver.OracleStatement.executeSQLStatement(OracleStatement.java:1820)
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1472)
+	at oracle.jdbc.driver.OracleStatement.executeInternal(OracleStatement.java:2505)
+	at oracle.jdbc.driver.OracleStatement.execute(OracleStatement.java:2460)
+	at oracle.jdbc.driver.OracleStatementWrapper.execute(OracleStatementWrapper.java:328)
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.execute(JDBCStatementImpl.java:344)
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.executeStatement(JDBCStatementImpl.java:128)
+	... 12 more
+Caused by: Error : 950, Position : 5, Sql = DROP tbl_user, OriginalSql = DROP tbl_user, Error Msg = ORA-00950: DROP 옵션이 부적합합니다
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:637)
+	... 26 more
+2025-01-21 11:05:54.173 - SQL Error [2449] [72000]: ORA-02449: 외래 키에 의해 참조되는 고유/기본 키가 테이블에 있습니다
+
+org.jkiss.dbeaver.model.sql.DBSQLException: SQL Error [2449] [72000]: ORA-02449: 외래 키에 의해 참조되는 고유/기본 키가 테이블에 있습니다
+
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.executeStatement(JDBCStatementImpl.java:130)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.executeStatement(SQLQueryJob.java:631)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.lambda$2(SQLQueryJob.java:522)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:192)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.executeSingleQuery(SQLQueryJob.java:541)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.extractData(SQLQueryJob.java:1016)
+	at org.jkiss.dbeaver.ui.editors.sql.SQLEditor$QueryResultsContainer.readData(SQLEditor.java:4273)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetJobDataRead.lambda$0(ResultSetJobDataRead.java:128)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:192)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetJobDataRead.run(ResultSetJobDataRead.java:126)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetViewer$ResultSetDataPumpJob.run(ResultSetViewer.java:5166)
+	at org.jkiss.dbeaver.model.runtime.AbstractJob.run(AbstractJob.java:119)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: java.sql.SQLException: ORA-02449: 외래 키에 의해 참조되는 고유/기본 키가 테이블에 있습니다
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:630)
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:564)
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1231)
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:772)
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:299)
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:512)
+	at oracle.jdbc.driver.T4CStatement.doOall8(T4CStatement.java:123)
+	at oracle.jdbc.driver.T4CStatement.executeForRows(T4CStatement.java:1200)
+	at oracle.jdbc.driver.OracleStatement.executeSQLStatement(OracleStatement.java:1820)
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1472)
+	at oracle.jdbc.driver.OracleStatement.executeInternal(OracleStatement.java:2505)
+	at oracle.jdbc.driver.OracleStatement.execute(OracleStatement.java:2460)
+	at oracle.jdbc.driver.OracleStatementWrapper.execute(OracleStatementWrapper.java:328)
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.execute(JDBCStatementImpl.java:344)
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.executeStatement(JDBCStatementImpl.java:128)
+	... 12 more
+Caused by: Error : 2449, Position : 11, Sql = DROP TABLE tbl_user, OriginalSql = DROP TABLE tbl_user, Error Msg = ORA-02449: 외래 키에 의해 참조되는 고유/기본 키가 테이블에 있습니다
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:637)
+	... 26 more
+2025-01-21 11:06:07.417 - SQL Error [2449] [72000]: ORA-02449: 외래 키에 의해 참조되는 고유/기본 키가 테이블에 있습니다
+
+
+Error position: line: 2 pos: 11
+org.jkiss.dbeaver.model.sql.DBSQLException: SQL Error [2449] [72000]: ORA-02449: 외래 키에 의해 참조되는 고유/기본 키가 테이블에 있습니다
+
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.executeStatement(JDBCStatementImpl.java:130)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.executeStatement(SQLQueryJob.java:631)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.lambda$2(SQLQueryJob.java:522)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:192)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.executeSingleQuery(SQLQueryJob.java:541)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.extractData(SQLQueryJob.java:1016)
+	at org.jkiss.dbeaver.ui.editors.sql.SQLEditor$QueryResultsContainer.readData(SQLEditor.java:4273)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetJobDataRead.lambda$0(ResultSetJobDataRead.java:128)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:192)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetJobDataRead.run(ResultSetJobDataRead.java:126)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetViewer$ResultSetDataPumpJob.run(ResultSetViewer.java:5166)
+	at org.jkiss.dbeaver.model.runtime.AbstractJob.run(AbstractJob.java:119)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: java.sql.SQLException: ORA-02449: 외래 키에 의해 참조되는 고유/기본 키가 테이블에 있습니다
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:630)
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:564)
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1231)
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:772)
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:299)
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:512)
+	at oracle.jdbc.driver.T4CStatement.doOall8(T4CStatement.java:123)
+	at oracle.jdbc.driver.T4CStatement.executeForRows(T4CStatement.java:1200)
+	at oracle.jdbc.driver.OracleStatement.executeSQLStatement(OracleStatement.java:1820)
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1472)
+	at oracle.jdbc.driver.OracleStatement.executeInternal(OracleStatement.java:2505)
+	at oracle.jdbc.driver.OracleStatement.execute(OracleStatement.java:2460)
+	at oracle.jdbc.driver.OracleStatementWrapper.execute(OracleStatementWrapper.java:328)
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.execute(JDBCStatementImpl.java:344)
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.executeStatement(JDBCStatementImpl.java:128)
+	... 12 more
+Caused by: Error : 2449, Position : 11, Sql = DROP TABLE tbl_forum, OriginalSql = DROP TABLE tbl_forum, Error Msg = ORA-02449: 외래 키에 의해 참조되는 고유/기본 키가 테이블에 있습니다
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:637)
+	... 26 more
+> Start DBeaver Data Transfer [org.jkiss.dbeaver.data.transfer 2.0.128.202412011650]
+2025-01-21 11:06:19.963 - SQL Error [2449] [72000]: ORA-02449: 외래 키에 의해 참조되는 고유/기본 키가 테이블에 있습니다
+
+
+Error position: line: 2 pos: 11
+org.jkiss.dbeaver.model.sql.DBSQLException: SQL Error [2449] [72000]: ORA-02449: 외래 키에 의해 참조되는 고유/기본 키가 테이블에 있습니다
+
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.executeStatement(JDBCStatementImpl.java:130)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.executeStatement(SQLQueryJob.java:631)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.lambda$2(SQLQueryJob.java:522)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:192)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.executeSingleQuery(SQLQueryJob.java:541)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.extractData(SQLQueryJob.java:1016)
+	at org.jkiss.dbeaver.ui.editors.sql.SQLEditor$QueryResultsContainer.readData(SQLEditor.java:4273)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetJobDataRead.lambda$0(ResultSetJobDataRead.java:128)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:192)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetJobDataRead.run(ResultSetJobDataRead.java:126)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetViewer$ResultSetDataPumpJob.run(ResultSetViewer.java:5166)
+	at org.jkiss.dbeaver.model.runtime.AbstractJob.run(AbstractJob.java:119)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: java.sql.SQLException: ORA-02449: 외래 키에 의해 참조되는 고유/기본 키가 테이블에 있습니다
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:630)
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:564)
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1231)
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:772)
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:299)
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:512)
+	at oracle.jdbc.driver.T4CStatement.doOall8(T4CStatement.java:123)
+	at oracle.jdbc.driver.T4CStatement.executeForRows(T4CStatement.java:1200)
+	at oracle.jdbc.driver.OracleStatement.executeSQLStatement(OracleStatement.java:1820)
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1472)
+	at oracle.jdbc.driver.OracleStatement.executeInternal(OracleStatement.java:2505)
+	at oracle.jdbc.driver.OracleStatement.execute(OracleStatement.java:2460)
+	at oracle.jdbc.driver.OracleStatementWrapper.execute(OracleStatementWrapper.java:328)
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.execute(JDBCStatementImpl.java:344)
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.executeStatement(JDBCStatementImpl.java:128)
+	... 12 more
+Caused by: Error : 2449, Position : 11, Sql = DROP TABLE tbl_user, OriginalSql = DROP TABLE tbl_user, Error Msg = ORA-02449: 외래 키에 의해 참조되는 고유/기본 키가 테이블에 있습니다
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:637)
+	... 26 more
+2025-01-21 11:06:21.753 - SQL Error [2449] [72000]: ORA-02449: 외래 키에 의해 참조되는 고유/기본 키가 테이블에 있습니다
+
+org.jkiss.dbeaver.model.sql.DBSQLException: SQL Error [2449] [72000]: ORA-02449: 외래 키에 의해 참조되는 고유/기본 키가 테이블에 있습니다
+
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.executeStatement(JDBCStatementImpl.java:130)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.executeStatement(SQLQueryJob.java:631)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.lambda$2(SQLQueryJob.java:522)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:192)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.executeSingleQuery(SQLQueryJob.java:541)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.extractData(SQLQueryJob.java:1016)
+	at org.jkiss.dbeaver.ui.editors.sql.SQLEditor$QueryResultsContainer.readData(SQLEditor.java:4273)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetJobDataRead.lambda$0(ResultSetJobDataRead.java:128)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:192)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetJobDataRead.run(ResultSetJobDataRead.java:126)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetViewer$ResultSetDataPumpJob.run(ResultSetViewer.java:5166)
+	at org.jkiss.dbeaver.model.runtime.AbstractJob.run(AbstractJob.java:119)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: java.sql.SQLException: ORA-02449: 외래 키에 의해 참조되는 고유/기본 키가 테이블에 있습니다
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:630)
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:564)
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1231)
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:772)
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:299)
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:512)
+	at oracle.jdbc.driver.T4CStatement.doOall8(T4CStatement.java:123)
+	at oracle.jdbc.driver.T4CStatement.executeForRows(T4CStatement.java:1200)
+	at oracle.jdbc.driver.OracleStatement.executeSQLStatement(OracleStatement.java:1820)
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1472)
+	at oracle.jdbc.driver.OracleStatement.executeInternal(OracleStatement.java:2505)
+	at oracle.jdbc.driver.OracleStatement.execute(OracleStatement.java:2460)
+	at oracle.jdbc.driver.OracleStatementWrapper.execute(OracleStatementWrapper.java:328)
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.execute(JDBCStatementImpl.java:344)
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.executeStatement(JDBCStatementImpl.java:128)
+	... 12 more
+Caused by: Error : 2449, Position : 11, Sql = DROP TABLE tbl_forum, OriginalSql = DROP TABLE tbl_forum, Error Msg = ORA-02449: 외래 키에 의해 참조되는 고유/기본 키가 테이블에 있습니다
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:637)
+	... 26 more
+2025-01-21 11:06:28.352 - SQL Error [942] [42000]: ORA-00942: 테이블 또는 뷰가 존재하지 않습니다
+
+
+Error position: line: 4 pos: 11
+org.jkiss.dbeaver.model.sql.DBSQLException: SQL Error [942] [42000]: ORA-00942: 테이블 또는 뷰가 존재하지 않습니다
+
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.executeStatement(JDBCStatementImpl.java:130)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.executeStatement(SQLQueryJob.java:631)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.lambda$2(SQLQueryJob.java:522)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:192)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.executeSingleQuery(SQLQueryJob.java:541)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.extractData(SQLQueryJob.java:1016)
+	at org.jkiss.dbeaver.ui.editors.sql.SQLEditor$QueryResultsContainer.readData(SQLEditor.java:4273)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetJobDataRead.lambda$0(ResultSetJobDataRead.java:128)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:192)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetJobDataRead.run(ResultSetJobDataRead.java:126)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetViewer$ResultSetDataPumpJob.run(ResultSetViewer.java:5166)
+	at org.jkiss.dbeaver.model.runtime.AbstractJob.run(AbstractJob.java:119)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: java.sql.SQLSyntaxErrorException: ORA-00942: 테이블 또는 뷰가 존재하지 않습니다
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:630)
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:564)
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1231)
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:772)
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:299)
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:512)
+	at oracle.jdbc.driver.T4CStatement.doOall8(T4CStatement.java:123)
+	at oracle.jdbc.driver.T4CStatement.executeForRows(T4CStatement.java:1200)
+	at oracle.jdbc.driver.OracleStatement.executeSQLStatement(OracleStatement.java:1820)
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1472)
+	at oracle.jdbc.driver.OracleStatement.executeInternal(OracleStatement.java:2505)
+	at oracle.jdbc.driver.OracleStatement.execute(OracleStatement.java:2460)
+	at oracle.jdbc.driver.OracleStatementWrapper.execute(OracleStatementWrapper.java:328)
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.execute(JDBCStatementImpl.java:344)
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.executeStatement(JDBCStatementImpl.java:128)
+	... 12 more
+Caused by: Error : 942, Position : 11, Sql = DROP TABLE tbl_party, OriginalSql = DROP TABLE tbl_party, Error Msg = ORA-00942: 테이블 또는 뷰가 존재하지 않습니다
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:637)
+	... 26 more
+2025-01-21 11:06:37.965 - SQL Error [942] [42000]: ORA-00942: 테이블 또는 뷰가 존재하지 않습니다
+
+
+Error position: line: 5 pos: 11
+org.jkiss.dbeaver.model.sql.DBSQLException: SQL Error [942] [42000]: ORA-00942: 테이블 또는 뷰가 존재하지 않습니다
+
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.executeStatement(JDBCStatementImpl.java:130)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.executeStatement(SQLQueryJob.java:631)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.lambda$2(SQLQueryJob.java:522)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:192)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.executeSingleQuery(SQLQueryJob.java:541)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.extractData(SQLQueryJob.java:1016)
+	at org.jkiss.dbeaver.ui.editors.sql.SQLEditor$QueryResultsContainer.readData(SQLEditor.java:4273)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetJobDataRead.lambda$0(ResultSetJobDataRead.java:128)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:192)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetJobDataRead.run(ResultSetJobDataRead.java:126)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetViewer$ResultSetDataPumpJob.run(ResultSetViewer.java:5166)
+	at org.jkiss.dbeaver.model.runtime.AbstractJob.run(AbstractJob.java:119)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: java.sql.SQLSyntaxErrorException: ORA-00942: 테이블 또는 뷰가 존재하지 않습니다
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:630)
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:564)
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1231)
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:772)
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:299)
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:512)
+	at oracle.jdbc.driver.T4CStatement.doOall8(T4CStatement.java:123)
+	at oracle.jdbc.driver.T4CStatement.executeForRows(T4CStatement.java:1200)
+	at oracle.jdbc.driver.OracleStatement.executeSQLStatement(OracleStatement.java:1820)
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1472)
+	at oracle.jdbc.driver.OracleStatement.executeInternal(OracleStatement.java:2505)
+	at oracle.jdbc.driver.OracleStatement.execute(OracleStatement.java:2460)
+	at oracle.jdbc.driver.OracleStatementWrapper.execute(OracleStatementWrapper.java:328)
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.execute(JDBCStatementImpl.java:344)
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.executeStatement(JDBCStatementImpl.java:128)
+	... 12 more
+Caused by: Error : 942, Position : 11, Sql = DROP TABLE tbl_comment, OriginalSql = DROP TABLE tbl_comment, Error Msg = ORA-00942: 테이블 또는 뷰가 존재하지 않습니다
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:637)
+	... 26 more
+2025-01-21 11:06:46.166 - SQL Error [2449] [72000]: ORA-02449: 외래 키에 의해 참조되는 고유/기본 키가 테이블에 있습니다
+
+org.jkiss.dbeaver.model.sql.DBSQLException: SQL Error [2449] [72000]: ORA-02449: 외래 키에 의해 참조되는 고유/기본 키가 테이블에 있습니다
+
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.executeStatement(JDBCStatementImpl.java:130)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.executeStatement(SQLQueryJob.java:631)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.lambda$2(SQLQueryJob.java:522)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:192)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.executeSingleQuery(SQLQueryJob.java:541)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.extractData(SQLQueryJob.java:1016)
+	at org.jkiss.dbeaver.ui.editors.sql.SQLEditor$QueryResultsContainer.readData(SQLEditor.java:4273)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetJobDataRead.lambda$0(ResultSetJobDataRead.java:128)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:192)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetJobDataRead.run(ResultSetJobDataRead.java:126)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetViewer$ResultSetDataPumpJob.run(ResultSetViewer.java:5166)
+	at org.jkiss.dbeaver.model.runtime.AbstractJob.run(AbstractJob.java:119)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: java.sql.SQLException: ORA-02449: 외래 키에 의해 참조되는 고유/기본 키가 테이블에 있습니다
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:630)
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:564)
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1231)
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:772)
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:299)
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:512)
+	at oracle.jdbc.driver.T4CStatement.doOall8(T4CStatement.java:123)
+	at oracle.jdbc.driver.T4CStatement.executeForRows(T4CStatement.java:1200)
+	at oracle.jdbc.driver.OracleStatement.executeSQLStatement(OracleStatement.java:1820)
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1472)
+	at oracle.jdbc.driver.OracleStatement.executeInternal(OracleStatement.java:2505)
+	at oracle.jdbc.driver.OracleStatement.execute(OracleStatement.java:2460)
+	at oracle.jdbc.driver.OracleStatementWrapper.execute(OracleStatementWrapper.java:328)
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.execute(JDBCStatementImpl.java:344)
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.executeStatement(JDBCStatementImpl.java:128)
+	... 12 more
+Caused by: Error : 2449, Position : 11, Sql = DROP TABLE tbl_user, OriginalSql = DROP TABLE tbl_user, Error Msg = ORA-02449: 외래 키에 의해 참조되는 고유/기본 키가 테이블에 있습니다
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:637)
+	... 26 more
+2025-01-21 11:06:54.656 - SQL Error [2449] [72000]: ORA-02449: 외래 키에 의해 참조되는 고유/기본 키가 테이블에 있습니다
+
+
+Error position: line: 5 pos: 11
+org.jkiss.dbeaver.model.sql.DBSQLException: SQL Error [2449] [72000]: ORA-02449: 외래 키에 의해 참조되는 고유/기본 키가 테이블에 있습니다
+
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.executeStatement(JDBCStatementImpl.java:130)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.executeStatement(SQLQueryJob.java:631)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.lambda$2(SQLQueryJob.java:522)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:192)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.executeSingleQuery(SQLQueryJob.java:541)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.extractData(SQLQueryJob.java:1016)
+	at org.jkiss.dbeaver.ui.editors.sql.SQLEditor$QueryResultsContainer.readData(SQLEditor.java:4273)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetJobDataRead.lambda$0(ResultSetJobDataRead.java:128)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:192)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetJobDataRead.run(ResultSetJobDataRead.java:126)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetViewer$ResultSetDataPumpJob.run(ResultSetViewer.java:5166)
+	at org.jkiss.dbeaver.model.runtime.AbstractJob.run(AbstractJob.java:119)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: java.sql.SQLException: ORA-02449: 외래 키에 의해 참조되는 고유/기본 키가 테이블에 있습니다
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:630)
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:564)
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1231)
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:772)
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:299)
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:512)
+	at oracle.jdbc.driver.T4CStatement.doOall8(T4CStatement.java:123)
+	at oracle.jdbc.driver.T4CStatement.executeForRows(T4CStatement.java:1200)
+	at oracle.jdbc.driver.OracleStatement.executeSQLStatement(OracleStatement.java:1820)
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1472)
+	at oracle.jdbc.driver.OracleStatement.executeInternal(OracleStatement.java:2505)
+	at oracle.jdbc.driver.OracleStatement.execute(OracleStatement.java:2460)
+	at oracle.jdbc.driver.OracleStatementWrapper.execute(OracleStatementWrapper.java:328)
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.execute(JDBCStatementImpl.java:344)
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.executeStatement(JDBCStatementImpl.java:128)
+	... 12 more
+Caused by: Error : 2449, Position : 11, Sql = DROP TABLE tbl_user, OriginalSql = DROP TABLE tbl_user, Error Msg = ORA-02449: 외래 키에 의해 참조되는 고유/기본 키가 테이블에 있습니다
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:637)
+	... 26 more
+2025-01-21 11:06:59.201 - SQL Error [942] [42000]: ORA-00942: 테이블 또는 뷰가 존재하지 않습니다
+
+org.jkiss.dbeaver.model.sql.DBSQLException: SQL Error [942] [42000]: ORA-00942: 테이블 또는 뷰가 존재하지 않습니다
+
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.executeStatement(JDBCStatementImpl.java:130)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.executeStatement(SQLQueryJob.java:631)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.lambda$2(SQLQueryJob.java:522)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:192)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.executeSingleQuery(SQLQueryJob.java:541)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.extractData(SQLQueryJob.java:1016)
+	at org.jkiss.dbeaver.ui.editors.sql.SQLEditor$QueryResultsContainer.readData(SQLEditor.java:4273)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetJobDataRead.lambda$0(ResultSetJobDataRead.java:128)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:192)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetJobDataRead.run(ResultSetJobDataRead.java:126)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetViewer$ResultSetDataPumpJob.run(ResultSetViewer.java:5166)
+	at org.jkiss.dbeaver.model.runtime.AbstractJob.run(AbstractJob.java:119)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: java.sql.SQLSyntaxErrorException: ORA-00942: 테이블 또는 뷰가 존재하지 않습니다
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:630)
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:564)
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1231)
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:772)
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:299)
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:512)
+	at oracle.jdbc.driver.T4CStatement.doOall8(T4CStatement.java:123)
+	at oracle.jdbc.driver.T4CStatement.executeForRows(T4CStatement.java:1200)
+	at oracle.jdbc.driver.OracleStatement.executeSQLStatement(OracleStatement.java:1820)
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1472)
+	at oracle.jdbc.driver.OracleStatement.executeInternal(OracleStatement.java:2505)
+	at oracle.jdbc.driver.OracleStatement.execute(OracleStatement.java:2460)
+	at oracle.jdbc.driver.OracleStatementWrapper.execute(OracleStatementWrapper.java:328)
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.execute(JDBCStatementImpl.java:344)
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.executeStatement(JDBCStatementImpl.java:128)
+	... 12 more
+Caused by: Error : 942, Position : 11, Sql = DROP table tbl_file, OriginalSql = DROP table tbl_file, Error Msg = ORA-00942: 테이블 또는 뷰가 존재하지 않습니다
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:637)
+	... 26 more
+2025-01-21 11:07:00.832 - SQL Error [942] [42000]: ORA-00942: 테이블 또는 뷰가 존재하지 않습니다
+
+org.jkiss.dbeaver.model.sql.DBSQLException: SQL Error [942] [42000]: ORA-00942: 테이블 또는 뷰가 존재하지 않습니다
+
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.executeStatement(JDBCStatementImpl.java:130)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.executeStatement(SQLQueryJob.java:631)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.lambda$2(SQLQueryJob.java:522)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:192)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.executeSingleQuery(SQLQueryJob.java:541)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.extractData(SQLQueryJob.java:1016)
+	at org.jkiss.dbeaver.ui.editors.sql.SQLEditor$QueryResultsContainer.readData(SQLEditor.java:4273)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetJobDataRead.lambda$0(ResultSetJobDataRead.java:128)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:192)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetJobDataRead.run(ResultSetJobDataRead.java:126)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetViewer$ResultSetDataPumpJob.run(ResultSetViewer.java:5166)
+	at org.jkiss.dbeaver.model.runtime.AbstractJob.run(AbstractJob.java:119)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: java.sql.SQLSyntaxErrorException: ORA-00942: 테이블 또는 뷰가 존재하지 않습니다
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:630)
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:564)
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1231)
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:772)
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:299)
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:512)
+	at oracle.jdbc.driver.T4CStatement.doOall8(T4CStatement.java:123)
+	at oracle.jdbc.driver.T4CStatement.executeForRows(T4CStatement.java:1200)
+	at oracle.jdbc.driver.OracleStatement.executeSQLStatement(OracleStatement.java:1820)
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1472)
+	at oracle.jdbc.driver.OracleStatement.executeInternal(OracleStatement.java:2505)
+	at oracle.jdbc.driver.OracleStatement.execute(OracleStatement.java:2460)
+	at oracle.jdbc.driver.OracleStatementWrapper.execute(OracleStatementWrapper.java:328)
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.execute(JDBCStatementImpl.java:344)
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.executeStatement(JDBCStatementImpl.java:128)
+	... 12 more
+Caused by: Error : 942, Position : 11, Sql = DROP TABLE tbl_party, OriginalSql = DROP TABLE tbl_party, Error Msg = ORA-00942: 테이블 또는 뷰가 존재하지 않습니다
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:637)
+	... 26 more
+2025-01-21 11:07:02.120 - SQL Error [942] [42000]: ORA-00942: 테이블 또는 뷰가 존재하지 않습니다
+
+
+Error position: line: 3 pos: 11
+org.jkiss.dbeaver.model.sql.DBSQLException: SQL Error [942] [42000]: ORA-00942: 테이블 또는 뷰가 존재하지 않습니다
+
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.executeStatement(JDBCStatementImpl.java:130)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.executeStatement(SQLQueryJob.java:631)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.lambda$2(SQLQueryJob.java:522)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:192)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.executeSingleQuery(SQLQueryJob.java:541)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.extractData(SQLQueryJob.java:1016)
+	at org.jkiss.dbeaver.ui.editors.sql.SQLEditor$QueryResultsContainer.readData(SQLEditor.java:4273)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetJobDataRead.lambda$0(ResultSetJobDataRead.java:128)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:192)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetJobDataRead.run(ResultSetJobDataRead.java:126)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetViewer$ResultSetDataPumpJob.run(ResultSetViewer.java:5166)
+	at org.jkiss.dbeaver.model.runtime.AbstractJob.run(AbstractJob.java:119)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: java.sql.SQLSyntaxErrorException: ORA-00942: 테이블 또는 뷰가 존재하지 않습니다
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:630)
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:564)
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1231)
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:772)
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:299)
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:512)
+	at oracle.jdbc.driver.T4CStatement.doOall8(T4CStatement.java:123)
+	at oracle.jdbc.driver.T4CStatement.executeForRows(T4CStatement.java:1200)
+	at oracle.jdbc.driver.OracleStatement.executeSQLStatement(OracleStatement.java:1820)
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1472)
+	at oracle.jdbc.driver.OracleStatement.executeInternal(OracleStatement.java:2505)
+	at oracle.jdbc.driver.OracleStatement.execute(OracleStatement.java:2460)
+	at oracle.jdbc.driver.OracleStatementWrapper.execute(OracleStatementWrapper.java:328)
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.execute(JDBCStatementImpl.java:344)
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.executeStatement(JDBCStatementImpl.java:128)
+	... 12 more
+Caused by: Error : 942, Position : 11, Sql = DROP TABLE tbl_comment, OriginalSql = DROP TABLE tbl_comment, Error Msg = ORA-00942: 테이블 또는 뷰가 존재하지 않습니다
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:637)
+	... 26 more
+2025-01-21 11:07:03.377 - SQL Error [942] [42000]: ORA-00942: 테이블 또는 뷰가 존재하지 않습니다
+
+org.jkiss.dbeaver.model.sql.DBSQLException: SQL Error [942] [42000]: ORA-00942: 테이블 또는 뷰가 존재하지 않습니다
+
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.executeStatement(JDBCStatementImpl.java:130)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.executeStatement(SQLQueryJob.java:631)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.lambda$2(SQLQueryJob.java:522)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:192)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.executeSingleQuery(SQLQueryJob.java:541)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.extractData(SQLQueryJob.java:1016)
+	at org.jkiss.dbeaver.ui.editors.sql.SQLEditor$QueryResultsContainer.readData(SQLEditor.java:4273)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetJobDataRead.lambda$0(ResultSetJobDataRead.java:128)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:192)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetJobDataRead.run(ResultSetJobDataRead.java:126)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetViewer$ResultSetDataPumpJob.run(ResultSetViewer.java:5166)
+	at org.jkiss.dbeaver.model.runtime.AbstractJob.run(AbstractJob.java:119)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: java.sql.SQLSyntaxErrorException: ORA-00942: 테이블 또는 뷰가 존재하지 않습니다
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:630)
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:564)
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1231)
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:772)
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:299)
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:512)
+	at oracle.jdbc.driver.T4CStatement.doOall8(T4CStatement.java:123)
+	at oracle.jdbc.driver.T4CStatement.executeForRows(T4CStatement.java:1200)
+	at oracle.jdbc.driver.OracleStatement.executeSQLStatement(OracleStatement.java:1820)
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1472)
+	at oracle.jdbc.driver.OracleStatement.executeInternal(OracleStatement.java:2505)
+	at oracle.jdbc.driver.OracleStatement.execute(OracleStatement.java:2460)
+	at oracle.jdbc.driver.OracleStatementWrapper.execute(OracleStatementWrapper.java:328)
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.execute(JDBCStatementImpl.java:344)
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.executeStatement(JDBCStatementImpl.java:128)
+	... 12 more
+Caused by: Error : 942, Position : 11, Sql = DROP TABLE tbl_forum, OriginalSql = DROP TABLE tbl_forum, Error Msg = ORA-00942: 테이블 또는 뷰가 존재하지 않습니다
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:637)
+	... 26 more
+2025-01-21 11:08:03.598 - SWT resource leak detected
+java.lang.Error: SWT Resource was not properly disposed
+	at org.eclipse.swt.graphics.Resource.initNonDisposeTracking(Resource.java:172)
+	at org.eclipse.swt.graphics.Resource.<init>(Resource.java:120)
+	at org.eclipse.swt.graphics.Image.<init>(Image.java:251)
+	at org.jkiss.dbeaver.ui.editors.sql.SQLEditor.doSetInput(SQLEditor.java:2292)
+	at org.eclipse.ui.texteditor.AbstractTextEditor.setInputWithNotify(AbstractTextEditor.java:4248)
+	at org.eclipse.ui.texteditor.AbstractTextEditor.setInput(AbstractTextEditor.java:4268)
+	at org.eclipse.ui.texteditor.AbstractTextEditor$ElementStateListener$1.run(AbstractTextEditor.java:536)
+	at org.eclipse.ui.texteditor.AbstractTextEditor$ElementStateListener.execute(AbstractTextEditor.java:597)
+	at org.eclipse.ui.texteditor.AbstractTextEditor$ElementStateListener.elementMoved(AbstractTextEditor.java:564)
+	at org.eclipse.ui.editors.text.TextFileDocumentProvider$FileBufferListener.underlyingFileMoved(TextFileDocumentProvider.java:335)
+	at org.eclipse.core.internal.filebuffers.TextFileBufferManager$6.run(TextFileBufferManager.java:710)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.core.internal.filebuffers.TextFileBufferManager.fireUnderlyingFileMoved(TextFileBufferManager.java:707)
+	at org.eclipse.core.internal.filebuffers.ResourceFileBuffer.handleFileMoved(ResourceFileBuffer.java:422)
+	at org.eclipse.core.internal.filebuffers.ResourceFileBuffer$FileSynchronizer$3.execute(ResourceFileBuffer.java:163)
+	at org.eclipse.core.internal.filebuffers.ResourceFileBuffer$SafeFileChange.run(ResourceFileBuffer.java:86)
+	at org.eclipse.ui.internal.editors.text.UISynchronizationContext.run(UISynchronizationContext.java:35)
+	at org.eclipse.core.internal.filebuffers.TextFileBufferManager.execute(TextFileBufferManager.java:593)
+	at org.eclipse.core.internal.filebuffers.ResourceFileBuffer$FileSynchronizer.resourceChanged(ResourceFileBuffer.java:184)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:321)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:311)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:174)
+	at org.eclipse.core.internal.resources.Workspace.broadcastPostChange(Workspace.java:459)
+	at org.eclipse.core.internal.resources.Workspace.endOperation(Workspace.java:1587)
+	at org.eclipse.core.internal.resources.Resource.move(Resource.java:1564)
+	at org.eclipse.core.internal.resources.Resource.move(Resource.java:1515)
+	at org.jkiss.dbeaver.model.navigator.DBNResource.rename(DBNResource.java:280)
+	at org.jkiss.dbeaver.ui.navigator.actions.NavigatorHandlerObjectRename.renameNode(NavigatorHandlerObjectRename.java:88)
+	at org.jkiss.dbeaver.ui.navigator.actions.NavigatorHandlerObjectRename.execute(NavigatorHandlerObjectRename.java:63)
+	at org.eclipse.ui.internal.handlers.HandlerProxy.execute(HandlerProxy.java:277)
+	at org.eclipse.ui.internal.handlers.E4HandlerProxy.execute(E4HandlerProxy.java:98)
+	at jdk.internal.reflect.GeneratedMethodAccessor69.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:56)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.invokeUsingClass(InjectorImpl.java:299)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.invoke(InjectorImpl.java:233)
+	at org.eclipse.e4.core.contexts.ContextInjectionFactory.invoke(ContextInjectionFactory.java:174)
+	at org.eclipse.e4.core.commands.internal.HandlerServiceHandler.execute(HandlerServiceHandler.java:165)
+	at org.eclipse.core.commands.Command.executeWithChecks(Command.java:488)
+	at org.eclipse.core.commands.ParameterizedCommand.executeWithChecks(ParameterizedCommand.java:485)
+	at org.eclipse.e4.core.commands.internal.HandlerServiceImpl.executeHandler(HandlerServiceImpl.java:204)
+	at org.eclipse.e4.ui.bindings.keys.KeyBindingDispatcher.executeCommand(KeyBindingDispatcher.java:308)
+	at org.eclipse.e4.ui.bindings.keys.KeyBindingDispatcher.press(KeyBindingDispatcher.java:569)
+	at org.eclipse.e4.ui.bindings.keys.KeyBindingDispatcher.processKeyEvent(KeyBindingDispatcher.java:644)
+	at org.eclipse.e4.ui.bindings.keys.KeyBindingDispatcher.filterKeySequenceBindings(KeyBindingDispatcher.java:439)
+	at org.eclipse.e4.ui.bindings.keys.KeyBindingDispatcher$KeyDownFilter.handleEvent(KeyBindingDispatcher.java:96)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:91)
+	at org.eclipse.swt.widgets.Display.filterEvent(Display.java:1319)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1173)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1198)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1183)
+	at org.eclipse.swt.widgets.Widget.sendKeyEvent(Widget.java:1225)
+	at org.eclipse.swt.widgets.Widget.sendKeyEvent(Widget.java:1221)
+	at org.eclipse.swt.widgets.Widget.wmKeyDown(Widget.java:1950)
+	at org.eclipse.swt.widgets.Control.WM_KEYDOWN(Control.java:5150)
+	at org.eclipse.swt.widgets.Tree.WM_KEYDOWN(Tree.java:6282)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4759)
+	at org.eclipse.swt.widgets.Tree.windowProc(Tree.java:6150)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5091)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessage(Native Method)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3710)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1151)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1042)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:153)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:639)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:546)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:173)
+	at org.jkiss.dbeaver.ui.app.standalone.DBeaverApplication.start(DBeaverApplication.java:293)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:208)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:143)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:109)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:439)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:271)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.jkiss.dbeaver.launcher.DBeaverLauncher.invokeFramework(DBeaverLauncher.java:650)
+	at org.jkiss.dbeaver.launcher.DBeaverLauncher.basicRun(DBeaverLauncher.java:610)
+	at org.jkiss.dbeaver.launcher.DBeaverLauncher.run(DBeaverLauncher.java:1461)
+2025-01-21 11:08:09.118 - Execution context opened (localhost; SQLEditor <Script.sql>; 11)
+2025-01-21 11:08:22.284 - SWT resource leak detected
+java.lang.Error: SWT Resource was not properly disposed
+	at org.eclipse.swt.graphics.Resource.initNonDisposeTracking(Resource.java:172)
+	at org.eclipse.swt.graphics.Resource.<init>(Resource.java:120)
+	at org.eclipse.swt.graphics.Image.<init>(Image.java:621)
+	at org.eclipse.jface.resource.ImageDescriptor.createImage(ImageDescriptor.java:340)
+	at org.eclipse.jface.resource.ImageDescriptor.createImage(ImageDescriptor.java:289)
+	at org.eclipse.jface.resource.ImageDescriptor.createImage(ImageDescriptor.java:267)
+	at org.jkiss.dbeaver.ui.DBeaverIcons.getCompositeIcon(DBeaverIcons.java:170)
+	at org.jkiss.dbeaver.ui.DBeaverIcons.getIconDescriptor(DBeaverIcons.java:122)
+	at org.jkiss.dbeaver.ui.DBeaverIcons.getImage(DBeaverIcons.java:94)
+	at org.jkiss.dbeaver.ui.editors.sql.SQLEditor.refreshEditorIconAndTitle(SQLEditor.java:3101)
+	at org.jkiss.dbeaver.ui.editors.sql.SQLEditor.onDataSourceChange(SQLEditor.java:3016)
+	at org.jkiss.dbeaver.ui.editors.sql.SQLEditor.lambda$32(SQLEditor.java:3263)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:132)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4099)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3715)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1151)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1042)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:153)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:639)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:546)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:173)
+	at org.jkiss.dbeaver.ui.app.standalone.DBeaverApplication.start(DBeaverApplication.java:293)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:208)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:143)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:109)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:439)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:271)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.jkiss.dbeaver.launcher.DBeaverLauncher.invokeFramework(DBeaverLauncher.java:650)
+	at org.jkiss.dbeaver.launcher.DBeaverLauncher.basicRun(DBeaverLauncher.java:610)
+	at org.jkiss.dbeaver.launcher.DBeaverLauncher.run(DBeaverLauncher.java:1461)
+2025-01-21 11:08:22.285 - SWT resource leak detected
+java.lang.Error: SWT Resource was not properly disposed
+	at org.eclipse.swt.graphics.Resource.initNonDisposeTracking(Resource.java:172)
+	at org.eclipse.swt.graphics.Resource.<init>(Resource.java:120)
+	at org.eclipse.swt.graphics.Image.<init>(Image.java:621)
+	at org.eclipse.jface.resource.ImageDescriptor.createImage(ImageDescriptor.java:340)
+	at org.eclipse.jface.resource.ImageDescriptor.createImage(ImageDescriptor.java:289)
+	at org.eclipse.jface.resource.ImageDescriptor.createImage(ImageDescriptor.java:267)
+	at org.jkiss.dbeaver.ui.DBeaverIcons.getCompositeIcon(DBeaverIcons.java:170)
+	at org.jkiss.dbeaver.ui.DBeaverIcons.getIconDescriptor(DBeaverIcons.java:122)
+	at org.jkiss.dbeaver.ui.DBeaverIcons.getImage(DBeaverIcons.java:94)
+	at org.jkiss.dbeaver.ui.editors.sql.SQLEditor.refreshEditorIconAndTitle(SQLEditor.java:3101)
+	at org.jkiss.dbeaver.ui.editors.sql.SQLEditor.onDataSourceChange(SQLEditor.java:3016)
+	at org.jkiss.dbeaver.ui.editors.sql.SQLEditor.lambda$32(SQLEditor.java:3263)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:132)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4099)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3715)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1151)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1042)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:153)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:639)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:546)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:173)
+	at org.jkiss.dbeaver.ui.app.standalone.DBeaverApplication.start(DBeaverApplication.java:293)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:208)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:143)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:109)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:439)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:271)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.jkiss.dbeaver.launcher.DBeaverLauncher.invokeFramework(DBeaverLauncher.java:650)
+	at org.jkiss.dbeaver.launcher.DBeaverLauncher.basicRun(DBeaverLauncher.java:610)
+	at org.jkiss.dbeaver.launcher.DBeaverLauncher.run(DBeaverLauncher.java:1461)
+2025-01-21 11:08:32.843 - org.jkiss.dbeaver.model.sql.DBSQLException: SQL Error [942] [42000]: ORA-00942: 테이블 또는 뷰가 존재하지 않습니다
+
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.executeStatement(JDBCStatementImpl.java:130)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.executeStatement(SQLQueryJob.java:631)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.lambda$2(SQLQueryJob.java:522)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.executeSingleQuery(SQLQueryJob.java:544)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.run(SQLQueryJob.java:241)
+	at org.jkiss.dbeaver.model.runtime.AbstractJob.run(AbstractJob.java:119)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: java.sql.SQLSyntaxErrorException: ORA-00942: 테이블 또는 뷰가 존재하지 않습니다
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:630)
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:564)
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1231)
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:772)
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:299)
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:512)
+	at oracle.jdbc.driver.T4CStatement.doOall8(T4CStatement.java:123)
+	at oracle.jdbc.driver.T4CStatement.executeForRows(T4CStatement.java:1200)
+	at oracle.jdbc.driver.OracleStatement.executeSQLStatement(OracleStatement.java:1820)
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1472)
+	at oracle.jdbc.driver.OracleStatement.executeInternal(OracleStatement.java:2505)
+	at oracle.jdbc.driver.OracleStatement.execute(OracleStatement.java:2460)
+	at oracle.jdbc.driver.OracleStatementWrapper.execute(OracleStatementWrapper.java:328)
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.execute(JDBCStatementImpl.java:344)
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.executeStatement(JDBCStatementImpl.java:128)
+	... 6 more
+Caused by: Error : 942, Position : 12, Sql = INSERT INTO TBL_USER (user_number, user_id, user_passwd, user_nickname, user_tier, user_phone, user_join_date) VALUES (seq_user.NEXTVAL, 'test1', 'passwd1*', '트롤장인', '플래티넘', '010-8298-9407', SYSDATE), OriginalSql = INSERT INTO TBL_USER (user_number, user_id, user_passwd, user_nickname, user_tier, user_phone, user_join_date) VALUES (seq_user.NEXTVAL, 'test1', 'passwd1*', '트롤장인', '플래티넘', '010-8298-9407', SYSDATE), Error Msg = ORA-00942: 테이블 또는 뷰가 존재하지 않습니다
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:637)
+	... 20 more
+2025-01-21 11:10:53.000 - SQL Error [2289] [42000]: ORA-02289: 시퀀스가 존재하지 않습니다.
+
+org.jkiss.dbeaver.model.sql.DBSQLException: SQL Error [2289] [42000]: ORA-02289: 시퀀스가 존재하지 않습니다.
+
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.executeStatement(JDBCStatementImpl.java:130)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.executeStatement(SQLQueryJob.java:631)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.lambda$2(SQLQueryJob.java:522)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:192)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.executeSingleQuery(SQLQueryJob.java:541)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.extractData(SQLQueryJob.java:1016)
+	at org.jkiss.dbeaver.ui.editors.sql.SQLEditor$QueryResultsContainer.readData(SQLEditor.java:4273)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetJobDataRead.lambda$0(ResultSetJobDataRead.java:128)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:192)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetJobDataRead.run(ResultSetJobDataRead.java:126)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetViewer$ResultSetDataPumpJob.run(ResultSetViewer.java:5166)
+	at org.jkiss.dbeaver.model.runtime.AbstractJob.run(AbstractJob.java:119)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: java.sql.SQLSyntaxErrorException: ORA-02289: 시퀀스가 존재하지 않습니다.
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:630)
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:564)
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1231)
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:772)
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:299)
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:512)
+	at oracle.jdbc.driver.T4CStatement.doOall8(T4CStatement.java:123)
+	at oracle.jdbc.driver.T4CStatement.executeForRows(T4CStatement.java:1200)
+	at oracle.jdbc.driver.OracleStatement.executeSQLStatement(OracleStatement.java:1820)
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1472)
+	at oracle.jdbc.driver.OracleStatement.executeInternal(OracleStatement.java:2505)
+	at oracle.jdbc.driver.OracleStatement.execute(OracleStatement.java:2460)
+	at oracle.jdbc.driver.OracleStatementWrapper.execute(OracleStatementWrapper.java:328)
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.execute(JDBCStatementImpl.java:344)
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.executeStatement(JDBCStatementImpl.java:128)
+	... 12 more
+Caused by: Error : 2289, Position : 14, Sql = DROP SEQUENCE seq_commnet, OriginalSql = DROP SEQUENCE seq_commnet, Error Msg = ORA-02289: 시퀀스가 존재하지 않습니다.
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:637)
+	... 26 more
+2025-01-21 11:11:07.090 - org.jkiss.dbeaver.model.sql.DBSQLException: SQL Error [955] [42000]: ORA-00955: 기존의 객체가 이름을 사용하고 있습니다.
+
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.executeStatement(JDBCStatementImpl.java:130)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.executeStatement(SQLQueryJob.java:631)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.lambda$2(SQLQueryJob.java:522)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:192)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.executeSingleQuery(SQLQueryJob.java:541)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.run(SQLQueryJob.java:241)
+	at org.jkiss.dbeaver.model.runtime.AbstractJob.run(AbstractJob.java:119)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: java.sql.SQLSyntaxErrorException: ORA-00955: 기존의 객체가 이름을 사용하고 있습니다.
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:630)
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:564)
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1231)
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:772)
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:299)
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:512)
+	at oracle.jdbc.driver.T4CStatement.doOall8(T4CStatement.java:123)
+	at oracle.jdbc.driver.T4CStatement.executeForRows(T4CStatement.java:1200)
+	at oracle.jdbc.driver.OracleStatement.executeSQLStatement(OracleStatement.java:1820)
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1472)
+	at oracle.jdbc.driver.OracleStatement.executeInternal(OracleStatement.java:2505)
+	at oracle.jdbc.driver.OracleStatement.execute(OracleStatement.java:2460)
+	at oracle.jdbc.driver.OracleStatementWrapper.execute(OracleStatementWrapper.java:328)
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.execute(JDBCStatementImpl.java:344)
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.executeStatement(JDBCStatementImpl.java:128)
+	... 7 more
+Caused by: Error : 955, Position : 13, Sql = CREATE TABLE tbl_admin (
+    admin_number NUMBER,
+    admin_id VARCHAR2(20) NOT NULL,
+    admin_passwd VARCHAR2(20) NOT NULL,
+    CONSTRAINT pk_admin PRIMARY KEY (admin_number)
+), OriginalSql = CREATE TABLE tbl_admin (
+    admin_number NUMBER,
+    admin_id VARCHAR2(20) NOT NULL,
+    admin_passwd VARCHAR2(20) NOT NULL,
+    CONSTRAINT pk_admin PRIMARY KEY (admin_number)
+), Error Msg = ORA-00955: 기존의 객체가 이름을 사용하고 있습니다.
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:637)
+	... 21 more
+2025-01-21 11:11:28.844 - org.jkiss.dbeaver.model.sql.DBSQLException: SQL Error [2449] [72000]: ORA-02449: 외래 키에 의해 참조되는 고유/기본 키가 테이블에 있습니다
+
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.executeStatement(JDBCStatementImpl.java:130)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.executeStatement(SQLQueryJob.java:631)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.lambda$2(SQLQueryJob.java:522)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:192)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.executeSingleQuery(SQLQueryJob.java:541)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.run(SQLQueryJob.java:241)
+	at org.jkiss.dbeaver.model.runtime.AbstractJob.run(AbstractJob.java:119)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: java.sql.SQLException: ORA-02449: 외래 키에 의해 참조되는 고유/기본 키가 테이블에 있습니다
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:630)
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:564)
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1231)
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:772)
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:299)
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:512)
+	at oracle.jdbc.driver.T4CStatement.doOall8(T4CStatement.java:123)
+	at oracle.jdbc.driver.T4CStatement.executeForRows(T4CStatement.java:1200)
+	at oracle.jdbc.driver.OracleStatement.executeSQLStatement(OracleStatement.java:1820)
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1472)
+	at oracle.jdbc.driver.OracleStatement.executeInternal(OracleStatement.java:2505)
+	at oracle.jdbc.driver.OracleStatement.execute(OracleStatement.java:2460)
+	at oracle.jdbc.driver.OracleStatementWrapper.execute(OracleStatementWrapper.java:328)
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.execute(JDBCStatementImpl.java:344)
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.executeStatement(JDBCStatementImpl.java:128)
+	... 7 more
+Caused by: Error : 2449, Position : 11, Sql = DROP TABLE tbl_user, OriginalSql = DROP TABLE tbl_user, Error Msg = ORA-02449: 외래 키에 의해 참조되는 고유/기본 키가 테이블에 있습니다
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:637)
+	... 21 more
+2025-01-21 11:11:55.725 - org.jkiss.dbeaver.model.sql.DBSQLException: SQL Error [942] [42000]: ORA-00942: 테이블 또는 뷰가 존재하지 않습니다
+
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.executeStatement(JDBCStatementImpl.java:130)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.executeStatement(SQLQueryJob.java:631)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.lambda$2(SQLQueryJob.java:522)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:192)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.executeSingleQuery(SQLQueryJob.java:541)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.run(SQLQueryJob.java:241)
+	at org.jkiss.dbeaver.model.runtime.AbstractJob.run(AbstractJob.java:119)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: java.sql.SQLSyntaxErrorException: ORA-00942: 테이블 또는 뷰가 존재하지 않습니다
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:630)
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:564)
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1231)
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:772)
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:299)
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:512)
+	at oracle.jdbc.driver.T4CStatement.doOall8(T4CStatement.java:123)
+	at oracle.jdbc.driver.T4CStatement.executeForRows(T4CStatement.java:1200)
+	at oracle.jdbc.driver.OracleStatement.executeSQLStatement(OracleStatement.java:1820)
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1472)
+	at oracle.jdbc.driver.OracleStatement.executeInternal(OracleStatement.java:2505)
+	at oracle.jdbc.driver.OracleStatement.execute(OracleStatement.java:2460)
+	at oracle.jdbc.driver.OracleStatementWrapper.execute(OracleStatementWrapper.java:328)
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.execute(JDBCStatementImpl.java:344)
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.executeStatement(JDBCStatementImpl.java:128)
+	... 7 more
+Caused by: Error : 942, Position : 11, Sql = DROP table tbl_file, OriginalSql = DROP table tbl_file, Error Msg = ORA-00942: 테이블 또는 뷰가 존재하지 않습니다
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:637)
+	... 21 more
+2025-01-21 11:13:09.361 - org.jkiss.dbeaver.model.sql.DBSQLException: SQL Error [12899] [72000]: ORA-12899: "LEARNING"."TBL_USER"."USER_NICKNAME" 열에 대한 값이 너무 큼(실제: 21, 최대값: 15)
+
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.executeStatement(JDBCStatementImpl.java:130)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.executeStatement(SQLQueryJob.java:631)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.lambda$2(SQLQueryJob.java:522)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.executeSingleQuery(SQLQueryJob.java:544)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.run(SQLQueryJob.java:241)
+	at org.jkiss.dbeaver.model.runtime.AbstractJob.run(AbstractJob.java:119)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: java.sql.SQLException: ORA-12899: "LEARNING"."TBL_USER"."USER_NICKNAME" 열에 대한 값이 너무 큼(실제: 21, 최대값: 15)
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:630)
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:564)
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1231)
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:772)
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:299)
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:512)
+	at oracle.jdbc.driver.T4CStatement.doOall8(T4CStatement.java:123)
+	at oracle.jdbc.driver.T4CStatement.executeForRows(T4CStatement.java:1200)
+	at oracle.jdbc.driver.OracleStatement.executeSQLStatement(OracleStatement.java:1820)
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1472)
+	at oracle.jdbc.driver.OracleStatement.executeInternal(OracleStatement.java:2505)
+	at oracle.jdbc.driver.OracleStatement.execute(OracleStatement.java:2460)
+	at oracle.jdbc.driver.OracleStatementWrapper.execute(OracleStatementWrapper.java:328)
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.execute(JDBCStatementImpl.java:344)
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.executeStatement(JDBCStatementImpl.java:128)
+	... 6 more
+Caused by: Error : 12899, Position : 158, Sql = INSERT INTO TBL_USER (user_number, user_id, user_passwd, user_nickname, user_tier, user_phone, user_join_date) VALUES (seq_user.NEXTVAL, 'test4', 'passwd4*', '라인먹는포식자', '실버', '010-2243-8341', SYSDATE), OriginalSql = INSERT INTO TBL_USER (user_number, user_id, user_passwd, user_nickname, user_tier, user_phone, user_join_date) VALUES (seq_user.NEXTVAL, 'test4', 'passwd4*', '라인먹는포식자', '실버', '010-2243-8341', SYSDATE), Error Msg = ORA-12899: "LEARNING"."TBL_USER"."USER_NICKNAME" 열에 대한 값이 너무 큼(실제: 21, 최대값: 15)
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:637)
+	... 20 more
+2025-01-21 11:13:28.348 - org.jkiss.dbeaver.model.sql.DBSQLException: SQL Error [900] [42000]: ORA-00900: SQL 문이 부적합합니다
+
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.executeStatement(JDBCStatementImpl.java:130)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.executeStatement(SQLQueryJob.java:631)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.lambda$2(SQLQueryJob.java:522)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:192)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.executeSingleQuery(SQLQueryJob.java:541)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.run(SQLQueryJob.java:241)
+	at org.jkiss.dbeaver.model.runtime.AbstractJob.run(AbstractJob.java:119)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: java.sql.SQLSyntaxErrorException: ORA-00900: SQL 문이 부적합합니다
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:630)
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:564)
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1231)
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:772)
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:299)
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:512)
+	at oracle.jdbc.driver.T4CStatement.doOall8(T4CStatement.java:123)
+	at oracle.jdbc.driver.T4CStatement.executeForRows(T4CStatement.java:1200)
+	at oracle.jdbc.driver.OracleStatement.executeSQLStatement(OracleStatement.java:1820)
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1472)
+	at oracle.jdbc.driver.OracleStatement.executeInternal(OracleStatement.java:2505)
+	at oracle.jdbc.driver.OracleStatement.execute(OracleStatement.java:2460)
+	at oracle.jdbc.driver.OracleStatementWrapper.execute(OracleStatementWrapper.java:328)
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.execute(JDBCStatementImpl.java:344)
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.executeStatement(JDBCStatementImpl.java:128)
+	... 7 more
+Caused by: Error : 900, Position : 0, Sql = ROP table tbl_file, OriginalSql = ROP table tbl_file, Error Msg = ORA-00900: SQL 문이 부적합합니다
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:637)
+	... 21 more
+2025-01-21 11:13:35.099 - org.jkiss.dbeaver.model.sql.DBSQLException: SQL Error [2449] [72000]: ORA-02449: 외래 키에 의해 참조되는 고유/기본 키가 테이블에 있습니다
+
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.executeStatement(JDBCStatementImpl.java:130)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.executeStatement(SQLQueryJob.java:631)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.lambda$2(SQLQueryJob.java:522)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:192)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.executeSingleQuery(SQLQueryJob.java:541)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.run(SQLQueryJob.java:241)
+	at org.jkiss.dbeaver.model.runtime.AbstractJob.run(AbstractJob.java:119)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: java.sql.SQLException: ORA-02449: 외래 키에 의해 참조되는 고유/기본 키가 테이블에 있습니다
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:630)
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:564)
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1231)
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:772)
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:299)
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:512)
+	at oracle.jdbc.driver.T4CStatement.doOall8(T4CStatement.java:123)
+	at oracle.jdbc.driver.T4CStatement.executeForRows(T4CStatement.java:1200)
+	at oracle.jdbc.driver.OracleStatement.executeSQLStatement(OracleStatement.java:1820)
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1472)
+	at oracle.jdbc.driver.OracleStatement.executeInternal(OracleStatement.java:2505)
+	at oracle.jdbc.driver.OracleStatement.execute(OracleStatement.java:2460)
+	at oracle.jdbc.driver.OracleStatementWrapper.execute(OracleStatementWrapper.java:328)
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.execute(JDBCStatementImpl.java:344)
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.executeStatement(JDBCStatementImpl.java:128)
+	... 7 more
+Caused by: Error : 2449, Position : 11, Sql = DROP TABLE tbl_user, OriginalSql = DROP TABLE tbl_user, Error Msg = ORA-02449: 외래 키에 의해 참조되는 고유/기본 키가 테이블에 있습니다
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:637)
+	... 21 more
+2025-01-21 11:14:08.705 - SQL Error [2289] [42000]: ORA-02289: 시퀀스가 존재하지 않습니다.
+
+org.jkiss.dbeaver.model.sql.DBSQLException: SQL Error [2289] [42000]: ORA-02289: 시퀀스가 존재하지 않습니다.
+
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.executeStatement(JDBCStatementImpl.java:130)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.executeStatement(SQLQueryJob.java:631)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.lambda$2(SQLQueryJob.java:522)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:192)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.executeSingleQuery(SQLQueryJob.java:541)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.extractData(SQLQueryJob.java:1016)
+	at org.jkiss.dbeaver.ui.editors.sql.SQLEditor$QueryResultsContainer.readData(SQLEditor.java:4273)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetJobDataRead.lambda$0(ResultSetJobDataRead.java:128)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:192)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetJobDataRead.run(ResultSetJobDataRead.java:126)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetViewer$ResultSetDataPumpJob.run(ResultSetViewer.java:5166)
+	at org.jkiss.dbeaver.model.runtime.AbstractJob.run(AbstractJob.java:119)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: java.sql.SQLSyntaxErrorException: ORA-02289: 시퀀스가 존재하지 않습니다.
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:630)
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:564)
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1231)
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:772)
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:299)
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:512)
+	at oracle.jdbc.driver.T4CStatement.doOall8(T4CStatement.java:123)
+	at oracle.jdbc.driver.T4CStatement.executeForRows(T4CStatement.java:1200)
+	at oracle.jdbc.driver.OracleStatement.executeSQLStatement(OracleStatement.java:1820)
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1472)
+	at oracle.jdbc.driver.OracleStatement.executeInternal(OracleStatement.java:2505)
+	at oracle.jdbc.driver.OracleStatement.execute(OracleStatement.java:2460)
+	at oracle.jdbc.driver.OracleStatementWrapper.execute(OracleStatementWrapper.java:328)
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.execute(JDBCStatementImpl.java:344)
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.executeStatement(JDBCStatementImpl.java:128)
+	... 12 more
+Caused by: Error : 2289, Position : 14, Sql = DROP SEQUENCE seq_user, OriginalSql = DROP SEQUENCE seq_user, Error Msg = ORA-02289: 시퀀스가 존재하지 않습니다.
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:637)
+	... 26 more
+2025-01-21 11:14:35.307 - org.jkiss.dbeaver.model.sql.DBSQLException: SQL Error [1] [23000]: ORA-00001: 무결성 제약 조건(LEARNING.UQ_USER_NICKNAME)에 위배됩니다
+
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.executeStatement(JDBCStatementImpl.java:130)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.executeStatement(SQLQueryJob.java:631)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.lambda$2(SQLQueryJob.java:522)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.executeSingleQuery(SQLQueryJob.java:544)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.run(SQLQueryJob.java:241)
+	at org.jkiss.dbeaver.model.runtime.AbstractJob.run(AbstractJob.java:119)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: java.sql.SQLIntegrityConstraintViolationException: ORA-00001: 무결성 제약 조건(LEARNING.UQ_USER_NICKNAME)에 위배됩니다
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:630)
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:564)
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1231)
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:772)
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:299)
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:512)
+	at oracle.jdbc.driver.T4CStatement.doOall8(T4CStatement.java:123)
+	at oracle.jdbc.driver.T4CStatement.executeForRows(T4CStatement.java:1200)
+	at oracle.jdbc.driver.OracleStatement.executeSQLStatement(OracleStatement.java:1820)
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1472)
+	at oracle.jdbc.driver.OracleStatement.executeInternal(OracleStatement.java:2505)
+	at oracle.jdbc.driver.OracleStatement.execute(OracleStatement.java:2460)
+	at oracle.jdbc.driver.OracleStatementWrapper.execute(OracleStatementWrapper.java:328)
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.execute(JDBCStatementImpl.java:344)
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.executeStatement(JDBCStatementImpl.java:128)
+	... 6 more
+Caused by: Error : 1, Position : 0, Sql = INSERT INTO TBL_USER (user_number, user_id, user_passwd, user_nickname, user_tier, user_phone, user_join_date) VALUES (seq_user.NEXTVAL, 'test10', 'passwd10*', '라인먹는포식자', '마스터', '010-6806-8368', SYSDATE), OriginalSql = INSERT INTO TBL_USER (user_number, user_id, user_passwd, user_nickname, user_tier, user_phone, user_join_date) VALUES (seq_user.NEXTVAL, 'test10', 'passwd10*', '라인먹는포식자', '마스터', '010-6806-8368', SYSDATE), Error Msg = ORA-00001: 무결성 제약 조건(LEARNING.UQ_USER_NICKNAME)에 위배됩니다
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:637)
+	... 20 more
+2025-01-21 11:18:16.648 - org.jkiss.dbeaver.model.sql.DBSQLException: SQL Error [1] [23000]: ORA-00001: 무결성 제약 조건(LEARNING.UQ_USER_NICKNAME)에 위배됩니다
+
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.executeStatement(JDBCStatementImpl.java:130)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.executeStatement(SQLQueryJob.java:631)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.lambda$2(SQLQueryJob.java:522)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.executeSingleQuery(SQLQueryJob.java:544)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.run(SQLQueryJob.java:241)
+	at org.jkiss.dbeaver.model.runtime.AbstractJob.run(AbstractJob.java:119)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: java.sql.SQLIntegrityConstraintViolationException: ORA-00001: 무결성 제약 조건(LEARNING.UQ_USER_NICKNAME)에 위배됩니다
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:630)
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:564)
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1231)
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:772)
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:299)
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:512)
+	at oracle.jdbc.driver.T4CStatement.doOall8(T4CStatement.java:123)
+	at oracle.jdbc.driver.T4CStatement.executeForRows(T4CStatement.java:1200)
+	at oracle.jdbc.driver.OracleStatement.executeSQLStatement(OracleStatement.java:1820)
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1472)
+	at oracle.jdbc.driver.OracleStatement.executeInternal(OracleStatement.java:2505)
+	at oracle.jdbc.driver.OracleStatement.execute(OracleStatement.java:2460)
+	at oracle.jdbc.driver.OracleStatementWrapper.execute(OracleStatementWrapper.java:328)
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.execute(JDBCStatementImpl.java:344)
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.executeStatement(JDBCStatementImpl.java:128)
+	... 6 more
+Caused by: Error : 1, Position : 0, Sql = INSERT INTO TBL_USER (user_number, user_id, user_passwd, user_nickname, user_tier, user_phone, user_join_date) VALUES (seq_user.NEXTVAL, 'test10', 'passwd10*', '라인먹는포식자', '마스터', '010-6806-8368', SYSDATE), OriginalSql = INSERT INTO TBL_USER (user_number, user_id, user_passwd, user_nickname, user_tier, user_phone, user_join_date) VALUES (seq_user.NEXTVAL, 'test10', 'passwd10*', '라인먹는포식자', '마스터', '010-6806-8368', SYSDATE), Error Msg = ORA-00001: 무결성 제약 조건(LEARNING.UQ_USER_NICKNAME)에 위배됩니다
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:637)
+	... 20 more
+2025-01-21 11:21:42.581 - SQL Error [933] [42000]: ORA-00933: SQL 명령어가 올바르게 종료되지 않았습니다
+
+org.jkiss.dbeaver.model.sql.DBSQLException: SQL Error [933] [42000]: ORA-00933: SQL 명령어가 올바르게 종료되지 않았습니다
+
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.executeStatement(JDBCStatementImpl.java:130)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.executeStatement(SQLQueryJob.java:631)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.lambda$2(SQLQueryJob.java:522)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:192)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.executeSingleQuery(SQLQueryJob.java:541)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.extractData(SQLQueryJob.java:1016)
+	at org.jkiss.dbeaver.ui.editors.sql.SQLEditor$QueryResultsContainer.readData(SQLEditor.java:4273)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetJobDataRead.lambda$0(ResultSetJobDataRead.java:128)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:192)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetJobDataRead.run(ResultSetJobDataRead.java:126)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetViewer$ResultSetDataPumpJob.run(ResultSetViewer.java:5166)
+	at org.jkiss.dbeaver.model.runtime.AbstractJob.run(AbstractJob.java:119)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: java.sql.SQLSyntaxErrorException: ORA-00933: SQL 명령어가 올바르게 종료되지 않았습니다
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:630)
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:564)
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1231)
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:772)
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:299)
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:512)
+	at oracle.jdbc.driver.T4CStatement.doOall8(T4CStatement.java:123)
+	at oracle.jdbc.driver.T4CStatement.executeForRows(T4CStatement.java:1200)
+	at oracle.jdbc.driver.OracleStatement.executeSQLStatement(OracleStatement.java:1820)
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1472)
+	at oracle.jdbc.driver.OracleStatement.executeInternal(OracleStatement.java:2505)
+	at oracle.jdbc.driver.OracleStatement.execute(OracleStatement.java:2460)
+	at oracle.jdbc.driver.OracleStatementWrapper.execute(OracleStatementWrapper.java:328)
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.execute(JDBCStatementImpl.java:344)
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.executeStatement(JDBCStatementImpl.java:128)
+	... 12 more
+Caused by: Error : 933, Position : 11364, Sql = --INSERT INTO TBL_USER (user_number, user_id, user_passwd, user_nickname, user_tier, user_phone, user_join_date) VALUES (seq_user.NEXTVAL, 'test1', 'passwd1*', '트롤장인', '플래티넘', '010-8298-9407', SYSDATE);
+--INSERT INTO TBL_USER (user_number, user_id, user_passwd, user_nickname, user_tier, user_phone, user_join_date) VALUES (seq_user.NEXTVAL, 'test2', 'passwd2*', '방어력제로', '브론즈', '010-7466-1301', SYSDATE);
+--INSERT INTO TBL_USER (user_number, user_id, user_passwd, user_nickname, user_tier, user_phone, user_join_date) VALUES (seq_user.NEXTVAL, 'test3', 'passwd3*', '개코원숭이', '실버', '010-7405-3632', SYSDATE);
+--INSERT INTO TBL_USER (user_number, user_id, user_passwd, user_nickname, user_tier, user_phone, user_join_date) VALUES (seq_user.NEXTVAL, 'test4', 'passwd4*', '라인먹는포식자', '실버', '010-2243-8341', SYSDATE);
+--INSERT INTO TBL_USER (user_number, user_id, user_passwd, user_nickname, user_tier, user_phone, user_join_date) VALUES (seq_user.NEXTVAL, 'test5', 'passwd5*', '투신용사', '에메랄드', '010-7878-8051', SYSDATE);
+--INSERT INTO TBL_USER (user_number, user_id, user_passwd, user_nickname, user_tier, user_phone, user_join_date) VALUES (seq_user.NEXTVAL, 'test6', 'passwd6*', '덕망높은트롤', '플래티넘', '010-3981-8295', SYSDATE);
+--INSERT INTO TBL_USER (user_number, user_id, user_passwd, user_nickname, user_tier, user_phone, user_join_date) VALUES (seq_user.NEXTVAL, 'test7', 'passwd7*', '한타노예', '플래티넘', '010-6201-9209', SYSDATE);
+--INSERT INTO TBL_USER (user_number, user_id, user_passwd, user_nickname, user_tier, user_phone, user_join_date) VALUES (seq_user.NEXTVAL, 'test8', 'passwd8*', '전설의광탈러', '그랜드마스터', '010-5559-1651', SYSDATE);
+--INSERT INTO TBL_USER (user_number, user_id, user_passwd, user_nickname, user_tier, user_phone, user_join_date) VALUES (seq_user.NEXTVAL, 'test9', 'passwd9*', '유체이탈자', '마스터', '010-5729-9450', SYSDATE);
+--INSERT INTO TBL_USER (user_number, user_id, user_passwd, user_nickname, user_tier, user_phone, user_join_date) VALUES (seq_user.NEXTVAL, 'test10', 'passwd10*', '라인먹는포식자', '마스터', '010-6806-8368', SYSDATE);
+--INSERT INTO TBL_USER (user_number, user_id, user_passwd, user_nickname, user_tier, user_phone, user_join_date) VALUES (seq_user.NEXTVAL, 'test11', 'passwd11*', '한방역전러', '그랜드마스터', '010-3886-7703', SYSDATE);
+--INSERT INTO TBL_USER (user_number, user_id, user_passwd, user_nickname, user_tier, user_phone, user_join_date) VALUES (seq_user.NEXTVAL, 'test12', 'passwd12*', '탑신병자', '언랭', '010-5443-3393', SYSDATE);
+--INSERT INTO TBL_USER (user_number, user_id, user_passwd, user_nickname, user_tier, user_phone, user_join_date) VALUES (seq_user.NEXTVAL, 'test13', 'passwd13*', '팀킬장인', '마스터', '010-8714-3309', SYSDATE);
+--INSERT INTO TBL_USER (user_number, user_id, user_passwd, user_nickname, user_tier, user_phone, user_join_date) VALUES (seq_user.NEXTVAL, 'test14', 'passwd14*', '방플대마왕', '실버', '010-6826-9446', SYSDATE);
+--INSERT INTO TBL_USER (user_number, user_id, user_passwd, user_nickname, user_tier, user_phone, user_join_date) VALUES (seq_user.NEXTVAL, 'test15', 'passwd15*', '도란링장인', '에메랄드', '010-1927-9653', SYSDATE);
+--INSERT INTO TBL_USER (user_number, user_id, user_passwd, user_nickname, user_tier, user_phone, user_join_date) VALUES (seq_user.NEXTVAL, 'test16', 'passwd16*', '덕망높은트롤', '그랜드마스터', '010-1146-3413', SYSDATE);
+--INSERT INTO TBL_USER (user_number, user_id, user_passwd, user_nickname, user_tier, user_phone, user_join_date) VALUES (seq_user.NEXTVAL, 'test17', 'passwd17*', '라인전프로', '챌린저', '010-6325-6201', SYSDATE);
+--INSERT INTO TBL_USER (user_number, user_id, user_passwd, user_nickname, user_tier, user_phone, user_join_date) VALUES (seq_user.NEXTVAL, 'test18', 'passwd18*', '폭풍성장러', '에메랄드', '010-9712-1933', SYSDATE);
+--INSERT INTO TBL_USER (user_number, user_id, user_passwd, user_nickname, user_tier, user_phone, user_join_date) VALUES (seq_user.NEXTVAL, 'test19', 'passwd19*', '신발안산놈', '언랭', '010-8447-8481', SYSDATE);
+--INSERT INTO TBL_USER (user_number, user_id, user_passwd, user_nickname, user_tier, user_phone, user_join_date) VALUES (seq_user.NEXTVAL, 'test20', 'passwd20*', '바텀디바인', '언랭', '010-6694-9056', SYSDATE);
+--INSERT INTO TBL_USER (user_number, user_id, user_passwd, user_nickname, user_tier, user_phone, user_join_date) VALUES (seq_user.NEXTVAL, 'test21', 'passwd21*', '방어력제로', '언랭', '010-4231-7227', SYSDATE);
+--INSERT INTO TBL_USER (user_number, user_id, user_passwd, user_nickname, user_tier, user_phone, user_join_date) VALUES (seq_user.NEXTVAL, 'test22', 'passwd22*', '무빙장인', '플래티넘', '010-9705-2108', SYSDATE);
+--INSERT INTO TBL_USER (user_number, user_id, user_passwd, user_nickname, user_tier, user_phone, user_join_date) VALUES (seq_user.NEXTVAL, 'test23', 'passwd23*', '그림자암살자', '다이아몬드', '010-8505-3561', SYSDATE);
+--INSERT INTO TBL_USER (user_number, user_id, user_passwd, user_nickname, user_tier, user_phone, user_join_date) VALUES (seq_user.NEXTVAL, 'test24', 'passwd24*', '탑포식자', '브론즈', '010-8853-6936', SYSDATE);
+--INSERT INTO TBL_USER (user_number, user_id, user_passwd, user_nickname, user_tier, user_phone, user_join_date) VALUES (seq_user.NEXTVAL, 'test25', 'passwd25*', '궁쓰고후퇴', '골드', '010-3960-6918', SYSDATE);
+--INSERT INTO TBL_USER (user_number, user_id, user_passwd, user_nickname, user_tier, user_phone, user_join_date) VALUES (seq_user.NEXTVAL, 'test26', 'passwd26*', '점멸아껴요', '마스터', '010-5079-1972', SYSDATE);
+--INSERT INTO TBL_USER (user_number, user_id, user_passwd, user_nickname, user_tier, user_phone, user_join_date) VALUES (seq_user.NEXTVAL, 'test27', 'passwd27*', '초식정글러', '실버', '010-1063-5399', SYSDATE);
+--INSERT INTO TBL_USER (user_number, user_id, user_passwd, user_nickname, user_tier, user_phone, user_join_date) VALUES (seq_user.NEXTVAL, 'test28', 'passwd28*', '사이온전차', '마스터', '010-6609-5971', SYSDATE);
+--INSERT INTO TBL_USER (user_number, user_id, user_passwd, user_nickname, user_tier, user_phone, user_join_date) VALUES (seq_user.NEXTVAL, 'test29', 'passwd29*', '폭풍성장러', '골드', '010-2690-1169', SYSDATE);
+--INSERT INTO TBL_USER (user_number, user_id, user_passwd, user_nickname, user_tier, user_phone, user_join_date) VALUES (seq_user.NEXTVAL, 'test30', 'passwd30*', '트롤장인', '챌린저', '010-1699-2885', SYSDATE);
+--INSERT INTO TBL_USER (user_number, user_id, user_passwd, user_nickname, user_tier, user_phone, user_join_date) VALUES (seq_user.NEXTVAL, 'test31', 'passwd31*', '킬스틸장인', '에메랄드', '010-5385-3605', SYSDATE);
+--INSERT INTO TBL_USER (user_number, user_id, user_passwd, user_nickname, user_tier, user_phone, user_join_date) VALUES (seq_user.NEXTVAL, 'test32', 'passwd32*', '와드장인', '다이아몬드', '010-2556-2966', SYSDATE);
+--INSERT INTO TBL_USER (user_number, user_id, user_passwd, user_nickname, user_tier, user_phone, user_join_date) VALUES (seq_user.NEXTVAL, 'test33', 'passwd33*', '강철멘탈', '챌린저', '010-9770-7067', SYSDATE);
+--INSERT INTO TBL_USER (user_number, user_id, user_passwd, user_nickname, user_tier, user_phone, user_join_date) VALUES (seq_user.NEXTVAL, 'test34', 'passwd34*', '덕망높은트롤', '마스터', '010-2012-4578', SYSDATE);
+--INSERT INTO TBL_USER (user_number, user_id, user_passwd, user_nickname, user_tier, user_phone, user_join_date) VALUES (seq_user.NEXTVAL, 'test35', 'passwd35*', '전설의광탈러', '챌린저', '010-5919-9184', SYSDATE);
+--INSERT INTO TBL_USER (user_number, user_id, user_passwd, user_nickname, user_tier, user_phone, user_join_date) VALUES (seq_user.NEXTVAL, 'test36', 'passwd36*', '스킬낭비왕', '에메랄드', '010-6158-6717', SYSDATE);
+--INSERT INTO TBL_USER (user_number, user_id, user_passwd, user_nickname, user_tier, user_phone, user_join_date) VALUES (seq_user.NEXTVAL, 'test37', 'passwd37*', '야스오장인', '다이아몬드', '010-6262-5139', SYSDATE);
+--INSERT INTO TBL_USER (user_number, user_id, user_passwd, user_nickname, user_tier, user_phone, user_join_date) VALUES (seq_user.NEXTVAL, 'test38', 'passwd38*', '트롤장인', '언랭', '010-1646-2456', SYSDATE);
+--INSERT INTO TBL_USER (user_number, user_id, user_passwd, user_nickname, user_tier, user_phone, user_join_date) VALUES (seq_user.NEXTVAL, 'test39', 'passwd39*', '오리아나공듀', '챌린저', '010-7900-3752', SYSDATE);
+--INSERT INTO TBL_USER (user_number, user_id, user_passwd, user_nickname, user_tier, user_phone, user_join_date) VALUES (seq_user.NEXTVAL, 'test40', 'passwd40*', '궁쿨러', '골드', '010-5275-5474', SYSDATE);
+--INSERT INTO TBL_USER (user_number, user_id, user_passwd, user_nickname, user_tier, user_phone, user_join_date) VALUES (seq_user.NEXTVAL, 'test41', 'passwd41*', '무한와드맨', '그랜드마스터', '010-7992-7974', SYSDATE);
+--INSERT INTO TBL_USER (user_number, user_id, user_passwd, user_nickname, user_tier, user_phone, user_join_date) VALUES (seq_user.NEXTVAL, 'test42', 'passwd42*', '초반빡겜러', '그랜드마스터', '010-4547-3096', SYSDATE);
+--INSERT INTO TBL_USER (user_number, user_id, user_passwd, user_nickname, user_tier, user_phone, user_join_date) VALUES (seq_user.NEXTVAL, 'test43', 'passwd43*', '스킬낭비왕', '그랜드마스터', '010-4182-8280', SYSDATE);
+--INSERT INTO TBL_USER (user_number, user_id, user_passwd, user_nickname, user_tier, user_phone, user_join_date) VALUES (seq_user.NEXTVAL, 'test44', 'passwd44*', '방플대마왕', '마스터', '010-8965-5747', SYSDATE);
+--INSERT INTO TBL_USER (user_number, user_id, user_passwd, user_nickname, user_tier, user_phone, user_join_date) VALUES (seq_user.NEXTVAL, 'test45', 'passwd45*', '폭풍성장러', '챌린저', '010-6103-7424', SYSDATE);
+--INSERT INTO TBL_USER (user_number, user_id, user_passwd, user_nickname, user_tier, user_phone, user_join_date) VALUES (seq_user.NEXTVAL, 'test46', 'passwd46*', '궁쓰고후퇴', '브론즈', '010-8684-1599', SYSDATE);
+--INSERT INTO TBL_USER (user_number, user_id, user_passwd, user_nickname, user_tier, user_phone, user_join_date) VALUES (seq_user.NEXTVAL, 'test47', 'passwd47*', '팀운극혐', '마스터', '010-4050-3946', SYSDATE);
+--INSERT INTO TBL_USER (user_number, user_id, user_passwd, user_nickname, user_tier, user_phone, user_join_date) VALUES (seq_user.NEXTVAL, 'test48', 'passwd48*', '궁쿨러', '브론즈', '010-7293-6036', SYSDATE);
+--INSERT INTO TBL_USER (user_number, user_id, user_passwd, user_nickname, user_tier, user_phone, user_join_date) VALUES (seq_user.NEXTVAL, 'test49', 'passwd49*', '그림자암살자', '브론즈', '010-8569-1034', SYSDATE);
+--INSERT INTO TBL_USER (user_number, user_id, user_passwd, user_nickname, user_tier, user_phone, user_join_date) VALUES (seq_user.NEXTVAL, 'test50', 'passwd50*', '불사조정글', '다이아몬드', '010-6391-6626', SYSDATE);
+
+
+
+INSERT INTO TBL_USER (user_number, user_id, user_passwd, user_nickname, user_tier, user_phone, user_join_date) VALUES (seq_user.NEXTVAL, 'test51', 'passwd51*', '한타노예', '마스터', '010-2507-9423', '2025-01-18');
+INSERT INTO TBL_USER (user_number, user_id, user_passwd, user_nickname, user_tier, user_phone, user_join_date) VALUES (seq_user.NEXTVAL, 'test52', 'passwd52*', '라인먹는포식자', '언랭', '010-6661-5481', '2025-01-09');
+INSERT INTO TBL_USER (user_number, user_id, user_passwd, user_nickname, user_tier, user_phone, user_join_date) VALUES (seq_user.NEXTVAL, 'test53', 'passwd53*', '바텀디바인', '골드', '010-1047-5715', '2025-01-02');
+INSERT INTO TBL_USER (user_number, user_id, user_passwd, user_nickname, user_tier, user_phone, user_join_date) VALUES (seq_user.NEXTVAL, 'test54', 'passwd54*', '사이온전차', '플래티넘', '010-8689-4224', '2025-01-15');
+INSERT INTO TBL_USER (user_number, user_id, user_passwd, user_nickname, user_tier, user_phone, user_join_date) VALUES (seq_user.NEXTVAL, 'test55', 'passwd55*', '야스오장인', '챌린저', '010-3666-9791', '2025-01-11');
+INSERT INTO TBL_USER (user_number, user_id, user_passwd, user_nickname, user_tier, user_phone, user_join_date) VALUES (seq_user.NEXTVAL, 'test56', 'passwd56*', '팀킬장인', '다이아몬드', '010-3605-2428', '2025-01-21');
+INSERT INTO TBL_USER (user_number, user_id, user_passwd, user_nickname, user_tier, user_phone, user_join_date) VALUES (seq_user.NEXTVAL, 'test57', 'passwd57*', '궁극저격수', '골드', '010-9933-1869', '2025-01-05');
+INSERT INTO TBL_USER (user_number, user_id, user_passwd, user_nickname, user_tier, user_phone, user_join_date) VALUES (seq_user.NEXTVAL, 'test58', 'passwd58*', '트롤장인', '실버', '010-7385-3707', '2025-01-15');
+INSERT INTO TBL_USER (user_number, user_id, user_passwd, user_nickname, user_tier, user_phone, user_join_date) VALUES (seq_user.NEXTVAL, 'test59', 'passwd59*', '불사조정글', '챌린저', '010-7966-9315', '2025-01-10');
+INSERT INTO TBL_USER (user_number, user_id, user_passwd, user_nickname, user_tier, user_phone, user_join_date) VALUES (seq_user.NEXTVAL, 'test60', 'passwd60*', '고라니킹', '골드', '010-3892-7753', '2025-01-03');
+INSERT INTO TBL_USER (user_number, user_id, user_passwd, user_nickname, user_tier, user_phone, user_join_date) VALUES (seq_user.NEXTVAL, 'test61', 'passwd61*', '와드장인', '골드', '010-8751-4448', '2025-01-08');
+INSERT INTO TBL_USER (user_number, user_id, user_passwd, user_nickname, user_tier, user_phone, user_join_date) VALUES (seq_user.NEXTVAL, 'test62', 'passwd62*', '초식정글러', '에메랄드', '010-1168-9948', '2025-01-13');
+INSERT INTO TBL_USER (user_number, user_id, user_passwd, user_nickname, user_tier, user_phone, user_join_date) VALUES (seq_user.NEXTVAL, 'test63', 'passwd63*', '무한와드맨', '골드', '010-6834-7645', '2025-01-16');
+INSERT INTO TBL_USER (user_number, user_id, user_passwd, user_nickname, user_tier, user_phone, user_join_date) VALUES (seq_user.NEXTVAL, 'test64', 'passwd64*', '강철멘탈', '언랭', '010-8311-5939', '2025-01-03');
+INSERT INTO TBL_USER (user_number, user_id, user_passwd, user_nickname, user_tier, user_phone, user_join_date) VALUES (seq_user.NEXTVAL, 'test65', 'passwd65*', '라인전프로', '브론즈', '010-2290-5468', '2025-01-11');
+INSERT INTO TBL_USER (user_number, user_id, user_passwd, user_nickname, user_tier, user_phone, user_join_date) VALUES (seq_user.NEXTVAL, 'test66', 'passwd66*', '투신용사', '브론즈', '010-5635-4035', '2025-01-04');
+INSERT INTO TBL_USER (user_number, user_id, user_passwd, user_nickname, user_tier, user_phone, user_join_date) VALUES (seq_user.NEXTVAL, 'test67', 'passwd67*', '궁쿨러', '그랜드마스터', '010-8433-8610', '2025-01-11');
+INSERT INTO TBL_USER (user_number, user_id, user_passwd, user_nickname, user_tier, user_phone, user_join_date) VALUES (seq_user.NEXTVAL, 'test68', 'passwd68*', '무빙장인', '다이아몬드', '010-1033-1625', '2025-01-21');
+INSERT INTO TBL_USER (user_number, user_id, user_passwd, user_nickname, user_tier, user_phone, user_join_date) VALUES (seq_user.NEXTVAL, 'test69', 'passwd69*', '탑포식자', '마스터', '010-7543-5732', '2025-01-20');
+INSERT INTO TBL_USER (user_number, user_id, user_passwd, user_nickname, user_tier, user_phone, user_join_date) VALUES (seq_user.NEXTVAL, 'test70', 'passwd70*', '롤만하는놈', '챌린저', '010-5984-3076', '2025-01-13');
+INSERT INTO TBL_USER (user_number, user_id, user_passwd, user_nickname, user_tier, user_phone, user_join_date) VALUES (seq_user.NEXTVAL, 'test71', 'passwd71*', '킬스틸장인', '에메랄드', '010-2204-2767', '2025-01-17');
+INSERT INTO TBL_USER (user_number, user_id, user_passwd, user_nickname, user_tier, user_phone, user_join_date) VALUES (seq_user.NEXTVAL, 'test72', 'passwd72*', '방어력제로', '마스터', '010-2046-1174', '2025-01-17');
+INSERT INTO TBL_USER (user_number, user_id, user_passwd, user_nickname, user_tier, user_phone, user_join_date) VALUES (seq_user.NEXTVAL, 'test73', 'passwd73*', '개판5분전', '다이아몬드', '010-8761-9301', '2025-01-14');
+INSERT INTO TBL_USER (user_number, user_id, user_passwd, user_nickname, user_tier, user_phone, user_join_date) VALUES (seq_user.NEXTVAL, 'test74', 'passwd74*', '점멸아껴요', '플래티넘', '010-2811-9545', '2025-01-08');
+INSERT INTO TBL_USER (user_number, user_id, user_passwd, user_nickname, user_tier, user_phone, user_join_date) VALUES (seq_user.NEXTVAL, 'test75', 'passwd75*', '한방역전러', '플래티넘', '010-6994-8703', '2025-01-11');
+INSERT INTO TBL_USER (user_number, user_id, user_passwd, user_nickname, user_tier, user_phone, user_join_date) VALUES (seq_user.NEXTVAL, 'test76', 'passwd76*', '솔랭장군', '챌린저', '010-9788-2468', '2025-01-17');
+INSERT INTO TBL_USER (user_number, user_id, user_passwd, user_nickname, user_tier, user_phone, user_join_date) VALUES (seq_user.NEXTVAL, 'test77', 'passwd77*', '궁한방주문', '에메랄드', '010-1504-2865', '2025-01-01');
+INSERT INTO TBL_USER (user_number, user_id, user_passwd, user_nickname, user_tier, user_phone, user_join_date) VALUES (seq_user.NEXTVAL, 'test78', 'passwd78*', '유체이탈자', '골드', '010-6610-7372', '2025-01-18');
+INSERT INTO TBL_USER (user_number, user_id, user_passwd, user_nickname, user_tier, user_phone, user_join_date) VALUES (seq_user.NEXTVAL, 'test79', 'passwd79*', '신발안산놈', '챌린저', '010-4469-3294', '2025-01-01');
+INSERT INTO TBL_USER (user_number, user_id, user_passwd, user_nickname, user_tier, user_phone, user_join_date) VALUES (seq_user.NEXTVAL, 'test80', 'passwd80*', '스킬낭비왕', '골드', '010-5034-7871', '2025-01-21');
+INSERT INTO TBL_USER (user_number, user_id, user_passwd, user_nickname, user_tier, user_phone, user_join_date) VALUES (seq_user.NEXTVAL, 'test81', 'passwd81*', '롤충이', '다이아몬드', '010-9177-2891', '2025-01-19');
+INSERT INTO TBL_USER (user_number, user_id, user_passwd, user_nickname, user_tier, user_phone, user_join_date) VALUES (seq_user.NEXTVAL, 'test82', 'passwd82*', '골드입문자', '언랭', '010-4052-8457', '2025-01-17');
+INSERT INTO TBL_USER (user_number, user_id, user_passwd, user_nickname, user_tier, user_phone, user_join_date) VALUES (seq_user.NEXTVAL, 'test83', 'passwd83*', '개코원숭이', '마스터', '010-8258-4014', '2025-01-08');
+INSERT INTO TBL_USER (user_number, user_id, user_passwd, user_nickname, user_tier, user_phone, user_join_date) VALUES (seq_user.NEXTVAL, 'test84', 'passwd84*', '그림자암살자', '골드', '010-8086-7077', '2025-01-08');
+INSERT INTO TBL_USER (user_number, user_id, user_passwd, user_nickname, user_tier, user_phone, user_join_date) VALUES (seq_user.NEXTVAL, 'test85', 'passwd85*', '전설의광탈러', '브론즈', '010-7550-8710', '2025-01-21');
+INSERT INTO TBL_USER (user_number, user_id, user_passwd, user_nickname, user_tier, user_phone, user_join_date) VALUES (seq_user.NEXTVAL, 'test86', 'passwd86*', '탈주전문가', '브론즈', '010-2256-7868', '2025-01-03');
+INSERT INTO TBL_USER (user_number, user_id, user_passwd, user_nickname, user_tier, user_phone, user_join_date) VALUES (seq_user.NEXTVAL, 'test87', 'passwd87*', '오리아나공듀', '실버', '010-9071-8740', '2025-01-06');
+INSERT INTO TBL_USER (user_number, user_id, user_passwd, user_nickname, user_tier, user_phone, user_join_date) VALUES (seq_user.NEXTVAL, 'test88', 'passwd88*', '도란링장인', '브론즈', '010-9668-3325', '2025-01-14');
+INSERT INTO TBL_USER (user_number, user_id, user_passwd, user_nickname, user_tier, user_phone, user_join_date) VALUES (seq_user.NEXTVAL, 'test89', 'passwd89*', '개싸움장인', '플래티넘', '010-4004-5766', '2025-01-10');
+INSERT INTO TBL_USER (user_number, user_id, user_passwd, user_nickname, user_tier, user_phone, user_join_date) VALUES (seq_user.NEXTVAL, 'test90', 'passwd90*', '궁극허수아비', '에메랄드', '010-8093-6626', '2025-01-01');
+INSERT INTO TBL_USER (user_number, user_id, user_passwd, user_nickname, user_tier, user_phone, user_join_date) VALUES (seq_user.NEXTVAL, 'test91', 'passwd91*', '덕망높은트롤', '그랜드마스터', '010-4961-9156', '2025-01-20');
+INSERT INTO TBL_USER (user_number, user_id, user_passwd, user_nickname, user_tier, user_phone, user_join_date) VALUES (seq_user.NEXTVAL, 'test92', 'passwd92*', '폭풍성장러', '골드', '010-3288-6586', '2025-01-09');
+INSERT INTO TBL_USER (user_number, user_id, user_passwd, user_nickname, user_tier, user_phone, user_join_date) VALUES (seq_user.NEXTVAL, 'test93', 'passwd93*', '피드머신', '실버', '010-3935-4805', '2025-01-17');
+INSERT INTO TBL_USER (user_number, user_id, user_passwd, user_nickname, user_tier, user_phone, user_join_date) VALUES (seq_user.NEXTVAL, 'test94', 'passwd94*', '킬각노리기', '실버', '010-9758-6226', '2025-01-12');
+INSERT INTO TBL_USER (user_number, user_id, user_passwd, user_nickname, user_tier, user_phone, user_join_date) VALUES (seq_user.NEXTVAL, 'test95', 'passwd95*', '미니언킬러', '언랭', '010-9699-7102', '2025-01-18');
+INSERT INTO TBL_USER (user_number, user_id, user_passwd, user_nickname, user_tier, user_phone, user_join_date) VALUES (seq_user.NEXTVAL, 'test96', 'passwd96*', '초반빡겜러', '챌린저', '010-4396-3001', '2025-01-11');
+INSERT INTO TBL_USER (user_number, user_id, user_passwd, user_nickname, user_tier, user_phone, user_join_date) VALUES (seq_user.NEXTVAL, 'test97', 'passwd97*', '궁쓰고후퇴', '다이아몬드', '010-2320-4895', '2025-01-21');
+INSERT INTO TBL_USER (user_number, user_id, user_passwd, user_nickname, user_tier, user_phone, user_join_date) VALUES (seq_user.NEXTVAL, 'test98', 'passwd98*', '팀운극혐', '다이아몬드', '010-6821-6758', '2025-01-21');
+INSERT INTO TBL_USER (user_number, user_id, user_passwd, user_nickname, user_tier, user_phone, user_join_date) VALUES (seq_user.NEXTVAL, 'test99', 'passwd99*', '방플대마왕', '실버', '010-7218-7010', '2025-01-19');
+INSERT INTO TBL_USER (user_number, user_id, user_passwd, user_nickname, user_tier, user_phone, user_join_date) VALUES (seq_user.NEXTVAL, 'test100', 'passwd100*', '탑신병자', '골드', '010-2278-5540', '2025-01-09'), OriginalSql = --INSERT INTO TBL_USER (user_number, user_id, user_passwd, user_nickname, user_tier, user_phone, user_join_date) VALUES (seq_user.NEXTVAL, 'test1', 'passwd1*', '트롤장인', '플래티넘', '010-8298-9407', SYSDATE);
+--INSERT INTO TBL_USER (user_number, user_id, user_passwd, user_nickname, user_tier, user_phone, user_join_date) VALUES (seq_user.NEXTVAL, 'test2', 'passwd2*', '방어력제로', '브론즈', '010-7466-1301', SYSDATE);
+--INSERT INTO TBL_USER (user_number, user_id, user_passwd, user_nickname, user_tier, user_phone, user_join_date) VALUES (seq_user.NEXTVAL, 'test3', 'passwd3*', '개코원숭이', '실버', '010-7405-3632', SYSDATE);
+--INSERT INTO TBL_USER (user_number, user_id, user_passwd, user_nickname, user_tier, user_phone, user_join_date) VALUES (seq_user.NEXTVAL, 'test4', 'passwd4*', '라인먹는포식자', '실버', '010-2243-8341', SYSDATE);
+--INSERT INTO TBL_USER (user_number, user_id, user_passwd, user_nickname, user_tier, user_phone, user_join_date) VALUES (seq_user.NEXTVAL, 'test5', 'passwd5*', '투신용사', '에메랄드', '010-7878-8051', SYSDATE);
+--INSERT INTO TBL_USER (user_number, user_id, user_passwd, user_nickname, user_tier, user_phone, user_join_date) VALUES (seq_user.NEXTVAL, 'test6', 'passwd6*', '덕망높은트롤', '플래티넘', '010-3981-8295', SYSDATE);
+--INSERT INTO TBL_USER (user_number, user_id, user_passwd, user_nickname, user_tier, user_phone, user_join_date) VALUES (seq_user.NEXTVAL, 'test7', 'passwd7*', '한타노예', '플래티넘', '010-6201-9209', SYSDATE);
+--INSERT INTO TBL_USER (user_number, user_id, user_passwd, user_nickname, user_tier, user_phone, user_join_date) VALUES (seq_user.NEXTVAL, 'test8', 'passwd8*', '전설의광탈러', '그랜드마스터', '010-5559-1651', SYSDATE);
+--INSERT INTO TBL_USER (user_number, user_id, user_passwd, user_nickname, user_tier, user_phone, user_join_date) VALUES (seq_user.NEXTVAL, 'test9', 'passwd9*', '유체이탈자', '마스터', '010-5729-9450', SYSDATE);
+--INSERT INTO TBL_USER (user_number, user_id, user_passwd, user_nickname, user_tier, user_phone, user_join_date) VALUES (seq_user.NEXTVAL, 'test10', 'passwd10*', '라인먹는포식자', '마스터', '010-6806-8368', SYSDATE);
+--INSERT INTO TBL_USER (user_number, user_id, user_passwd, user_nickname, user_tier, user_phone, user_join_date) VALUES (seq_user.NEXTVAL, 'test11', 'passwd11*', '한방역전러', '그랜드마스터', '010-3886-7703', SYSDATE);
+--INSERT INTO TBL_USER (user_number, user_id, user_passwd, user_nickname, user_tier, user_phone, user_join_date) VALUES (seq_user.NEXTVAL, 'test12', 'passwd12*', '탑신병자', '언랭', '010-5443-3393', SYSDATE);
+--INSERT INTO TBL_USER (user_number, user_id, user_passwd, user_nickname, user_tier, user_phone, user_join_date) VALUES (seq_user.NEXTVAL, 'test13', 'passwd13*', '팀킬장인', '마스터', '010-8714-3309', SYSDATE);
+--INSERT INTO TBL_USER (user_number, user_id, user_passwd, user_nickname, user_tier, user_phone, user_join_date) VALUES (seq_user.NEXTVAL, 'test14', 'passwd14*', '방플대마왕', '실버', '010-6826-9446', SYSDATE);
+--INSERT INTO TBL_USER (user_number, user_id, user_passwd, user_nickname, user_tier, user_phone, user_join_date) VALUES (seq_user.NEXTVAL, 'test15', 'passwd15*', '도란링장인', '에메랄드', '010-1927-9653', SYSDATE);
+--INSERT INTO TBL_USER (user_number, user_id, user_passwd, user_nickname, user_tier, user_phone, user_join_date) VALUES (seq_user.NEXTVAL, 'test16', 'passwd16*', '덕망높은트롤', '그랜드마스터', '010-1146-3413', SYSDATE);
+--INSERT INTO TBL_USER (user_number, user_id, user_passwd, user_nickname, user_tier, user_phone, user_join_date) VALUES (seq_user.NEXTVAL, 'test17', 'passwd17*', '라인전프로', '챌린저', '010-6325-6201', SYSDATE);
+--INSERT INTO TBL_USER (user_number, user_id, user_passwd, user_nickname, user_tier, user_phone, user_join_date) VALUES (seq_user.NEXTVAL, 'test18', 'passwd18*', '폭풍성장러', '에메랄드', '010-9712-1933', SYSDATE);
+--INSERT INTO TBL_USER (user_number, user_id, user_passwd, user_nickname, user_tier, user_phone, user_join_date) VALUES (seq_user.NEXTVAL, 'test19', 'passwd19*', '신발안산놈', '언랭', '010-8447-8481', SYSDATE);
+--INSERT INTO TBL_USER (user_number, user_id, user_passwd, user_nickname, user_tier, user_phone, user_join_date) VALUES (seq_user.NEXTVAL, 'test20', 'passwd20*', '바텀디바인', '언랭', '010-6694-9056', SYSDATE);
+--INSERT INTO TBL_USER (user_number, user_id, user_passwd, user_nickname, user_tier, user_phone, user_join_date) VALUES (seq_user.NEXTVAL, 'test21', 'passwd21*', '방어력제로', '언랭', '010-4231-7227', SYSDATE);
+--INSERT INTO TBL_USER (user_number, user_id, user_passwd, user_nickname, user_tier, user_phone, user_join_date) VALUES (seq_user.NEXTVAL, 'test22', 'passwd22*', '무빙장인', '플래티넘', '010-9705-2108', SYSDATE);
+--INSERT INTO TBL_USER (user_number, user_id, user_passwd, user_nickname, user_tier, user_phone, user_join_date) VALUES (seq_user.NEXTVAL, 'test23', 'passwd23*', '그림자암살자', '다이아몬드', '010-8505-3561', SYSDATE);
+--INSERT INTO TBL_USER (user_number, user_id, user_passwd, user_nickname, user_tier, user_phone, user_join_date) VALUES (seq_user.NEXTVAL, 'test24', 'passwd24*', '탑포식자', '브론즈', '010-8853-6936', SYSDATE);
+--INSERT INTO TBL_USER (user_number, user_id, user_passwd, user_nickname, user_tier, user_phone, user_join_date) VALUES (seq_user.NEXTVAL, 'test25', 'passwd25*', '궁쓰고후퇴', '골드', '010-3960-6918', SYSDATE);
+--INSERT INTO TBL_USER (user_number, user_id, user_passwd, user_nickname, user_tier, user_phone, user_join_date) VALUES (seq_user.NEXTVAL, 'test26', 'passwd26*', '점멸아껴요', '마스터', '010-5079-1972', SYSDATE);
+--INSERT INTO TBL_USER (user_number, user_id, user_passwd, user_nickname, user_tier, user_phone, user_join_date) VALUES (seq_user.NEXTVAL, 'test27', 'passwd27*', '초식정글러', '실버', '010-1063-5399', SYSDATE);
+--INSERT INTO TBL_USER (user_number, user_id, user_passwd, user_nickname, user_tier, user_phone, user_join_date) VALUES (seq_user.NEXTVAL, 'test28', 'passwd28*', '사이온전차', '마스터', '010-6609-5971', SYSDATE);
+--INSERT INTO TBL_USER (user_number, user_id, user_passwd, user_nickname, user_tier, user_phone, user_join_date) VALUES (seq_user.NEXTVAL, 'test29', 'passwd29*', '폭풍성장러', '골드', '010-2690-1169', SYSDATE);
+--INSERT INTO TBL_USER (user_number, user_id, user_passwd, user_nickname, user_tier, user_phone, user_join_date) VALUES (seq_user.NEXTVAL, 'test30', 'passwd30*', '트롤장인', '챌린저', '010-1699-2885', SYSDATE);
+--INSERT INTO TBL_USER (user_number, user_id, user_passwd, user_nickname, user_tier, user_phone, user_join_date) VALUES (seq_user.NEXTVAL, 'test31', 'passwd31*', '킬스틸장인', '에메랄드', '010-5385-3605', SYSDATE);
+--INSERT INTO TBL_USER (user_number, user_id, user_passwd, user_nickname, user_tier, user_phone, user_join_date) VALUES (seq_user.NEXTVAL, 'test32', 'passwd32*', '와드장인', '다이아몬드', '010-2556-2966', SYSDATE);
+--INSERT INTO TBL_USER (user_number, user_id, user_passwd, user_nickname, user_tier, user_phone, user_join_date) VALUES (seq_user.NEXTVAL, 'test33', 'passwd33*', '강철멘탈', '챌린저', '010-9770-7067', SYSDATE);
+--INSERT INTO TBL_USER (user_number, user_id, user_passwd, user_nickname, user_tier, user_phone, user_join_date) VALUES (seq_user.NEXTVAL, 'test34', 'passwd34*', '덕망높은트롤', '마스터', '010-2012-4578', SYSDATE);
+--INSERT INTO TBL_USER (user_number, user_id, user_passwd, user_nickname, user_tier, user_phone, user_join_date) VALUES (seq_user.NEXTVAL, 'test35', 'passwd35*', '전설의광탈러', '챌린저', '010-5919-9184', SYSDATE);
+--INSERT INTO TBL_USER (user_number, user_id, user_passwd, user_nickname, user_tier, user_phone, user_join_date) VALUES (seq_user.NEXTVAL, 'test36', 'passwd36*', '스킬낭비왕', '에메랄드', '010-6158-6717', SYSDATE);
+--INSERT INTO TBL_USER (user_number, user_id, user_passwd, user_nickname, user_tier, user_phone, user_join_date) VALUES (seq_user.NEXTVAL, 'test37', 'passwd37*', '야스오장인', '다이아몬드', '010-6262-5139', SYSDATE);
+--INSERT INTO TBL_USER (user_number, user_id, user_passwd, user_nickname, user_tier, user_phone, user_join_date) VALUES (seq_user.NEXTVAL, 'test38', 'passwd38*', '트롤장인', '언랭', '010-1646-2456', SYSDATE);
+--INSERT INTO TBL_USER (user_number, user_id, user_passwd, user_nickname, user_tier, user_phone, user_join_date) VALUES (seq_user.NEXTVAL, 'test39', 'passwd39*', '오리아나공듀', '챌린저', '010-7900-3752', SYSDATE);
+--INSERT INTO TBL_USER (user_number, user_id, user_passwd, user_nickname, user_tier, user_phone, user_join_date) VALUES (seq_user.NEXTVAL, 'test40', 'passwd40*', '궁쿨러', '골드', '010-5275-5474', SYSDATE);
+--INSERT INTO TBL_USER (user_number, user_id, user_passwd, user_nickname, user_tier, user_phone, user_join_date) VALUES (seq_user.NEXTVAL, 'test41', 'passwd41*', '무한와드맨', '그랜드마스터', '010-7992-7974', SYSDATE);
+--INSERT INTO TBL_USER (user_number, user_id, user_passwd, user_nickname, user_tier, user_phone, user_join_date) VALUES (seq_user.NEXTVAL, 'test42', 'passwd42*', '초반빡겜러', '그랜드마스터', '010-4547-3096', SYSDATE);
+--INSERT INTO TBL_USER (user_number, user_id, user_passwd, user_nickname, user_tier, user_phone, user_join_date) VALUES (seq_user.NEXTVAL, 'test43', 'passwd43*', '스킬낭비왕', '그랜드마스터', '010-4182-8280', SYSDATE);
+--INSERT INTO TBL_USER (user_number, user_id, user_passwd, user_nickname, user_tier, user_phone, user_join_date) VALUES (seq_user.NEXTVAL, 'test44', 'passwd44*', '방플대마왕', '마스터', '010-8965-5747', SYSDATE);
+--INSERT INTO TBL_USER (user_number, user_id, user_passwd, user_nickname, user_tier, user_phone, user_join_date) VALUES (seq_user.NEXTVAL, 'test45', 'passwd45*', '폭풍성장러', '챌린저', '010-6103-7424', SYSDATE);
+--INSERT INTO TBL_USER (user_number, user_id, user_passwd, user_nickname, user_tier, user_phone, user_join_date) VALUES (seq_user.NEXTVAL, 'test46', 'passwd46*', '궁쓰고후퇴', '브론즈', '010-8684-1599', SYSDATE);
+--INSERT INTO TBL_USER (user_number, user_id, user_passwd, user_nickname, user_tier, user_phone, user_join_date) VALUES (seq_user.NEXTVAL, 'test47', 'passwd47*', '팀운극혐', '마스터', '010-4050-3946', SYSDATE);
+--INSERT INTO TBL_USER (user_number, user_id, user_passwd, user_nickname, user_tier, user_phone, user_join_date) VALUES (seq_user.NEXTVAL, 'test48', 'passwd48*', '궁쿨러', '브론즈', '010-7293-6036', SYSDATE);
+--INSERT INTO TBL_USER (user_number, user_id, user_passwd, user_nickname, user_tier, user_phone, user_join_date) VALUES (seq_user.NEXTVAL, 'test49', 'passwd49*', '그림자암살자', '브론즈', '010-8569-1034', SYSDATE);
+--INSERT INTO TBL_USER (user_number, user_id, user_passwd, user_nickname, user_tier, user_phone, user_join_date) VALUES (seq_user.NEXTVAL, 'test50', 'passwd50*', '불사조정글', '다이아몬드', '010-6391-6626', SYSDATE);
+
+
+
+INSERT INTO TBL_USER (user_number, user_id, user_passwd, user_nickname, user_tier, user_phone, user_join_date) VALUES (seq_user.NEXTVAL, 'test51', 'passwd51*', '한타노예', '마스터', '010-2507-9423', '2025-01-18');
+INSERT INTO TBL_USER (user_number, user_id, user_passwd, user_nickname, user_tier, user_phone, user_join_date) VALUES (seq_user.NEXTVAL, 'test52', 'passwd52*', '라인먹는포식자', '언랭', '010-6661-5481', '2025-01-09');
+INSERT INTO TBL_USER (user_number, user_id, user_passwd, user_nickname, user_tier, user_phone, user_join_date) VALUES (seq_user.NEXTVAL, 'test53', 'passwd53*', '바텀디바인', '골드', '010-1047-5715', '2025-01-02');
+INSERT INTO TBL_USER (user_number, user_id, user_passwd, user_nickname, user_tier, user_phone, user_join_date) VALUES (seq_user.NEXTVAL, 'test54', 'passwd54*', '사이온전차', '플래티넘', '010-8689-4224', '2025-01-15');
+INSERT INTO TBL_USER (user_number, user_id, user_passwd, user_nickname, user_tier, user_phone, user_join_date) VALUES (seq_user.NEXTVAL, 'test55', 'passwd55*', '야스오장인', '챌린저', '010-3666-9791', '2025-01-11');
+INSERT INTO TBL_USER (user_number, user_id, user_passwd, user_nickname, user_tier, user_phone, user_join_date) VALUES (seq_user.NEXTVAL, 'test56', 'passwd56*', '팀킬장인', '다이아몬드', '010-3605-2428', '2025-01-21');
+INSERT INTO TBL_USER (user_number, user_id, user_passwd, user_nickname, user_tier, user_phone, user_join_date) VALUES (seq_user.NEXTVAL, 'test57', 'passwd57*', '궁극저격수', '골드', '010-9933-1869', '2025-01-05');
+INSERT INTO TBL_USER (user_number, user_id, user_passwd, user_nickname, user_tier, user_phone, user_join_date) VALUES (seq_user.NEXTVAL, 'test58', 'passwd58*', '트롤장인', '실버', '010-7385-3707', '2025-01-15');
+INSERT INTO TBL_USER (user_number, user_id, user_passwd, user_nickname, user_tier, user_phone, user_join_date) VALUES (seq_user.NEXTVAL, 'test59', 'passwd59*', '불사조정글', '챌린저', '010-7966-9315', '2025-01-10');
+INSERT INTO TBL_USER (user_number, user_id, user_passwd, user_nickname, user_tier, user_phone, user_join_date) VALUES (seq_user.NEXTVAL, 'test60', 'passwd60*', '고라니킹', '골드', '010-3892-7753', '2025-01-03');
+INSERT INTO TBL_USER (user_number, user_id, user_passwd, user_nickname, user_tier, user_phone, user_join_date) VALUES (seq_user.NEXTVAL, 'test61', 'passwd61*', '와드장인', '골드', '010-8751-4448', '2025-01-08');
+INSERT INTO TBL_USER (user_number, user_id, user_passwd, user_nickname, user_tier, user_phone, user_join_date) VALUES (seq_user.NEXTVAL, 'test62', 'passwd62*', '초식정글러', '에메랄드', '010-1168-9948', '2025-01-13');
+INSERT INTO TBL_USER (user_number, user_id, user_passwd, user_nickname, user_tier, user_phone, user_join_date) VALUES (seq_user.NEXTVAL, 'test63', 'passwd63*', '무한와드맨', '골드', '010-6834-7645', '2025-01-16');
+INSERT INTO TBL_USER (user_number, user_id, user_passwd, user_nickname, user_tier, user_phone, user_join_date) VALUES (seq_user.NEXTVAL, 'test64', 'passwd64*', '강철멘탈', '언랭', '010-8311-5939', '2025-01-03');
+INSERT INTO TBL_USER (user_number, user_id, user_passwd, user_nickname, user_tier, user_phone, user_join_date) VALUES (seq_user.NEXTVAL, 'test65', 'passwd65*', '라인전프로', '브론즈', '010-2290-5468', '2025-01-11');
+INSERT INTO TBL_USER (user_number, user_id, user_passwd, user_nickname, user_tier, user_phone, user_join_date) VALUES (seq_user.NEXTVAL, 'test66', 'passwd66*', '투신용사', '브론즈', '010-5635-4035', '2025-01-04');
+INSERT INTO TBL_USER (user_number, user_id, user_passwd, user_nickname, user_tier, user_phone, user_join_date) VALUES (seq_user.NEXTVAL, 'test67', 'passwd67*', '궁쿨러', '그랜드마스터', '010-8433-8610', '2025-01-11');
+INSERT INTO TBL_USER (user_number, user_id, user_passwd, user_nickname, user_tier, user_phone, user_join_date) VALUES (seq_user.NEXTVAL, 'test68', 'passwd68*', '무빙장인', '다이아몬드', '010-1033-1625', '2025-01-21');
+INSERT INTO TBL_USER (user_number, user_id, user_passwd, user_nickname, user_tier, user_phone, user_join_date) VALUES (seq_user.NEXTVAL, 'test69', 'passwd69*', '탑포식자', '마스터', '010-7543-5732', '2025-01-20');
+INSERT INTO TBL_USER (user_number, user_id, user_passwd, user_nickname, user_tier, user_phone, user_join_date) VALUES (seq_user.NEXTVAL, 'test70', 'passwd70*', '롤만하는놈', '챌린저', '010-5984-3076', '2025-01-13');
+INSERT INTO TBL_USER (user_number, user_id, user_passwd, user_nickname, user_tier, user_phone, user_join_date) VALUES (seq_user.NEXTVAL, 'test71', 'passwd71*', '킬스틸장인', '에메랄드', '010-2204-2767', '2025-01-17');
+INSERT INTO TBL_USER (user_number, user_id, user_passwd, user_nickname, user_tier, user_phone, user_join_date) VALUES (seq_user.NEXTVAL, 'test72', 'passwd72*', '방어력제로', '마스터', '010-2046-1174', '2025-01-17');
+INSERT INTO TBL_USER (user_number, user_id, user_passwd, user_nickname, user_tier, user_phone, user_join_date) VALUES (seq_user.NEXTVAL, 'test73', 'passwd73*', '개판5분전', '다이아몬드', '010-8761-9301', '2025-01-14');
+INSERT INTO TBL_USER (user_number, user_id, user_passwd, user_nickname, user_tier, user_phone, user_join_date) VALUES (seq_user.NEXTVAL, 'test74', 'passwd74*', '점멸아껴요', '플래티넘', '010-2811-9545', '2025-01-08');
+INSERT INTO TBL_USER (user_number, user_id, user_passwd, user_nickname, user_tier, user_phone, user_join_date) VALUES (seq_user.NEXTVAL, 'test75', 'passwd75*', '한방역전러', '플래티넘', '010-6994-8703', '2025-01-11');
+INSERT INTO TBL_USER (user_number, user_id, user_passwd, user_nickname, user_tier, user_phone, user_join_date) VALUES (seq_user.NEXTVAL, 'test76', 'passwd76*', '솔랭장군', '챌린저', '010-9788-2468', '2025-01-17');
+INSERT INTO TBL_USER (user_number, user_id, user_passwd, user_nickname, user_tier, user_phone, user_join_date) VALUES (seq_user.NEXTVAL, 'test77', 'passwd77*', '궁한방주문', '에메랄드', '010-1504-2865', '2025-01-01');
+INSERT INTO TBL_USER (user_number, user_id, user_passwd, user_nickname, user_tier, user_phone, user_join_date) VALUES (seq_user.NEXTVAL, 'test78', 'passwd78*', '유체이탈자', '골드', '010-6610-7372', '2025-01-18');
+INSERT INTO TBL_USER (user_number, user_id, user_passwd, user_nickname, user_tier, user_phone, user_join_date) VALUES (seq_user.NEXTVAL, 'test79', 'passwd79*', '신발안산놈', '챌린저', '010-4469-3294', '2025-01-01');
+INSERT INTO TBL_USER (user_number, user_id, user_passwd, user_nickname, user_tier, user_phone, user_join_date) VALUES (seq_user.NEXTVAL, 'test80', 'passwd80*', '스킬낭비왕', '골드', '010-5034-7871', '2025-01-21');
+INSERT INTO TBL_USER (user_number, user_id, user_passwd, user_nickname, user_tier, user_phone, user_join_date) VALUES (seq_user.NEXTVAL, 'test81', 'passwd81*', '롤충이', '다이아몬드', '010-9177-2891', '2025-01-19');
+INSERT INTO TBL_USER (user_number, user_id, user_passwd, user_nickname, user_tier, user_phone, user_join_date) VALUES (seq_user.NEXTVAL, 'test82', 'passwd82*', '골드입문자', '언랭', '010-4052-8457', '2025-01-17');
+INSERT INTO TBL_USER (user_number, user_id, user_passwd, user_nickname, user_tier, user_phone, user_join_date) VALUES (seq_user.NEXTVAL, 'test83', 'passwd83*', '개코원숭이', '마스터', '010-8258-4014', '2025-01-08');
+INSERT INTO TBL_USER (user_number, user_id, user_passwd, user_nickname, user_tier, user_phone, user_join_date) VALUES (seq_user.NEXTVAL, 'test84', 'passwd84*', '그림자암살자', '골드', '010-8086-7077', '2025-01-08');
+INSERT INTO TBL_USER (user_number, user_id, user_passwd, user_nickname, user_tier, user_phone, user_join_date) VALUES (seq_user.NEXTVAL, 'test85', 'passwd85*', '전설의광탈러', '브론즈', '010-7550-8710', '2025-01-21');
+INSERT INTO TBL_USER (user_number, user_id, user_passwd, user_nickname, user_tier, user_phone, user_join_date) VALUES (seq_user.NEXTVAL, 'test86', 'passwd86*', '탈주전문가', '브론즈', '010-2256-7868', '2025-01-03');
+INSERT INTO TBL_USER (user_number, user_id, user_passwd, user_nickname, user_tier, user_phone, user_join_date) VALUES (seq_user.NEXTVAL, 'test87', 'passwd87*', '오리아나공듀', '실버', '010-9071-8740', '2025-01-06');
+INSERT INTO TBL_USER (user_number, user_id, user_passwd, user_nickname, user_tier, user_phone, user_join_date) VALUES (seq_user.NEXTVAL, 'test88', 'passwd88*', '도란링장인', '브론즈', '010-9668-3325', '2025-01-14');
+INSERT INTO TBL_USER (user_number, user_id, user_passwd, user_nickname, user_tier, user_phone, user_join_date) VALUES (seq_user.NEXTVAL, 'test89', 'passwd89*', '개싸움장인', '플래티넘', '010-4004-5766', '2025-01-10');
+INSERT INTO TBL_USER (user_number, user_id, user_passwd, user_nickname, user_tier, user_phone, user_join_date) VALUES (seq_user.NEXTVAL, 'test90', 'passwd90*', '궁극허수아비', '에메랄드', '010-8093-6626', '2025-01-01');
+INSERT INTO TBL_USER (user_number, user_id, user_passwd, user_nickname, user_tier, user_phone, user_join_date) VALUES (seq_user.NEXTVAL, 'test91', 'passwd91*', '덕망높은트롤', '그랜드마스터', '010-4961-9156', '2025-01-20');
+INSERT INTO TBL_USER (user_number, user_id, user_passwd, user_nickname, user_tier, user_phone, user_join_date) VALUES (seq_user.NEXTVAL, 'test92', 'passwd92*', '폭풍성장러', '골드', '010-3288-6586', '2025-01-09');
+INSERT INTO TBL_USER (user_number, user_id, user_passwd, user_nickname, user_tier, user_phone, user_join_date) VALUES (seq_user.NEXTVAL, 'test93', 'passwd93*', '피드머신', '실버', '010-3935-4805', '2025-01-17');
+INSERT INTO TBL_USER (user_number, user_id, user_passwd, user_nickname, user_tier, user_phone, user_join_date) VALUES (seq_user.NEXTVAL, 'test94', 'passwd94*', '킬각노리기', '실버', '010-9758-6226', '2025-01-12');
+INSERT INTO TBL_USER (user_number, user_id, user_passwd, user_nickname, user_tier, user_phone, user_join_date) VALUES (seq_user.NEXTVAL, 'test95', 'passwd95*', '미니언킬러', '언랭', '010-9699-7102', '2025-01-18');
+INSERT INTO TBL_USER (user_number, user_id, user_passwd, user_nickname, user_tier, user_phone, user_join_date) VALUES (seq_user.NEXTVAL, 'test96', 'passwd96*', '초반빡겜러', '챌린저', '010-4396-3001', '2025-01-11');
+INSERT INTO TBL_USER (user_number, user_id, user_passwd, user_nickname, user_tier, user_phone, user_join_date) VALUES (seq_user.NEXTVAL, 'test97', 'passwd97*', '궁쓰고후퇴', '다이아몬드', '010-2320-4895', '2025-01-21');
+INSERT INTO TBL_USER (user_number, user_id, user_passwd, user_nickname, user_tier, user_phone, user_join_date) VALUES (seq_user.NEXTVAL, 'test98', 'passwd98*', '팀운극혐', '다이아몬드', '010-6821-6758', '2025-01-21');
+INSERT INTO TBL_USER (user_number, user_id, user_passwd, user_nickname, user_tier, user_phone, user_join_date) VALUES (seq_user.NEXTVAL, 'test99', 'passwd99*', '방플대마왕', '실버', '010-7218-7010', '2025-01-19');
+INSERT INTO TBL_USER (user_number, user_id, user_passwd, user_nickname, user_tier, user_phone, user_join_date) VALUES (seq_user.NEXTVAL, 'test100', 'passwd100*', '탑신병자', '골드', '010-2278-5540', '2025-01-09'), Error Msg = ORA-00933: SQL 명령어가 올바르게 종료되지 않았습니다
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:637)
+	... 26 more
+2025-01-21 11:22:32.877 - SQL Error [1] [23000]: ORA-00001: 무결성 제약 조건(LEARNING.UQ_USER_NICKNAME)에 위배됩니다
+
+org.jkiss.dbeaver.model.sql.DBSQLException: SQL Error [1] [23000]: ORA-00001: 무결성 제약 조건(LEARNING.UQ_USER_NICKNAME)에 위배됩니다
+
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.executeStatement(JDBCStatementImpl.java:130)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.executeStatement(SQLQueryJob.java:631)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.lambda$2(SQLQueryJob.java:522)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.executeSingleQuery(SQLQueryJob.java:544)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.extractData(SQLQueryJob.java:1016)
+	at org.jkiss.dbeaver.ui.editors.sql.SQLEditor$QueryResultsContainer.readData(SQLEditor.java:4273)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetJobDataRead.lambda$0(ResultSetJobDataRead.java:128)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:192)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetJobDataRead.run(ResultSetJobDataRead.java:126)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetViewer$ResultSetDataPumpJob.run(ResultSetViewer.java:5166)
+	at org.jkiss.dbeaver.model.runtime.AbstractJob.run(AbstractJob.java:119)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: java.sql.SQLIntegrityConstraintViolationException: ORA-00001: 무결성 제약 조건(LEARNING.UQ_USER_NICKNAME)에 위배됩니다
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:630)
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:564)
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1231)
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:772)
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:299)
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:512)
+	at oracle.jdbc.driver.T4CStatement.doOall8(T4CStatement.java:123)
+	at oracle.jdbc.driver.T4CStatement.executeForRows(T4CStatement.java:1200)
+	at oracle.jdbc.driver.OracleStatement.executeSQLStatement(OracleStatement.java:1820)
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1472)
+	at oracle.jdbc.driver.OracleStatement.executeInternal(OracleStatement.java:2505)
+	at oracle.jdbc.driver.OracleStatement.execute(OracleStatement.java:2460)
+	at oracle.jdbc.driver.OracleStatementWrapper.execute(OracleStatementWrapper.java:328)
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.execute(JDBCStatementImpl.java:344)
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.executeStatement(JDBCStatementImpl.java:128)
+	... 11 more
+Caused by: Error : 1, Position : 0, Sql = INSERT INTO TBL_USER (user_number, user_id, user_passwd, user_nickname, user_tier, user_phone, user_join_date) VALUES (seq_user.NEXTVAL, 'test51', 'passwd51*', '한타노예', '마스터', '010-2507-9423', '2025-01-18'), OriginalSql = INSERT INTO TBL_USER (user_number, user_id, user_passwd, user_nickname, user_tier, user_phone, user_join_date) VALUES (seq_user.NEXTVAL, 'test51', 'passwd51*', '한타노예', '마스터', '010-2507-9423', '2025-01-18'), Error Msg = ORA-00001: 무결성 제약 조건(LEARNING.UQ_USER_NICKNAME)에 위배됩니다
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:637)
+	... 25 more
+2025-01-21 11:22:40.140 - SQL Error [1] [23000]: ORA-00001: 무결성 제약 조건(LEARNING.UQ_USER_NICKNAME)에 위배됩니다
+
+org.jkiss.dbeaver.model.sql.DBSQLException: SQL Error [1] [23000]: ORA-00001: 무결성 제약 조건(LEARNING.UQ_USER_NICKNAME)에 위배됩니다
+
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.executeStatement(JDBCStatementImpl.java:130)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.executeStatement(SQLQueryJob.java:631)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.lambda$2(SQLQueryJob.java:522)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.executeSingleQuery(SQLQueryJob.java:544)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.extractData(SQLQueryJob.java:1016)
+	at org.jkiss.dbeaver.ui.editors.sql.SQLEditor$QueryResultsContainer.readData(SQLEditor.java:4273)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetJobDataRead.lambda$0(ResultSetJobDataRead.java:128)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:192)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetJobDataRead.run(ResultSetJobDataRead.java:126)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetViewer$ResultSetDataPumpJob.run(ResultSetViewer.java:5166)
+	at org.jkiss.dbeaver.model.runtime.AbstractJob.run(AbstractJob.java:119)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: java.sql.SQLIntegrityConstraintViolationException: ORA-00001: 무결성 제약 조건(LEARNING.UQ_USER_NICKNAME)에 위배됩니다
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:630)
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:564)
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1231)
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:772)
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:299)
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:512)
+	at oracle.jdbc.driver.T4CStatement.doOall8(T4CStatement.java:123)
+	at oracle.jdbc.driver.T4CStatement.executeForRows(T4CStatement.java:1200)
+	at oracle.jdbc.driver.OracleStatement.executeSQLStatement(OracleStatement.java:1820)
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1472)
+	at oracle.jdbc.driver.OracleStatement.executeInternal(OracleStatement.java:2505)
+	at oracle.jdbc.driver.OracleStatement.execute(OracleStatement.java:2460)
+	at oracle.jdbc.driver.OracleStatementWrapper.execute(OracleStatementWrapper.java:328)
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.execute(JDBCStatementImpl.java:344)
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.executeStatement(JDBCStatementImpl.java:128)
+	... 11 more
+Caused by: Error : 1, Position : 0, Sql = INSERT INTO TBL_USER (user_number, user_id, user_passwd, user_nickname, user_tier, user_phone, user_join_date) VALUES (seq_user.NEXTVAL, 'test53', 'passwd53*', '바텀디바인', '골드', '010-1047-5715', '2025-01-02'), OriginalSql = INSERT INTO TBL_USER (user_number, user_id, user_passwd, user_nickname, user_tier, user_phone, user_join_date) VALUES (seq_user.NEXTVAL, 'test53', 'passwd53*', '바텀디바인', '골드', '010-1047-5715', '2025-01-02'), Error Msg = ORA-00001: 무결성 제약 조건(LEARNING.UQ_USER_NICKNAME)에 위배됩니다
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:637)
+	... 25 more
+2025-01-21 11:22:40.765 - SQL Error [1] [23000]: ORA-00001: 무결성 제약 조건(LEARNING.UQ_USER_NICKNAME)에 위배됩니다
+
+org.jkiss.dbeaver.model.sql.DBSQLException: SQL Error [1] [23000]: ORA-00001: 무결성 제약 조건(LEARNING.UQ_USER_NICKNAME)에 위배됩니다
+
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.executeStatement(JDBCStatementImpl.java:130)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.executeStatement(SQLQueryJob.java:631)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.lambda$2(SQLQueryJob.java:522)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.executeSingleQuery(SQLQueryJob.java:544)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.extractData(SQLQueryJob.java:1016)
+	at org.jkiss.dbeaver.ui.editors.sql.SQLEditor$QueryResultsContainer.readData(SQLEditor.java:4273)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetJobDataRead.lambda$0(ResultSetJobDataRead.java:128)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:192)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetJobDataRead.run(ResultSetJobDataRead.java:126)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetViewer$ResultSetDataPumpJob.run(ResultSetViewer.java:5166)
+	at org.jkiss.dbeaver.model.runtime.AbstractJob.run(AbstractJob.java:119)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: java.sql.SQLIntegrityConstraintViolationException: ORA-00001: 무결성 제약 조건(LEARNING.UQ_USER_NICKNAME)에 위배됩니다
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:630)
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:564)
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1231)
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:772)
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:299)
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:512)
+	at oracle.jdbc.driver.T4CStatement.doOall8(T4CStatement.java:123)
+	at oracle.jdbc.driver.T4CStatement.executeForRows(T4CStatement.java:1200)
+	at oracle.jdbc.driver.OracleStatement.executeSQLStatement(OracleStatement.java:1820)
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1472)
+	at oracle.jdbc.driver.OracleStatement.executeInternal(OracleStatement.java:2505)
+	at oracle.jdbc.driver.OracleStatement.execute(OracleStatement.java:2460)
+	at oracle.jdbc.driver.OracleStatementWrapper.execute(OracleStatementWrapper.java:328)
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.execute(JDBCStatementImpl.java:344)
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.executeStatement(JDBCStatementImpl.java:128)
+	... 11 more
+Caused by: Error : 1, Position : 0, Sql = INSERT INTO TBL_USER (user_number, user_id, user_passwd, user_nickname, user_tier, user_phone, user_join_date) VALUES (seq_user.NEXTVAL, 'test54', 'passwd54*', '사이온전차', '플래티넘', '010-8689-4224', '2025-01-15'), OriginalSql = INSERT INTO TBL_USER (user_number, user_id, user_passwd, user_nickname, user_tier, user_phone, user_join_date) VALUES (seq_user.NEXTVAL, 'test54', 'passwd54*', '사이온전차', '플래티넘', '010-8689-4224', '2025-01-15'), Error Msg = ORA-00001: 무결성 제약 조건(LEARNING.UQ_USER_NICKNAME)에 위배됩니다
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:637)
+	... 25 more
+2025-01-21 11:22:41.286 - SQL Error [1] [23000]: ORA-00001: 무결성 제약 조건(LEARNING.UQ_USER_NICKNAME)에 위배됩니다
+
+org.jkiss.dbeaver.model.sql.DBSQLException: SQL Error [1] [23000]: ORA-00001: 무결성 제약 조건(LEARNING.UQ_USER_NICKNAME)에 위배됩니다
+
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.executeStatement(JDBCStatementImpl.java:130)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.executeStatement(SQLQueryJob.java:631)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.lambda$2(SQLQueryJob.java:522)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.executeSingleQuery(SQLQueryJob.java:544)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.extractData(SQLQueryJob.java:1016)
+	at org.jkiss.dbeaver.ui.editors.sql.SQLEditor$QueryResultsContainer.readData(SQLEditor.java:4273)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetJobDataRead.lambda$0(ResultSetJobDataRead.java:128)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:192)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetJobDataRead.run(ResultSetJobDataRead.java:126)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetViewer$ResultSetDataPumpJob.run(ResultSetViewer.java:5166)
+	at org.jkiss.dbeaver.model.runtime.AbstractJob.run(AbstractJob.java:119)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: java.sql.SQLIntegrityConstraintViolationException: ORA-00001: 무결성 제약 조건(LEARNING.UQ_USER_NICKNAME)에 위배됩니다
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:630)
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:564)
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1231)
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:772)
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:299)
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:512)
+	at oracle.jdbc.driver.T4CStatement.doOall8(T4CStatement.java:123)
+	at oracle.jdbc.driver.T4CStatement.executeForRows(T4CStatement.java:1200)
+	at oracle.jdbc.driver.OracleStatement.executeSQLStatement(OracleStatement.java:1820)
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1472)
+	at oracle.jdbc.driver.OracleStatement.executeInternal(OracleStatement.java:2505)
+	at oracle.jdbc.driver.OracleStatement.execute(OracleStatement.java:2460)
+	at oracle.jdbc.driver.OracleStatementWrapper.execute(OracleStatementWrapper.java:328)
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.execute(JDBCStatementImpl.java:344)
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.executeStatement(JDBCStatementImpl.java:128)
+	... 11 more
+Caused by: Error : 1, Position : 0, Sql = INSERT INTO TBL_USER (user_number, user_id, user_passwd, user_nickname, user_tier, user_phone, user_join_date) VALUES (seq_user.NEXTVAL, 'test55', 'passwd55*', '야스오장인', '챌린저', '010-3666-9791', '2025-01-11'), OriginalSql = INSERT INTO TBL_USER (user_number, user_id, user_passwd, user_nickname, user_tier, user_phone, user_join_date) VALUES (seq_user.NEXTVAL, 'test55', 'passwd55*', '야스오장인', '챌린저', '010-3666-9791', '2025-01-11'), Error Msg = ORA-00001: 무결성 제약 조건(LEARNING.UQ_USER_NICKNAME)에 위배됩니다
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:637)
+	... 25 more
+2025-01-21 11:22:41.677 - SQL Error [1] [23000]: ORA-00001: 무결성 제약 조건(LEARNING.UQ_USER_NICKNAME)에 위배됩니다
+
+org.jkiss.dbeaver.model.sql.DBSQLException: SQL Error [1] [23000]: ORA-00001: 무결성 제약 조건(LEARNING.UQ_USER_NICKNAME)에 위배됩니다
+
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.executeStatement(JDBCStatementImpl.java:130)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.executeStatement(SQLQueryJob.java:631)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.lambda$2(SQLQueryJob.java:522)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.executeSingleQuery(SQLQueryJob.java:544)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.extractData(SQLQueryJob.java:1016)
+	at org.jkiss.dbeaver.ui.editors.sql.SQLEditor$QueryResultsContainer.readData(SQLEditor.java:4273)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetJobDataRead.lambda$0(ResultSetJobDataRead.java:128)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:192)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetJobDataRead.run(ResultSetJobDataRead.java:126)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetViewer$ResultSetDataPumpJob.run(ResultSetViewer.java:5166)
+	at org.jkiss.dbeaver.model.runtime.AbstractJob.run(AbstractJob.java:119)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: java.sql.SQLIntegrityConstraintViolationException: ORA-00001: 무결성 제약 조건(LEARNING.UQ_USER_NICKNAME)에 위배됩니다
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:630)
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:564)
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1231)
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:772)
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:299)
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:512)
+	at oracle.jdbc.driver.T4CStatement.doOall8(T4CStatement.java:123)
+	at oracle.jdbc.driver.T4CStatement.executeForRows(T4CStatement.java:1200)
+	at oracle.jdbc.driver.OracleStatement.executeSQLStatement(OracleStatement.java:1820)
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1472)
+	at oracle.jdbc.driver.OracleStatement.executeInternal(OracleStatement.java:2505)
+	at oracle.jdbc.driver.OracleStatement.execute(OracleStatement.java:2460)
+	at oracle.jdbc.driver.OracleStatementWrapper.execute(OracleStatementWrapper.java:328)
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.execute(JDBCStatementImpl.java:344)
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.executeStatement(JDBCStatementImpl.java:128)
+	... 11 more
+Caused by: Error : 1, Position : 0, Sql = INSERT INTO TBL_USER (user_number, user_id, user_passwd, user_nickname, user_tier, user_phone, user_join_date) VALUES (seq_user.NEXTVAL, 'test56', 'passwd56*', '팀킬장인', '다이아몬드', '010-3605-2428', '2025-01-21'), OriginalSql = INSERT INTO TBL_USER (user_number, user_id, user_passwd, user_nickname, user_tier, user_phone, user_join_date) VALUES (seq_user.NEXTVAL, 'test56', 'passwd56*', '팀킬장인', '다이아몬드', '010-3605-2428', '2025-01-21'), Error Msg = ORA-00001: 무결성 제약 조건(LEARNING.UQ_USER_NICKNAME)에 위배됩니다
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:637)
+	... 25 more
+2025-01-21 11:22:59.550 - SQL Error [922] [42000]: ORA-00922: 누락된 또는 부적합한 옵션
+
+org.jkiss.dbeaver.model.sql.DBSQLException: SQL Error [922] [42000]: ORA-00922: 누락된 또는 부적합한 옵션
+
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.executeStatement(JDBCStatementImpl.java:130)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.executeStatement(SQLQueryJob.java:631)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.lambda$2(SQLQueryJob.java:522)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:192)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.executeSingleQuery(SQLQueryJob.java:541)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.extractData(SQLQueryJob.java:1016)
+	at org.jkiss.dbeaver.ui.editors.sql.SQLEditor$QueryResultsContainer.readData(SQLEditor.java:4273)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetJobDataRead.lambda$0(ResultSetJobDataRead.java:128)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:192)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetJobDataRead.run(ResultSetJobDataRead.java:126)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetViewer$ResultSetDataPumpJob.run(ResultSetViewer.java:5166)
+	at org.jkiss.dbeaver.model.runtime.AbstractJob.run(AbstractJob.java:119)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: java.sql.SQLSyntaxErrorException: ORA-00922: 누락된 또는 부적합한 옵션
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:630)
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:564)
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1231)
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:772)
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:299)
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:512)
+	at oracle.jdbc.driver.T4CStatement.doOall8(T4CStatement.java:123)
+	at oracle.jdbc.driver.T4CStatement.executeForRows(T4CStatement.java:1200)
+	at oracle.jdbc.driver.OracleStatement.executeSQLStatement(OracleStatement.java:1820)
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1472)
+	at oracle.jdbc.driver.OracleStatement.executeInternal(OracleStatement.java:2505)
+	at oracle.jdbc.driver.OracleStatement.execute(OracleStatement.java:2460)
+	at oracle.jdbc.driver.OracleStatementWrapper.execute(OracleStatementWrapper.java:328)
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.execute(JDBCStatementImpl.java:344)
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.executeStatement(JDBCStatementImpl.java:128)
+	... 12 more
+Caused by: Error : 922, Position : 886, Sql = --DROP table tbl_file;
+--DROP TABLE tbl_party;
+--DROP TABLE tbl_comment;
+--DROP TABLE tbl_forum;
+--DROP TABLE tbl_ben;
+--DROP TABLE tbl_user;
+--DROP TABLE tbl_admin;
+--
+--DROP SEQUENCE seq_user;
+--DROP SEQUENCE seq_admin;
+--drop SEQUENCE seq_ben;
+--DROP SEQUENCE seq_comment;
+--DROP SEQUENCE seq_file;
+--DROP SEQUENCE seq_forum;
+--DROP SEQUENCE seq_party;
+
+
+CREATE TABLE tbl_user (
+    user_number NUMBER,
+    user_id VARCHAR2(20) NOT NULL,
+    user_passwd VARCHAR2(20) NOT NULL,
+    user_nickname VARCHAR2(30) NOT NULL,
+    user_tier VARCHAR2(30) NOT NULL,
+    user_phone VARCHAR2(15) NOT NULL,
+    user_join_date DATE,
+    user_ben_cnt NUMBER DEFAULT 0,
+    CONSTRAINT pk_user PRIMARY KEY (user_number),
+    CONSTRAINT uq_user_id UNIQUE (user_id),
+    CONSTRAINT uq_user_nickname UNIQUE (user_nickname),
+    CONSTRAINT uq_user_phone UNIQUE (user_phone)
+);
+CREATE SEQUENCE seq_user START WITH 1 INCREMENT BY 1
+nocache  --시퀀스 값을 미리 메모리에 캐싱하지 않도록 설정
+nocycle; --최대갑셍 도달하면 재시작하지 않도록 설정
+
+CREATE TABLE tbl_forum (
+    forum_number NUMBER,
+    user_number NUMBER,
+    forum_category VARCHAR2(10) NOT NULL,
+    forum_title VARCHAR2(150) NOT NULL,
+    forum_date DATE,
+    forum_update DATE,
+    forum_content VARCHAR2(2000) NOT NULL,
+    CONSTRAINT pk_forum PRIMARY KEY (forum_number),
+    CONSTRAINT fk_forum_user FOREIGN KEY (user_number) REFERENCES tbl_user (user_number) ON DELETE CASCADE
+);
+CREATE SEQUENCE seq_forum START WITH 1 INCREMENT BY 1 nocache nocycle;
+
+CREATE TABLE tbl_file (
+    file_number NUMBER,
+    forum_number NUMBER,
+    img_source VARCHAR2(200),
+    CONSTRAINT pk_file PRIMARY KEY (file_number),
+    CONSTRAINT fk_file_forum FOREIGN KEY (forum_number) REFERENCES tbl_forum (forum_number) ON DELETE CASCADE
+);
+CREATE SEQUENCE seq_file START WITH 1 INCREMENT BY 1 nocache nocycle;
+
+CREATE TABLE tbl_comment (
+    comment_number NUMBER,
+    forum_number NUMBER,
+    user_number NUMBER,
+    comment_content VARCHAR2(500) NOT NULL,
+    comment_date DATE,
+    CONSTRAINT pk_comment PRIMARY KEY (comment_number),
+    CONSTRAINT fk_comment_forum FOREIGN KEY (forum_number) REFERENCES tbl_forum (forum_number) ON DELETE CASCADE,
+    CONSTRAINT fk_comment_user FOREIGN KEY (user_number) REFERENCES tbl_user (user_number) ON DELETE CASCADE
+);
+CREATE SEQUENCE seq_comment START WITH 1 INCREMENT BY 1 nocache nocycle;
+
+
+CREATE TABLE tbl_party (
+    party_number NUMBER,
+    forum_number NUMBER,
+    user_number NUMBER,
+    party_state VARCHAR2(20) DEFAULT '대기중',
+    CONSTRAINT pk_party PRIMARY KEY (party_number),
+    CONSTRAINT fk_party_forum FOREIGN KEY (forum_number) REFERENCES tbl_forum (forum_number) ON DELETE CASCADE,
+    CONSTRAINT fk_party_user FOREIGN KEY (user_number) REFERENCES tbl_user (user_number) ON DELETE CASCADE
+);
+CREATE SEQUENCE seq_party START WITH 1 INCREMENT BY 1 nocache nocycle;
+
+
+CREATE TABLE tbl_ben (
+    ben_number NUMBER,
+    user_num NUMBER,
+    ben_start_date DATE,
+    ben_period NUMBER NOT NULL,
+    ben_reason VARCHAR2(50) NOT NULL,
+    CONSTRAINT pk_ben PRIMARY KEY (ben_number),
+    CONSTRAINT fk_ben_user FOREIGN KEY (user_num) REFERENCES tbl_user (user_number) ON DELETE CASCADE
+);
+CREATE SEQUENCE seq_ben START WITH 1 INCREMENT BY 1 nocache nocycle;
+
+CREATE TABLE tbl_admin (
+    admin_number NUMBER,
+    admin_id VARCHAR2(20) NOT NULL,
+    admin_passwd VARCHAR2(20) NOT NULL,
+    CONSTRAINT pk_admin PRIMARY KEY (admin_number)
+);
+CREATE SEQUENCE seq_admin START WITH 1 INCREMENT BY 1 nocache nocycle;
+
+
+
+--SELECT * FROM tbl_admin;
+--SELECT * FROM tbl_user, OriginalSql = --DROP table tbl_file;
+--DROP TABLE tbl_party;
+--DROP TABLE tbl_comment;
+--DROP TABLE tbl_forum;
+--DROP TABLE tbl_ben;
+--DROP TABLE tbl_user;
+--DROP TABLE tbl_admin;
+--
+--DROP SEQUENCE seq_user;
+--DROP SEQUENCE seq_admin;
+--drop SEQUENCE seq_ben;
+--DROP SEQUENCE seq_comment;
+--DROP SEQUENCE seq_file;
+--DROP SEQUENCE seq_forum;
+--DROP SEQUENCE seq_party;
+
+
+CREATE TABLE tbl_user (
+    user_number NUMBER,
+    user_id VARCHAR2(20) NOT NULL,
+    user_passwd VARCHAR2(20) NOT NULL,
+    user_nickname VARCHAR2(30) NOT NULL,
+    user_tier VARCHAR2(30) NOT NULL,
+    user_phone VARCHAR2(15) NOT NULL,
+    user_join_date DATE,
+    user_ben_cnt NUMBER DEFAULT 0,
+    CONSTRAINT pk_user PRIMARY KEY (user_number),
+    CONSTRAINT uq_user_id UNIQUE (user_id),
+    CONSTRAINT uq_user_nickname UNIQUE (user_nickname),
+    CONSTRAINT uq_user_phone UNIQUE (user_phone)
+);
+CREATE SEQUENCE seq_user START WITH 1 INCREMENT BY 1
+nocache  --시퀀스 값을 미리 메모리에 캐싱하지 않도록 설정
+nocycle; --최대갑셍 도달하면 재시작하지 않도록 설정
+
+CREATE TABLE tbl_forum (
+    forum_number NUMBER,
+    user_number NUMBER,
+    forum_category VARCHAR2(10) NOT NULL,
+    forum_title VARCHAR2(150) NOT NULL,
+    forum_date DATE,
+    forum_update DATE,
+    forum_content VARCHAR2(2000) NOT NULL,
+    CONSTRAINT pk_forum PRIMARY KEY (forum_number),
+    CONSTRAINT fk_forum_user FOREIGN KEY (user_number) REFERENCES tbl_user (user_number) ON DELETE CASCADE
+);
+CREATE SEQUENCE seq_forum START WITH 1 INCREMENT BY 1 nocache nocycle;
+
+CREATE TABLE tbl_file (
+    file_number NUMBER,
+    forum_number NUMBER,
+    img_source VARCHAR2(200),
+    CONSTRAINT pk_file PRIMARY KEY (file_number),
+    CONSTRAINT fk_file_forum FOREIGN KEY (forum_number) REFERENCES tbl_forum (forum_number) ON DELETE CASCADE
+);
+CREATE SEQUENCE seq_file START WITH 1 INCREMENT BY 1 nocache nocycle;
+
+CREATE TABLE tbl_comment (
+    comment_number NUMBER,
+    forum_number NUMBER,
+    user_number NUMBER,
+    comment_content VARCHAR2(500) NOT NULL,
+    comment_date DATE,
+    CONSTRAINT pk_comment PRIMARY KEY (comment_number),
+    CONSTRAINT fk_comment_forum FOREIGN KEY (forum_number) REFERENCES tbl_forum (forum_number) ON DELETE CASCADE,
+    CONSTRAINT fk_comment_user FOREIGN KEY (user_number) REFERENCES tbl_user (user_number) ON DELETE CASCADE
+);
+CREATE SEQUENCE seq_comment START WITH 1 INCREMENT BY 1 nocache nocycle;
+
+
+CREATE TABLE tbl_party (
+    party_number NUMBER,
+    forum_number NUMBER,
+    user_number NUMBER,
+    party_state VARCHAR2(20) DEFAULT '대기중',
+    CONSTRAINT pk_party PRIMARY KEY (party_number),
+    CONSTRAINT fk_party_forum FOREIGN KEY (forum_number) REFERENCES tbl_forum (forum_number) ON DELETE CASCADE,
+    CONSTRAINT fk_party_user FOREIGN KEY (user_number) REFERENCES tbl_user (user_number) ON DELETE CASCADE
+);
+CREATE SEQUENCE seq_party START WITH 1 INCREMENT BY 1 nocache nocycle;
+
+
+CREATE TABLE tbl_ben (
+    ben_number NUMBER,
+    user_num NUMBER,
+    ben_start_date DATE,
+    ben_period NUMBER NOT NULL,
+    ben_reason VARCHAR2(50) NOT NULL,
+    CONSTRAINT pk_ben PRIMARY KEY (ben_number),
+    CONSTRAINT fk_ben_user FOREIGN KEY (user_num) REFERENCES tbl_user (user_number) ON DELETE CASCADE
+);
+CREATE SEQUENCE seq_ben START WITH 1 INCREMENT BY 1 nocache nocycle;
+
+CREATE TABLE tbl_admin (
+    admin_number NUMBER,
+    admin_id VARCHAR2(20) NOT NULL,
+    admin_passwd VARCHAR2(20) NOT NULL,
+    CONSTRAINT pk_admin PRIMARY KEY (admin_number)
+);
+CREATE SEQUENCE seq_admin START WITH 1 INCREMENT BY 1 nocache nocycle;
+
+
+
+--SELECT * FROM tbl_admin;
+--SELECT * FROM tbl_user, Error Msg = ORA-00922: 누락된 또는 부적합한 옵션
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:637)
+	... 26 more
+2025-01-21 11:23:35.039 - SWT resource leak detected
+java.lang.Error: SWT Resource was not properly disposed
+	at org.eclipse.swt.graphics.Resource.initNonDisposeTracking(Resource.java:172)
+	at org.eclipse.swt.graphics.Resource.<init>(Resource.java:120)
+	at org.eclipse.swt.graphics.Image.<init>(Image.java:621)
+	at org.eclipse.jface.resource.ImageDescriptor.createImage(ImageDescriptor.java:340)
+	at org.eclipse.jface.resource.ImageDescriptor.createImage(ImageDescriptor.java:289)
+	at org.eclipse.jface.resource.ImageDescriptor.createImage(ImageDescriptor.java:267)
+	at org.jkiss.dbeaver.ui.DBeaverIcons.getCompositeIcon(DBeaverIcons.java:170)
+	at org.jkiss.dbeaver.ui.DBeaverIcons.getIconDescriptor(DBeaverIcons.java:122)
+	at org.jkiss.dbeaver.ui.DBeaverIcons.getImage(DBeaverIcons.java:94)
+	at org.jkiss.dbeaver.ui.editors.sql.SQLEditor.refreshEditorIconAndTitle(SQLEditor.java:3101)
+	at org.jkiss.dbeaver.ui.editors.sql.SQLEditor.onDataSourceChange(SQLEditor.java:3016)
+	at org.jkiss.dbeaver.ui.editors.sql.SQLEditor.lambda$32(SQLEditor.java:3263)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:132)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4099)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3715)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1151)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1042)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:153)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:639)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:546)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:173)
+	at org.jkiss.dbeaver.ui.app.standalone.DBeaverApplication.start(DBeaverApplication.java:293)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:208)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:143)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:109)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:439)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:271)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.jkiss.dbeaver.launcher.DBeaverLauncher.invokeFramework(DBeaverLauncher.java:650)
+	at org.jkiss.dbeaver.launcher.DBeaverLauncher.basicRun(DBeaverLauncher.java:610)
+	at org.jkiss.dbeaver.launcher.DBeaverLauncher.run(DBeaverLauncher.java:1461)
+2025-01-21 11:23:35.040 - SWT resource leak detected
+java.lang.Error: SWT Resource was not properly disposed
+	at org.eclipse.swt.graphics.Resource.initNonDisposeTracking(Resource.java:172)
+	at org.eclipse.swt.graphics.Resource.<init>(Resource.java:120)
+	at org.eclipse.swt.graphics.Image.<init>(Image.java:621)
+	at org.eclipse.jface.resource.ImageDescriptor.createImage(ImageDescriptor.java:340)
+	at org.eclipse.jface.resource.ImageDescriptor.createImage(ImageDescriptor.java:289)
+	at org.eclipse.jface.resource.ImageDescriptor.createImage(ImageDescriptor.java:267)
+	at org.jkiss.dbeaver.ui.DBeaverIcons.getCompositeIcon(DBeaverIcons.java:170)
+	at org.jkiss.dbeaver.ui.DBeaverIcons.getIconDescriptor(DBeaverIcons.java:122)
+	at org.jkiss.dbeaver.ui.DBeaverIcons.getImage(DBeaverIcons.java:94)
+	at org.jkiss.dbeaver.ui.editors.sql.SQLEditor.refreshEditorIconAndTitle(SQLEditor.java:3101)
+	at org.jkiss.dbeaver.ui.editors.sql.SQLEditor.onDataSourceChange(SQLEditor.java:3016)
+	at org.jkiss.dbeaver.ui.editors.sql.SQLEditor.lambda$32(SQLEditor.java:3263)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:132)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4099)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3715)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1151)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1042)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:153)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:639)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:546)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:173)
+	at org.jkiss.dbeaver.ui.app.standalone.DBeaverApplication.start(DBeaverApplication.java:293)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:208)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:143)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:109)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:439)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:271)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.jkiss.dbeaver.launcher.DBeaverLauncher.invokeFramework(DBeaverLauncher.java:650)
+	at org.jkiss.dbeaver.launcher.DBeaverLauncher.basicRun(DBeaverLauncher.java:610)
+	at org.jkiss.dbeaver.launcher.DBeaverLauncher.run(DBeaverLauncher.java:1461)
+2025-01-21 11:23:40.135 - org.jkiss.dbeaver.model.sql.DBSQLException: SQL Error [1] [23000]: ORA-00001: 무결성 제약 조건(LEARNING.UQ_USER_NICKNAME)에 위배됩니다
+
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.executeStatement(JDBCStatementImpl.java:130)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.executeStatement(SQLQueryJob.java:631)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.lambda$2(SQLQueryJob.java:522)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.executeSingleQuery(SQLQueryJob.java:544)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.run(SQLQueryJob.java:241)
+	at org.jkiss.dbeaver.model.runtime.AbstractJob.run(AbstractJob.java:119)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: java.sql.SQLIntegrityConstraintViolationException: ORA-00001: 무결성 제약 조건(LEARNING.UQ_USER_NICKNAME)에 위배됩니다
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:630)
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:564)
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1231)
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:772)
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:299)
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:512)
+	at oracle.jdbc.driver.T4CStatement.doOall8(T4CStatement.java:123)
+	at oracle.jdbc.driver.T4CStatement.executeForRows(T4CStatement.java:1200)
+	at oracle.jdbc.driver.OracleStatement.executeSQLStatement(OracleStatement.java:1820)
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1472)
+	at oracle.jdbc.driver.OracleStatement.executeInternal(OracleStatement.java:2505)
+	at oracle.jdbc.driver.OracleStatement.execute(OracleStatement.java:2460)
+	at oracle.jdbc.driver.OracleStatementWrapper.execute(OracleStatementWrapper.java:328)
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.execute(JDBCStatementImpl.java:344)
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.executeStatement(JDBCStatementImpl.java:128)
+	... 6 more
+Caused by: Error : 1, Position : 0, Sql = INSERT INTO TBL_USER (user_number, user_id, user_passwd, user_nickname, user_tier, user_phone, user_join_date) VALUES (seq_user.NEXTVAL, 'test10', 'passwd10*', '라인먹는포식자', '마스터', '010-6806-8368', SYSDATE), OriginalSql = INSERT INTO TBL_USER (user_number, user_id, user_passwd, user_nickname, user_tier, user_phone, user_join_date) VALUES (seq_user.NEXTVAL, 'test10', 'passwd10*', '라인먹는포식자', '마스터', '010-6806-8368', SYSDATE), Error Msg = ORA-00001: 무결성 제약 조건(LEARNING.UQ_USER_NICKNAME)에 위배됩니다
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:637)
+	... 20 more
+2025-01-21 11:23:43.916 - org.jkiss.dbeaver.model.sql.DBSQLException: SQL Error [1] [23000]: ORA-00001: 무결성 제약 조건(LEARNING.UQ_USER_NICKNAME)에 위배됩니다
+
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.executeStatement(JDBCStatementImpl.java:130)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.executeStatement(SQLQueryJob.java:631)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.lambda$2(SQLQueryJob.java:522)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.executeSingleQuery(SQLQueryJob.java:544)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.run(SQLQueryJob.java:241)
+	at org.jkiss.dbeaver.model.runtime.AbstractJob.run(AbstractJob.java:119)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: java.sql.SQLIntegrityConstraintViolationException: ORA-00001: 무결성 제약 조건(LEARNING.UQ_USER_NICKNAME)에 위배됩니다
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:630)
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:564)
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1231)
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:772)
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:299)
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:512)
+	at oracle.jdbc.driver.T4CStatement.doOall8(T4CStatement.java:123)
+	at oracle.jdbc.driver.T4CStatement.executeForRows(T4CStatement.java:1200)
+	at oracle.jdbc.driver.OracleStatement.executeSQLStatement(OracleStatement.java:1820)
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1472)
+	at oracle.jdbc.driver.OracleStatement.executeInternal(OracleStatement.java:2505)
+	at oracle.jdbc.driver.OracleStatement.execute(OracleStatement.java:2460)
+	at oracle.jdbc.driver.OracleStatementWrapper.execute(OracleStatementWrapper.java:328)
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.execute(JDBCStatementImpl.java:344)
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.executeStatement(JDBCStatementImpl.java:128)
+	... 6 more
+Caused by: Error : 1, Position : 0, Sql = INSERT INTO TBL_USER (user_number, user_id, user_passwd, user_nickname, user_tier, user_phone, user_join_date) VALUES (seq_user.NEXTVAL, 'test16', 'passwd16*', '덕망높은트롤', '그랜드마스터', '010-1146-3413', SYSDATE), OriginalSql = INSERT INTO TBL_USER (user_number, user_id, user_passwd, user_nickname, user_tier, user_phone, user_join_date) VALUES (seq_user.NEXTVAL, 'test16', 'passwd16*', '덕망높은트롤', '그랜드마스터', '010-1146-3413', SYSDATE), Error Msg = ORA-00001: 무결성 제약 조건(LEARNING.UQ_USER_NICKNAME)에 위배됩니다
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:637)
+	... 20 more
+2025-01-21 11:23:45.043 - org.jkiss.dbeaver.model.sql.DBSQLException: SQL Error [1] [23000]: ORA-00001: 무결성 제약 조건(LEARNING.UQ_USER_NICKNAME)에 위배됩니다
+
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.executeStatement(JDBCStatementImpl.java:130)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.executeStatement(SQLQueryJob.java:631)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.lambda$2(SQLQueryJob.java:522)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.executeSingleQuery(SQLQueryJob.java:544)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.run(SQLQueryJob.java:241)
+	at org.jkiss.dbeaver.model.runtime.AbstractJob.run(AbstractJob.java:119)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: java.sql.SQLIntegrityConstraintViolationException: ORA-00001: 무결성 제약 조건(LEARNING.UQ_USER_NICKNAME)에 위배됩니다
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:630)
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:564)
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1231)
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:772)
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:299)
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:512)
+	at oracle.jdbc.driver.T4CStatement.doOall8(T4CStatement.java:123)
+	at oracle.jdbc.driver.T4CStatement.executeForRows(T4CStatement.java:1200)
+	at oracle.jdbc.driver.OracleStatement.executeSQLStatement(OracleStatement.java:1820)
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1472)
+	at oracle.jdbc.driver.OracleStatement.executeInternal(OracleStatement.java:2505)
+	at oracle.jdbc.driver.OracleStatement.execute(OracleStatement.java:2460)
+	at oracle.jdbc.driver.OracleStatementWrapper.execute(OracleStatementWrapper.java:328)
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.execute(JDBCStatementImpl.java:344)
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.executeStatement(JDBCStatementImpl.java:128)
+	... 6 more
+Caused by: Error : 1, Position : 0, Sql = INSERT INTO TBL_USER (user_number, user_id, user_passwd, user_nickname, user_tier, user_phone, user_join_date) VALUES (seq_user.NEXTVAL, 'test21', 'passwd21*', '방어력제로', '언랭', '010-4231-7227', SYSDATE), OriginalSql = INSERT INTO TBL_USER (user_number, user_id, user_passwd, user_nickname, user_tier, user_phone, user_join_date) VALUES (seq_user.NEXTVAL, 'test21', 'passwd21*', '방어력제로', '언랭', '010-4231-7227', SYSDATE), Error Msg = ORA-00001: 무결성 제약 조건(LEARNING.UQ_USER_NICKNAME)에 위배됩니다
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:637)
+	... 20 more
+2025-01-21 18:02:58.923 - Execution context closed (localhost, 9)
+2025-01-21 18:02:58.950 - Execution context closed (localhost, 8)
+2025-01-21 18:02:58.976 - Execution context closed (localhost, 5)
+2025-01-21 18:02:59.008 - Execution context closed (localhost, 2)
+2025-01-21 18:02:59.040 - Execution context closed (localhost, 11)
+2025-01-21 18:02:59.071 - Execution context closed (localhost, 10)
+2025-01-21 18:02:59.154 - Dispose navigator model
+2025-01-21 18:02:59.172 - DBeaver is stopping
+2025-01-21 18:02:59.172 - Stop instance server
+2025-01-21 18:03:00.178 - Instance server has been stopped
+2025-01-21 18:03:00.178 - DBeaver shutdown completed

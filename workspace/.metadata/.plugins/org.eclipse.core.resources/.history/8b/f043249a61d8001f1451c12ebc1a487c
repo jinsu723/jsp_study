@@ -1,0 +1,5 @@
+package com.learning.app.dto;
+
+public class AdminPartyDTO {
+
+}

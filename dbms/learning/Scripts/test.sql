@@ -25,6 +25,34 @@ SELECT * FROM tbl_ben;
 
 INSERT INTO tbl_ben
 VALUES(seq_ben.nextval, 1, sysdate, 1, '욕설');
+INSERT INTO tbl_ben
+VALUES(seq_ben.nextval, 2, sysdate, 4, '욕설');
+INSERT INTO tbl_ben
+VALUES(seq_ben.nextval, 3, sysdate, 9, '욕설');
+INSERT INTO tbl_ben
+VALUES(seq_ben.nextval, 4, sysdate, 2, '욕설');
+INSERT INTO tbl_ben
+VALUES(seq_ben.nextval, 5, sysdate, 4, '욕설');
+INSERT INTO tbl_ben
+VALUES(seq_ben.nextval, 6, sysdate, 7, '욕설');
+INSERT INTO tbl_ben
+VALUES(seq_ben.nextval, 7, sysdate, 2, '욕설');
+INSERT INTO tbl_ben
+VALUES(seq_ben.nextval, 8, sysdate, 5, '욕설');
+INSERT INTO tbl_ben
+VALUES(seq_ben.nextval, 9, sysdate, 1, '욕설');
+INSERT INTO tbl_ben
+VALUES(seq_ben.nextval, 11, sysdate, 3, '욕설');
+INSERT INTO tbl_ben
+VALUES(seq_ben.nextval, 12, sysdate, 10, '욕설');
+INSERT INTO tbl_ben
+VALUES(seq_ben.nextval, 13, sysdate, 6, '욕설');
+INSERT INTO tbl_ben
+VALUES(seq_ben.nextval, 14, sysdate, 4, '욕설');
+INSERT INTO tbl_ben
+VALUES(seq_ben.nextval, 15, sysdate, 7, '욕설');
+INSERT INTO tbl_ben
+VALUES(seq_ben.nextval, 17, sysdate, 8, '욕설');
 
 DELETE FROM tbl_ben
 WHERE ben_start_date <= sysdate+10;

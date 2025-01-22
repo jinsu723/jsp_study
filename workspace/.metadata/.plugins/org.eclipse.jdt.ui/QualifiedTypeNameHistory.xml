@@ -4,4 +4,7 @@
     <fullyQualifiedTypeName name="com.mybatis.config.MyBatisConfig"/>
     <fullyQualifiedTypeName name="com.example.app.Result"/>
     <fullyQualifiedTypeName name="com.learning.app.dao.AdminDAO"/>
+    <fullyQualifiedTypeName name="java.sql.Date"/>
+    <fullyQualifiedTypeName name="java.util.Date"/>
+    <fullyQualifiedTypeName name="com.learning.app.Result"/>
 </qualifiedTypeNameHistroy>

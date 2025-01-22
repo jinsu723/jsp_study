@@ -221,6 +221,11 @@ a {
   flex-direction: row;
   justify-content: space-between;
 }
+
+.manager-ban-user-main-list-ban-start-date{
+	margin-right: 20px;
+}
+
 .ban-controll{
   border-radius: 8px;
   border: 1px solid gray;

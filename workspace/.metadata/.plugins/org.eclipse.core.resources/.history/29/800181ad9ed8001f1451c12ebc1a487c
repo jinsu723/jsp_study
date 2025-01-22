@@ -1,0 +1,49 @@
+package com.learning.app.admin;
+
+import java.io.IOException;
+import java.io.PrintWriter;
+import java.util.ArrayList;
+import java.util.List;
+
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import com.google.gson.Gson;
+import com.learning.app.Execute;
+import com.learning.app.Result;
+import com.learning.app.dao.AdminDAO;
+import com.learning.app.dto.UserDTO;
+
+public class AdminUserNickNameController implements Execute {
+
+    @Override
+    public Result execute(HttpServletRequest request, HttpServletResponse response)
+            throws ServletException, IOException {
+        // 닉네임 파라미터 가져오기
+        String nickname = request.getParameter("nickname");
+        System.out.println(nickname + "확인 ==========");
+        // DAO 호출
+        AdminDAO adminDAO = new AdminDAO();
+        List<UserDTO> users = new ArrayList<>();
+        System.out.println(users + "닉네임 컨트롤러 조회 ===========");
+        if (nickname != null && !nickname.trim().isEmpty()) {
+            users = adminDAO.searchByNickname(nickname.trim());
+            System.out.println(users + "==========확인");
+        }
+
+        // JSON 응답 설정
+        response.setContentType("application/json; charset=UTF-8");
+        PrintWriter out = response.getWriter();
+
+        // Gson 라이브러리를 사용해 List<UserDTO>를 JSON으로 변환
+        Gson gson = new Gson();
+        String jsonResponse = gson.toJson(users);
+        System.out.println(jsonResponse);
+        // 클라이언트로 JSON 응답 전송
+        out.print(jsonResponse);
+        out.close();
+
+        return null; // Fetch API에서는 JSP로 포워드하지 않음
+    }
+}

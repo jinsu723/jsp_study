@@ -1,0 +1,5 @@
+package com.learning.app.admin;
+
+public class AdminDoBenController implements Execute{
+
+}
