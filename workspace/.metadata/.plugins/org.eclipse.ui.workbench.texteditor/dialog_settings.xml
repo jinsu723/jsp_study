@@ -3,6 +3,7 @@
 	<item key="hasShownOverlayPopupBefore" value="true"/>
 	<item key="replaceBarOpen" value="false"/>
 	<list key="searchhistory">
+		<item value="forum"/>
 		<item value="resetButtonSearch"/>
 		<item value="fetchData"/>
 		<item value="manager-ban-user-page-numbers"/>

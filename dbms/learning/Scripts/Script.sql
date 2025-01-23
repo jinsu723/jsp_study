@@ -1,158 +1,57 @@
-CREATE TABLE tbl_user (
-    user_number NUMBER,
-    user_id VARCHAR2(20) NOT NULL,
-    user_passwd VARCHAR2(20) NOT NULL,
-    user_nickname VARCHAR2(15) NOT NULL,
-    user_tier VARCHAR2(15) NOT NULL,
-    user_phone VARCHAR2(15) NOT NULL,
-    user_join_date DATE,
-    user_ben_ctn NUMBER DEFAULT 0,
-    CONSTRAINT pk_user PRIMARY KEY (user_number),
-    CONSTRAINT uq_user_id UNIQUE (user_id),
-    CONSTRAINT uq_user_nickname UNIQUE (user_nickname),
-    CONSTRAINT uq_user_phone UNIQUE (user_phone)
-);
-CREATE SEQUENCE seq_user START WITH 1 INCREMENT BY 1
-nocache  --시퀀스 값을 미리 메모리에 캐싱하지 않도록 설정
-nocycle; --최대갑셍 도달하면 재시작하지 않도록 설정
+BEGIN
+   DBMS_SCHEDULER.create_job (
+      job_name        => 'delete_old_data_job',  -- 작업 이름
+      job_type        => 'PLSQL_BLOCK',          -- 작업 유형
+      job_action      => 'BEGIN DELETE FROM tbl_ben WHERE (ben_start_date+ben_period) <= SYSDATE; END;', -- DML 작업
+      start_date      =>  TO_DATE('2025-01-23 10:00', 'YYYY-MM-DD HH24:MI'), -- 지정한 시간부터 시작
+      repeat_interval => 'FREQ=HOURLY', -- 1시간 마다 수행
+      enabled         =>  TRUE -- 작업 활성화
+   );
+END;
 
-CREATE TABLE tbl_forum (
-    forum_number NUMBER,
-    user_number NUMBER,
-    forum_category VARCHAR2(10) NOT NULL,
-    forum_title VARCHAR2(150) NOT NULL,
-    forum_date DATE,
-    forum_update DATE,
-    forum_content VARCHAR2(2000) NOT NULL,
-    CONSTRAINT pk_forum PRIMARY KEY (forum_number),
-    CONSTRAINT fk_forum_user FOREIGN KEY (user_number) REFERENCES tbl_user (user_number) ON DELETE CASCADE
-);
-CREATE SEQUENCE seq_forum START WITH 1 INCREMENT BY 1 nocache nocycle;
+--job_name: 작업의 이름을 지정합니다. 여기서는 delete_old_data_job으로 설정했습니다.
+--job_type: 작업 유형을 PLSQL_BLOCK으로 설정하여 PL/SQL 블록을 실행하도록 합니다.
+--job_action: 실행할 PL/SQL 블록을 정의합니다. 여기서는 DELETE 문을 사용하여 date_column의 값이 오늘 날짜(SYSDATE)와 동일한 데이터를 삭제합니다. TRUNC() 함수는 시간을 제거하고 날짜만 비교합니다.
+--start_date: 작업이 시작될 날짜와 시간을 설정합니다. TRUNC(SYSDATE) + INTERVAL '1' DAY는 자정부터 시작하도록 설정합니다.
+--repeat_interval: FREQ=DAILY; INTERVAL=1로 설정하여 매일 실행되도록 설정합니다.
+--enabled: TRUE로 설정하여 작업이 활성화되도록 설정합니다.
+--
+---- 작업 확인
+SELECT job_name, state, last_start_date, next_run_date
+FROM dba_scheduler_jobs
+WHERE job_name = 'DELETE_OLD_DATA_JOB';
+--
+----작업 비활성화
+--BEGIN
+--   DBMS_SCHEDULER.disable('delete_old_data_job');
+--END;
+--
+--
+작업 삭제
+BEGIN
+   DBMS_SCHEDULER.drop_job('delete_old_data_job');
+END;
 
-CREATE TABLE tbl_file (
-    file_number NUMBER,
-    forum_number NUMBER,
-    img_source VARCHAR2(200),
-    CONSTRAINT pk_file PRIMARY KEY (file_number),
-    CONSTRAINT fk_file_forum FOREIGN KEY (forum_number) REFERENCES tbl_forum (forum_number) ON DELETE CASCADE
-);
-CREATE SEQUENCE seq_file START WITH 1 INCREMENT BY 1 nocache nocycle;
-
-CREATE TABLE tbl_comment (
-    comment_number NUMBER,
-    forum_number NUMBER,
-    user_number NUMBER,
-    comment_content VARCHAR2(500) NOT NULL,
-    comment_date DATE,
-    CONSTRAINT pk_comment PRIMARY KEY (comment_number),
-    CONSTRAINT fk_comment_forum FOREIGN KEY (forum_number) REFERENCES tbl_forum (forum_number) ON DELETE CASCADE,
-    CONSTRAINT fk_comment_user FOREIGN KEY (user_number) REFERENCES tbl_user (user_number) ON DELETE CASCADE
-);
-CREATE SEQUENCE seq_comment START WITH 1 INCREMENT BY 1 nocache nocycle;
+select * FROM tbl_ben;
+select * FROM tbl_ben WHERE BEN_START_DATE+BEN_PERIOD < SYSDATE;
+DELETE FROM tbl_ben WHERE (ben_start_date+ben_period) <= SYSDATE;
 
 
-CREATE TABLE tbl_party (
-    party_number NUMBER,
-    forum_number NUMBER,
-    user_number NUMBER,
-    party_state VARCHAR2(20) DEFAULT '대기중',
-    CONSTRAINT pk_party PRIMARY KEY (party_number),
-    CONSTRAINT fk_party_forum FOREIGN KEY (forum_number) REFERENCES tbl_forum (forum_number) ON DELETE CASCADE,
-    CONSTRAINT fk_party_user FOREIGN KEY (user_number) REFERENCES tbl_user (user_number) ON DELETE CASCADE
-);
-CREATE SEQUENCE seq_party START WITH 1 INCREMENT BY 1 nocache nocycle;
+SELECT * FROM tbl_forum;
 
+		SELECT f.forum_number,
+		f.forum_category, f.forum_title, f.forum_date,
+		u.user_nickname,
+		u.user_tier
+		FROM tbl_forum f INNER JOIN tbl_user u
+		ON f.user_number =
+		u.user_number
+		WHERE f.forum_category LIKE '%모집%'
+		order by f.forum_number DESC;
+		
+	DELETE FROM tbl_forum
+	WHERE forum_category = '모집' AND forum_number = 51;
+	
+SELECT * FROM tbl_forum;
 
-CREATE TABLE tbl_ben (
-    ben_number NUMBER,
-    user_num NUMBER,
-    ben_start_date DATE,
-    ben_period NUMBER NOT NULL,
-    ben_reason VARCHAR2(50) NOT NULL,
-    CONSTRAINT pk_ben PRIMARY KEY (ben_number),
-    CONSTRAINT fk_ben_user FOREIGN KEY (user_num) REFERENCES tbl_user (user_number) ON DELETE CASCADE
-);
-CREATE SEQUENCE seq_ben START WITH 1 INCREMENT BY 1 nocache nocycle;
-
-
-CREATE TABLE tbl_admin (
-    admin_number NUMBER,
-    admin_id VARCHAR2(20) NOT NULL,
-    admin_passwd VARCHAR2(20) NOT NULL,
-    CONSTRAINT pk_admin PRIMARY KEY (admin_number)
-);
-CREATE SEQUENCE seq_admin START WITH 1 INCREMENT BY 1 nocache nocycle;
-
---SELECT * FROM tbl_user;
---SELECT * FROM tbl_forum;
---SELECT * FROM tbl_file;
---SELECT * FROM tbl_comment;
---SELECT * FROM tbl_party;
---SELECT * FROM tbl_ben;
---SELECT * from tbl_manager;
-
-INSERT INTO tbl_user (user_number, user_id, user_passwd, user_nickname, user_tier, user_phone, user_join_date, user_ben_ctn)
-VALUES (seq_user.NEXTVAL, 'alice123', 'pass123', 'Alice', 'gold', '010-1111-2222', SYSDATE, 0);
-
-INSERT INTO tbl_user (user_number, user_id, user_passwd, user_nickname, user_tier, user_phone, user_join_date, user_ben_ctn)
-VALUES (seq_user.NEXTVAL, 'bob456', 'pass456', 'Bob', 'silver', '010-3333-4444', SYSDATE, 1);
-
-INSERT INTO tbl_user (user_number, user_id, user_passwd, user_nickname, user_tier, user_phone, user_join_date, user_ben_ctn)
-VALUES (seq_user.NEXTVAL, 'char789', 'pass789', 'Char', 'bronze', '010-5555-6666', SYSDATE, 0);
-
-
-INSERT INTO tbl_forum (forum_number, user_number, forum_category, forum_title, forum_date, forum_update, forum_content)
-VALUES (seq_forum.NEXTVAL, 1, '자유', '이게 롤이다', SYSDATE, NULL, '요번 업데이트 미쳤다 이게 롤이지 이게');
-
-INSERT INTO tbl_forum (forum_number, user_number, forum_category, forum_title, forum_date, forum_update, forum_content)
-VALUES (seq_forum.NEXTVAL, 2, '공략', '아이템 이게 맞나요?', SYSDATE, NULL, 'ap템으로 가려고 하는데 어떤걸 가야할지 모르겠어요 추천좀여');
-
-INSERT INTO tbl_forum (forum_number, user_number, forum_category, forum_title, forum_date, forum_update, forum_content)
-VALUES (seq_forum.NEXTVAL, 3, '파티', '1/3일 5인팟해주실 고인물들 구함', SYSDATE, NULL, '플레 이상만 지원해주세여~ 1/1일까지 받음');
-
-
-INSERT INTO tbl_file (file_number, forum_number, img_source)
-VALUES (seq_file.NEXTVAL, 1, 'image1.png');
-
-INSERT INTO tbl_file (file_number, forum_number, img_source)
-VALUES (seq_file.NEXTVAL, 2, 'tips.png');
-
-INSERT INTO tbl_file (file_number, forum_number, img_source)
-VALUES (seq_file.NEXTVAL, 3, 'trends.png');
-
-
-INSERT INTO tbl_comment (comment_number, forum_number, user_number, comment_content, comment_date)
-VALUES (seq_comment.NEXTVAL, 1, 2, '대박 ㄷㄷ', SYSDATE);
-
-INSERT INTO tbl_comment (comment_number, forum_number, user_number, comment_content, comment_date)
-VALUES (seq_comment.NEXTVAL, 2, 3, '오오', SYSDATE);
-
-INSERT INTO tbl_comment (comment_number, forum_number, user_number, comment_content, comment_date)
-VALUES (seq_comment.NEXTVAL, 3, 1, '추추추', SYSDATE);
-
-
-INSERT INTO tbl_party (party_number, forum_number, user_number, party_state)
-VALUES (seq_party.NEXTVAL, 1, 1, '대기중');
-
-INSERT INTO tbl_party (party_number, forum_number, user_number, party_state)
-VALUES (seq_party.NEXTVAL, 2, 2, '대기중');
-
-INSERT INTO tbl_party (party_number, forum_number, user_number, party_state)
-VALUES (seq_party.NEXTVAL, 3, 3, '승인됨');
-
-
-INSERT INTO tbl_ben (ben_number, user_num, ben_start_date, ben_period, ben_reason)
-VALUES (seq_ben.NEXTVAL, 2, SYSDATE, 30, '욕설');
-
-INSERT INTO tbl_ben (ben_number, user_num, ben_start_date, ben_period, ben_reason)
-VALUES (seq_ben.NEXTVAL, 3, SYSDATE, 15, '비방');
-
-INSERT INTO tbl_ben (ben_number, user_num, ben_start_date, ben_period, ben_reason)
-VALUES (seq_ben.NEXTVAL, 1, SYSDATE, 7, '선정적인 게시물');
-
-
-INSERT INTO tbl_admin (admin_number, admin_id, admin_passwd)
-VALUES (seq_admin.NEXTVAL, 'admin', 'admin123');
-
---SELECT * FROM tbl_admin;
---SELECT * FROM tbl_user;
+SELECT COUNT(FORUM_CATEGORY) count FROM TBL_FORUM WHERE FORUM_CATEGORY = '자유';

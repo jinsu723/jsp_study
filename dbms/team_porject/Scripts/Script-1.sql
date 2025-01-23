@@ -23,6 +23,15 @@ NOCACHE
 NOCYCLE;
 
 
+      SELECT f.forum_number,
+      f.forum_category, f.forum_title, f.forum_date,
+      u.user_nickname,
+      u.user_tier
+      FROM tbl_forum f INNER JOIN tbl_user u
+      ON f.user_number =
+      u.user_number
+      WHERE f.forum_category NOT LIKE '%모집%';
+
 SELECT * FROM TBL_MEMBER tm ;
 
 -- tbl_board 테이블 생성

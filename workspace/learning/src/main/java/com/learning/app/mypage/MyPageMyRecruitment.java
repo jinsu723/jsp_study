@@ -25,10 +25,9 @@ public class MyPageMyRecruitment implements Execute {
 		int userNumber = ((UserDTO) request.getSession().getAttribute("userDTO")).getUserNumber();
 		System.out.println("유저 넘버 : " + userNumber);
 		list = new MyPageDAO().myRecruitmentList(userNumber);
-		System.out.println("신청 현황 1번 : " + list.get(0));
 		request.setAttribute("posts", list);
 		request.setAttribute("pageType", "신청");
-
+		
 		rs.setPath("/app/myPage/myPageRecruitment.jsp");
 		rs.setRedirect(false);
 		return rs;

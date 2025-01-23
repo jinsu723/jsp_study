@@ -56,6 +56,7 @@ body{
   margin: auto;
   display: none;
   top: 50px;
+  z-index: 1;
 }
 .mng-users-text:hover #mng-users-dropText{
   display: block;
@@ -262,8 +263,6 @@ body{
 #mng-totalcount{
   width: 96%;
   text-align: right;
-  margin-top: 30px;
-  margin-right: 80px;
 }
 
 
