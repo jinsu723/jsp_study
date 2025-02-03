@@ -20,12 +20,12 @@
 			alias="BoardDTO"></typeAlias>
 		<typeAlias type="com.example.app.dto.BoardListDTO"
 			alias="BoardListDTO"></typeAlias>
-		<typeAlias type="com.example.app.dto.FileDTO"
+<!-- 		<typeAlias type="com.example.app.dto.FileDTO"
 			alias="FileDTO" />
 		<typeAlias type="com.example.app.dto.ReplyDTO"
 			alias="ReplyDTO" />
 		<typeAlias type="com.example.app.dto.ReplyListDTO"
-			alias="ReplyListDTO" />
+			alias="ReplyListDTO" /> -->
 	</typeAliases>
 
 	<environments default="oracle">
@@ -35,7 +35,7 @@
 				<property name="driver" value="oracle.jdbc.OracleDriver" />
 				<property name="url"
 					value="jdbc:oracle:thin:@localhost:1521/xe" />
-				<property name="username" value="test" />
+				<property name="username" value="test00" />
 				<property name="password" value="1234" />
 			</dataSource>
 		</environment>
@@ -44,8 +44,8 @@
 	<mappers>
 		<mapper resource="com/mybatis/mapper/MemberMapper.xml" />
 		<mapper resource="com/mybatis/mapper/BoardMapper.xml" />
-		<mapper resource="com/mybatis/mapper/FileMapper.xml" />
-		<mapper resource="com/mybatis/mapper/ReplyMapper.xml" />
+<!-- 		<mapper resource="com/mybatis/mapper/FileMapper.xml" />
+		<mapper resource="com/mybatis/mapper/ReplyMapper.xml" /> -->
 	</mappers>
 
 </configuration>

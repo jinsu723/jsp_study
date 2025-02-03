@@ -1,0 +1,27 @@
+package com.example.app.member;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import com.example.app.Execute;
+import com.example.app.Result;
+import com.google.gson.JsonElement;
+
+public class JoinSMSController implements Execute{
+
+	@Override
+	public Result execute(HttpServletRequest request, HttpServletResponse response)
+			throws IOException, ServletException {
+		
+		BufferedReader reader = request.getReader();
+		String line = reader.readLine();
+		JsonElement jsonElement = JsonParser.parseString(line);
+		
+		return null;
+	}
+	
+}

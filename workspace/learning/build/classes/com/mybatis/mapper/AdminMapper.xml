@@ -99,8 +99,6 @@
 
 	<!-- 파티 게시글 삭제 -->
 	<delete id="deletePartyForum" parameterType="int">
-		delete from
-		tbl_forum
-		where forum_number = #{forumNumber}
+		delete from tbl_forum where forum_number = #{forumNumber}
 	</delete>
 </mapper>

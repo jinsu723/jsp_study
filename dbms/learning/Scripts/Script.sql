@@ -26,6 +26,8 @@ WHERE job_name = 'DELETE_OLD_DATA_JOB';
 --   DBMS_SCHEDULER.disable('delete_old_data_job');
 --END;
 --
+
+SELECT * FROM tbl_user WHERE user_nickname like '%탑%';
 --
 작업 삭제
 BEGIN
@@ -55,3 +57,5 @@ SELECT * FROM tbl_forum;
 SELECT * FROM tbl_forum;
 
 SELECT COUNT(FORUM_CATEGORY) count FROM TBL_FORUM WHERE FORUM_CATEGORY = '자유';
+
+SELECT * FROM tbl_user;
