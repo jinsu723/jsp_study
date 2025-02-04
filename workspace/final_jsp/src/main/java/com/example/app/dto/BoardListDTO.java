@@ -1,5 +1,7 @@
 package com.example.app.dto;
 
+import java.util.List;
+
 public class BoardListDTO {
 	private int memberNumber;
 	private String memberId;
@@ -8,15 +10,15 @@ public class BoardListDTO {
 	private String boardContent;
 	private String boardDate;
 	private int boardReadCount;
-//	private List<FileDTO> files; // 필드 추가, getter, setter 추가
+	private List<FileDTO> files; // 필드 추가, getter, setter 추가
 	
 	
-//	public List<FileDTO> getFiles() {
-//		return files;
-//	}
-//	public void setFiles(List<FileDTO> files) {
-//		this.files = files;
-//	}
+	public List<FileDTO> getFiles() {
+		return files;
+	}
+	public void setFiles(List<FileDTO> files) {
+		this.files = files;
+	}
 	public int getMemberNumber() {
 		return memberNumber;
 	}

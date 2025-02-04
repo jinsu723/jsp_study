@@ -1,0 +1,41 @@
+package com.example.app.board;
+
+import java.io.IOException;
+
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import com.example.app.Execute;
+import com.example.app.Result;
+import com.example.app.board.dao.BoardDAO;
+import com.example.app.dto.BoardListDTO;
+
+public class BoardReadOkController implements Execute{
+
+	@Override
+	public Result execute(HttpServletRequest request, HttpServletResponse response)
+			throws IOException, ServletException {
+		
+		Result result = new Result();
+		
+		// boardNumber가 빈 문자열이나 null인 경우
+		String boardNumberStr = request.getParameter("boardNumber");
+		if(boardNumberStr == null || boardNumberStr.trim().isEmpty()) {
+			System.out.println("boardNumber 값이 없습니다");
+			
+			result.setPath("/app/board/boardList.jsp");  // 게시글 목록 페이지로 리다이렉트
+			result.setRedirect(true);
+			
+			return result;
+		}
+		
+		int boardNumber = Integer.parseInt(boardNumberStr);
+		
+		BoardDAO boardDAO = new BoardDAO();
+		BoardListDTO boardListDTO = BoardDAO.select(boardNumber);
+		
+		return result;
+	}
+	
+}

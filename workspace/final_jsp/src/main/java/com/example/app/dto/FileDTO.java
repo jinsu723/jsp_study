@@ -4,6 +4,7 @@ public class FileDTO {
 	private String fileSystemName;
 	private String fileOriginalName;
 	private int boardNumber;
+	
 	public String getFileSystemName() {
 		return fileSystemName;
 	}
@@ -22,12 +23,10 @@ public class FileDTO {
 	public void setBoardNumber(int boardNumber) {
 		this.boardNumber = boardNumber;
 	}
+	
 	@Override
 	public String toString() {
 		return "FileDTO [fileSystemName=" + fileSystemName + ", fileOriginalName=" + fileOriginalName + ", boardNumber="
 				+ boardNumber + "]";
 	}
-	
-	
-	
 }

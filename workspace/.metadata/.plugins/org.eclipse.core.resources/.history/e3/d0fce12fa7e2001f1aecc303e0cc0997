@@ -1,0 +1,7 @@
+package com.example.app.board;
+
+import com.example.app.Execute;
+
+public class BoardWriteController implements Execute{
+
+}

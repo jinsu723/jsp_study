@@ -24,6 +24,8 @@ public class MemberDAO {
 	
 	
 	public int login(MemberDTO memberDTO) {
+		System.out.println("로그인 실행");
+		
 		Integer memberNumber = sqlSession.selectOne("member.login", memberDTO);
 		
 		return memberNumber == null ? -1 : memberNumber;

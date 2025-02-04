@@ -1,0 +1,15 @@
+Manifest-Version: 1.0
+Build-Jdk-Spec: 21
+Specification-Title: mybatis
+Specification-Version: 3.5
+Specification-Vendor: MyBatis.org
+Implementation-Title: mybatis
+Implementation-Version: 3.5.11
+Implementation-Vendor: MyBatis.org
+Automatic-Module-Name: org.mybatis
+Copyright: 2022
+Created-By: Maven Integration for Eclipse
+X-Compile-Release-JDK: 16
+X-Compile-Source-JDK: 16
+X-Compile-Target-JDK: 16
+

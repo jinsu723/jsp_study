@@ -15,7 +15,7 @@
 	<jsp:include page="/header.jsp" />
 	<%-- 	<header>
 		<div class="header">
-			<div class="header-left">
+			<div class="header-left">F
 				<h1>자유게시판</h1>
 			</div>
 			<div class="header-right">
@@ -63,7 +63,7 @@
 								<div class="board-item title">
 									<!-- 제목 클릭 시 상세 페이지로 이동 -->
 									<a
-										href="${pageContext.request.contextPath}/board/boardRead.bo?boardNumber=${board.boardNumber}">
+										href="${pageContext.request.contextPath}/board/boardReadOk.bo?boardNumber=${board.boardNumber}">
 										<c:out value="${board.boardTitle}" />
 									</a>
 								</div>
@@ -71,7 +71,9 @@
 									<c:out value="${board.getMemberId()}" />
 								</div>
 								<div class="board-item date">
-									<c:out value="${board.getBoardDate()}" />
+									<%-- <c:out value="${board.getBoardDate()}" /> --%>
+									<!-- 출력되는 날짜데이터 형식이 YYYY-MM-DD HH:MM:SS 형식일 경우 fn:substring 이용하여 날짜부분만 출력 가능 -->
+									<c:out value="${fn:substring(board.boardDate, 0, 10)}" />
 								</div>
 								<div class="board-item hit">
 									<c:out value="${board.getBoardReadCount()}" />
@@ -117,7 +119,8 @@
 						href="${pageContext.request.contextPath}/board/boardListOk.bo?page=${startPage - 1}"
 						class="prev">&lt;</a></li>
 				</c:if>
-				<c:forEach var="i" begin="${startPage}" end="${endPage}">
+				<c:set var="realStartPage" value="${startPage < 0 ? 0 : startPage }" />
+				<c:forEach var="i" begin="${realStartPage}" end="${endPage}">
 					<c:choose>
 						<c:when test="${!(i == page)}">
 							<li><a
@@ -152,7 +155,5 @@
 		</script>
 		<!-- ++++++ -->
 
-		<script
-			src="${pagetContext.request.contextPath}/assets/js/boardRead.js"></script>
 </body>
 </html>

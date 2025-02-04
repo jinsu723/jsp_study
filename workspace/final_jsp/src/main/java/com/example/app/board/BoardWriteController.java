@@ -12,8 +12,11 @@ import com.example.app.Result;
 import com.example.app.member.dao.MemberDAO;
 
 public class BoardWriteController implements Execute{
+
 	@Override
-	public Result execute(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+	public Result execute(HttpServletRequest request, HttpServletResponse response)
+			throws IOException, ServletException {
+		
 		MemberDAO memberDAO = new MemberDAO();
 		Result result = new Result();
 		HttpSession session = request.getSession();
@@ -22,15 +25,14 @@ public class BoardWriteController implements Execute{
 		
 		if(memberNumber == null) {
 			path = "/app/member/login.jsp";
-		}else {
+		} else {
 			path = "/app/board/boardWrite.jsp";
 			request.setAttribute("memberId", memberDAO.getMemberId(memberNumber));
 		}
-		
-//		request.getRequestDispatcher(path).forward(request, response);
-		
 		result.setPath(path);
 		result.setRedirect(false);
+		
 		return result;
 	}
+	
 }

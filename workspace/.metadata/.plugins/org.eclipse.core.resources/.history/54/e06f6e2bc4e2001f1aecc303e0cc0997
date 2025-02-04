@@ -1,0 +1,31 @@
+package com.example.app.file.dao;
+
+import java.util.List;
+
+import org.apache.ibatis.session.SqlSession;
+
+import com.example.app.dto.FileDTO;
+import com.mybatis.config.MyBatisConfig;
+
+public class FileDAO {
+	SqlSession sqlSession;
+	
+	public FileDAO() {
+		sqlSession = MyBatisConfig.getSqlSessionFactory().openSession(true);
+	}
+	
+	public void insert(FileDTO fileDTO) {
+		sqlSession.insert("file.insert", fileDTO);
+		
+		int result = sqlSession.insert("file.insert", fileDTO);
+		System.out.println("파일 저장완료 - db저장된 행의 개수 : " + result);
+	}
+	
+	public List<FileDTO> select(int boardNumber) {
+		return sqlSession.selectList("file.select", boardNumber);
+	}
+	
+	public void delete(int boardNumber) {
+		sqlSession.delete("file.delete", boardNumber);
+	}
+}

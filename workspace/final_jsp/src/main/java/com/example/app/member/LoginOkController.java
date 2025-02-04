@@ -26,9 +26,13 @@ public class LoginOkController implements Execute {
 		String memberPassword = request.getParameter("memberPassword");
 		String remember = request.getParameter("remember"); // +++++++++++
 		HttpSession session = request.getSession(); // ++++++++++++++세션저장
+		
+		System.out.println("LoginOkController1");
 
 		memberDTO.setMemberId(memberId);
 		memberDTO.setMemberPassword(memberPassword);
+		
+		System.out.println("LoginOkController2");
 
 		memberNumber = memberDAO.login(memberDTO);
 
@@ -48,7 +52,7 @@ public class LoginOkController implements Execute {
 		}
 
 //		response.sendRedirect(path);
-		result.setRedirect(true);
+		result.setRedirect(false);
 		result.setPath(path);
 		return result;
 	}
