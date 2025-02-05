@@ -2,12 +2,13 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <% if(session.getAttribute("userDTO")==null){
-	System.out.println("없음");
 	response.sendRedirect(request.getContextPath()+"/app/user/login/login.jsp");
 }else{
+	System.out.println("checkPass : "+session.getAttribute("checkPass"));
 	if(session.getAttribute("checkPass")!="pass"){
-		System.out.println("checkPass = " + session.getAttribute("checkPass"));
 		response.sendRedirect(request.getContextPath()+"/app/myPage/checkPass.jsp");
+	}else{
+		session.setAttribute("checkPass", "pass");
 	}
 }%>
 <% UserDTO dto = (UserDTO) session.getAttribute("userDTO"); %>
@@ -93,6 +94,7 @@
          <div class="myPage-container-box">
             <h2>전화번호</h2>
             <div class="myPage-box-text">
+               현재 전화번호 : <% if(session.getAttribute("userDTO")!=null){%><%= dto.getUserPhone() %><%} %><br>
                전화번호를 변경합니다. 새로 입력하는 전화번호로 본인인증이 진행됩니다.
             </div>
             <div>
@@ -132,6 +134,10 @@
   }
   const contextPath = '<%= request.getContextPath() %>';
   let isChangeNickName = "<%= request.getAttribute("nickChanged") %>";
+  <% if(request.getAttribute("nickChanged")!=null){
+	  session.setAttribute("checkPass", "pass");
+  }
+  request.removeAttribute("nickChanged"); %>
   if(isChangeNickName==="true"){
 	  alert("닉네임이 변경되었습니다");
 	  location.href = '<%= request.getContextPath() %>/app/myPage/myPageMain.jsp';
@@ -140,6 +146,5 @@
 	  location.href = '<%= request.getContextPath() %>/app/myPage/myPageMain.jsp';
   }
   isChangeNickName = "";
-  <% request.removeAttribute("nickChanged"); %>
 </script>
 </html>

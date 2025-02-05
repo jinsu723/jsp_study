@@ -8,11 +8,4 @@
 	</buildSpec>
 	<natures>
 	</natures>
-	<linkedResources>
-		<link>
-			<name>.link1</name>
-			<type>2</type>
-			<location>D:/web_0900_kjs/jsp_6/workspace/mybatis-3.5.11/build/classes/META-INF/maven/org.javassist/javassist/target/classes</location>
-		</link>
-	</linkedResources>
 </projectDescription>

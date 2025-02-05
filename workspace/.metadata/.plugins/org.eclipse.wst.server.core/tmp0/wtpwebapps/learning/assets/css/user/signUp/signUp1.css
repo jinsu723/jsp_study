@@ -1,4 +1,4 @@
-body {
+.total-container {
   margin: 0;
   padding: 0;
   display: flex;
@@ -10,10 +10,13 @@ body {
 .signup1-container {
   margin: 0;
   padding: 30px 40px;
+  width: 600px;
+  background: #fff;
   border: 1px solid #ddd;
-  width: 650px;
+  border-radius: 10px;
   max-width: 90%;
   box-sizing: border-box;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 header p {

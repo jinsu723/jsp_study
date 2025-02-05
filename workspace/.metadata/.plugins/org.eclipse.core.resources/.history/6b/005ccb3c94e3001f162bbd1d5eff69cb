@@ -1,0 +1,33 @@
+const banButton = document.querySelector('.ban-controll');
+const userNickname = document.querySelector('.manager-ban-user-list-ban-nickName');
+
+/*console.log(banButton);
+
+banButton.addEventListener('click', () => {
+	console.log('밴');
+	console.log(userNickname.innerText);
+})*/
+
+function banUser(user) {
+	const userId = userNickname.innerText;
+	alert(userId);
+	fetch(`/adminDoBen.ad`)
+		.then(response => {
+            if (!response.ok) throw new Error(`HTTP 오류! 상태 코드: ${response.status}`);
+            return response.json();
+        })
+        .then(data => {
+            if (data.available) {
+                checkIdMsg.textContent = "사용 가능한 아이디입니다.";
+                checkIdMsg.style.color = "green";
+            } else {
+                checkIdMsg.textContent = "이미 사용 중인 아이디입니다.";
+                checkIdMsg.style.color = "red";
+            }
+        })
+        .catch(error => {
+            console.error("아이디 중복 검사 오류:", error);
+            checkIdMsg.textContent = "아이디 중복 검사 중 오류가 발생했습니다.";
+            checkIdMsg.style.color = "red";
+        });
+}

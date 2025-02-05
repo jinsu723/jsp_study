@@ -1,12 +1,12 @@
 package com.learning.app.mypage;
 
 import java.io.IOException;
+
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import javax.servlet.http.HttpSession;
 
 import com.learning.app.Result;
 import com.learning.app.dto.UserDTO;
@@ -98,7 +98,18 @@ public class MyPageFrontController extends HttpServlet {
 			case "/myPageRecruitmentBnt.my":
 				result = new MyPageRecruitmentBnt().execute(request, response);
 				break;
-				
+
+//			case "/sendSMS.my":
+//				result = new MyPageSendSMS().execute(request, response);
+//				break;
+//
+//			case "/verifyCode.my":
+//				result = new MyPageCheckVerifyCode().execute(request, response);
+//				break;
+//
+//			case "/changePhoneNumber.my":
+//				result = new MyPageChangePhoneNumber().execute(request, response);
+//				break;
 			}
 		}
 

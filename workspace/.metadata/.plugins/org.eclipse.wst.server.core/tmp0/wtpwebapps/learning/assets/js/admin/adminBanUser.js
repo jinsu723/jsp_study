@@ -121,7 +121,11 @@ function getban(page) {
 					method: "POST",
 					headers: { "Content-Type": "application/x-www-form-urlencoded" },
 					body: `userNickname=${encodeURIComponent(userNickname)}`
-				})
+				}).then(response => {
+					if (!response.ok) {
+						console.log("Request failed with status:", response.status);
+					}
+				});
 				location.reload();
 				console.log("삭제 완료");
 

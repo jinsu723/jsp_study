@@ -1,5 +1,9 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
+	pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<% if(session.getAttribute("adminDTO")==null){
+	response.sendRedirect(request.getContextPath()+"/app/admin/adminLogin.jsp");
+}%>
 <!DOCTYPE html>
 <html lang="ko">
 
@@ -16,29 +20,8 @@
 <body>
   <!-- <div class="mng-container"> -->
 
-  <header class="main-nonLogin-header">
-    <nav>
-      <div class="main-nonLogin-nav">
-        <div class="main-nonLogin-logo"><a href="${pageContext.request.contextPath}/adminMain.ad">learning</a></div>
-        <ul class="main-nonLogin-contents main-nonLogin-ul">
-            <div class="mng-users-contentes-drop">
-              <div class="mng-users-text"><a href="${pageContext.request.contextPath}/adminUser.ad">회원 관리</a>  
-                <div id="mng-users-dropText"><a href="${pageContext.request.contextPath}/ben.ad">밴 회원 관리</a></div>
-              </div>
-            </div>
-          <li id="mng-contents-drop">게시글 관리
-              <div class="mng-header-drop">
-                <div id="mng-header-dropDown1"><a href="${pageContext.request.contextPath}/adminParty.ad">파티 관리</a></div>
-                <div id="mng-header-dropDown2"><a href="${pageContext.request.contextPath}/adminCommunity.ad">커뮤니티</a></div>
-              </div>
-          </li>
-        </ul>
-      </div>
-      <ul class="main-nonLogin-join-box main-nonLogin-ul">
-        <li class="main-nonLogin-join"><a href="${pageContext.request.contextPath}/adminlogoutOk.ad">로그아웃</a></li>
-      </ul>
-    </nav>
-  </header>
+  <jsp:include page="/app/preset/adminHeader.jsp" />
+  
   <main class="manager-dashboard-main">
     <div class="manager-monitoring-container">
       <div class="manager-monitoring-title">
@@ -52,7 +35,7 @@
               <p class="post-chart-line-text">오늘기준 7일동안 일별로 게시글의 추이를 나타냅니다.</p>
             </div>
             <!-- <canvas id="line-chart" width="350" height="150"></canvas> -->
-            <canvas id="line-chart" width="1500" height="340"></canvas>
+            <canvas id="line-chart" width="1100" height="300"></canvas>
           </div>
         </div>
         <div class="manager-monitoring-users-cart-container">
@@ -91,11 +74,9 @@
       </div>
     </div>
   </main>
-  <footer class="main-footer">
-    <div class="main-nonLogin-footer-text">
-      <span><a href="">이용약관</a></span> | <span><a href="">개인정보 처리 방침</a></span> | <span><a href="">고객센터</a></span>
-    </div>
-  </footer>
+  
+  <jsp:include page="/app/preset/adminFooter.jsp" />
+
   <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.7"></script>
   <script src="${pageContext.request.contextPath}/assets/js/admin/adminMain.js"></script>
 </body>
