@@ -15,13 +15,17 @@ public class BoardUpdateController implements Execute{
 	@Override
 	public Result execute(HttpServletRequest request, HttpServletResponse response)
 			throws IOException, ServletException {
+		
 		int boardNumber = Integer.valueOf(request.getParameter("boardNumber"));
 		BoardDAO boardDAO = new BoardDAO();
+		Result result = new Result();
 		
 		request.setAttribute("board", boardDAO.select(boardNumber));
 		
-		request.getRequestDispatcher("/app/board/boardUpdate.jsp").forward(request, response);
-		return null;
+		result.setPath("/app/board/boardUpdate.jsp");
+		result.setRedirect(false);
+		
+		return result;
 	}
-
+	
 }

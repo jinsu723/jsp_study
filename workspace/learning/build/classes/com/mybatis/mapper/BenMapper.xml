@@ -29,7 +29,7 @@
 	<update id="plusBenCnt" parameterType="String">
 		UPDATE tbl_user
 		SET user_ben_cnt = user_ben_cnt + 1
-		WHERE user_number = #{userNumber}
+		WHERE user_nickname = #{userNcikname}
 	</update>
 	
 	<!-- 벤 회원 추가 -->
@@ -40,6 +40,6 @@
 		(SELECT user_number
 		FROM	tbl_user u
 		WHERE	u.user_nickname = #{userNickname})
-		, sysdate, #{banPeriod}, #{banReasion});
+		, sysdate, #{benPeriod}, #{benReason})
 	</insert>
 </mapper>

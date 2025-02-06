@@ -19,6 +19,7 @@ public class ReplyListOkController implements Execute{
 	@Override
 	public Result execute(HttpServletRequest request, HttpServletResponse response)
 			throws IOException, ServletException {
+		
 		int boardNumber = Integer.valueOf(request.getParameter("boardNumber"));
 		ReplyDAO replyDAO = new ReplyDAO();
 		Gson gson = new Gson();
@@ -39,10 +40,11 @@ public class ReplyListOkController implements Execute{
 		
 		System.out.println(replies.toString());
 		
-		response.setContentType("application/json;charset=utf-8");
+		response.setContentType("application/json; charset=utf-8");
 		PrintWriter out = response.getWriter();
 		out.print(replies.toString());
 		out.close();
+		
 		return null;
 	}
 	

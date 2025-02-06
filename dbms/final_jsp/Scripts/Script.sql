@@ -1,3 +1,5 @@
+-- 켄바 포폴 만들어야됨
+
 SELECT sysdate FROM dual;
 
 -- member 테이블 생성
@@ -39,7 +41,9 @@ NOcache
 nocycle;
 
 INSERT INTO tbl_member
-values(seq_member.nextval, 'aaa', 'test123', '길진수', '01049396668', 28, 'M');
+VALUES
+--(seq_member.nextval, 'aaa', 'test123', '길진수', '01049396668', 28, 'M');
+(seq_member.nextval, 'bbb', 'test123', '진수길', '01012345678', 28, 'W');
 
 DROP TABLE tbl_board;
 
@@ -53,3 +57,27 @@ CREATE TABLE tbl_file(
   , CONSTRAINT pk_file PRIMARY key(file_system_name)
   , CONSTRAINT fk_file FOREIGN key(board_number) REFERENCES tbl_board(board_number)
 );
+
+SELECT * FROM tbl_file;
+
+SELECT * FROM tbl_member;
+
+CREATE TABLE tbl_reply(
+	reply_number	NUMBER
+  , reply_content	varchar2(500)
+  , reply_date		DATE DEFAULT current_timestamp
+  , board_number	NUMBER
+  , member_number	NUMBER
+  , CONSTRAINT pk_reply PRIMARY key(reply_number)
+  , CONSTRAINT fk_reply_board FOREIGN key(board_number) REFERENCES tbl_board(board_number) ON DELETE CASCADE
+  , CONSTRAINT fk_reply_member FOREIGN key(member_number) REFERENCES tbl_member(member_number) ON DELETE cascade
+);
+
+CREATE SEQUENCE seq_reply
+START WITH 1 INCREMENT BY 1 nocache nocycle;
+
+SELECT * FROM tbl_reply;
+
+INSERT INTO tbl_reply
+VALUES
+(seq_reply.nextvar, '1234', sysdate, '1', '1');

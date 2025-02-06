@@ -1,0 +1,16 @@
+day41
+
+MultipartReques와 MultipartParser
+	1) MultipartRequest
+		파일 및 텍스트 데이터를 자동으로 처리해주는 클래스
+		파일이 자동으로 저장되며 파라미터 값도 바로 가져올 수 있음
+		메모리 관리는 내부적으로 처리하므로 개발자가 제어 불가능
+
+		MultipartRequest multipartRequest = new MultipartRequest(reqeust, UPLOAD_PATH, FILE_SIZE, "utf-8", new DefaultFileRenamePolucy());
+
+	2) MultipartParser
+		파일과 텍스트 데이터를 개별적으로 처리할 수 있는 클래스
+		파일을 수동으로 저장해야 함
+		메모리 관리는 직접 readNextPart()로 제어 가능
+
+		MultipartParser parser = new MultipartParser(request, FILE_SIZE);

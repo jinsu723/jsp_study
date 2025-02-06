@@ -9,8 +9,8 @@
 	</select>
 	
 	<insert id="insert" parameterType="replyDTO">
-		insert into tbl_reply(reply_content, board_number, member_number)
-		values(#{replyContent}, #{boardNumber}, #{memberNumber})
+		insert into tbl_reply(reply_number, reply_content, reply_date, board_number, member_number)
+		values(seq_reply.nextval, #{replyContent}, sysdate, #{boardNumber}, #{memberNumber})
 	</insert>
 	
 	<delete id="delete" parameterType="int">

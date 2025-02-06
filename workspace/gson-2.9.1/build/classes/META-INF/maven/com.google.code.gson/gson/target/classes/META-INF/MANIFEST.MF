@@ -1,7 +1,7 @@
 Manifest-Version: 1.0
 Build-Jdk-Spec: 21
 Created-By: 21.0.4 (Eclipse Adoptium)
-Bnd-LastModified: 1738658042951
+Bnd-LastModified: 1738801215069
 Bundle-Description: Gson JSON library
 Bundle-DocURL: https://github.com/google/gson/gson
 Bundle-License: "Apache-2.0";link="https://www.apache.org/licenses/LICEN

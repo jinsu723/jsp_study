@@ -22,91 +22,102 @@ import com.oreilly.servlet.multipart.Part;
 
 public class BoardUpdateOkController implements Execute {
 
-	@Override
-	public Result execute(HttpServletRequest request, HttpServletResponse response)
-			throws IOException, ServletException {
-		BoardDAO boardDAO = new BoardDAO();
-		BoardDTO boardDTO = new BoardDTO();
-		FileDAO fileDAO = new FileDAO();
-		FileDTO fileDTO = new FileDTO();
-		Result result = new Result();
+    @Override
+    public Result execute(HttpServletRequest request, HttpServletResponse response)
+            throws IOException, ServletException {
+    	
+        BoardDAO boardDAO = new BoardDAO();
+        BoardDTO boardDTO = new BoardDTO();
+        FileDAO fileDAO = new FileDAO();
+        Result result = new Result();
 
-		final String UPLOAD_PATH = request.getSession().getServletContext().getRealPath("/") + "upload/";
-		final int FILE_SIZE = 1024 * 1024 * 5; // 5MB
-		final String UPLOAD_PATH2 = "/Users/thirdk/work_data/new-class/jsp/workspace/finalProject/WebContent/upload/";
-		int boardNumber = 0;
+        final String UPLOAD_PATH = request.getSession().getServletContext().getRealPath("/") + "upload/";
+        final int FILE_SIZE = 1024 * 1024 * 5; 
 
-		MultipartParser parser = new MultipartParser(request, FILE_SIZE);
-		parser.setEncoding("utf-8");
-		while (true) {
+        // MultipartParser 실행
+        MultipartParser parser = new MultipartParser(request, FILE_SIZE);
+        parser.setEncoding("utf-8");
+        System.out.println("MultipartParser 초기화 완료");
 
-			Part part = parser.readNextPart();
-			if (part == null) {
-				break;
-			}
-			String fileSystemName = null;
-			String fileOriginalName = null;
+        int boardNumber = 0;
+        boolean isFileUpload = false;
 
-			if (part.isFile()) {
-				FilePart filePart = (FilePart) part;
-				filePart.setRenamePolicy(new DefaultFileRenamePolicy());
-				fileOriginalName = filePart.getFileName();
+        // 파일, 텍스트 데이터 처리
+        Part part;
+        while ((part = parser.readNextPart()) != null) {
+            System.out.println("Part: " + part.getClass().getSimpleName());
 
-				System.out.println(fileOriginalName);
-				if (fileOriginalName != null) {
+            if (part.isParam()) {
+                // 텍스트 파라미터 처리
+                ParamPart paramPart = (ParamPart) part;
+                String paramName = paramPart.getName();
+                String paramValue = paramPart.getStringValue();
 
-					File file = new File(UPLOAD_PATH, fileOriginalName);
+                System.out.println("파라미터: " + paramName + " = " + paramValue);
 
-					filePart.writeTo(file);
-					fileSystemName = filePart.getFileName();
+                if ("boardNumber".equals(paramName)) {
+                    boardNumber = Integer.parseInt(paramValue);
+                    boardDTO.setBoardNumber(boardNumber);
+                } else if ("boardTitle".equals(paramName)) {
+                    boardDTO.setBoardTitle(paramValue);
+                } else if ("boardContent".equals(paramName)) {
+                    boardDTO.setBoardContent(paramValue);
+                }
+                
+            } else if (part.isFile() && !isFileUpload) {
+                FilePart filePart = (FilePart) part;
+                filePart.setRenamePolicy(new DefaultFileRenamePolicy());
+                String fileOriginalName = filePart.getFileName();
+                
+                // 기존 파일 삭제
+                if (boardNumber != 0) {
+                    List<FileDTO> existingFiles = fileDAO.select(boardNumber);
+                    for (FileDTO file : existingFiles) {
+                        File oldFile = new File(UPLOAD_PATH, file.getFileSystemName());
+                        if (oldFile.exists()) {
+                            System.out.println("기존 파일 삭제: " + oldFile.getAbsolutePath());
+                            oldFile.delete();
+                        }
+                    }
+                    fileDAO.delete(boardNumber);
+                    System.out.println("기존 파일 DB 삭제 완료");
+                }
 
-					fileDTO.setFileSystemName(fileSystemName);
-					fileDTO.setFileOriginalName(fileOriginalName);
-					fileDTO.setBoardNumber(boardNumber);
-					fileDAO.insert(fileDTO);
-				}
+                if (fileOriginalName != null) {
+                    String newFileName = System.currentTimeMillis() + "_" + fileOriginalName;
+                    File newFile = new File(UPLOAD_PATH, newFileName);
+                    filePart.writeTo(newFile);
 
-			} else {
-				ParamPart paramPart = (ParamPart) part;
-				String param = paramPart.getName(); // 파라미터명
-				String value = paramPart.getStringValue(); // 값
-				System.out.println(param + " : " + value);
+                    if (newFile.exists()) {
+                        System.out.println("새로운 파일 저장 완료: " + newFile.getAbsolutePath());
+                    } else {
+                        System.out.println("새로운 파일 저장 실패: " + newFile.getAbsolutePath());
+                    }
 
-				if (param.equals("boardTitle")) {
-					boardDTO.setBoardTitle(value);
-				} else if (param.equals("boardContent")) {
-					boardDTO.setBoardContent(value);
-				} else if (param.equals("boardNumber")) { // ++++++++++++
-					// jsp에서 hidden으로 추가해서 boardNumber 가져와야함
-					boardNumber = Integer.valueOf(value); // ++++
-					boardDTO.setBoardNumber(boardNumber); // ++++
-				}
+                    // DB 저장
+                    FileDTO fileDTO = new FileDTO();
+                    fileDTO.setFileSystemName(newFileName);
+                    fileDTO.setFileOriginalName(fileOriginalName);
+                    fileDTO.setBoardNumber(boardNumber);
+                    fileDAO.insert(fileDTO);
+                    System.out.println("새로운 파일 DB 저장 완료: " + fileDTO);
 
-				if (boardDTO.getBoardTitle() == null || boardDTO.getBoardContent() == null) {
-					continue;
-				}
+                    isFileUpload = true; // 파일이 업로드되었음을 표시
+                } else {
+                    System.out.println("업로드된 파일이 없습니다 (파일 선택하지 않음)");
+                }
+            }
+        }
 
-				boardDTO.setMemberNumber((Integer) request.getSession().getAttribute("memberNumber"));
-				boardDAO.update(boardDTO); // **************
-//				게시글 번호 가져오기
-//				boardNumber = boardDAO.getSequence(); ------
+        // 게시글 업데이트 실행
+        boardDTO.setMemberNumber((Integer) request.getSession().getAttribute("memberNumber"));
+        boardDAO.update(boardDTO);
+        System.out.println("게시글 수정 완료");
 
-				// ============ BoardDeleteOkController에서 코드 가져오기==============
-				List<FileDTO> files = fileDAO.select(boardNumber);
-//				스트림과 람다식
-				files.stream().map(file -> file.getFileSystemName()).map(name -> new File(UPLOAD_PATH, name))
-						.filter(tmp -> tmp.exists()).forEach(tmp -> tmp.delete());
-
-				fileDAO.delete(boardNumber);
-				// ==================================
-			}
-
-//			response.sendRedirect("/board/boardListOk.bo");
-			result.setPath("/board/boardListOk.bo");
-			result.setRedirect(true);
-			return result;
-		}
-		return result;
-
-	}
+        //수정 완료 후 리스트 페이지로 이동
+        result.setPath("/board/boardListOk.bo");
+        result.setRedirect(true);
+        
+        return result;
+    }
 }

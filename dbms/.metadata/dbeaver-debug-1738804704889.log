@@ -1,0 +1,310 @@
+2025-02-05 10:10:55.219 - DBeaver 24.3.0.202412011650 is starting
+2025-02-05 10:10:55.220 - OS: Windows 10 10.0 (amd64)
+2025-02-05 10:10:55.220 - Java version: 17.0.6 by Eclipse Adoptium (64bit)
+2025-02-05 10:10:55.220 - Install path: 'D:\web_0900_kjs\dbms_3\resource\dbeaver-ce-24.3.0-win32.win32.x86_64\dbeaver'
+2025-02-05 10:10:55.220 - Instance path: 'file:/D:/web_0900_kjs/jsp_6/dbms/'
+2025-02-05 10:10:55.222 - Memory available 64Mb/1024Mb
+2025-02-05 10:10:55.222 - Platform not initialized: metadata folder may be not set
+2025-02-05 10:10:55.229 - Create display
+2025-02-05 10:10:55.309 - Initialize desktop platform...
+2025-02-05 10:10:55.403 - BounceCastle bundle found. Use JCE provider BC
+> Start Core File Systems [org.eclipse.core.filesystem 1.11.0.v20240824-0952]
+> Start Core Resource Management [org.eclipse.core.resources 3.21.0.v20240805-1607]
+> Start Team Support Core [org.eclipse.team.core 3.10.500.v20240621-0541]
+> Start DBeaver UI Navigator [org.jkiss.dbeaver.ui.navigator 1.0.144.202412011650]
+2025-02-05 10:10:55.540 - Initialize base platform...
+> Start DBeaver UI Editors - Base [org.jkiss.dbeaver.ui.editors.base 1.0.144.202412011650]
+2025-02-05 10:10:55.558 - send collected statistics
+2025-02-05 10:10:55.565 - Platform initialized (256ms)
+2025-02-05 10:10:55.599 - Starting instance server at http://localhost:50039
+2025-02-05 10:10:55.604 - Run workbench
+> Start Eclipse e4 Workbench SWT [org.eclipse.e4.ui.workbench.swt 0.17.500.v20240807-0911]
+> Start Eclipse Application Services [org.eclipse.e4.core.services 2.4.400.v20240413-1529]
+> Start Eclipse UI Application Services [org.eclipse.e4.ui.services 1.6.300.v20231201-1637]
+> Start Eclipse e4 Progress View [org.eclipse.e4.ui.progress 0.4.600.v20240606-1020]
+> Start Eclipse Bindings Support [org.eclipse.e4.ui.bindings 0.14.400.v20240321-1245]
+> Start Eclipse e4 core commands [org.eclipse.e4.core.commands 1.1.400.v20240424-0444]
+> Start EMF XML/XMI Persistence [org.eclipse.emf.ecore.xmi 2.38.0.v20240721-0634]
+> Start Eclipse CSS SWT Theme Support [org.eclipse.e4.ui.css.swt.theme 0.14.400.v20240424-0956]
+> Start Eclipse e4 Workbench Add-ons [org.eclipse.e4.ui.workbench.addons.swt 1.5.500.v20240620-1945]
+> Start Eclipse e4 Workbench SWT Renderer [org.eclipse.e4.ui.workbench.renderers.swt 0.16.500.v20240727-1037]
+> Start Eclipse Dependency Injection Extensions [org.eclipse.e4.core.di.extensions 0.18.300.v20240413-1529]
+> Start Eclipse CSS SWT Support [org.eclipse.e4.ui.css.swt 0.15.400.v20240321-1245]
+> Start Default Text Editor [org.eclipse.ui.editors 3.18.0.v20240807-0735]
+> Start Text Editor Framework [org.eclipse.ui.workbench.texteditor 3.18.0.v20240819-1419]
+2025-02-05 10:10:56.706 - Configure workbench window
+> Start DBeaver SQL Model [org.jkiss.dbeaver.model.sql 1.0.134.202412011650]
+2025-02-05 10:10:56.778 - Script dialect 'gbase8s' not found in registry (for data source provider gbase8s). Use default.
+2025-02-05 10:10:56.806 - Total database drivers: 121 (121)
+> Start Help System Core [org.eclipse.help 3.10.400.v20240415-0528]
+2025-02-05 10:10:56.859 - Create actions
+2025-02-05 10:10:56.864 - Disable Eclipse action set 'org.eclipse.ui.edit.text.actionSet.annotationNavigation'
+2025-02-05 10:10:56.865 - Disable Eclipse action set 'org.eclipse.ui.WorkingSetActionSet'
+2025-02-05 10:10:56.865 - Disable Eclipse action set 'org.eclipse.ui.actionSet.openFiles'
+2025-02-05 10:10:56.865 - Create workbench actions
+2025-02-05 10:10:57.109 - Initialize workbench window
+2025-02-05 10:10:57.113 - Finish initialization
+> Start DBeaver UI Editors - Data [org.jkiss.dbeaver.ui.editors.data 1.0.144.202412011650]
+Warning: NLS unused message: actions_navigator__objects in: org.jkiss.dbeaver.ui.editors.sql.internal.SQLEditorMessages
+> Start DBeaver UI Editors - SQL [org.jkiss.dbeaver.ui.editors.sql 1.0.144.202412011650]
+> Start DBeaver SQL Terminal [org.jkiss.dbeaver.ui.editors.sql.terminal 1.0.120.202412011650]
+> Start Core Compare Support [org.eclipse.compare.core 3.8.500.v20240524-2010]
+> Start Internet Connection Management UI [org.eclipse.ui.net 1.5.400.v20240413-1529]
+> Start Internet Connection Management [org.eclipse.core.net 1.5.500.v20240625-1706]
+> Start DBeaver Sample Database [org.jkiss.dbeaver.ext.sample.database 1.0.181.202412011650]
+> Start DBeaver Tip of the day [org.jkiss.dbeaver.ext.ui.tipoftheday 1.0.150.202412011650]
+> Start GEF Classic Draw2d [org.eclipse.draw2d 3.17.0.202409021815]
+> Start GEF Classic GEF (MVC) [org.eclipse.gef 3.19.0.202409021815]
+> Start DBeaver ERD UI [org.jkiss.dbeaver.erd.ui 3.0.104.202412011650]
+> Start DBeaver ERD Model [org.jkiss.dbeaver.erd.model 1.0.104.202412011650]
+> Start DBeaver Dashboard UI [org.jkiss.dbeaver.ui.dashboard 1.0.141.202412011650]
+> Start DBeaver UI Editors - Connections [org.jkiss.dbeaver.ui.editors.connection 1.0.135.202412011650]
+> Start DBeaver JDBC Model [org.jkiss.dbeaver.model.jdbc 1.0.37.202412011650]
+> Start DBeaver Oracle Model [org.jkiss.dbeaver.ext.oracle 2.1.229.202412011650]
+> Start Console [org.eclipse.ui.console 3.14.100.v20240429-1358]
+> Start Debug Core [org.eclipse.debug.core 3.21.500.v20240801-2219]
+> Start DBeaver Tasks - Native Tools UI [org.jkiss.dbeaver.tasks.native.ui 1.0.122.202412011650]
+> Start DBeaver Oracle UI [org.jkiss.dbeaver.ext.oracle.ui 1.0.131.202412011650]
+> Start DBeaver Tasks - General UI [org.jkiss.dbeaver.tasks.ui 1.0.122.202412011650]
+2025-02-05 10:10:58.839 - Connect with 'localhost' (oracle_thin-194c99fb6e5-33ce03064bcd6860)
+2025-02-05 10:10:58.864 - Execution context opened (localhost; Main; 0)
+2025-02-05 10:10:59.216 - Execution context opened (localhost; Metadata; 1)
+2025-02-05 10:10:59.299 - Connected (oracle_thin-194c99fb6e5-33ce03064bcd6860, Oracle JDBC driver [21.3.0.0.0])
+2025-02-05 10:10:59.300 - Execution context opened (localhost; SQLEditor <Script.sql>; 2)
+> Start DBeaver SQL Language Semantic Model [org.jkiss.dbeaver.model.lsm 1.0.39.202412011650]
+2025-02-05 10:11:00.950 - Open [https://dbeaver.io/product/version.xml]
+2025-02-05 10:11:01.434 - Object 'BIN$P9CZVv/5RXWCl5JwVIVCQw==$0' owner 'BIN$jH5rqA/hSPuOAQbsjr5Cyw==$0' not found
+2025-02-05 10:11:01.435 - Can't get column 'COLUMN_NAMES_NUMS': 부적합한 열 이름
+2025-02-05 10:11:11.173 - Connect with 'localhost' (oracle_thin-19482321f56-1b0cbac635d63ab3)
+2025-02-05 10:11:11.173 - Execution context opened (localhost; Main; 3)
+2025-02-05 10:11:11.207 - Execution context opened (localhost; Metadata; 4)
+2025-02-05 10:11:11.238 - Connected (oracle_thin-19482321f56-1b0cbac635d63ab3, Oracle JDBC driver [21.3.0.0.0])
+2025-02-05 10:11:11.245 - Execution context opened (localhost; SQLEditor <DDL.sql>; 5)
+2025-02-05 10:11:12.272 - Execution context opened (localhost; SQLEditor <DML.sql>; 6)
+2025-02-05 10:11:19.469 - Execution context opened (localhost; SQLEditor <Script.sql>; 7)
+2025-02-05 14:53:52.716 - Object 'BIN$/xfCShLnRMC8qPlhBXsc1w==$0' owner 'BIN$oShYQMHbSjGD6hJ0XFhyUQ==$0' not found
+2025-02-05 14:53:52.716 - Object 'BIN$0vWqCx01StGl36zB8UIiAQ==$0' owner 'BIN$hunJHcz9SOeYBhOd6y13/Q==$0' not found
+2025-02-05 14:53:52.716 - Object 'BIN$2KBvfXlZRBqOZvx2qB1GAw==$0' owner 'BIN$S2gH+GpVSxyOJYHLjsHHAw==$0' not found
+2025-02-05 14:53:52.716 - Object 'BIN$3ScsyXR7TLaZx/RTh2yrIA==$0' owner 'BIN$RCiYNllPRleZrLMInNusxA==$0' not found
+2025-02-05 14:53:52.716 - Object 'BIN$5tuBCoCzSoqyfqaM226ZDQ==$0' owner 'BIN$5v2MqYwqTDuZQHtsMpFkpg==$0' not found
+2025-02-05 14:53:52.716 - Object 'BIN$75VmeN+DTbSspYM6Ek45Gg==$0' owner 'BIN$GNFMpR4wTFqSS+ANpwHy1Q==$0' not found
+2025-02-05 14:53:52.716 - Object 'BIN$7NQIEZFWSsyz7xf30Cw+9A==$0' owner 'BIN$S2gH+GpVSxyOJYHLjsHHAw==$0' not found
+2025-02-05 14:53:52.717 - Object 'BIN$7ZG4iIfJQWCibuyKqUrXOA==$0' owner 'BIN$IpdY07nDQRicb23FKF0a1Q==$0' not found
+2025-02-05 14:53:52.717 - Object 'BIN$8s+XRvldRfm/FYRwv9OPWA==$0' owner 'BIN$oShYQMHbSjGD6hJ0XFhyUQ==$0' not found
+2025-02-05 14:53:52.717 - Object 'BIN$9OdHpF8URc6LrQ2YVr4EcQ==$0' owner 'BIN$GNFMpR4wTFqSS+ANpwHy1Q==$0' not found
+2025-02-05 14:53:52.717 - Object 'BIN$9TY4pFMeQHGqYDgWPiGWxA==$0' owner 'BIN$S2gH+GpVSxyOJYHLjsHHAw==$0' not found
+2025-02-05 14:53:52.717 - Object 'BIN$9ZRhORWPTk6wpCbEsmzydQ==$0' owner 'BIN$oShYQMHbSjGD6hJ0XFhyUQ==$0' not found
+2025-02-05 14:53:52.717 - Object 'BIN$AIWmDp1WSMakySmimaodlQ==$0' owner 'BIN$oQbFVr5gQTO8ys0gkKdRBg==$0' not found
+2025-02-05 14:53:52.717 - Object 'BIN$AVKAECKnQLKdttGdXhuxSg==$0' owner 'BIN$Nm3SCQaXRg+u9qaI6jNqbg==$0' not found
+2025-02-05 14:53:52.717 - Object 'BIN$BM6KuiuCTe2FKOnTv4WkoA==$0' owner 'BIN$Hw1pDllvRxSQnjT74p+5Cw==$0' not found
+2025-02-05 14:53:52.717 - Object 'BIN$C5aBndLrQ9W9Sn2lInKfWA==$0' owner 'BIN$CGtQgG9iRKqR7/mQkh1zew==$0' not found
+2025-02-05 14:53:52.717 - Object 'BIN$CN9ihANjTTyvOrHDQwOReQ==$0' owner 'BIN$hunJHcz9SOeYBhOd6y13/Q==$0' not found
+2025-02-05 14:53:52.717 - Object 'BIN$CZ8Bw+riTDWzvMbFgB6bwg==$0' owner 'BIN$+8RCUNTZRvi5evo8wmfG0g==$0' not found
+2025-02-05 14:53:52.717 - Object 'BIN$CbKzqCXRSgCDqTNJ135F8w==$0' owner 'BIN$Nm3SCQaXRg+u9qaI6jNqbg==$0' not found
+2025-02-05 14:53:52.717 - Object 'BIN$CsoYgAPKQMim9i1GLkyfow==$0' owner 'BIN$6vDq2dj9R+iKLKm47GCFxg==$0' not found
+2025-02-05 14:53:52.717 - Object 'BIN$DX2Hp4veQUmag7WG6oaECw==$0' owner 'BIN$oShYQMHbSjGD6hJ0XFhyUQ==$0' not found
+2025-02-05 14:53:52.717 - Object 'BIN$EMZ9pdMlREKEU0SIjYKBgw==$0' owner 'BIN$/79xi0+RQn+5kKsAdyvGhA==$0' not found
+2025-02-05 14:53:52.717 - Object 'BIN$FUT1ZtnvQpG0ikt8EFpCvQ==$0' owner 'BIN$5v2MqYwqTDuZQHtsMpFkpg==$0' not found
+2025-02-05 14:53:52.717 - Object 'BIN$FWxRQ4mlSoSygIzZcdsgUQ==$0' owner 'BIN$CGtQgG9iRKqR7/mQkh1zew==$0' not found
+2025-02-05 14:53:52.718 - Object 'BIN$FuJv8sk+Qu68nkQO2qRj4w==$0' owner 'BIN$oShYQMHbSjGD6hJ0XFhyUQ==$0' not found
+2025-02-05 14:53:52.718 - Object 'BIN$GQbl6mWNRMqoAplKdWEQmw==$0' owner 'BIN$6+zPQoz0Tmu9GwLV+KBCAw==$0' not found
+2025-02-05 14:53:52.718 - Object 'BIN$H3rQo6oZRJe9h4ih9D1Xwg==$0' owner 'BIN$vqKQkOnhTwa/sv2ZPay8nw==$0' not found
+2025-02-05 14:53:52.718 - Object 'BIN$I01LFm19QSCWUkChSYiMWg==$0' owner 'BIN$vqKQkOnhTwa/sv2ZPay8nw==$0' not found
+2025-02-05 14:53:52.718 - Object 'BIN$IpBt1+1WS62dVNfT0D9GUg==$0' owner 'BIN$+8RCUNTZRvi5evo8wmfG0g==$0' not found
+2025-02-05 14:53:52.718 - Object 'BIN$JqatxTwbQqCjTKpdqVXkSg==$0' owner 'BIN$RCiYNllPRleZrLMInNusxA==$0' not found
+2025-02-05 14:53:52.718 - Object 'BIN$KWZT5ShUQuaYUlXcdYNYlQ==$0' owner 'BIN$luAHUWGzTZ69vCQUYJkpIA==$0' not found
+2025-02-05 14:53:52.718 - Object 'BIN$Kjvz+ceNRnaQXi+MnBSrwA==$0' owner 'BIN$6Dsgx0jeQNi/+2hxnw9fDA==$0' not found
+2025-02-05 14:53:52.718 - Object 'BIN$LT8iEkmUR0OND+EEIMGe6A==$0' owner 'BIN$OO4IBEJjQnOXBdqqCJu3Hg==$0' not found
+2025-02-05 14:53:52.718 - Object 'BIN$LVtcahVCSWq23ustT07KWQ==$0' owner 'BIN$6vDq2dj9R+iKLKm47GCFxg==$0' not found
+2025-02-05 14:53:52.718 - Object 'BIN$MjGMMjNoR7OM7CnAuS4kvA==$0' owner 'BIN$+pR4VBLTTCub/p9Qp5FsqA==$0' not found
+2025-02-05 14:53:52.718 - Object 'BIN$NA1AP8ADRIicQj1hlwAscA==$0' owner 'BIN$oShYQMHbSjGD6hJ0XFhyUQ==$0' not found
+2025-02-05 14:53:52.718 - Object 'BIN$NVSDCWR3R5S9cgLGTZIj2w==$0' owner 'BIN$+pR4VBLTTCub/p9Qp5FsqA==$0' not found
+2025-02-05 14:53:52.718 - Object 'BIN$Nh6ure/lQfKI+0xitieG6A==$0' owner 'BIN$xUs2o1R0Qlqh6D7ONwE2MA==$0' not found
+2025-02-05 14:53:52.718 - Object 'BIN$O0B/TpSRTwW7IWtFrG6q1A==$0' owner 'BIN$AzQg+LBXQdiftMrYQWojQA==$0' not found
+2025-02-05 14:53:52.718 - Object 'BIN$QFZuA59cQoCGgqwbRrg1qA==$0' owner 'BIN$6vDq2dj9R+iKLKm47GCFxg==$0' not found
+2025-02-05 14:53:52.718 - Object 'BIN$QPudtaPER62JucyJ9ZLEHw==$0' owner 'BIN$RCiYNllPRleZrLMInNusxA==$0' not found
+2025-02-05 14:53:52.718 - Object 'BIN$R14cMHX6QdWkabS4sSPU1w==$0' owner 'BIN$+pR4VBLTTCub/p9Qp5FsqA==$0' not found
+2025-02-05 14:53:52.718 - Object 'BIN$RM8Pv0UuQ5+HxsSH3foV3w==$0' owner 'BIN$6vDq2dj9R+iKLKm47GCFxg==$0' not found
+2025-02-05 14:53:52.718 - Object 'BIN$RTTi4CAvRkCx0/30jJi8bQ==$0' owner 'BIN$6vDq2dj9R+iKLKm47GCFxg==$0' not found
+2025-02-05 14:53:52.719 - Object 'BIN$S22VcCQmRxCOnT+GGzW4wg==$0' owner 'BIN$luAHUWGzTZ69vCQUYJkpIA==$0' not found
+2025-02-05 14:53:52.719 - Object 'BIN$SvJaKOMVT5OsY6X7Cgu3QQ==$0' owner 'BIN$a6vM75GsQ1KzfTBn4oydvw==$0' not found
+2025-02-05 14:53:52.719 - Object 'BIN$T7CqkW6OSDmwMV7HMu/1rA==$0' owner 'BIN$xUs2o1R0Qlqh6D7ONwE2MA==$0' not found
+2025-02-05 14:53:52.719 - Object 'BIN$TekCjGXfSY68f+099Cg9Vw==$0' owner 'BIN$Hw1pDllvRxSQnjT74p+5Cw==$0' not found
+2025-02-05 14:53:52.719 - Object 'BIN$Tiov4Q1XSTic0P4t0TFWqg==$0' owner 'BIN$AzQg+LBXQdiftMrYQWojQA==$0' not found
+2025-02-05 14:53:52.719 - Object 'BIN$UN/dR4MFTQS1ED8AmnPH+A==$0' owner 'BIN$oQbFVr5gQTO8ys0gkKdRBg==$0' not found
+2025-02-05 14:53:52.719 - Object 'BIN$VQakc4cDRDeTA+3KSVgHxQ==$0' owner 'BIN$Hw1pDllvRxSQnjT74p+5Cw==$0' not found
+2025-02-05 14:53:52.719 - Object 'BIN$Vwkw0SrMR3WG6yQB/Wrlvw==$0' owner 'BIN$PH4rv4vsSueU1yDwfKZQfA==$0' not found
+2025-02-05 14:53:52.719 - Object 'BIN$VzWkHXPDRrWuVKx2bZKdCQ==$0' owner 'BIN$RCiYNllPRleZrLMInNusxA==$0' not found
+2025-02-05 14:53:52.719 - Object 'BIN$WLjPGfeKQjK/0pDVkUgzyg==$0' owner 'BIN$GNFMpR4wTFqSS+ANpwHy1Q==$0' not found
+2025-02-05 14:53:52.719 - Object 'BIN$WV1WgeH4Tzm2JG0RYxveRQ==$0' owner 'BIN$OxTDU4whTlWU14TBXYyS3Q==$0' not found
+2025-02-05 14:53:52.719 - Object 'BIN$WnFlIr+QSQ66xuTCWc117A==$0' owner 'BIN$GNFMpR4wTFqSS+ANpwHy1Q==$0' not found
+2025-02-05 14:53:52.719 - Object 'BIN$XTk/HQwtTQKRzdU75gAHXg==$0' owner 'BIN$+8RCUNTZRvi5evo8wmfG0g==$0' not found
+2025-02-05 14:53:52.719 - Object 'BIN$XjrjvyhTRaGGwdc2d4bDHw==$0' owner 'BIN$lgIzzOI2TLi8X867ZxzSUA==$0' not found
+2025-02-05 14:53:52.719 - Object 'BIN$Y2ar1oPdSMy9F4ERhpWoyg==$0' owner 'BIN$PH4rv4vsSueU1yDwfKZQfA==$0' not found
+2025-02-05 14:53:52.719 - Object 'BIN$YODlb2GdRjqxTEN0RmsbUA==$0' owner 'BIN$RCiYNllPRleZrLMInNusxA==$0' not found
+2025-02-05 14:53:52.719 - Object 'BIN$Yp26O+MxQve1ucWu1uu4OQ==$0' owner 'BIN$Nm3SCQaXRg+u9qaI6jNqbg==$0' not found
+2025-02-05 14:53:52.719 - Object 'BIN$Z0ANfyylSiC+ZbllmuLeTw==$0' owner 'BIN$GvuCuuIwRT2fQQqd+Wh4OA==$0' not found
+2025-02-05 14:53:52.719 - Object 'BIN$ZTPdwMj5T+OCugCbTNm7hA==$0' owner 'BIN$6+zPQoz0Tmu9GwLV+KBCAw==$0' not found
+2025-02-05 14:53:52.720 - Object 'BIN$Zs6A3l+ATjq46NA6F6N1WQ==$0' owner 'BIN$6vDq2dj9R+iKLKm47GCFxg==$0' not found
+2025-02-05 14:53:52.720 - Object 'BIN$a/WhcvIeSRaR8FCbzwLYOQ==$0' owner 'BIN$S2gH+GpVSxyOJYHLjsHHAw==$0' not found
+2025-02-05 14:53:52.720 - Object 'BIN$adjDes7ISGi5dtp9hbMdWA==$0' owner 'BIN$MqyY3W87QNKwEV1ZDgkFpw==$0' not found
+2025-02-05 14:53:52.720 - Object 'BIN$awLyQZsPS2m1/SwrGnl1Jg==$0' owner 'BIN$S2gH+GpVSxyOJYHLjsHHAw==$0' not found
+2025-02-05 14:53:52.720 - Object 'BIN$b36CDjkmRECRG0n7Jiq/cQ==$0' owner 'BIN$RCiYNllPRleZrLMInNusxA==$0' not found
+2025-02-05 14:53:52.720 - Object 'BIN$b7jM6hzUTbm4QbsW8zo/tA==$0' owner 'BIN$GvuCuuIwRT2fQQqd+Wh4OA==$0' not found
+2025-02-05 14:53:52.720 - Object 'BIN$bThbKJ1ITSiP2dONEOWV0A==$0' owner 'BIN$GNFMpR4wTFqSS+ANpwHy1Q==$0' not found
+2025-02-05 14:53:52.720 - Object 'BIN$c6gsFc5YS+mvKhG2cRGY5w==$0' owner 'BIN$S2gH+GpVSxyOJYHLjsHHAw==$0' not found
+2025-02-05 14:53:52.720 - Object 'BIN$ceWE6bJMSyq7D64Mrysmjw==$0' owner 'BIN$oShYQMHbSjGD6hJ0XFhyUQ==$0' not found
+2025-02-05 14:53:52.720 - Object 'BIN$dE5BVYoqSzis2NIVX3pHcA==$0' owner 'BIN$5v2MqYwqTDuZQHtsMpFkpg==$0' not found
+2025-02-05 14:53:52.720 - Object 'BIN$e0/U6mVFQtiapmFG/IbDvw==$0' owner 'BIN$68CGBnLgT3ibhDzB006Wjg==$0' not found
+2025-02-05 14:53:52.720 - Object 'BIN$g9/w1YaeTvSpesRbpkEmkA==$0' owner 'BIN$vqKQkOnhTwa/sv2ZPay8nw==$0' not found
+2025-02-05 14:53:52.720 - Object 'BIN$gBvkTBc0TBuZo9uGnn995Q==$0' owner 'BIN$MqyY3W87QNKwEV1ZDgkFpw==$0' not found
+2025-02-05 14:53:52.720 - Object 'BIN$gxtsRVD6TLef9MSpQOuN7Q==$0' owner 'BIN$OO4IBEJjQnOXBdqqCJu3Hg==$0' not found
+2025-02-05 14:53:52.720 - Object 'BIN$hY0mMI8jTY6BQo2DJvuGSA==$0' owner 'BIN$hunJHcz9SOeYBhOd6y13/Q==$0' not found
+2025-02-05 14:53:52.720 - Object 'BIN$j9q29dG0Q2SNxO/fYdiRaQ==$0' owner 'BIN$CGtQgG9iRKqR7/mQkh1zew==$0' not found
+2025-02-05 14:53:52.720 - Object 'BIN$jGzFSnYgSmeJGcJWSGHtPQ==$0' owner 'BIN$6+zPQoz0Tmu9GwLV+KBCAw==$0' not found
+2025-02-05 14:53:52.720 - Object 'BIN$jJiGMF0+QZ2/XTtpwyWejA==$0' owner 'BIN$xQ0Suuu4TG+6AHP0rzwRDA==$0' not found
+2025-02-05 14:53:52.720 - Object 'BIN$jipJQWpcTJ6gioB634ESRw==$0' owner 'BIN$8jllKE7KQwK2Jq+zzmT9sg==$0' not found
+2025-02-05 14:53:52.720 - Object 'BIN$kA2Vj04rQ0qSvR+nAbCbKw==$0' owner 'BIN$6vDq2dj9R+iKLKm47GCFxg==$0' not found
+2025-02-05 14:53:52.720 - Object 'BIN$kY06I9fwSAq4QleYOCZg1A==$0' owner 'BIN$GNFMpR4wTFqSS+ANpwHy1Q==$0' not found
+2025-02-05 14:53:52.721 - Object 'BIN$kv3KDfcDQ5OXnqoigoHPxg==$0' owner 'BIN$xQ0Suuu4TG+6AHP0rzwRDA==$0' not found
+2025-02-05 14:53:52.721 - Object 'BIN$lIlcFgnqRxedCs98R4/AVg==$0' owner 'BIN$spBFV88sR52/gJGhJKzupQ==$0' not found
+2025-02-05 14:53:52.721 - Object 'BIN$lYYK7nRaTY65wLGFLifBOg==$0' owner 'BIN$S2gH+GpVSxyOJYHLjsHHAw==$0' not found
+2025-02-05 14:53:52.721 - Object 'BIN$mURApa1FT0mkY/9E/JZL+A==$0' owner 'BIN$AzQg+LBXQdiftMrYQWojQA==$0' not found
+2025-02-05 14:53:52.721 - Object 'BIN$mawtQGJjS8+fQ+/tu4ZRnQ==$0' owner 'BIN$oQbFVr5gQTO8ys0gkKdRBg==$0' not found
+2025-02-05 14:53:52.721 - Object 'BIN$mbyVtGEKRQuvt82ZWCDVVQ==$0' owner 'BIN$GNFMpR4wTFqSS+ANpwHy1Q==$0' not found
+2025-02-05 14:53:52.721 - Object 'BIN$nPcYyMeeQNGH5ZG0WtYP/w==$0' owner 'BIN$OO4IBEJjQnOXBdqqCJu3Hg==$0' not found
+2025-02-05 14:53:52.721 - Object 'BIN$nreeRvJ3RkydVw5RQqM6xA==$0' owner 'BIN$S2gH+GpVSxyOJYHLjsHHAw==$0' not found
+2025-02-05 14:53:52.721 - Object 'BIN$o1cqdBV+THC4aJGzWjNq2A==$0' owner 'BIN$RCiYNllPRleZrLMInNusxA==$0' not found
+2025-02-05 14:53:52.721 - Object 'BIN$qgK+en5URFuDmf+ELS23fA==$0' owner 'BIN$S2gH+GpVSxyOJYHLjsHHAw==$0' not found
+2025-02-05 14:53:52.721 - Object 'BIN$qixczSr/TvOpMOn6ZC08YA==$0' owner 'BIN$GNFMpR4wTFqSS+ANpwHy1Q==$0' not found
+2025-02-05 14:53:52.721 - Object 'BIN$qjGaQ+ROStK4m/850kwPBg==$0' owner 'BIN$dmcbozgASOSfbyvFmdY55A==$0' not found
+2025-02-05 14:53:52.721 - Object 'BIN$s9DGWrqTSlmUAVEr94EDqg==$0' owner 'BIN$oShYQMHbSjGD6hJ0XFhyUQ==$0' not found
+2025-02-05 14:53:52.721 - Object 'BIN$t+C5y0fpR3+P3x+Z/Ww4GQ==$0' owner 'BIN$oQbFVr5gQTO8ys0gkKdRBg==$0' not found
+2025-02-05 14:53:52.721 - Object 'BIN$tHfZhTO3TWSm855DoU0svg==$0' owner 'BIN$IpdY07nDQRicb23FKF0a1Q==$0' not found
+2025-02-05 14:53:52.721 - Object 'BIN$tXmTgsqKRTCbE06ypi276A==$0' owner 'BIN$spBFV88sR52/gJGhJKzupQ==$0' not found
+2025-02-05 14:53:52.721 - Object 'BIN$td+mRcrFSxWpVFy2ZyRgVA==$0' owner 'BIN$6vDq2dj9R+iKLKm47GCFxg==$0' not found
+2025-02-05 14:53:52.721 - Object 'BIN$uFbHSEuwQOG6m9Z8A9Iqig==$0' owner 'BIN$GNFMpR4wTFqSS+ANpwHy1Q==$0' not found
+2025-02-05 14:53:52.721 - Object 'BIN$uIp1koTLTJCWBPNWGVRN2Q==$0' owner 'BIN$xUs2o1R0Qlqh6D7ONwE2MA==$0' not found
+2025-02-05 14:53:52.721 - Object 'BIN$udLFMpkjROqIkOAKILRA5g==$0' owner 'BIN$6vDq2dj9R+iKLKm47GCFxg==$0' not found
+2025-02-05 14:53:52.721 - Object 'BIN$v/vB41zdTQud4lQjCKTPYQ==$0' owner 'BIN$oShYQMHbSjGD6hJ0XFhyUQ==$0' not found
+2025-02-05 14:53:52.721 - Object 'BIN$v6vsZuWURue6+24EWGbIoQ==$0' owner 'BIN$AzQg+LBXQdiftMrYQWojQA==$0' not found
+2025-02-05 14:53:52.722 - Object 'BIN$vBRPbaVrRZWZTCJ4x2HYiA==$0' owner 'BIN$m6/55nhLRUaRTg+IDCgBgg==$0' not found
+2025-02-05 14:53:52.722 - Object 'BIN$vb/v00btTgyDRTkzasRMiA==$0' owner 'BIN$xQ0Suuu4TG+6AHP0rzwRDA==$0' not found
+2025-02-05 14:53:52.722 - Object 'BIN$vbNZKklwTg+4hUqdjRj0Ug==$0' owner 'BIN$xUs2o1R0Qlqh6D7ONwE2MA==$0' not found
+2025-02-05 14:53:52.722 - Object 'BIN$vtLA1G1oQcaU3Qpa7mN02w==$0' owner 'BIN$CGtQgG9iRKqR7/mQkh1zew==$0' not found
+2025-02-05 14:53:52.722 - Object 'BIN$wdZ+qMcRSiKn/wFiiKB2hA==$0' owner 'BIN$4ldy0oaHRImBECLd8oz8SQ==$0' not found
+2025-02-05 14:53:52.722 - Object 'BIN$x62sr75tT2+P2Grw/RXTBg==$0' owner 'BIN$RCiYNllPRleZrLMInNusxA==$0' not found
+2025-02-05 14:53:52.722 - Object 'BIN$xQk17Z80QXORNYVO1hJwOg==$0' owner 'BIN$MqyY3W87QNKwEV1ZDgkFpw==$0' not found
+2025-02-05 14:53:52.722 - Object 'BIN$yrKwYApVT2OZF7UIrna2sg==$0' owner 'BIN$+8RCUNTZRvi5evo8wmfG0g==$0' not found
+2025-02-05 14:53:52.722 - Object 'BIN$z5KWXC7lQWqGZ9vNKtvnow==$0' owner 'BIN$RCiYNllPRleZrLMInNusxA==$0' not found
+2025-02-05 17:43:43.740 - SQL Error [936] [42000]: ORA-00936: 누락된 표현식
+
+org.jkiss.dbeaver.model.sql.DBSQLException: SQL Error [936] [42000]: ORA-00936: 누락된 표현식
+
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.executeStatement(JDBCStatementImpl.java:130)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.executeStatement(SQLQueryJob.java:631)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.lambda$2(SQLQueryJob.java:522)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:192)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.executeSingleQuery(SQLQueryJob.java:541)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.extractData(SQLQueryJob.java:1016)
+	at org.jkiss.dbeaver.ui.editors.sql.SQLEditor$QueryResultsContainer.readData(SQLEditor.java:4273)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetJobDataRead.lambda$0(ResultSetJobDataRead.java:128)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:192)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetJobDataRead.run(ResultSetJobDataRead.java:126)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetViewer$ResultSetDataPumpJob.run(ResultSetViewer.java:5166)
+	at org.jkiss.dbeaver.model.runtime.AbstractJob.run(AbstractJob.java:119)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: java.sql.SQLSyntaxErrorException: ORA-00936: 누락된 표현식
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:630)
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:564)
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1231)
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:772)
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:299)
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:512)
+	at oracle.jdbc.driver.T4CStatement.doOall8(T4CStatement.java:123)
+	at oracle.jdbc.driver.T4CStatement.executeForRows(T4CStatement.java:1200)
+	at oracle.jdbc.driver.OracleStatement.executeSQLStatement(OracleStatement.java:1820)
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1472)
+	at oracle.jdbc.driver.OracleStatement.executeInternal(OracleStatement.java:2505)
+	at oracle.jdbc.driver.OracleStatement.execute(OracleStatement.java:2460)
+	at oracle.jdbc.driver.OracleStatementWrapper.execute(OracleStatementWrapper.java:328)
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.execute(JDBCStatementImpl.java:344)
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.executeStatement(JDBCStatementImpl.java:128)
+	... 12 more
+Caused by: Error : 936, Position : 51, Sql = INSERT INTO tbl_ben b
+VALUES
+(seq_ben.nextval, 
+SELECT user_number
+FROM	tbl_user
+WHERE	b.user_nickname = '트롤장인'
+, sysdate, 3, '욕설'), OriginalSql = INSERT INTO tbl_ben b
+VALUES
+(seq_ben.nextval, 
+SELECT user_number
+FROM	tbl_user
+WHERE	b.user_nickname = '트롤장인'
+, sysdate, 3, '욕설'), Error Msg = ORA-00936: 누락된 표현식
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:637)
+	... 26 more
+2025-02-05 17:43:51.790 - SQL Error [904] [42000]: ORA-00904: "B"."USER_NICKNAME": 부적합한 식별자
+
+org.jkiss.dbeaver.model.sql.DBSQLException: SQL Error [904] [42000]: ORA-00904: "B"."USER_NICKNAME": 부적합한 식별자
+
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.executeStatement(JDBCStatementImpl.java:130)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.executeStatement(SQLQueryJob.java:631)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.lambda$2(SQLQueryJob.java:522)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.executeSingleQuery(SQLQueryJob.java:544)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.extractData(SQLQueryJob.java:1016)
+	at org.jkiss.dbeaver.ui.editors.sql.SQLEditor$QueryResultsContainer.readData(SQLEditor.java:4273)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetJobDataRead.lambda$0(ResultSetJobDataRead.java:128)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:192)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetJobDataRead.run(ResultSetJobDataRead.java:126)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetViewer$ResultSetDataPumpJob.run(ResultSetViewer.java:5166)
+	at org.jkiss.dbeaver.model.runtime.AbstractJob.run(AbstractJob.java:119)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: java.sql.SQLSyntaxErrorException: ORA-00904: "B"."USER_NICKNAME": 부적합한 식별자
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:630)
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:564)
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1231)
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:772)
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:299)
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:512)
+	at oracle.jdbc.driver.T4CStatement.doOall8(T4CStatement.java:123)
+	at oracle.jdbc.driver.T4CStatement.executeForRows(T4CStatement.java:1200)
+	at oracle.jdbc.driver.OracleStatement.executeSQLStatement(OracleStatement.java:1820)
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1472)
+	at oracle.jdbc.driver.OracleStatement.executeInternal(OracleStatement.java:2505)
+	at oracle.jdbc.driver.OracleStatement.execute(OracleStatement.java:2460)
+	at oracle.jdbc.driver.OracleStatementWrapper.execute(OracleStatementWrapper.java:328)
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.execute(JDBCStatementImpl.java:344)
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.executeStatement(JDBCStatementImpl.java:128)
+	... 11 more
+Caused by: Error : 904, Position : 93, Sql = INSERT INTO tbl_ben b
+VALUES
+(seq_ben.nextval, 
+(SELECT user_number
+FROM	tbl_user
+WHERE	b.user_nickname = '트롤장인')
+, sysdate, 3, '욕설'), OriginalSql = INSERT INTO tbl_ben b
+VALUES
+(seq_ben.nextval, 
+(SELECT user_number
+FROM	tbl_user
+WHERE	b.user_nickname = '트롤장인')
+, sysdate, 3, '욕설'), Error Msg = ORA-00904: "B"."USER_NICKNAME": 부적합한 식별자
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:637)
+	... 25 more
+> Start DBeaver Data Transfer [org.jkiss.dbeaver.data.transfer 2.0.128.202412011650]
+2025-02-05 17:55:06.313 - Execution context closed (localhost, 2)
+2025-02-05 17:55:06.347 - Execution context closed (localhost, 5)
+2025-02-05 17:55:06.373 - Execution context closed (localhost, 6)
+2025-02-05 17:55:06.420 - Execution context closed (localhost, 7)
+2025-02-05 17:55:06.510 - Dispose navigator model
+2025-02-05 17:55:06.525 - DBeaver is stopping
+2025-02-05 17:55:06.526 - Stop instance server
+2025-02-05 17:55:07.530 - Instance server has been stopped
+2025-02-05 17:55:07.531 - DBeaver shutdown completed

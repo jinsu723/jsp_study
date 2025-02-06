@@ -1,8 +1,8 @@
 package com.example.app.reply;
 
 import java.io.IOException;
+
 import javax.servlet.ServletException;
-import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -51,7 +51,8 @@ public class ReplyFrontController extends HttpServlet {
 
 		switch (target) {
 		case "/reply/replyListOk.re":
-			new ReplyListOkController().execute(request, response);
+			System.out.println("댓글 목록 컨트롤러 진입");
+			result = new ReplyListOkController().execute(request, response);
 			break;
 
 		case "/reply/replyDeleteOk.re":
@@ -63,7 +64,8 @@ public class ReplyFrontController extends HttpServlet {
 			break;
 			
 		case "/reply/replyWriteOk.re":
-			new ReplyWriteOkController().execute(request, response);
+			System.out.println("댓글 작성 컨트롤러 진입");
+			result = new ReplyWriteOkController().execute(request, response);
 			break;
 		}
 

@@ -1,8 +1,9 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-	pageEncoding="UTF-8"%>
+    pageEncoding="UTF-8"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt" %>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/functions" prefix="fn"%>
 <%@ page import="java.util.List"%>
-<%-- <%@ page import="com.fasterxml.jackson.databind.ObjectMapper" %> --%>
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <% if(session.getAttribute("adminDTO")==null){
 	response.sendRedirect(request.getContextPath()+"/app/admin/adminLogin.jsp");
 }%>
@@ -16,6 +17,8 @@
   <link rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/preset/adminPreset.css">
   <link rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/admin/adminBanUser.css">
   <link rel="stylesheet" href="${pageContext.request.contextPath}/assets/deleteFont/fontello.css">
+  
+  <script defer src="${pageContext.request.contextPath}/assets/js/admin/adminBanUser.js"></script>
   
 </head>
 
@@ -68,6 +71,36 @@
         </div>
         <hr class="manager-ban-user-list-line">
         <ul class="manager-ban-user-list">
+          <c:choose>
+            <c:when test="${not empty benList}">
+              <c:forEach var="users" items="${benList}">
+                <li class="manager-ban-user-list-item">
+              	  <div class="manager-ban-user-list-ban-userId">
+              	  	<c:out value="${users.userId}" />
+              	  </div>
+              	  <div class="manager-ban-user-list-ban-nickName">
+              	  	<c:out value="${users.userNickname}" />
+              	  </div>
+              	  <div class="manager-ban-user-list-ban-text">
+              	  	<c:out value="${users.benReason}" />
+              	  </div>
+              	  <div class="ban-list-date">
+              	    <div class="manager-ban-user-list-ban-start-date">
+              	      <c:out value="${users.benStartDate}" />
+              	    </div>
+              	    <div class="manager-ban-user-list-ban-end-date">
+              	      <c:out value="${users.benEndDate}" />
+              	    </div>
+              	    <div class="manager-ban-user-list-ban-date-count">
+              	      <c:out value="${users.benPeriod}" />
+              	    </div>
+              	  </div>
+              	  <button type="submit" class="ban-controll" onclick="banCancel('${users.userNickname}')">밴 취소</button>
+                </li>
+                <hr>
+              </c:forEach>
+            </c:when>
+          </c:choose>
         </ul>
       </div>
     </div>
@@ -84,25 +117,6 @@
   
   <jsp:include page="/app/preset/footer.jsp" />
   
-  <script defer src="${pageContext.request.contextPath}/assets/js/admin/adminBanUser.js"></script>
-  <script type="text/javascript">
-  const benUserCount = {
-		  benedUsertNumber: ${benedUserNumber}
-  };
-  
-  const bensList = [
-	  <c:forEach var="ben" items="${benList}">
-	  	{
-	  		userId: "${ben.userId}",
-	  		userNickname: "${ben.userNickname}",
-	  		benReason: "${ben.benReason}",
-	  		benStartDate: "${ben.benStartDate}",
-	  		benEndDate: "${ben.benEndDate}",
-	  		benPeriod: "${ben.benPeriod}"
-	  	}<c:if test="${ben ne benList[benList.size()-1]}">,</c:if>
-	  </c:forEach>
-	  ];
-  </script>
 </body>
 
 </html>

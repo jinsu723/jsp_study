@@ -1,0 +1,37 @@
+package com.example.app.board;
+
+import java.io.IOException;
+
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import com.example.app.Execute;
+import com.example.app.Result;
+import com.example.app.board.dao.BoardDAO;
+import com.example.app.dto.BoardDTO;
+import com.example.app.file.dao.FileDAO;
+import com.oreilly.servlet.multipart.MultipartParser;
+
+public class BoardUpdateOkController implements Execute{
+
+	@Override
+	public Result execute(HttpServletRequest request, HttpServletResponse response)
+			throws IOException, ServletException {
+		
+		BoardDAO boardDAO = new BoardDAO();
+		BoardDTO boardDTO = new BoardDTO();
+		FileDAO fileDAO = new FileDAO();
+		Result result = new Result();
+		
+		final String UPLOAD_PATH = request.getSession().getServletContext().getRealPath("/") + "upload/";
+		final int FILE_SIZE = 1024 * 1024 * 5;
+		
+		int boardNumber = 0;
+		MultipartParser parse = new MultipartParser(request, FILE_SIZE);
+		parser.setEncoding("utf-8");
+		
+		return result;
+	}
+	
+}

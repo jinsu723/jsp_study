@@ -2,7 +2,7 @@ BEGIN
    DBMS_SCHEDULER.create_job (
       job_name        => 'delete_old_data_job',  -- 작업 이름
       job_type        => 'PLSQL_BLOCK',          -- 작업 유형
-      job_action      => 'BEGIN DELETE FROM tbl_ben WHERE (ben_start_date+ben_period) <= SYSDATE; END;', -- DML 작업
+      job_action      => 'begin UPDATE tbl_ben SET ben_status = 0 WHERE (ben_start_date + ben_period) <= sysdate; END;', -- DML 작업
       start_date      =>  TO_DATE('2025-01-23 10:00', 'YYYY-MM-DD HH24:MI'), -- 지정한 시간부터 시작
       repeat_interval => 'FREQ=HOURLY', -- 1시간 마다 수행
       enabled         =>  TRUE -- 작업 활성화
@@ -25,11 +25,16 @@ WHERE job_name = 'DELETE_OLD_DATA_JOB';
 --BEGIN
 --   DBMS_SCHEDULER.disable('delete_old_data_job');
 --END;
---
+begin
+	UPDATE tbl_ben
+	SET
+	ben_status = 0
+	WHERE (ben_start_date + ben_period) <= sysdate;
+END;
 
 SELECT * FROM tbl_user WHERE user_nickname like '%탑%';
 --
-작업 삭제
+--작업 삭제
 BEGIN
    DBMS_SCHEDULER.drop_job('delete_old_data_job');
 END;
@@ -59,3 +64,13 @@ SELECT * FROM tbl_forum;
 SELECT COUNT(FORUM_CATEGORY) count FROM TBL_FORUM WHERE FORUM_CATEGORY = '자유';
 
 SELECT * FROM tbl_user;
+
+INSERT INTO tbl_ben b
+VALUES
+(seq_ben.nextval, 
+(SELECT user_number
+FROM	tbl_user u
+WHERE	u.user_nickname = '트롤장인')
+, sysdate, 3, '욕설');
+
+SELECT * FROM tbl_ben;

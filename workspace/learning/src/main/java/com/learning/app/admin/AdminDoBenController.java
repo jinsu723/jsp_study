@@ -31,9 +31,10 @@ public class AdminDoBenController implements Execute{
 		BufferedReader reader = request.getReader();
 		String line = reader.readLine();
 		
-		JsonElement jsonElement = JsonParser.parseString(line);  // 문자열 형태의 JSON을 JsonElement로 변환
-		JsonObject jsonObject = jsonElement.getAsJsonObject();  // JsonObject 형태로 변환하여 key-value값을 쉽게 추출하도록 함
-		String userNickname = jsonObject.get("userNickname").getAsString();  // code 필드 값을 string으로 가져옴
+		JsonElement jsonElement = JsonParser.parseString(line);
+		JsonObject jsonObject = jsonElement.getAsJsonObject();
+		
+		String userNickname = jsonObject.get("userNickname").getAsString();
 		String banReason = jsonObject.get("banReason").getAsString();
 		String banPeriod = jsonObject.get("banPeriod").getAsString();
 		
@@ -53,7 +54,7 @@ public class AdminDoBenController implements Execute{
 		
 		benDAO.Ben(benDTO);
 		
-		benDAO.plusBenCnt(request.getParameter("userNickname"));
+		benDAO.plusBenCnt(userNickname);
 		
 		return null;
 		

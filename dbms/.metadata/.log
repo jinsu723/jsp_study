@@ -9014,3 +9014,1248 @@ Error : 942, Position : 14, Sql = SELECT * FROM tbl_user, OriginalSql = SELECT *
 	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetViewer$ResultSetDataPumpJob.run(ResultSetViewer.java:5166)
 	at org.jkiss.dbeaver.model.runtime.AbstractJob.run(AbstractJob.java:119)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.jkiss.dbeaver.model 2 0 2025-02-04 17:57:30.405
+!MESSAGE Some data source listeners are still registered: org.jkiss.dbeaver.model.navigator.DBNProjectDatabases:node://final_jsp/datasources
+!SESSION 2025-02-05 10:10:54.002 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=17.0.6
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ko_KR
+Framework arguments:  -eclipse.keyring C:\Users\Administrator\AppData\Roaming\DBeaverData\secure\secure_storage
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY org.eclipse.ui 2 2 2025-02-05 10:10:57.938
+!MESSAGE Invalid preference category path: org.eclipse.debug.ui.ConsolePreferencePage (bundle: org.eclipse.ui.console, page: org.eclipse.ui.internal.console.ansi.preferences.AnsiConsolePreferencePage)
+
+!ENTRY org.jkiss.dbeaver.model 4 0 2025-02-05 17:43:43.743
+!MESSAGE SQL Error [936] [42000]: ORA-00936: 누락된 표현식
+
+!SUBENTRY 1 org.jkiss.dbeaver.model 4 0 2025-02-05 17:43:43.743
+!MESSAGE Error : 936, Position : 51, Sql = INSERT INTO tbl_ben b
+VALUES
+(seq_ben.nextval, 
+SELECT user_number
+FROM	tbl_user
+WHERE	b.user_nickname = '트롤장인'
+, sysdate, 3, '욕설'), OriginalSql = INSERT INTO tbl_ben b
+VALUES
+(seq_ben.nextval, 
+SELECT user_number
+FROM	tbl_user
+WHERE	b.user_nickname = '트롤장인'
+, sysdate, 3, '욕설'), Error Msg = ORA-00936: 누락된 표현식
+
+!STACK 0
+Error : 936, Position : 51, Sql = INSERT INTO tbl_ben b
+VALUES
+(seq_ben.nextval, 
+SELECT user_number
+FROM	tbl_user
+WHERE	b.user_nickname = '트롤장인'
+, sysdate, 3, '욕설'), OriginalSql = INSERT INTO tbl_ben b
+VALUES
+(seq_ben.nextval, 
+SELECT user_number
+FROM	tbl_user
+WHERE	b.user_nickname = '트롤장인'
+, sysdate, 3, '욕설'), Error Msg = ORA-00936: 누락된 표현식
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:637)
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:564)
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1231)
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:772)
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:299)
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:512)
+	at oracle.jdbc.driver.T4CStatement.doOall8(T4CStatement.java:123)
+	at oracle.jdbc.driver.T4CStatement.executeForRows(T4CStatement.java:1200)
+	at oracle.jdbc.driver.OracleStatement.executeSQLStatement(OracleStatement.java:1820)
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1472)
+	at oracle.jdbc.driver.OracleStatement.executeInternal(OracleStatement.java:2505)
+	at oracle.jdbc.driver.OracleStatement.execute(OracleStatement.java:2460)
+	at oracle.jdbc.driver.OracleStatementWrapper.execute(OracleStatementWrapper.java:328)
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.execute(JDBCStatementImpl.java:344)
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.executeStatement(JDBCStatementImpl.java:128)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.executeStatement(SQLQueryJob.java:631)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.lambda$2(SQLQueryJob.java:522)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:192)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.executeSingleQuery(SQLQueryJob.java:541)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.extractData(SQLQueryJob.java:1016)
+	at org.jkiss.dbeaver.ui.editors.sql.SQLEditor$QueryResultsContainer.readData(SQLEditor.java:4273)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetJobDataRead.lambda$0(ResultSetJobDataRead.java:128)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:192)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetJobDataRead.run(ResultSetJobDataRead.java:126)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetViewer$ResultSetDataPumpJob.run(ResultSetViewer.java:5166)
+	at org.jkiss.dbeaver.model.runtime.AbstractJob.run(AbstractJob.java:119)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.jkiss.dbeaver.model 4 0 2025-02-05 17:43:51.791
+!MESSAGE SQL Error [904] [42000]: ORA-00904: "B"."USER_NICKNAME": 부적합한 식별자
+
+!SUBENTRY 1 org.jkiss.dbeaver.model 4 0 2025-02-05 17:43:51.791
+!MESSAGE Error : 904, Position : 93, Sql = INSERT INTO tbl_ben b
+VALUES
+(seq_ben.nextval, 
+(SELECT user_number
+FROM	tbl_user
+WHERE	b.user_nickname = '트롤장인')
+, sysdate, 3, '욕설'), OriginalSql = INSERT INTO tbl_ben b
+VALUES
+(seq_ben.nextval, 
+(SELECT user_number
+FROM	tbl_user
+WHERE	b.user_nickname = '트롤장인')
+, sysdate, 3, '욕설'), Error Msg = ORA-00904: "B"."USER_NICKNAME": 부적합한 식별자
+
+!STACK 0
+Error : 904, Position : 93, Sql = INSERT INTO tbl_ben b
+VALUES
+(seq_ben.nextval, 
+(SELECT user_number
+FROM	tbl_user
+WHERE	b.user_nickname = '트롤장인')
+, sysdate, 3, '욕설'), OriginalSql = INSERT INTO tbl_ben b
+VALUES
+(seq_ben.nextval, 
+(SELECT user_number
+FROM	tbl_user
+WHERE	b.user_nickname = '트롤장인')
+, sysdate, 3, '욕설'), Error Msg = ORA-00904: "B"."USER_NICKNAME": 부적합한 식별자
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:637)
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:564)
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1231)
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:772)
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:299)
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:512)
+	at oracle.jdbc.driver.T4CStatement.doOall8(T4CStatement.java:123)
+	at oracle.jdbc.driver.T4CStatement.executeForRows(T4CStatement.java:1200)
+	at oracle.jdbc.driver.OracleStatement.executeSQLStatement(OracleStatement.java:1820)
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1472)
+	at oracle.jdbc.driver.OracleStatement.executeInternal(OracleStatement.java:2505)
+	at oracle.jdbc.driver.OracleStatement.execute(OracleStatement.java:2460)
+	at oracle.jdbc.driver.OracleStatementWrapper.execute(OracleStatementWrapper.java:328)
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.execute(JDBCStatementImpl.java:344)
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.executeStatement(JDBCStatementImpl.java:128)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.executeStatement(SQLQueryJob.java:631)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.lambda$2(SQLQueryJob.java:522)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.executeSingleQuery(SQLQueryJob.java:544)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.extractData(SQLQueryJob.java:1016)
+	at org.jkiss.dbeaver.ui.editors.sql.SQLEditor$QueryResultsContainer.readData(SQLEditor.java:4273)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetJobDataRead.lambda$0(ResultSetJobDataRead.java:128)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:192)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetJobDataRead.run(ResultSetJobDataRead.java:126)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetViewer$ResultSetDataPumpJob.run(ResultSetViewer.java:5166)
+	at org.jkiss.dbeaver.model.runtime.AbstractJob.run(AbstractJob.java:119)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.jkiss.dbeaver.model 2 0 2025-02-05 17:55:08.154
+!MESSAGE Some data source listeners are still registered: org.jkiss.dbeaver.model.navigator.DBNProjectDatabases:node://final_jsp/datasources
+!SESSION 2025-02-06 10:18:23.739 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=17.0.6
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ko_KR
+Framework arguments:  -eclipse.keyring C:\Users\Administrator\AppData\Roaming\DBeaverData\secure\secure_storage
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY org.eclipse.ui 2 2 2025-02-06 10:18:27.679
+!MESSAGE Invalid preference category path: org.eclipse.debug.ui.ConsolePreferencePage (bundle: org.eclipse.ui.console, page: org.eclipse.ui.internal.console.ansi.preferences.AnsiConsolePreferencePage)
+
+!ENTRY org.jkiss.dbeaver.model 4 0 2025-02-06 10:23:23.560
+!MESSAGE SQL Error [933] [42000]: ORA-00933: SQL 명령어가 올바르게 종료되지 않았습니다
+
+
+Error position: line: 1 pos: 19
+!SUBENTRY 1 org.jkiss.dbeaver.model 4 0 2025-02-06 10:23:23.560
+!MESSAGE SQL Error [933] [42000]: ORA-00933: SQL 명령어가 올바르게 종료되지 않았습니다
+
+!SUBENTRY 2 org.jkiss.dbeaver.model 4 0 2025-02-06 10:23:23.560
+!MESSAGE Error : 933, Position : 19, Sql = DROP table tbl_file;
+DROP TABLE tbl_party;
+DROP TABLE tbl_comment;
+DROP TABLE tbl_forum;
+DROP TABLE tbl_ben;
+DROP TABLE tbl_user;
+DROP TABLE tbl_admin, OriginalSql = DROP table tbl_file;
+DROP TABLE tbl_party;
+DROP TABLE tbl_comment;
+DROP TABLE tbl_forum;
+DROP TABLE tbl_ben;
+DROP TABLE tbl_user;
+DROP TABLE tbl_admin, Error Msg = ORA-00933: SQL 명령어가 올바르게 종료되지 않았습니다
+
+!STACK 0
+Error : 933, Position : 19, Sql = DROP table tbl_file;
+DROP TABLE tbl_party;
+DROP TABLE tbl_comment;
+DROP TABLE tbl_forum;
+DROP TABLE tbl_ben;
+DROP TABLE tbl_user;
+DROP TABLE tbl_admin, OriginalSql = DROP table tbl_file;
+DROP TABLE tbl_party;
+DROP TABLE tbl_comment;
+DROP TABLE tbl_forum;
+DROP TABLE tbl_ben;
+DROP TABLE tbl_user;
+DROP TABLE tbl_admin, Error Msg = ORA-00933: SQL 명령어가 올바르게 종료되지 않았습니다
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:637)
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:564)
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1231)
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:772)
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:299)
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:512)
+	at oracle.jdbc.driver.T4CStatement.doOall8(T4CStatement.java:123)
+	at oracle.jdbc.driver.T4CStatement.executeForRows(T4CStatement.java:1200)
+	at oracle.jdbc.driver.OracleStatement.executeSQLStatement(OracleStatement.java:1820)
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1472)
+	at oracle.jdbc.driver.OracleStatement.executeInternal(OracleStatement.java:2505)
+	at oracle.jdbc.driver.OracleStatement.execute(OracleStatement.java:2460)
+	at oracle.jdbc.driver.OracleStatementWrapper.execute(OracleStatementWrapper.java:328)
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.execute(JDBCStatementImpl.java:344)
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.executeStatement(JDBCStatementImpl.java:128)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.executeStatement(SQLQueryJob.java:631)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.lambda$2(SQLQueryJob.java:522)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:192)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.executeSingleQuery(SQLQueryJob.java:541)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.extractData(SQLQueryJob.java:1016)
+	at org.jkiss.dbeaver.ui.editors.sql.SQLEditor$QueryResultsContainer.readData(SQLEditor.java:4273)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetJobDataRead.lambda$0(ResultSetJobDataRead.java:128)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:192)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetJobDataRead.run(ResultSetJobDataRead.java:126)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetViewer$ResultSetDataPumpJob.run(ResultSetViewer.java:5166)
+	at org.jkiss.dbeaver.model.runtime.AbstractJob.run(AbstractJob.java:119)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.jkiss.dbeaver.model 4 0 2025-02-06 10:25:40.777
+!MESSAGE SQL Error [907] [42000]: ORA-00907: 누락된 우괄호
+
+!SUBENTRY 1 org.jkiss.dbeaver.model 4 0 2025-02-06 10:25:40.777
+!MESSAGE Error : 907, Position : 277, Sql = --CREATE SEQUENCE seq_party START WITH 1 INCREMENT BY 1 nocache nocycle;
+
+
+CREATE TABLE tbl_ben (
+    ben_number NUMBER,
+    user_num NUMBER,
+    ben_start_date DATE,
+    ben_period NUMBER NOT NULL,
+    ben_reason VARCHAR2(50) NOT NULL,
+    ben_status	NUMBER NOT NULL DEFAULT 1,
+    CONSTRAINT pk_ben PRIMARY KEY (ben_number),
+    CONSTRAINT fk_ben_user FOREIGN KEY (user_num) REFERENCES tbl_user (user_number) ON DELETE CASCADE
+), OriginalSql = --CREATE SEQUENCE seq_party START WITH 1 INCREMENT BY 1 nocache nocycle;
+
+
+CREATE TABLE tbl_ben (
+    ben_number NUMBER,
+    user_num NUMBER,
+    ben_start_date DATE,
+    ben_period NUMBER NOT NULL,
+    ben_reason VARCHAR2(50) NOT NULL,
+    ben_status	NUMBER NOT NULL DEFAULT 1,
+    CONSTRAINT pk_ben PRIMARY KEY (ben_number),
+    CONSTRAINT fk_ben_user FOREIGN KEY (user_num) REFERENCES tbl_user (user_number) ON DELETE CASCADE
+), Error Msg = ORA-00907: 누락된 우괄호
+
+!STACK 0
+Error : 907, Position : 277, Sql = --CREATE SEQUENCE seq_party START WITH 1 INCREMENT BY 1 nocache nocycle;
+
+
+CREATE TABLE tbl_ben (
+    ben_number NUMBER,
+    user_num NUMBER,
+    ben_start_date DATE,
+    ben_period NUMBER NOT NULL,
+    ben_reason VARCHAR2(50) NOT NULL,
+    ben_status	NUMBER NOT NULL DEFAULT 1,
+    CONSTRAINT pk_ben PRIMARY KEY (ben_number),
+    CONSTRAINT fk_ben_user FOREIGN KEY (user_num) REFERENCES tbl_user (user_number) ON DELETE CASCADE
+), OriginalSql = --CREATE SEQUENCE seq_party START WITH 1 INCREMENT BY 1 nocache nocycle;
+
+
+CREATE TABLE tbl_ben (
+    ben_number NUMBER,
+    user_num NUMBER,
+    ben_start_date DATE,
+    ben_period NUMBER NOT NULL,
+    ben_reason VARCHAR2(50) NOT NULL,
+    ben_status	NUMBER NOT NULL DEFAULT 1,
+    CONSTRAINT pk_ben PRIMARY KEY (ben_number),
+    CONSTRAINT fk_ben_user FOREIGN KEY (user_num) REFERENCES tbl_user (user_number) ON DELETE CASCADE
+), Error Msg = ORA-00907: 누락된 우괄호
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:637)
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:564)
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1231)
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:772)
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:299)
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:512)
+	at oracle.jdbc.driver.T4CStatement.doOall8(T4CStatement.java:123)
+	at oracle.jdbc.driver.T4CStatement.executeForRows(T4CStatement.java:1200)
+	at oracle.jdbc.driver.OracleStatement.executeSQLStatement(OracleStatement.java:1820)
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1472)
+	at oracle.jdbc.driver.OracleStatement.executeInternal(OracleStatement.java:2505)
+	at oracle.jdbc.driver.OracleStatement.execute(OracleStatement.java:2460)
+	at oracle.jdbc.driver.OracleStatementWrapper.execute(OracleStatementWrapper.java:328)
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.execute(JDBCStatementImpl.java:344)
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.executeStatement(JDBCStatementImpl.java:128)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.executeStatement(SQLQueryJob.java:631)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.lambda$2(SQLQueryJob.java:522)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:192)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.executeSingleQuery(SQLQueryJob.java:541)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.run(SQLQueryJob.java:241)
+	at org.jkiss.dbeaver.model.runtime.AbstractJob.run(AbstractJob.java:119)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.jkiss.dbeaver.model 4 0 2025-02-06 10:25:56.984
+!MESSAGE SQL Error [942] [42000]: ORA-00942: 테이블 또는 뷰가 존재하지 않습니다
+
+!SUBENTRY 1 org.jkiss.dbeaver.model 4 0 2025-02-06 10:25:56.984
+!MESSAGE Error : 942, Position : 11, Sql = DROP TABLE tbl_ben, OriginalSql = DROP TABLE tbl_ben, Error Msg = ORA-00942: 테이블 또는 뷰가 존재하지 않습니다
+
+!STACK 0
+Error : 942, Position : 11, Sql = DROP TABLE tbl_ben, OriginalSql = DROP TABLE tbl_ben, Error Msg = ORA-00942: 테이블 또는 뷰가 존재하지 않습니다
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:637)
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:564)
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1231)
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:772)
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:299)
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:512)
+	at oracle.jdbc.driver.T4CStatement.doOall8(T4CStatement.java:123)
+	at oracle.jdbc.driver.T4CStatement.executeForRows(T4CStatement.java:1200)
+	at oracle.jdbc.driver.OracleStatement.executeSQLStatement(OracleStatement.java:1820)
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1472)
+	at oracle.jdbc.driver.OracleStatement.executeInternal(OracleStatement.java:2505)
+	at oracle.jdbc.driver.OracleStatement.execute(OracleStatement.java:2460)
+	at oracle.jdbc.driver.OracleStatementWrapper.execute(OracleStatementWrapper.java:328)
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.execute(JDBCStatementImpl.java:344)
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.executeStatement(JDBCStatementImpl.java:128)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.executeStatement(SQLQueryJob.java:631)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.lambda$2(SQLQueryJob.java:522)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:192)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.executeSingleQuery(SQLQueryJob.java:541)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.run(SQLQueryJob.java:241)
+	at org.jkiss.dbeaver.model.runtime.AbstractJob.run(AbstractJob.java:119)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.jkiss.dbeaver.model 4 0 2025-02-06 10:26:03.835
+!MESSAGE SQL Error [2289] [42000]: ORA-02289: 시퀀스가 존재하지 않습니다.
+
+!SUBENTRY 1 org.jkiss.dbeaver.model 4 0 2025-02-06 10:26:03.835
+!MESSAGE Error : 2289, Position : 246, Sql = --DROP table tbl_file;
+--DROP TABLE tbl_party;
+--DROP TABLE tbl_comment;
+--DROP TABLE tbl_forum;
+--DROP TABLE tbl_ben;
+--DROP TABLE tbl_user;
+--DROP TABLE tbl_admin;
+--
+--DROP SEQUENCE seq_user;
+--DROP SEQUENCE seq_admin;
+drop SEQUENCE seq_ben, OriginalSql = --DROP table tbl_file;
+--DROP TABLE tbl_party;
+--DROP TABLE tbl_comment;
+--DROP TABLE tbl_forum;
+--DROP TABLE tbl_ben;
+--DROP TABLE tbl_user;
+--DROP TABLE tbl_admin;
+--
+--DROP SEQUENCE seq_user;
+--DROP SEQUENCE seq_admin;
+drop SEQUENCE seq_ben, Error Msg = ORA-02289: 시퀀스가 존재하지 않습니다.
+
+!STACK 0
+Error : 2289, Position : 246, Sql = --DROP table tbl_file;
+--DROP TABLE tbl_party;
+--DROP TABLE tbl_comment;
+--DROP TABLE tbl_forum;
+--DROP TABLE tbl_ben;
+--DROP TABLE tbl_user;
+--DROP TABLE tbl_admin;
+--
+--DROP SEQUENCE seq_user;
+--DROP SEQUENCE seq_admin;
+drop SEQUENCE seq_ben, OriginalSql = --DROP table tbl_file;
+--DROP TABLE tbl_party;
+--DROP TABLE tbl_comment;
+--DROP TABLE tbl_forum;
+--DROP TABLE tbl_ben;
+--DROP TABLE tbl_user;
+--DROP TABLE tbl_admin;
+--
+--DROP SEQUENCE seq_user;
+--DROP SEQUENCE seq_admin;
+drop SEQUENCE seq_ben, Error Msg = ORA-02289: 시퀀스가 존재하지 않습니다.
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:637)
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:564)
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1231)
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:772)
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:299)
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:512)
+	at oracle.jdbc.driver.T4CStatement.doOall8(T4CStatement.java:123)
+	at oracle.jdbc.driver.T4CStatement.executeForRows(T4CStatement.java:1200)
+	at oracle.jdbc.driver.OracleStatement.executeSQLStatement(OracleStatement.java:1820)
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1472)
+	at oracle.jdbc.driver.OracleStatement.executeInternal(OracleStatement.java:2505)
+	at oracle.jdbc.driver.OracleStatement.execute(OracleStatement.java:2460)
+	at oracle.jdbc.driver.OracleStatementWrapper.execute(OracleStatementWrapper.java:328)
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.execute(JDBCStatementImpl.java:344)
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.executeStatement(JDBCStatementImpl.java:128)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.executeStatement(SQLQueryJob.java:631)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.lambda$2(SQLQueryJob.java:522)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:192)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.executeSingleQuery(SQLQueryJob.java:541)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.extractData(SQLQueryJob.java:1016)
+	at org.jkiss.dbeaver.ui.editors.sql.SQLEditor$QueryResultsContainer.readData(SQLEditor.java:4273)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetJobDataRead.lambda$0(ResultSetJobDataRead.java:128)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:192)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetJobDataRead.run(ResultSetJobDataRead.java:126)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetViewer$ResultSetDataPumpJob.run(ResultSetViewer.java:5166)
+	at org.jkiss.dbeaver.model.runtime.AbstractJob.run(AbstractJob.java:119)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.jkiss.dbeaver.model 4 0 2025-02-06 10:26:19.213
+!MESSAGE SQL Error [907] [42000]: ORA-00907: 누락된 우괄호
+
+!SUBENTRY 1 org.jkiss.dbeaver.model 4 0 2025-02-06 10:26:19.213
+!MESSAGE Error : 907, Position : 277, Sql = --CREATE SEQUENCE seq_party START WITH 1 INCREMENT BY 1 nocache nocycle;
+
+
+CREATE TABLE tbl_ben (
+    ben_number NUMBER,
+    user_num NUMBER,
+    ben_start_date DATE,
+    ben_period NUMBER NOT NULL,
+    ben_reason VARCHAR2(50) NOT NULL,
+    ben_status	NUMBER NOT NULL DEFAULT 1,
+    CONSTRAINT pk_ben PRIMARY KEY (ben_number),
+    CONSTRAINT fk_ben_user FOREIGN KEY (user_num) REFERENCES tbl_user (user_number) ON DELETE CASCADE
+), OriginalSql = --CREATE SEQUENCE seq_party START WITH 1 INCREMENT BY 1 nocache nocycle;
+
+
+CREATE TABLE tbl_ben (
+    ben_number NUMBER,
+    user_num NUMBER,
+    ben_start_date DATE,
+    ben_period NUMBER NOT NULL,
+    ben_reason VARCHAR2(50) NOT NULL,
+    ben_status	NUMBER NOT NULL DEFAULT 1,
+    CONSTRAINT pk_ben PRIMARY KEY (ben_number),
+    CONSTRAINT fk_ben_user FOREIGN KEY (user_num) REFERENCES tbl_user (user_number) ON DELETE CASCADE
+), Error Msg = ORA-00907: 누락된 우괄호
+
+!STACK 0
+Error : 907, Position : 277, Sql = --CREATE SEQUENCE seq_party START WITH 1 INCREMENT BY 1 nocache nocycle;
+
+
+CREATE TABLE tbl_ben (
+    ben_number NUMBER,
+    user_num NUMBER,
+    ben_start_date DATE,
+    ben_period NUMBER NOT NULL,
+    ben_reason VARCHAR2(50) NOT NULL,
+    ben_status	NUMBER NOT NULL DEFAULT 1,
+    CONSTRAINT pk_ben PRIMARY KEY (ben_number),
+    CONSTRAINT fk_ben_user FOREIGN KEY (user_num) REFERENCES tbl_user (user_number) ON DELETE CASCADE
+), OriginalSql = --CREATE SEQUENCE seq_party START WITH 1 INCREMENT BY 1 nocache nocycle;
+
+
+CREATE TABLE tbl_ben (
+    ben_number NUMBER,
+    user_num NUMBER,
+    ben_start_date DATE,
+    ben_period NUMBER NOT NULL,
+    ben_reason VARCHAR2(50) NOT NULL,
+    ben_status	NUMBER NOT NULL DEFAULT 1,
+    CONSTRAINT pk_ben PRIMARY KEY (ben_number),
+    CONSTRAINT fk_ben_user FOREIGN KEY (user_num) REFERENCES tbl_user (user_number) ON DELETE CASCADE
+), Error Msg = ORA-00907: 누락된 우괄호
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:637)
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:564)
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1231)
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:772)
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:299)
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:512)
+	at oracle.jdbc.driver.T4CStatement.doOall8(T4CStatement.java:123)
+	at oracle.jdbc.driver.T4CStatement.executeForRows(T4CStatement.java:1200)
+	at oracle.jdbc.driver.OracleStatement.executeSQLStatement(OracleStatement.java:1820)
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1472)
+	at oracle.jdbc.driver.OracleStatement.executeInternal(OracleStatement.java:2505)
+	at oracle.jdbc.driver.OracleStatement.execute(OracleStatement.java:2460)
+	at oracle.jdbc.driver.OracleStatementWrapper.execute(OracleStatementWrapper.java:328)
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.execute(JDBCStatementImpl.java:344)
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.executeStatement(JDBCStatementImpl.java:128)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.executeStatement(SQLQueryJob.java:631)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.lambda$2(SQLQueryJob.java:522)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:192)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.executeSingleQuery(SQLQueryJob.java:541)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.run(SQLQueryJob.java:241)
+	at org.jkiss.dbeaver.model.runtime.AbstractJob.run(AbstractJob.java:119)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.jkiss.dbeaver.model 4 0 2025-02-06 10:26:49.861
+!MESSAGE SQL Error [907] [42000]: ORA-00907: 누락된 우괄호
+
+!SUBENTRY 1 org.jkiss.dbeaver.model 4 0 2025-02-06 10:26:49.861
+!MESSAGE Error : 907, Position : 277, Sql = --CREATE SEQUENCE seq_party START WITH 1 INCREMENT BY 1 nocache nocycle;
+
+
+CREATE TABLE tbl_ben (
+    ben_number NUMBER,
+    user_num NUMBER,
+    ben_start_date DATE,
+    ben_period NUMBER NOT NULL,
+    ben_reason VARCHAR2(50) NOT NULL,
+    ben_status	NUMBER NOT NULL DEFAULT 1,
+    CONSTRAINT pk_ben PRIMARY KEY (ben_number),
+    CONSTRAINT fk_ben_user FOREIGN KEY (user_num) REFERENCES tbl_user (user_number) ON DELETE CASCADE
+), OriginalSql = --CREATE SEQUENCE seq_party START WITH 1 INCREMENT BY 1 nocache nocycle;
+
+
+CREATE TABLE tbl_ben (
+    ben_number NUMBER,
+    user_num NUMBER,
+    ben_start_date DATE,
+    ben_period NUMBER NOT NULL,
+    ben_reason VARCHAR2(50) NOT NULL,
+    ben_status	NUMBER NOT NULL DEFAULT 1,
+    CONSTRAINT pk_ben PRIMARY KEY (ben_number),
+    CONSTRAINT fk_ben_user FOREIGN KEY (user_num) REFERENCES tbl_user (user_number) ON DELETE CASCADE
+), Error Msg = ORA-00907: 누락된 우괄호
+
+!STACK 0
+Error : 907, Position : 277, Sql = --CREATE SEQUENCE seq_party START WITH 1 INCREMENT BY 1 nocache nocycle;
+
+
+CREATE TABLE tbl_ben (
+    ben_number NUMBER,
+    user_num NUMBER,
+    ben_start_date DATE,
+    ben_period NUMBER NOT NULL,
+    ben_reason VARCHAR2(50) NOT NULL,
+    ben_status	NUMBER NOT NULL DEFAULT 1,
+    CONSTRAINT pk_ben PRIMARY KEY (ben_number),
+    CONSTRAINT fk_ben_user FOREIGN KEY (user_num) REFERENCES tbl_user (user_number) ON DELETE CASCADE
+), OriginalSql = --CREATE SEQUENCE seq_party START WITH 1 INCREMENT BY 1 nocache nocycle;
+
+
+CREATE TABLE tbl_ben (
+    ben_number NUMBER,
+    user_num NUMBER,
+    ben_start_date DATE,
+    ben_period NUMBER NOT NULL,
+    ben_reason VARCHAR2(50) NOT NULL,
+    ben_status	NUMBER NOT NULL DEFAULT 1,
+    CONSTRAINT pk_ben PRIMARY KEY (ben_number),
+    CONSTRAINT fk_ben_user FOREIGN KEY (user_num) REFERENCES tbl_user (user_number) ON DELETE CASCADE
+), Error Msg = ORA-00907: 누락된 우괄호
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:637)
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:564)
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1231)
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:772)
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:299)
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:512)
+	at oracle.jdbc.driver.T4CStatement.doOall8(T4CStatement.java:123)
+	at oracle.jdbc.driver.T4CStatement.executeForRows(T4CStatement.java:1200)
+	at oracle.jdbc.driver.OracleStatement.executeSQLStatement(OracleStatement.java:1820)
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1472)
+	at oracle.jdbc.driver.OracleStatement.executeInternal(OracleStatement.java:2505)
+	at oracle.jdbc.driver.OracleStatement.execute(OracleStatement.java:2460)
+	at oracle.jdbc.driver.OracleStatementWrapper.execute(OracleStatementWrapper.java:328)
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.execute(JDBCStatementImpl.java:344)
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.executeStatement(JDBCStatementImpl.java:128)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.executeStatement(SQLQueryJob.java:631)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.lambda$2(SQLQueryJob.java:522)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:192)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.executeSingleQuery(SQLQueryJob.java:541)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.run(SQLQueryJob.java:241)
+	at org.jkiss.dbeaver.model.runtime.AbstractJob.run(AbstractJob.java:119)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.jkiss.dbeaver.model 4 0 2025-02-06 10:28:12.902
+!MESSAGE SQL Error [933] [42000]: ORA-00933: SQL 명령어가 올바르게 종료되지 않았습니다
+
+!SUBENTRY 1 org.jkiss.dbeaver.model 4 0 2025-02-06 10:28:12.902
+!MESSAGE Error : 933, Position : 19, Sql = DROP table tbl_file;
+DROP TABLE tbl_party;
+DROP TABLE tbl_comment;
+DROP TABLE tbl_forum;
+DROP TABLE tbl_ben;
+DROP TABLE tbl_user;
+DROP TABLE tbl_admin, OriginalSql = DROP table tbl_file;
+DROP TABLE tbl_party;
+DROP TABLE tbl_comment;
+DROP TABLE tbl_forum;
+DROP TABLE tbl_ben;
+DROP TABLE tbl_user;
+DROP TABLE tbl_admin, Error Msg = ORA-00933: SQL 명령어가 올바르게 종료되지 않았습니다
+
+!STACK 0
+Error : 933, Position : 19, Sql = DROP table tbl_file;
+DROP TABLE tbl_party;
+DROP TABLE tbl_comment;
+DROP TABLE tbl_forum;
+DROP TABLE tbl_ben;
+DROP TABLE tbl_user;
+DROP TABLE tbl_admin, OriginalSql = DROP table tbl_file;
+DROP TABLE tbl_party;
+DROP TABLE tbl_comment;
+DROP TABLE tbl_forum;
+DROP TABLE tbl_ben;
+DROP TABLE tbl_user;
+DROP TABLE tbl_admin, Error Msg = ORA-00933: SQL 명령어가 올바르게 종료되지 않았습니다
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:637)
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:564)
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1231)
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:772)
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:299)
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:512)
+	at oracle.jdbc.driver.T4CStatement.doOall8(T4CStatement.java:123)
+	at oracle.jdbc.driver.T4CStatement.executeForRows(T4CStatement.java:1200)
+	at oracle.jdbc.driver.OracleStatement.executeSQLStatement(OracleStatement.java:1820)
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1472)
+	at oracle.jdbc.driver.OracleStatement.executeInternal(OracleStatement.java:2505)
+	at oracle.jdbc.driver.OracleStatement.execute(OracleStatement.java:2460)
+	at oracle.jdbc.driver.OracleStatementWrapper.execute(OracleStatementWrapper.java:328)
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.execute(JDBCStatementImpl.java:344)
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.executeStatement(JDBCStatementImpl.java:128)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.executeStatement(SQLQueryJob.java:631)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.lambda$2(SQLQueryJob.java:522)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:192)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.executeSingleQuery(SQLQueryJob.java:541)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.extractData(SQLQueryJob.java:1016)
+	at org.jkiss.dbeaver.ui.editors.sql.SQLEditor$QueryResultsContainer.readData(SQLEditor.java:4273)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetJobDataRead.lambda$0(ResultSetJobDataRead.java:128)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:192)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetJobDataRead.run(ResultSetJobDataRead.java:126)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetViewer$ResultSetDataPumpJob.run(ResultSetViewer.java:5166)
+	at org.jkiss.dbeaver.model.runtime.AbstractJob.run(AbstractJob.java:119)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.jkiss.dbeaver.model 4 0 2025-02-06 10:28:20.565
+!MESSAGE SQL Error [942] [42000]: ORA-00942: 테이블 또는 뷰가 존재하지 않습니다
+
+!SUBENTRY 1 org.jkiss.dbeaver.model 4 0 2025-02-06 10:28:20.565
+!MESSAGE Error : 942, Position : 11, Sql = DROP TABLE tbl_ben, OriginalSql = DROP TABLE tbl_ben, Error Msg = ORA-00942: 테이블 또는 뷰가 존재하지 않습니다
+
+!STACK 0
+Error : 942, Position : 11, Sql = DROP TABLE tbl_ben, OriginalSql = DROP TABLE tbl_ben, Error Msg = ORA-00942: 테이블 또는 뷰가 존재하지 않습니다
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:637)
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:564)
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1231)
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:772)
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:299)
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:512)
+	at oracle.jdbc.driver.T4CStatement.doOall8(T4CStatement.java:123)
+	at oracle.jdbc.driver.T4CStatement.executeForRows(T4CStatement.java:1200)
+	at oracle.jdbc.driver.OracleStatement.executeSQLStatement(OracleStatement.java:1820)
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1472)
+	at oracle.jdbc.driver.OracleStatement.executeInternal(OracleStatement.java:2505)
+	at oracle.jdbc.driver.OracleStatement.execute(OracleStatement.java:2460)
+	at oracle.jdbc.driver.OracleStatementWrapper.execute(OracleStatementWrapper.java:328)
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.execute(JDBCStatementImpl.java:344)
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.executeStatement(JDBCStatementImpl.java:128)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.executeStatement(SQLQueryJob.java:631)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.lambda$2(SQLQueryJob.java:522)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:192)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.executeSingleQuery(SQLQueryJob.java:541)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.run(SQLQueryJob.java:241)
+	at org.jkiss.dbeaver.model.runtime.AbstractJob.run(AbstractJob.java:119)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.jkiss.dbeaver.model 4 0 2025-02-06 10:28:25.287
+!MESSAGE SQL Error [2289] [42000]: ORA-02289: 시퀀스가 존재하지 않습니다.
+
+!SUBENTRY 1 org.jkiss.dbeaver.model 4 0 2025-02-06 10:28:25.287
+!MESSAGE Error : 2289, Position : 73, Sql = --
+--DROP SEQUENCE seq_user;
+--DROP SEQUENCE seq_admin;
+drop SEQUENCE seq_ben, OriginalSql = --
+--DROP SEQUENCE seq_user;
+--DROP SEQUENCE seq_admin;
+drop SEQUENCE seq_ben, Error Msg = ORA-02289: 시퀀스가 존재하지 않습니다.
+
+!STACK 0
+Error : 2289, Position : 73, Sql = --
+--DROP SEQUENCE seq_user;
+--DROP SEQUENCE seq_admin;
+drop SEQUENCE seq_ben, OriginalSql = --
+--DROP SEQUENCE seq_user;
+--DROP SEQUENCE seq_admin;
+drop SEQUENCE seq_ben, Error Msg = ORA-02289: 시퀀스가 존재하지 않습니다.
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:637)
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:564)
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1231)
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:772)
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:299)
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:512)
+	at oracle.jdbc.driver.T4CStatement.doOall8(T4CStatement.java:123)
+	at oracle.jdbc.driver.T4CStatement.executeForRows(T4CStatement.java:1200)
+	at oracle.jdbc.driver.OracleStatement.executeSQLStatement(OracleStatement.java:1820)
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1472)
+	at oracle.jdbc.driver.OracleStatement.executeInternal(OracleStatement.java:2505)
+	at oracle.jdbc.driver.OracleStatement.execute(OracleStatement.java:2460)
+	at oracle.jdbc.driver.OracleStatementWrapper.execute(OracleStatementWrapper.java:328)
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.execute(JDBCStatementImpl.java:344)
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.executeStatement(JDBCStatementImpl.java:128)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.executeStatement(SQLQueryJob.java:631)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.lambda$2(SQLQueryJob.java:522)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:192)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.executeSingleQuery(SQLQueryJob.java:541)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.extractData(SQLQueryJob.java:1016)
+	at org.jkiss.dbeaver.ui.editors.sql.SQLEditor$QueryResultsContainer.readData(SQLEditor.java:4273)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetJobDataRead.lambda$0(ResultSetJobDataRead.java:128)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:192)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetJobDataRead.run(ResultSetJobDataRead.java:126)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetViewer$ResultSetDataPumpJob.run(ResultSetViewer.java:5166)
+	at org.jkiss.dbeaver.model.runtime.AbstractJob.run(AbstractJob.java:119)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.jkiss.dbeaver.model 4 0 2025-02-06 10:28:59.191
+!MESSAGE SQL Error [900] [42000]: ORA-00900: SQL 문이 부적합합니다
+
+!SUBENTRY 1 org.jkiss.dbeaver.model 4 0 2025-02-06 10:28:59.191
+!MESSAGE Error : 900, Position : 4, Sql = --
+작업 삭제
+BEGIN
+   DBMS_SCHEDULER.drop_job('delete_old_data_job');
+END;, OriginalSql = --
+작업 삭제
+BEGIN
+   DBMS_SCHEDULER.drop_job('delete_old_data_job');
+END;, Error Msg = ORA-00900: SQL 문이 부적합합니다
+
+!STACK 0
+Error : 900, Position : 4, Sql = --
+작업 삭제
+BEGIN
+   DBMS_SCHEDULER.drop_job('delete_old_data_job');
+END;, OriginalSql = --
+작업 삭제
+BEGIN
+   DBMS_SCHEDULER.drop_job('delete_old_data_job');
+END;, Error Msg = ORA-00900: SQL 문이 부적합합니다
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:637)
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:564)
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1231)
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:772)
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:299)
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:512)
+	at oracle.jdbc.driver.T4CStatement.doOall8(T4CStatement.java:123)
+	at oracle.jdbc.driver.T4CStatement.executeForRows(T4CStatement.java:1200)
+	at oracle.jdbc.driver.OracleStatement.executeSQLStatement(OracleStatement.java:1820)
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1472)
+	at oracle.jdbc.driver.OracleStatement.executeInternal(OracleStatement.java:2505)
+	at oracle.jdbc.driver.OracleStatement.execute(OracleStatement.java:2460)
+	at oracle.jdbc.driver.OracleStatementWrapper.execute(OracleStatementWrapper.java:328)
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.execute(JDBCStatementImpl.java:344)
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.executeStatement(JDBCStatementImpl.java:128)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.executeStatement(SQLQueryJob.java:631)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.lambda$2(SQLQueryJob.java:522)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:192)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.executeSingleQuery(SQLQueryJob.java:541)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.extractData(SQLQueryJob.java:1016)
+	at org.jkiss.dbeaver.ui.editors.sql.SQLEditor$QueryResultsContainer.readData(SQLEditor.java:4273)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetJobDataRead.lambda$0(ResultSetJobDataRead.java:128)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:192)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetJobDataRead.run(ResultSetJobDataRead.java:126)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetViewer$ResultSetDataPumpJob.run(ResultSetViewer.java:5166)
+	at org.jkiss.dbeaver.model.runtime.AbstractJob.run(AbstractJob.java:119)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.jkiss.dbeaver.model 4 0 2025-02-06 10:29:08.045
+!MESSAGE SQL Error [900] [42000]: ORA-00900: SQL 문이 부적합합니다
+
+!SUBENTRY 1 org.jkiss.dbeaver.model 4 0 2025-02-06 10:29:08.045
+!MESSAGE Error : 900, Position : 4, Sql = --
+작업 삭제
+BEGIN
+   DBMS_SCHEDULER.drop_job('delete_old_data_job');
+END;, OriginalSql = --
+작업 삭제
+BEGIN
+   DBMS_SCHEDULER.drop_job('delete_old_data_job');
+END;, Error Msg = ORA-00900: SQL 문이 부적합합니다
+
+!STACK 0
+Error : 900, Position : 4, Sql = --
+작업 삭제
+BEGIN
+   DBMS_SCHEDULER.drop_job('delete_old_data_job');
+END;, OriginalSql = --
+작업 삭제
+BEGIN
+   DBMS_SCHEDULER.drop_job('delete_old_data_job');
+END;, Error Msg = ORA-00900: SQL 문이 부적합합니다
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:637)
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:564)
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1231)
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:772)
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:299)
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:512)
+	at oracle.jdbc.driver.T4CStatement.doOall8(T4CStatement.java:123)
+	at oracle.jdbc.driver.T4CStatement.executeForRows(T4CStatement.java:1200)
+	at oracle.jdbc.driver.OracleStatement.executeSQLStatement(OracleStatement.java:1820)
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1472)
+	at oracle.jdbc.driver.OracleStatement.executeInternal(OracleStatement.java:2505)
+	at oracle.jdbc.driver.OracleStatement.execute(OracleStatement.java:2460)
+	at oracle.jdbc.driver.OracleStatementWrapper.execute(OracleStatementWrapper.java:328)
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.execute(JDBCStatementImpl.java:344)
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.executeStatement(JDBCStatementImpl.java:128)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.executeStatement(SQLQueryJob.java:631)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.lambda$2(SQLQueryJob.java:522)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:192)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.executeSingleQuery(SQLQueryJob.java:541)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.extractData(SQLQueryJob.java:1016)
+	at org.jkiss.dbeaver.ui.editors.sql.SQLEditor$QueryResultsContainer.readData(SQLEditor.java:4273)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetJobDataRead.lambda$0(ResultSetJobDataRead.java:128)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:192)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetJobDataRead.run(ResultSetJobDataRead.java:126)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetViewer$ResultSetDataPumpJob.run(ResultSetViewer.java:5166)
+	at org.jkiss.dbeaver.model.runtime.AbstractJob.run(AbstractJob.java:119)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.jkiss.dbeaver.model 4 0 2025-02-06 10:29:37.222
+!MESSAGE SQL Error [27475] [99999]: ORA-27475: 알 수 없는 job "LEARNING"."DELETE_OLD_DATA_JOB"
+ORA-06512: "SYS.DBMS_ISCHED",  277행
+ORA-06512: "SYS.DBMS_SCHEDULER",  751행
+ORA-06512:  4행
+
+!SUBENTRY 1 org.jkiss.dbeaver.model 4 0 2025-02-06 10:29:37.222
+!MESSAGE Error : 27475, Position : 0, Sql = --
+--작업 삭제
+BEGIN
+   DBMS_SCHEDULER.drop_job('delete_old_data_job');
+END;, OriginalSql = --
+--작업 삭제
+BEGIN
+   DBMS_SCHEDULER.drop_job('delete_old_data_job');
+END;, Error Msg = ORA-27475: 알 수 없는 job "LEARNING"."DELETE_OLD_DATA_JOB"
+ORA-06512: "SYS.DBMS_ISCHED",  277행
+ORA-06512: "SYS.DBMS_SCHEDULER",  751행
+ORA-06512:  4행
+
+!STACK 0
+Error : 27475, Position : 0, Sql = --
+--작업 삭제
+BEGIN
+   DBMS_SCHEDULER.drop_job('delete_old_data_job');
+END;, OriginalSql = --
+--작업 삭제
+BEGIN
+   DBMS_SCHEDULER.drop_job('delete_old_data_job');
+END;, Error Msg = ORA-27475: 알 수 없는 job "LEARNING"."DELETE_OLD_DATA_JOB"
+ORA-06512: "SYS.DBMS_ISCHED",  277행
+ORA-06512: "SYS.DBMS_SCHEDULER",  751행
+ORA-06512:  4행
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:637)
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:564)
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1231)
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:772)
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:299)
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:512)
+	at oracle.jdbc.driver.T4CStatement.doOall8(T4CStatement.java:123)
+	at oracle.jdbc.driver.T4CStatement.executeForRows(T4CStatement.java:1200)
+	at oracle.jdbc.driver.OracleStatement.executeSQLStatement(OracleStatement.java:1820)
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1472)
+	at oracle.jdbc.driver.OracleStatement.executeInternal(OracleStatement.java:2505)
+	at oracle.jdbc.driver.OracleStatement.execute(OracleStatement.java:2460)
+	at oracle.jdbc.driver.OracleStatementWrapper.execute(OracleStatementWrapper.java:328)
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.execute(JDBCStatementImpl.java:344)
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.executeStatement(JDBCStatementImpl.java:128)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.executeStatement(SQLQueryJob.java:631)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.lambda$2(SQLQueryJob.java:522)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:192)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.executeSingleQuery(SQLQueryJob.java:541)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.extractData(SQLQueryJob.java:1016)
+	at org.jkiss.dbeaver.ui.editors.sql.SQLEditor$QueryResultsContainer.readData(SQLEditor.java:4273)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetJobDataRead.lambda$0(ResultSetJobDataRead.java:128)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:192)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetJobDataRead.run(ResultSetJobDataRead.java:126)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetViewer$ResultSetDataPumpJob.run(ResultSetViewer.java:5166)
+	at org.jkiss.dbeaver.model.runtime.AbstractJob.run(AbstractJob.java:119)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.jkiss.dbeaver.model 4 0 2025-02-06 10:29:39.681
+!MESSAGE SQL Error [27475] [99999]: ORA-27475: 알 수 없는 job "LEARNING"."DELETE_OLD_DATA_JOB"
+ORA-06512: "SYS.DBMS_ISCHED",  277행
+ORA-06512: "SYS.DBMS_SCHEDULER",  751행
+ORA-06512:  4행
+
+!SUBENTRY 1 org.jkiss.dbeaver.model 4 0 2025-02-06 10:29:39.681
+!MESSAGE Error : 27475, Position : 0, Sql = --
+--작업 삭제
+BEGIN
+   DBMS_SCHEDULER.drop_job('delete_old_data_job');
+END;, OriginalSql = --
+--작업 삭제
+BEGIN
+   DBMS_SCHEDULER.drop_job('delete_old_data_job');
+END;, Error Msg = ORA-27475: 알 수 없는 job "LEARNING"."DELETE_OLD_DATA_JOB"
+ORA-06512: "SYS.DBMS_ISCHED",  277행
+ORA-06512: "SYS.DBMS_SCHEDULER",  751행
+ORA-06512:  4행
+
+!STACK 0
+Error : 27475, Position : 0, Sql = --
+--작업 삭제
+BEGIN
+   DBMS_SCHEDULER.drop_job('delete_old_data_job');
+END;, OriginalSql = --
+--작업 삭제
+BEGIN
+   DBMS_SCHEDULER.drop_job('delete_old_data_job');
+END;, Error Msg = ORA-27475: 알 수 없는 job "LEARNING"."DELETE_OLD_DATA_JOB"
+ORA-06512: "SYS.DBMS_ISCHED",  277행
+ORA-06512: "SYS.DBMS_SCHEDULER",  751행
+ORA-06512:  4행
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:637)
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:564)
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1231)
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:772)
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:299)
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:512)
+	at oracle.jdbc.driver.T4CStatement.doOall8(T4CStatement.java:123)
+	at oracle.jdbc.driver.T4CStatement.executeForRows(T4CStatement.java:1200)
+	at oracle.jdbc.driver.OracleStatement.executeSQLStatement(OracleStatement.java:1820)
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1472)
+	at oracle.jdbc.driver.OracleStatement.executeInternal(OracleStatement.java:2505)
+	at oracle.jdbc.driver.OracleStatement.execute(OracleStatement.java:2460)
+	at oracle.jdbc.driver.OracleStatementWrapper.execute(OracleStatementWrapper.java:328)
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.execute(JDBCStatementImpl.java:344)
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.executeStatement(JDBCStatementImpl.java:128)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.executeStatement(SQLQueryJob.java:631)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.lambda$2(SQLQueryJob.java:522)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:192)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.executeSingleQuery(SQLQueryJob.java:541)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.extractData(SQLQueryJob.java:1016)
+	at org.jkiss.dbeaver.ui.editors.sql.SQLEditor$QueryResultsContainer.readData(SQLEditor.java:4273)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetJobDataRead.lambda$0(ResultSetJobDataRead.java:128)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:192)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetJobDataRead.run(ResultSetJobDataRead.java:126)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetViewer$ResultSetDataPumpJob.run(ResultSetViewer.java:5166)
+	at org.jkiss.dbeaver.model.runtime.AbstractJob.run(AbstractJob.java:119)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.jkiss.dbeaver.model 4 0 2025-02-06 10:30:24.974
+!MESSAGE SQL Error [27477] [99999]: ORA-27477: "LEARNING"."DELETE_OLD_DATA_JOB"이(가) 존재합니다.
+ORA-06512: "SYS.DBMS_ISCHED",  174행
+ORA-06512: "SYS.DBMS_SCHEDULER",  286행
+ORA-06512:  2행
+
+!SUBENTRY 1 org.jkiss.dbeaver.model 4 0 2025-02-06 10:30:24.974
+!MESSAGE Error : 27477, Position : 0, Sql = BEGIN
+   DBMS_SCHEDULER.create_job (
+      job_name        => 'delete_old_data_job',  -- 작업 이름
+      job_type        => 'PLSQL_BLOCK',          -- 작업 유형
+      job_action      => 'BEGIN DELETE FROM tbl_ben WHERE (ben_start_date+ben_period) <= SYSDATE; END;', -- DML 작업
+      start_date      =>  TO_DATE('2025-01-23 10:00', 'YYYY-MM-DD HH24:MI'), -- 지정한 시간부터 시작
+      repeat_interval => 'FREQ=HOURLY', -- 1시간 마다 수행
+      enabled         =>  TRUE -- 작업 활성화
+   );
+END;, OriginalSql = BEGIN
+   DBMS_SCHEDULER.create_job (
+      job_name        => 'delete_old_data_job',  -- 작업 이름
+      job_type        => 'PLSQL_BLOCK',          -- 작업 유형
+      job_action      => 'BEGIN DELETE FROM tbl_ben WHERE (ben_start_date+ben_period) <= SYSDATE; END;', -- DML 작업
+      start_date      =>  TO_DATE('2025-01-23 10:00', 'YYYY-MM-DD HH24:MI'), -- 지정한 시간부터 시작
+      repeat_interval => 'FREQ=HOURLY', -- 1시간 마다 수행
+      enabled         =>  TRUE -- 작업 활성화
+   );
+END;, Error Msg = ORA-27477: "LEARNING"."DELETE_OLD_DATA_JOB"이(가) 존재합니다.
+ORA-06512: "SYS.DBMS_ISCHED",  174행
+ORA-06512: "SYS.DBMS_SCHEDULER",  286행
+ORA-06512:  2행
+
+!STACK 0
+Error : 27477, Position : 0, Sql = BEGIN
+   DBMS_SCHEDULER.create_job (
+      job_name        => 'delete_old_data_job',  -- 작업 이름
+      job_type        => 'PLSQL_BLOCK',          -- 작업 유형
+      job_action      => 'BEGIN DELETE FROM tbl_ben WHERE (ben_start_date+ben_period) <= SYSDATE; END;', -- DML 작업
+      start_date      =>  TO_DATE('2025-01-23 10:00', 'YYYY-MM-DD HH24:MI'), -- 지정한 시간부터 시작
+      repeat_interval => 'FREQ=HOURLY', -- 1시간 마다 수행
+      enabled         =>  TRUE -- 작업 활성화
+   );
+END;, OriginalSql = BEGIN
+   DBMS_SCHEDULER.create_job (
+      job_name        => 'delete_old_data_job',  -- 작업 이름
+      job_type        => 'PLSQL_BLOCK',          -- 작업 유형
+      job_action      => 'BEGIN DELETE FROM tbl_ben WHERE (ben_start_date+ben_period) <= SYSDATE; END;', -- DML 작업
+      start_date      =>  TO_DATE('2025-01-23 10:00', 'YYYY-MM-DD HH24:MI'), -- 지정한 시간부터 시작
+      repeat_interval => 'FREQ=HOURLY', -- 1시간 마다 수행
+      enabled         =>  TRUE -- 작업 활성화
+   );
+END;, Error Msg = ORA-27477: "LEARNING"."DELETE_OLD_DATA_JOB"이(가) 존재합니다.
+ORA-06512: "SYS.DBMS_ISCHED",  174행
+ORA-06512: "SYS.DBMS_SCHEDULER",  286행
+ORA-06512:  2행
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:637)
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:564)
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1231)
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:772)
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:299)
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:512)
+	at oracle.jdbc.driver.T4CStatement.doOall8(T4CStatement.java:123)
+	at oracle.jdbc.driver.T4CStatement.executeForRows(T4CStatement.java:1200)
+	at oracle.jdbc.driver.OracleStatement.executeSQLStatement(OracleStatement.java:1820)
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1472)
+	at oracle.jdbc.driver.OracleStatement.executeInternal(OracleStatement.java:2505)
+	at oracle.jdbc.driver.OracleStatement.execute(OracleStatement.java:2460)
+	at oracle.jdbc.driver.OracleStatementWrapper.execute(OracleStatementWrapper.java:328)
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.execute(JDBCStatementImpl.java:344)
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.executeStatement(JDBCStatementImpl.java:128)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.executeStatement(SQLQueryJob.java:631)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.lambda$2(SQLQueryJob.java:522)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:192)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.executeSingleQuery(SQLQueryJob.java:541)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.extractData(SQLQueryJob.java:1016)
+	at org.jkiss.dbeaver.ui.editors.sql.SQLEditor$QueryResultsContainer.readData(SQLEditor.java:4273)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetJobDataRead.lambda$0(ResultSetJobDataRead.java:128)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:192)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetJobDataRead.run(ResultSetJobDataRead.java:126)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetViewer$ResultSetDataPumpJob.run(ResultSetViewer.java:5166)
+	at org.jkiss.dbeaver.model.runtime.AbstractJob.run(AbstractJob.java:119)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.jkiss.dbeaver.model 4 0 2025-02-06 16:24:27.224
+!MESSAGE SQL Error [942] [42000]: ORA-00942: 테이블 또는 뷰가 존재하지 않습니다
+
+!SUBENTRY 1 org.jkiss.dbeaver.model 4 0 2025-02-06 16:24:27.224
+!MESSAGE Error : 942, Position : 14, Sql = SELECT * FROM tbl_reply, OriginalSql = SELECT * FROM tbl_reply, Error Msg = ORA-00942: 테이블 또는 뷰가 존재하지 않습니다
+
+!STACK 0
+Error : 942, Position : 14, Sql = SELECT * FROM tbl_reply, OriginalSql = SELECT * FROM tbl_reply, Error Msg = ORA-00942: 테이블 또는 뷰가 존재하지 않습니다
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:637)
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:564)
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1231)
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:772)
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:299)
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:512)
+	at oracle.jdbc.driver.T4CStatement.doOall8(T4CStatement.java:123)
+	at oracle.jdbc.driver.T4CStatement.executeForDescribe(T4CStatement.java:969)
+	at oracle.jdbc.driver.OracleStatement.prepareDefineBufferAndExecute(OracleStatement.java:1271)
+	at oracle.jdbc.driver.OracleStatement.executeMaybeDescribe(OracleStatement.java:1149)
+	at oracle.jdbc.driver.OracleStatement.executeSQLSelect(OracleStatement.java:1661)
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1470)
+	at oracle.jdbc.driver.OracleStatement.executeInternal(OracleStatement.java:2505)
+	at oracle.jdbc.driver.OracleStatement.execute(OracleStatement.java:2460)
+	at oracle.jdbc.driver.OracleStatementWrapper.execute(OracleStatementWrapper.java:328)
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.execute(JDBCStatementImpl.java:344)
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.executeStatement(JDBCStatementImpl.java:128)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.executeStatement(SQLQueryJob.java:631)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.lambda$2(SQLQueryJob.java:522)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:192)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.executeSingleQuery(SQLQueryJob.java:541)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.extractData(SQLQueryJob.java:1016)
+	at org.jkiss.dbeaver.ui.editors.sql.SQLEditor$QueryResultsContainer.readData(SQLEditor.java:4273)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetJobDataRead.lambda$0(ResultSetJobDataRead.java:128)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:192)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetJobDataRead.run(ResultSetJobDataRead.java:126)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetViewer$ResultSetDataPumpJob.run(ResultSetViewer.java:5166)
+	at org.jkiss.dbeaver.model.runtime.AbstractJob.run(AbstractJob.java:119)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.jkiss.dbeaver.model 4 0 2025-02-06 16:27:45.772
+!MESSAGE SQL Error [904] [42000]: ORA-00904: "REPLY_NUMBER": 부적합한 식별자
+
+!SUBENTRY 1 org.jkiss.dbeaver.model 4 0 2025-02-06 16:27:45.772
+!MESSAGE Error : 904, Position : 216, Sql = CREATE TABLE tbl_reply(
+	reply_numnber	NUMBER
+  , reply_content	varchar2(500)
+  , reply_date		DATE DEFAULT current_timestemp
+  , board_number	NUMBER
+  , member_number	NUMBER
+  , CONSTRAINT pk_reply PRIMARY key(reply_number)
+  , CONSTRAINT fk_reply_board FOREIGN key(board_number) REFERENCES tbl_board(board_number) ON DELETE CASCADE
+  , CONSTRAINT fk_reply_member FOREIGN key(member_number) REFERENCES tbl_member(member_number) ON DELETE cascade
+), OriginalSql = CREATE TABLE tbl_reply(
+	reply_numnber	NUMBER
+  , reply_content	varchar2(500)
+  , reply_date		DATE DEFAULT current_timestemp
+  , board_number	NUMBER
+  , member_number	NUMBER
+  , CONSTRAINT pk_reply PRIMARY key(reply_number)
+  , CONSTRAINT fk_reply_board FOREIGN key(board_number) REFERENCES tbl_board(board_number) ON DELETE CASCADE
+  , CONSTRAINT fk_reply_member FOREIGN key(member_number) REFERENCES tbl_member(member_number) ON DELETE cascade
+), Error Msg = ORA-00904: "REPLY_NUMBER": 부적합한 식별자
+
+!STACK 0
+Error : 904, Position : 216, Sql = CREATE TABLE tbl_reply(
+	reply_numnber	NUMBER
+  , reply_content	varchar2(500)
+  , reply_date		DATE DEFAULT current_timestemp
+  , board_number	NUMBER
+  , member_number	NUMBER
+  , CONSTRAINT pk_reply PRIMARY key(reply_number)
+  , CONSTRAINT fk_reply_board FOREIGN key(board_number) REFERENCES tbl_board(board_number) ON DELETE CASCADE
+  , CONSTRAINT fk_reply_member FOREIGN key(member_number) REFERENCES tbl_member(member_number) ON DELETE cascade
+), OriginalSql = CREATE TABLE tbl_reply(
+	reply_numnber	NUMBER
+  , reply_content	varchar2(500)
+  , reply_date		DATE DEFAULT current_timestemp
+  , board_number	NUMBER
+  , member_number	NUMBER
+  , CONSTRAINT pk_reply PRIMARY key(reply_number)
+  , CONSTRAINT fk_reply_board FOREIGN key(board_number) REFERENCES tbl_board(board_number) ON DELETE CASCADE
+  , CONSTRAINT fk_reply_member FOREIGN key(member_number) REFERENCES tbl_member(member_number) ON DELETE cascade
+), Error Msg = ORA-00904: "REPLY_NUMBER": 부적합한 식별자
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:637)
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:564)
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1231)
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:772)
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:299)
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:512)
+	at oracle.jdbc.driver.T4CStatement.doOall8(T4CStatement.java:123)
+	at oracle.jdbc.driver.T4CStatement.executeForRows(T4CStatement.java:1200)
+	at oracle.jdbc.driver.OracleStatement.executeSQLStatement(OracleStatement.java:1820)
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1472)
+	at oracle.jdbc.driver.OracleStatement.executeInternal(OracleStatement.java:2505)
+	at oracle.jdbc.driver.OracleStatement.execute(OracleStatement.java:2460)
+	at oracle.jdbc.driver.OracleStatementWrapper.execute(OracleStatementWrapper.java:328)
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.execute(JDBCStatementImpl.java:344)
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.executeStatement(JDBCStatementImpl.java:128)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.executeStatement(SQLQueryJob.java:631)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.lambda$2(SQLQueryJob.java:522)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:192)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.executeSingleQuery(SQLQueryJob.java:541)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.extractData(SQLQueryJob.java:1016)
+	at org.jkiss.dbeaver.ui.editors.sql.SQLEditor$QueryResultsContainer.readData(SQLEditor.java:4273)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetJobDataRead.lambda$0(ResultSetJobDataRead.java:128)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:192)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetJobDataRead.run(ResultSetJobDataRead.java:126)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetViewer$ResultSetDataPumpJob.run(ResultSetViewer.java:5166)
+	at org.jkiss.dbeaver.model.runtime.AbstractJob.run(AbstractJob.java:119)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.jkiss.dbeaver.model 4 0 2025-02-06 16:28:01.332
+!MESSAGE SQL Error [904] [42000]: ORA-00904: "REPLY_NUMBER": 부적합한 식별자
+
+!SUBENTRY 1 org.jkiss.dbeaver.model 4 0 2025-02-06 16:28:01.332
+!MESSAGE Error : 904, Position : 216, Sql = CREATE TABLE tbl_reply(
+	reply_numnber	NUMBER
+  , reply_content	varchar2(500)
+  , reply_date		DATE DEFAULT current_timestamp
+  , board_number	NUMBER
+  , member_number	NUMBER
+  , CONSTRAINT pk_reply PRIMARY key(reply_number)
+  , CONSTRAINT fk_reply_board FOREIGN key(board_number) REFERENCES tbl_board(board_number) ON DELETE CASCADE
+  , CONSTRAINT fk_reply_member FOREIGN key(member_number) REFERENCES tbl_member(member_number) ON DELETE cascade
+), OriginalSql = CREATE TABLE tbl_reply(
+	reply_numnber	NUMBER
+  , reply_content	varchar2(500)
+  , reply_date		DATE DEFAULT current_timestamp
+  , board_number	NUMBER
+  , member_number	NUMBER
+  , CONSTRAINT pk_reply PRIMARY key(reply_number)
+  , CONSTRAINT fk_reply_board FOREIGN key(board_number) REFERENCES tbl_board(board_number) ON DELETE CASCADE
+  , CONSTRAINT fk_reply_member FOREIGN key(member_number) REFERENCES tbl_member(member_number) ON DELETE cascade
+), Error Msg = ORA-00904: "REPLY_NUMBER": 부적합한 식별자
+
+!STACK 0
+Error : 904, Position : 216, Sql = CREATE TABLE tbl_reply(
+	reply_numnber	NUMBER
+  , reply_content	varchar2(500)
+  , reply_date		DATE DEFAULT current_timestamp
+  , board_number	NUMBER
+  , member_number	NUMBER
+  , CONSTRAINT pk_reply PRIMARY key(reply_number)
+  , CONSTRAINT fk_reply_board FOREIGN key(board_number) REFERENCES tbl_board(board_number) ON DELETE CASCADE
+  , CONSTRAINT fk_reply_member FOREIGN key(member_number) REFERENCES tbl_member(member_number) ON DELETE cascade
+), OriginalSql = CREATE TABLE tbl_reply(
+	reply_numnber	NUMBER
+  , reply_content	varchar2(500)
+  , reply_date		DATE DEFAULT current_timestamp
+  , board_number	NUMBER
+  , member_number	NUMBER
+  , CONSTRAINT pk_reply PRIMARY key(reply_number)
+  , CONSTRAINT fk_reply_board FOREIGN key(board_number) REFERENCES tbl_board(board_number) ON DELETE CASCADE
+  , CONSTRAINT fk_reply_member FOREIGN key(member_number) REFERENCES tbl_member(member_number) ON DELETE cascade
+), Error Msg = ORA-00904: "REPLY_NUMBER": 부적합한 식별자
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:637)
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:564)
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1231)
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:772)
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:299)
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:512)
+	at oracle.jdbc.driver.T4CStatement.doOall8(T4CStatement.java:123)
+	at oracle.jdbc.driver.T4CStatement.executeForRows(T4CStatement.java:1200)
+	at oracle.jdbc.driver.OracleStatement.executeSQLStatement(OracleStatement.java:1820)
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1472)
+	at oracle.jdbc.driver.OracleStatement.executeInternal(OracleStatement.java:2505)
+	at oracle.jdbc.driver.OracleStatement.execute(OracleStatement.java:2460)
+	at oracle.jdbc.driver.OracleStatementWrapper.execute(OracleStatementWrapper.java:328)
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.execute(JDBCStatementImpl.java:344)
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.executeStatement(JDBCStatementImpl.java:128)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.executeStatement(SQLQueryJob.java:631)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.lambda$2(SQLQueryJob.java:522)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:192)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.executeSingleQuery(SQLQueryJob.java:541)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.extractData(SQLQueryJob.java:1016)
+	at org.jkiss.dbeaver.ui.editors.sql.SQLEditor$QueryResultsContainer.readData(SQLEditor.java:4273)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetJobDataRead.lambda$0(ResultSetJobDataRead.java:128)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:192)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetJobDataRead.run(ResultSetJobDataRead.java:126)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetViewer$ResultSetDataPumpJob.run(ResultSetViewer.java:5166)
+	at org.jkiss.dbeaver.model.runtime.AbstractJob.run(AbstractJob.java:119)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.jkiss.dbeaver.model 4 0 2025-02-06 17:42:26.467
+!MESSAGE SQL Error [984] [42000]: ORA-00984: 열을 사용할 수 없습니다
+
+!SUBENTRY 1 org.jkiss.dbeaver.model 4 0 2025-02-06 17:42:26.468
+!MESSAGE Error : 984, Position : 42, Sql = INSERT INTO tbl_reply
+VALUES
+(seq_reply.nextvar, '1234', sysdate, '1', '1'), OriginalSql = INSERT INTO tbl_reply
+VALUES
+(seq_reply.nextvar, '1234', sysdate, '1', '1'), Error Msg = ORA-00984: 열을 사용할 수 없습니다
+
+!STACK 0
+Error : 984, Position : 42, Sql = INSERT INTO tbl_reply
+VALUES
+(seq_reply.nextvar, '1234', sysdate, '1', '1'), OriginalSql = INSERT INTO tbl_reply
+VALUES
+(seq_reply.nextvar, '1234', sysdate, '1', '1'), Error Msg = ORA-00984: 열을 사용할 수 없습니다
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:637)
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:564)
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1231)
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:772)
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:299)
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:512)
+	at oracle.jdbc.driver.T4CStatement.doOall8(T4CStatement.java:123)
+	at oracle.jdbc.driver.T4CStatement.executeForRows(T4CStatement.java:1200)
+	at oracle.jdbc.driver.OracleStatement.executeSQLStatement(OracleStatement.java:1820)
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1472)
+	at oracle.jdbc.driver.OracleStatement.executeInternal(OracleStatement.java:2505)
+	at oracle.jdbc.driver.OracleStatement.execute(OracleStatement.java:2460)
+	at oracle.jdbc.driver.OracleStatementWrapper.execute(OracleStatementWrapper.java:328)
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.execute(JDBCStatementImpl.java:344)
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.executeStatement(JDBCStatementImpl.java:128)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.executeStatement(SQLQueryJob.java:631)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.lambda$2(SQLQueryJob.java:522)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.executeSingleQuery(SQLQueryJob.java:544)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.extractData(SQLQueryJob.java:1016)
+	at org.jkiss.dbeaver.ui.editors.sql.SQLEditor$QueryResultsContainer.readData(SQLEditor.java:4273)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetJobDataRead.lambda$0(ResultSetJobDataRead.java:128)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:192)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetJobDataRead.run(ResultSetJobDataRead.java:126)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetViewer$ResultSetDataPumpJob.run(ResultSetViewer.java:5166)
+	at org.jkiss.dbeaver.model.runtime.AbstractJob.run(AbstractJob.java:119)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)

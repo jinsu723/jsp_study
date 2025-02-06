@@ -1,0 +1,3 @@
+function banCancel(user) {
+	const confrim = confirm(user + '의 밴을 해제하시겠습니까?');
+}

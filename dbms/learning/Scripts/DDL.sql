@@ -102,16 +102,16 @@
 --INSERT INTO TBL_USER (user_number, user_id, user_passwd, user_nickname, user_tier, user_phone, user_join_date) VALUES (seq_user.NEXTVAL, 'test99', 'passwd99*', '방플대마왕', '실버', '010-7218-7010', '2025-01-19');
 --INSERT INTO TBL_USER (user_number, user_id, user_passwd, user_nickname, user_tier, user_phone, user_join_date) VALUES (seq_user.NEXTVAL, 'test100', 'passwd100*', '탑신병자', '골드', '010-2278-5540', '2025-01-09');
 --INSERT INTO TBL_USER (user_number, user_id, user_passwd, user_nickname, user_tier, user_phone, user_join_date) VALUES (seq_user.NEXTVAL, 'test101', 'passwd100*', '길진수', '골드', '010-2278-5540', sysdate);
-
-
-
-
-
+--
+--
+--
+--
+--
 --SELECT * FROM tbl_forum;
-
-
-
-
+--
+--
+--
+--
 --INSERT INTO tbl_forum (forum_number, user_number, forum_category, forum_title, forum_date, forum_update, forum_content) VALUES (seq_forum.NEXTVAL, 46, '자유', '이 게임에 대해 이야기해봅시다.', SYSDATE, NULL, '소소한 잡담과 일상 이야기를 나눠봅시다.');
 --INSERT INTO tbl_forum (forum_number, user_number, forum_category, forum_title, forum_date, forum_update, forum_content) VALUES (seq_forum.NEXTVAL, 32, '모집', '팀원 모집합니다!', SYSDATE, NULL, '주말 레이드 같이 하실 분 구해요.');
 --INSERT INTO tbl_forum (forum_number, user_number, forum_category, forum_title, forum_date, forum_update, forum_content) VALUES (seq_forum.NEXTVAL, 48, '공략', '이 챔피언 공략 가이드', SYSDATE, NULL, '상대 챔피언 카운터 공략법을 소개합니다.');
